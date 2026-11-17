@@ -55,14 +55,14 @@
        The subtle/separator tier (3.45:1 on white) can dip below 3:1 on darker panels
        such as --accent and muted-hover; 1.4.11 exempts purely decorative dividers,
        and --border still clears 3:1 on those surfaces. */
-    --border: #c9c9c9;
-    --border-subtle: #dcdcdc;
+    --border: #dadada;
+    --border-subtle: #ebebeb;
     --input: #919191;
-    /* Dyson focus outline is black */
-    --ring: #000000;
+    /* Dyson focus ring: 3px solid blue */
+    --ring: #0066cc;
 
-    --separator: #c9c9c9;
-    --separator-foreground: #919191;
+    --separator: #dadada;
+    --separator-foreground: #999999;
 
     /* not in Figma JSON */
     --rating: #facc15;

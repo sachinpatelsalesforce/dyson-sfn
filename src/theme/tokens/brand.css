@@ -1,6 +1,7 @@
 /*
- * Dyson UK brand palette.
- * Source: dyson-uk-branding.json extracted from dyson.co.uk stylesheet.
+ * Dyson-inspired brand palette.
+ * Source: dyson-branding.json (proposed implementation, 2026-11-17).
+ * Colors are reference values from third-party sources, not live-extracted.
  */
 :root {
     --brand-primary: #79b928;
@@ -8,30 +9,20 @@
 
     /* Dyson core */
     --brand-black: #000000;
+    --brand-ink: #333333;
+    --brand-secondary: #555555;
+    --brand-muted: #999999;
+    --brand-outline: #919191;
+    --brand-divider: #dadada;
+    --brand-light: #ebebeb;
     --brand-white: #ffffff;
+    --brand-cream: #fff8e6;
 
     /* Dyson accent colors */
     --brand-green: #79b928;
-    --brand-green-hover: #65a01b;
-    --brand-yellow: #ffcc00;
-    --brand-pink: #c4398d;
-    --brand-pink-hover: #ab2975;
-    --brand-purple: #522a86;
     --brand-blue: #0066cc;
-    --brand-sale-blue: #006fdd;
-
-    /* Dyson neutral scale */
-    --brand-gray-900: #242424;
-    --brand-gray-800: #333333;
-    --brand-gray-700: #555555;
-    --brand-gray-600: #666666;
-    --brand-gray-500: #919191;
-    --brand-gray-400: #c9c9c9;
-    --brand-gray-300: #dcdcdc;
-    --brand-gray-250: #ebebeb;
-    --brand-gray-200: #ececec;
-    --brand-gray-100: #f0f0f0;
-    --brand-gray-50: #fbfbfb;
+    --brand-cyan: #149ecc;
+    --brand-brown: #ac5d00;
 
     /*
      * Hero overlay scrims — brand-tinted gradients layered between a hero image

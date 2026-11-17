@@ -1,7 +1,7 @@
 @theme inline {
     /* Font families */
-    --font-sans: 'DysonFutura', -apple-system, 'system-ui', 'Helvetica Neue', Arial, sans-serif;
-    --font-serif: 'DysonFutura', Georgia, serif;
+    --font-sans: 'DysonFutura', 'Futura', 'Avenir Next', Arial, sans-serif;
+    --font-serif: 'DysonFutura', 'Futura', Georgia, serif;
     --font-mono: 'DysonFutura', 'Courier New', monospace;
 
     /* Error page tokens */
