@@ -65,6 +65,9 @@ Claude.local.md
 # Claude Code local settings
 .claude/
 
+# PD library backup ZIPs (large binaries — store locally only)
+backups/*.zip
+
 dw.json
 
 # Generated per-vertical tsconfigs (see scripts/internal/generate-vertical-tsconfig.mjs).

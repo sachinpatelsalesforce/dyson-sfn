@@ -8,7 +8,7 @@ set -euo pipefail
 
 TAG="baseline-dysonuk-20261117"
 SERVER="zzse-015.dx.commercecloud.salesforce.com"
-PD_BACKUP="${1:-}"
+PD_BACKUP="${1:-./backups/dysonuk-pd-backup-20261117.zip}"
 
 echo ""
 echo "=== Reverting code to $TAG ==="
