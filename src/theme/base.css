@@ -1,7 +1,25 @@
+/*
+ * DysonFutura — place font files in public/fonts/ before deploying.
+ * Files needed: DysonFutura-Light.woff, DysonFutura-Book.woff, DysonFutura-Medium.woff
+ */
 @font-face {
-    font-family: 'Sen';
-    src: url('/fonts/sen-variable.woff2') format('woff2');
-    font-weight: 400 800;
+    font-family: 'DysonFutura';
+    src: url('/fonts/DysonFutura-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DysonFutura';
+    src: url('/fonts/DysonFutura-Book.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DysonFutura';
+    src: url('/fonts/DysonFutura-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }

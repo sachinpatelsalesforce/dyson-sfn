@@ -1,8 +1,8 @@
 @theme inline {
     /* Font families */
-    --font-sans: 'Sen', -apple-system, 'system-ui', 'Helvetica Neue', Arial, sans-serif;
-    --font-serif: 'Sen', Georgia, serif;
-    --font-mono: 'Sen', 'Courier New', monospace;
+    --font-sans: 'DysonFutura', -apple-system, 'system-ui', 'Helvetica Neue', Arial, sans-serif;
+    --font-serif: 'DysonFutura', Georgia, serif;
+    --font-mono: 'DysonFutura', 'Courier New', monospace;
 
     /* Error page tokens */
     --text-error-status: 12rem;  /* Large status code display for error pages */
