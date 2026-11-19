@@ -20,6 +20,7 @@ import {
     PopoverTrigger,
 } from '@/components/ui/popover';
 import { ScrollReveal } from '@/components/motion/scroll-reveal';
+import cleanerHeadExploded from '/images/cleaner-head-exploded.png';
 
 /* DEMO: hotspot positions mapped to the exploded High Torque cleaner head diagram */
 const HOTSPOTS = [
@@ -67,8 +68,7 @@ const HOTSPOTS = [
     },
 ] as const;
 
-/* Exploded High Torque cleaner head — static public asset */
-const PRODUCT_IMAGE = '/images/cleaner-head-exploded.png';
+const PRODUCT_IMAGE = cleanerHeadExploded;
 
 export default function HotspotDiagram() {
     const { t } = useTranslation('home');
