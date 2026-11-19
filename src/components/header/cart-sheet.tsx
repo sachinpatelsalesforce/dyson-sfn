@@ -41,9 +41,10 @@ import {
     SheetTitle,
     SheetTrigger,
 } from '@/components/ui/sheet';
-import { XIcon } from 'lucide-react';
+import { XIcon, Truck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import DysonCarePlanTile from '@/components/cart/dyson-care-plan-tile';
 import MiniCartItem from '@/components/cart/mini-cart-item';
 import SelectBonusProductsCard from '@/components/cart/select-bonus-products-card';
 import { formatCurrency } from '@/lib/currency';
@@ -353,6 +354,15 @@ const CartSheetPanel = function CartSheetPanel({ onClose }: { onClose: () => voi
                             </div>
                         )}
 
+                        {/* Care plan upsell + free delivery */}
+                        <div className="px-6 pb-4 space-y-3">
+                            <DysonCarePlanTile />
+                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                                <Truck className="size-3.5 text-primary shrink-0" aria-hidden="true" />
+                                <span>{tMiniCart('dyson.freeDelivery', 'Free next-day delivery on orders over £50. DEMO.')}</span>
+                            </div>
+                        </div>
+
                         {/* Bottom Divider */}
                         <Separator className="bg-muted-foreground/10" />
                     </>
@@ -365,7 +375,7 @@ const CartSheetPanel = function CartSheetPanel({ onClose }: { onClose: () => voi
 
             {/* Footer */}
             {basket && basket.productItems && basket.productItems.length > 0 && (
-                <SheetFooter className="px-6 py-6 border-t flex-col gap-3 sm:flex-col">
+                <SheetFooter className="px-6 py-6 border-t flex-col gap-3 sm:flex-col [&_[data-testid='express-payments']]:hidden">
                     {isCartUpdating && <p className="text-xs text-muted-foreground">{tMiniCart('loading')}</p>}
                     <Button
                         asChild

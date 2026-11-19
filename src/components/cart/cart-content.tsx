@@ -32,6 +32,7 @@ import ProductItemsList from '@/components/product-items-list';
 import { RemoveItemButtonWithConfirmation } from '@/components/buttons/remove-item-button-with-confirmation';
 import { CartItemEditButton } from '@/components/cart/cart-item-edit-button';
 import CartEmpty from './cart-empty';
+import DysonCarePlanTile from './dyson-care-plan-tile';
 import CartTitle from './cart-title';
 import OrderSummary from '@/components/order-summary';
 import { OrderSummaryMobileAccordion } from '@/components/order-summary/mobile-heading';
@@ -517,6 +518,9 @@ export default function CartContent({
                             showCheckoutAction={true}
                             inventoryValidation={inventoryValidation}
                         />
+                        <div className="mt-4">
+                            <DysonCarePlanTile />
+                        </div>
                         <UITarget targetId="sfcc.cart.bnpl.message" />
                     </div>
                 </div>
