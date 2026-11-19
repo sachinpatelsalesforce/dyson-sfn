@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { useState, Suspense } from 'react';
+import { useState, Suspense, type ComponentType } from 'react';
+import { PawPrint, Sparkles, Home, Wind, Maximize2, RefreshCw, Droplets, Volume2, type LucideProps } from 'lucide-react';
 import { Await } from 'react-router';
 import {
     NavigationMenu,
@@ -30,16 +31,16 @@ import { createCategoryUrlFromScapiCategory } from '@/lib/seo/scapi-slugs';
 import { useSeoUrlContext } from '@/hooks/use-seo-url-context';
 
 // Goal definitions — each maps to a category ID and a filterBestFor value
-const GOALS = [
-    { key: 'petHair', icon: '🐾', categoryId: 'cordless-vacuums' },
-    { key: 'hardFloors', icon: '✨', categoryId: 'cordless-vacuums' },
-    { key: 'carpets', icon: '🏠', categoryId: 'cordless-vacuums' },
-    { key: 'allergies', icon: '🌿', categoryId: 'air-purifiers' },
-    { key: 'smallSpaces', icon: '📐', categoryId: 'cordless-vacuums' },
-    { key: 'wholeHome', icon: '🔄', categoryId: 'robot-vacuums' },
-    { key: 'wetDry', icon: '💧', categoryId: 'wet-floor-cleaners' },
-    { key: 'quiet', icon: '🔇', categoryId: 'cordless-vacuums' },
-] as const;
+const GOALS: { key: string; Icon: ComponentType<LucideProps>; categoryId: string }[] = [
+    { key: 'petHair', Icon: PawPrint, categoryId: 'cordless-vacuums' },
+    { key: 'hardFloors', Icon: Sparkles, categoryId: 'cordless-vacuums' },
+    { key: 'carpets', Icon: Home, categoryId: 'cordless-vacuums' },
+    { key: 'allergies', Icon: Wind, categoryId: 'air-purifiers' },
+    { key: 'smallSpaces', Icon: Maximize2, categoryId: 'cordless-vacuums' },
+    { key: 'wholeHome', Icon: RefreshCw, categoryId: 'robot-vacuums' },
+    { key: 'wetDry', Icon: Droplets, categoryId: 'wet-floor-cleaners' },
+    { key: 'quiet', Icon: Volume2, categoryId: 'cordless-vacuums' },
+];
 
 const ENGINEERING_LINKS = [
     { key: 'insideMachine', to: '/engineering' },
@@ -171,7 +172,7 @@ function FindYourCleanPanel({ categories }: { categories: ShopperProducts.schema
                     {t('nav.byGoal', 'Shop by goal')}
                 </p>
                 <ul className="grid grid-cols-2 gap-3">
-                    {GOALS.map(({ key, icon, categoryId }) => {
+                    {GOALS.map(({ key, Icon, categoryId }) => {
                         const cat = categoryMap[categoryId];
                         const url = cat ? createCategoryUrlFromScapiCategory(cat, seoUrlContext) : undefined;
                         return (
@@ -180,14 +181,14 @@ function FindYourCleanPanel({ categories }: { categories: ShopperProducts.schema
                                     <NavLink
                                         to={url}
                                         className="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-panel transition-colors group">
-                                        <span className="text-lg" aria-hidden="true">{icon}</span>
+                                        <Icon className="size-4 text-header-menu-foreground/50 group-hover:text-header-menu-foreground transition-colors shrink-0" aria-hidden="true" />
                                         <span className="text-sm text-header-menu-foreground/80 group-hover:text-header-menu-foreground transition-colors">
                                             {t(`nav.goal.${key}`, key)}
                                         </span>
                                     </NavLink>
                                 ) : (
                                     <span className="flex items-center gap-3 px-3 py-2.5 opacity-40 cursor-default">
-                                        <span className="text-lg" aria-hidden="true">{icon}</span>
+                                        <Icon className="size-4 shrink-0" aria-hidden="true" />
                                         <span className="text-sm">{t(`nav.goal.${key}`, key)}</span>
                                     </span>
                                 )}
