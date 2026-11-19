@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React, { type ReactElement } from 'react';
+import React, { lazy, Suspense, type ReactElement } from 'react';
 import { ShieldCheck, Truck, RotateCcw } from 'lucide-react';
 import type { ShopperProducts } from '@/scapi';
 import ImageGallery from '@/components/image-gallery';
@@ -30,8 +30,12 @@ import { useTranslation } from 'react-i18next';
 import { UITarget } from '@/targets/ui-target';
 import KeyFeatureStrip from '@/components/product-view/key-feature-strip';
 import SpecTiles from '@/components/product-view/spec-tiles';
-import TechSpecsAccordion from '@/components/product-view/tech-specs-accordion';
+import TechSpecsPanel from '@/components/product-view/tech-specs-panel';
 import BrandPromiseStrip from '@/components/product-view/brand-promise-strip';
+import OptionCards from '@/components/product-view/option-cards';
+import ProductFaq from '@/components/product-view/product-faq';
+
+const StickyAtcBar = lazy(() => import('@/components/product-view/sticky-atc-bar'));
 
 interface ProductViewProps {
     product: ShopperProducts.schemas['Product'];
@@ -115,7 +119,7 @@ export default function ProductView({ product, mode = 'add' }: ProductViewProps)
                     )}
                 </div>
 
-                <div className="order-2">
+                <div className="order-2 lg:sticky lg:top-20 lg:self-start">
                     <ProductInfo
                         product={product}
                         showQuantityPicker={!useInlineCartQuantity}
@@ -124,9 +128,16 @@ export default function ProductView({ product, mode = 'add' }: ProductViewProps)
                         enableDeliveryEstimatePresentation
                         // @sfdc-extension-block-end SFDC_EXT_BOPIS
                     />
-                    <ProductCartActions product={product} showInlineCartQuantity={useInlineCartQuantity} />
-                    <TrustRow />
-                    <UITarget targetId="sfcc.pdp.returnsWarranty" />
+                    <OptionCards />
+                    <div id="pdp-buy-panel" className="mt-6 rounded-2xl bg-panel p-6 [&_[data-testid='express-payments']]:hidden">
+                        <ProductCartActions product={product} showInlineCartQuantity={useInlineCartQuantity} />
+                        <TrustRow />
+                        <UITarget targetId="sfcc.pdp.returnsWarranty" />
+                        {/* DEMO: Finance line */}
+                        <p className="mt-3 text-xs text-muted-foreground">
+                            {t('dyson.financing', 'From £X/month with 0% APR. DEMO only.')}
+                        </p>
+                    </div>
                     <UITarget targetId="sfcc.pdp.collapsibles" />
                 </div>
             </div>
@@ -134,16 +145,29 @@ export default function ProductView({ product, mode = 'add' }: ProductViewProps)
             {/* Below-fold enrichment sections */}
             <KeyFeatureStrip product={product} />
             <SpecTiles product={product} />
-            <TechSpecsAccordion product={product} />
+            <TechSpecsPanel product={product} imageUrl={galleryImages[0]?.src ?? undefined} />
             <BrandPromiseStrip />
+            <section className="section-container py-16">
+                <ProductFaq />
+            </section>
         </React.Fragment>
     );
 
-    if (productView) return content;
+    if (productView) return (
+        <>
+            {content}
+            <Suspense fallback={null}>
+                <StickyAtcBar product={product} />
+            </Suspense>
+        </>
+    );
 
     return (
         <ProductViewProvider product={product} mode={mode}>
             {content}
+            <Suspense fallback={null}>
+                <StickyAtcBar product={product} />
+            </Suspense>
         </ProductViewProvider>
     );
 }

@@ -2236,6 +2236,25 @@
                 "returns": "30-day returns",
                 "returnsDesc": "No quibble guarantee"
             },
+            "financing": "From £X/month with 0% APR. DEMO only.",
+            "optionCards": {
+                "heading": "Choose your set",
+                "standard": {
+                    "title": "Standard tools",
+                    "desc": "Machine + Crevice tool + Combination tool. DEMO.",
+                    "price": "Included"
+                },
+                "complete": {
+                    "title": "Complete tool set",
+                    "desc": "Everything in Standard, plus the Hair screw tool, Stubborn dirt brush, and Flexi crevice tool. DEMO.",
+                    "priceDelta": "+£X DEMO"
+                },
+                "compareTitle": "What's included",
+                "demoTitle": "Book a free home demo",
+                "demoDesc": "DEMO: One of our experts will visit your home and show you the full range.",
+                "demoSubmit": "Request a demo",
+                "demoSuccess": "Thanks! We'll be in touch. DEMO — no data sent."
+            },
             "specs": {
                 "title": "Performance",
                 "suction": "Suction power",
@@ -2251,15 +2270,34 @@
             },
             "techSpecs": {
                 "title": "Technical specifications",
+                "heading": "Technical Specifications",
                 "overview": "Overview",
                 "inBox": "What's in the box",
                 "compatibility": "Compatibility",
                 "power": "Power",
                 "filter": "Filtration",
+                "filtration": "Filtration",
                 "warrantyDetail": "Warranty",
-                "boxContents": "Box contents"
+                "boxContents": "Box contents",
+                "performance": "Performance",
+                "weightDimensions": "Weight & Dimensions",
+                "noSpecs": "Detailed specifications are not available for this product."
             }
         }
+    },
+    "pdpFaq": {
+        "heading": "Frequently Asked Questions",
+        "learnMore": "Learn more",
+        "q1": "How long does the battery last?",
+        "a1": "DEMO: Up to 60 minutes in Eco mode on a full charge.",
+        "q2": "Can it clean wet and dry?",
+        "a2": "DEMO: Yes, the Submarine wet roller head handles wet spills and dry debris in a single pass.",
+        "q3": "Is it effective for pet hair?",
+        "a3": "DEMO: The motorised cleaner head removes embedded pet hair from carpets and hard floors.",
+        "q4": "How do I empty and clean it?",
+        "a4": "DEMO: Press the bin release to eject directly into your bin. Rinse the washable filter monthly.",
+        "q5": "How do I register my warranty?",
+        "a5": "DEMO: Register at dyson.com/register within 30 days of purchase to activate your 2-year guarantee."
     },
     "orderLookup": {
         "results": {
