@@ -36,6 +36,7 @@ import { EINSTEIN_RECOMMENDERS } from '@/lib/product/einstein-recommenders';
 import { useTranslation } from 'react-i18next';
 import { useProductViewTracking } from '@/hooks/product/use-product-view-tracking';
 const TrustRow = lazy(() => import('@/components/trust-row'));
+const CompleteYourClean = lazy(() => import('@/components/pdp/complete-your-clean'));
 import { Region } from '@/components/region';
 import { ProductProvider } from '@/providers/product-context';
 import { PageType } from '@/lib/decorators/page-type';
@@ -387,6 +388,11 @@ function ProductContent({
                                 ) : (
                                     <ProductView product={product} />
                                 )}
+
+                                {/* Complete your clean — complement cross-sell (DEMO), after product form, before reviews */}
+                                <Suspense fallback={<div className="h-72 bg-panel rounded-2xl" />}>
+                                    <CompleteYourClean />
+                                </Suspense>
 
                                 {/* @sfdc-extension-block-start SFDC_EXT_RATINGS_REVIEWS */}
                                 <UITarget targetId="sfcc.pdp.reviews.section" />
