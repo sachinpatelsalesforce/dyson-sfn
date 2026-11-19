@@ -21,48 +21,54 @@ import {
 } from '@/components/ui/popover';
 import { ScrollReveal } from '@/components/motion/scroll-reveal';
 
-/* DEMO: hotspot positions are illustrative — not real engineering data */
+/* DEMO: hotspot positions mapped to the exploded High Torque cleaner head diagram */
 const HOTSPOTS = [
     {
-        key: 'laser',
-        x: '28%',
-        y: '62%',
-        title: 'Laser Slim Fluffy head',
-        body: 'Green laser illuminates microscopic particles invisible to the naked eye.',
+        key: 'housing',
+        x: '46%',
+        y: '21%',
+        title: 'Clear protective cover',
+        body: 'Polycarbonate shell lets you spot blockages instantly. Quarter-turn removal — no tools required.',
     },
     {
-        key: 'filtration',
-        x: '72%',
-        y: '24%',
-        title: 'Whole-machine HEPA filtration',
-        body: 'Five-stage filtration captures 99.99% of particles down to 0.3 microns.',
-    },
-    {
-        key: 'motor',
-        x: '54%',
-        y: '42%',
-        title: 'Hyperdymium motor',
-        body: 'Spins at up to 125,000rpm — generating powerful suction from a lightweight motor.',
-    },
-    {
-        key: 'lcd',
+        key: 'comb',
         x: '62%',
-        y: '68%',
-        title: 'LCD screen',
-        body: 'Real-time performance reporting: mode, run time, and filter life at a glance.',
+        y: '33%',
+        title: 'Anti-tangle comb',
+        body: '316 precision-moulded teeth continuously separate hair from the roller, so the brush bar stays clear between cleans.',
     },
     {
-        key: 'submarine',
-        x: '18%',
-        y: '36%',
-        title: 'Submarine wet head',
-        body: 'Self-cleaning roller washes and dries itself after every pass.',
+        key: 'roller',
+        x: '36%',
+        y: '46%',
+        title: 'High Torque woven roller',
+        body: 'Stiffened nylon tufts pull hair into the head while carbon fibre filaments sweep fine dust from hard floors — in a single pass.',
+    },
+    {
+        key: 'gearbox',
+        x: '64%',
+        y: '54%',
+        title: 'Precision gearbox & motor',
+        body: 'An 11-stage planetary gearbox drives the roller directly — no belt — eliminating stretch, wear, and energy loss.',
+    },
+    {
+        key: 'airway',
+        x: '34%',
+        y: '65%',
+        title: 'Shaped airflow channel',
+        body: 'The curved blue chassis maximises fluid dynamics across the full head width, drawing particles in from edge to edge.',
+    },
+    {
+        key: 'chassis',
+        x: '52%',
+        y: '79%',
+        title: 'Low-profile chassis',
+        body: 'The 20% thinner profile reaches deeper under furniture without compromising suction or airflow path.',
     },
 ] as const;
 
-/* DEMO product image — real product, correct SKU */
-const PRODUCT_IMAGE =
-    'https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/485296-01.png';
+/* Exploded High Torque cleaner head — static public asset */
+const PRODUCT_IMAGE = '/images/cleaner-head-exploded.png';
 
 export default function HotspotDiagram() {
     const { t } = useTranslation('home');
@@ -84,14 +90,14 @@ export default function HotspotDiagram() {
                 </ScrollReveal>
 
                 {/* Diagram */}
-                <div className="relative max-w-2xl mx-auto">
+                <div className="relative max-w-xl mx-auto">
                     <img
                         src={PRODUCT_IMAGE}
-                        alt={t('hotspot.imageAlt', 'Dyson V12s Detect Slim Submarine with feature callouts')}
+                        alt={t('hotspot.imageAlt', 'Exploded view of Dyson High Torque cleaner head showing all internal components')}
                         className="w-full h-auto"
                         loading="lazy"
-                        width={800}
-                        height={600}
+                        width={900}
+                        height={1125}
                     />
 
                     {HOTSPOTS.map((spot) => (
