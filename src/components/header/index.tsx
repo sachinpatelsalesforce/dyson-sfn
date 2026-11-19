@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { type ReactElement, type ReactNode, type PropsWithChildren, useRef, useEffect, useCallback } from 'react';
+import { type ReactElement, type ReactNode, type PropsWithChildren, useRef, useEffect, useCallback, useState } from 'react';
 import { useLocation } from 'react-router';
 import { Link } from '@/components/link';
 import Search from './search';
@@ -21,7 +21,7 @@ import CartBadge from './cart-badge';
 import UserActions from './user-actions/user-actions';
 import WishlistIcon from './wishlist-icon';
 import { useTranslation } from 'react-i18next';
-import logo from '/images/logo.svg';
+import logo from '/images/dysonSalesforce.png';
 import { Button } from '@/components/ui/button';
 import { SparklesIcon } from '@/components/icons';
 import { useConfig } from '@salesforce/storefront-next-runtime/config';
@@ -54,6 +54,12 @@ interface HeaderProps extends PropsWithChildren {
      */
     announcementSlot?: ReactNode;
     variant?: 'full' | 'checkout';
+    /**
+     * When true the header starts transparent over the hero and transitions to
+     * opaque once the user scrolls past the viewport. Applies `data-transparent`
+     * on the element so CSS can handle the visual switch without layout shift.
+     */
+    heroTransparent?: boolean;
 }
 
 // Isolates the `useLocation()` subscription so that route changes only re-render the Search component (via key reset)
@@ -69,10 +75,12 @@ export default function Header({
     beforeHeader,
     announcementSlot,
     variant = 'full',
+    heroTransparent = false,
 }: HeaderProps): ReactElement {
     const { t } = useTranslation('header');
     const headerRef = useRef<HTMLElement>(null);
     const config = useConfig();
+    const [isTransparent, setIsTransparent] = useState(heroTransparent);
     const shopperAgent = resolveShopperAgentConfig(config);
     const showChat =
         variant === 'full' && isCimulateEnabled(shopperAgent?.enabled) && validateCimulateConfig(shopperAgent);
@@ -93,6 +101,14 @@ export default function Header({
         return () => observer.disconnect();
     }, [updateHeaderHeight]);
 
+    useEffect(() => {
+        if (!heroTransparent) return;
+        const onScroll = () => setIsTransparent(window.scrollY < 60);
+        setIsTransparent(window.scrollY < 60);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, [heroTransparent]);
+
     if (variant === 'checkout') {
         return (
             <header
@@ -104,7 +120,7 @@ export default function Header({
                             <img
                                 src={logo}
                                 alt={t('logoAlt')}
-                                className="h-3 lg:h-4 w-auto [filter:var(--header-logo-filter)]"
+                                className="h-6 lg:h-7 w-auto"
                             />
                         </Link>
                         <div className="flex-1" />
@@ -118,18 +134,18 @@ export default function Header({
     return (
         <header
             ref={headerRef}
-            className="bg-header-background text-header-foreground sticky top-0 z-50 [@media(max-height:400px)]:static">
+            data-transparent={isTransparent || undefined}
+            className="bg-header-background text-header-foreground sticky top-0 z-50 transition-colors duration-300 border-b border-[var(--header-border)] [@media(max-height:400px)]:static">
             {announcementSlot}
             <div className="flex justify-end section-container">{beforeHeader}</div>
             <div className="section-container py-6">
                 {/* Top row: Logo left, Icons right */}
                 <div className="flex items-center gap-x-1 lg:gap-x-6">
-                    {/* Logo - color swapped by theme via --header-logo-filter in app.css */}
                     <Link to="/" className="flex-shrink-0 flex items-center" data-testid="header-logo">
                         <img
                             src={logo}
                             alt={t('logoAlt')}
-                            className="h-3 lg:h-4 w-auto [filter:var(--header-logo-filter)]"
+                            className="h-6 lg:h-7 w-auto"
                         />
                     </Link>
 

@@ -19,7 +19,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from '@/components/link';
 import { useConfig } from '@salesforce/storefront-next-runtime/config';
 import { stripPathPrefix } from '@salesforce/storefront-next-runtime/site-context';
-import logo from '/images/logo.svg';
+import logo from '/images/dysonSalesforce.png';
 import LegalLinks from '@/components/footer/legal-links';
 import NewsletterSection from './newsletter-section';
 import PolicyLinks from './policy-links';
@@ -44,7 +44,7 @@ export default function MainFooter(): ReactElement {
                         <div className="flex w-full flex-col items-start lg:flex-row gap-6">
                             <div className="flex w-full items-center gap-6">
                                 <Link to="/">
-                                    <img src={logo} alt={t('logoAlt')} className="h-4 w-auto" />
+                                    <img src={logo} alt={t('logoAlt')} className="h-6 w-auto" />
                                 </Link>
                                 <PolicyLinks className="hidden lg:flex" />
                                 <SocialIcons className="ml-auto" />

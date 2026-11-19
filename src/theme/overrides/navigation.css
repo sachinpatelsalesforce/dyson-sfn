@@ -1,6 +1,7 @@
 /* Header navigation uses header-specific colors */
 header [data-slot="navigation-menu-trigger"] {
     color: var(--header-foreground);
+    background: transparent;
 }
 
 header button:not([data-slot]),
@@ -12,16 +13,24 @@ header svg {
     color: var(--header-foreground);
 }
 
-/* Remove gap between header and navigation dropdowns for seamless look */
-header [data-slot="navigation-menu-viewport"] {
-    margin-top: 0 !important;
-    border-top-color: var(--header-border);
+/* Full-width mega nav — break out of header layout and fix to viewport edge */
+header .absolute.top-full.left-0.isolate.z-50:has([data-slot="navigation-menu-viewport"]) {
+    position: fixed;
+    top: var(--header-height, 80px);
+    left: 0 !important;
+    width: 100vw;
+    max-width: 100vw;
 }
 
-/* Navigation viewport positioned flush with header */
-header ~ * [data-slot="navigation-menu-viewport"],
-.absolute.top-full.left-0.isolate.z-50:has([data-slot="navigation-menu-viewport"]) {
+header [data-slot="navigation-menu-viewport"] {
     margin-top: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    border-radius: 0 !important;
+    border-top: 1px solid var(--header-menu-border);
+    background: var(--header-menu-background);
+    color: var(--header-menu-foreground);
+    box-shadow: 0 8px 40px -4px rgba(0, 0, 0, 0.6), 0 2px 12px -2px rgba(0, 0, 0, 0.4);
 }
 
 /* Navigation menu trigger hover text color */
@@ -32,4 +41,24 @@ header ~ * [data-slot="navigation-menu-viewport"],
 [data-slot="navigation-menu-link"]:hover,
 [data-slot="navigation-menu-link"]:focus {
     color: var(--header-menu-hover-foreground) !important;
+}
+
+/* Links inside dropdown panels inherit panel foreground */
+header [data-slot="navigation-menu-viewport"] a,
+header [data-slot="navigation-menu-viewport"] button {
+    color: var(--header-menu-foreground);
+}
+
+/* Transparent header variant: only background and blur change */
+header[data-transparent="true"] {
+    background: transparent !important;
+    backdrop-filter: none;
+    border-bottom-color: transparent !important;
+}
+
+header[data-transparent="true"] [data-slot="navigation-menu-trigger"],
+header[data-transparent="true"] button:not([data-slot]),
+header[data-transparent="true"] a:not([data-slot]),
+header[data-transparent="true"] svg {
+    color: var(--header-transparent-foreground);
 }

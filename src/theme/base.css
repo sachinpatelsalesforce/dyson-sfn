@@ -28,6 +28,32 @@
     .section-container {
         @apply px-4 sm:px-8 lg:px-16 max-w-screen-2xl mx-auto;
     }
+
+    /* Display headings: serif, tight tracking, warm near-black */
+    .display-heading {
+        font-family: var(--font-serif);
+        font-weight: 300;
+        letter-spacing: -0.03em;
+        line-height: 1.05;
+        color: var(--foreground);
+    }
+}
+
+/* Buttons are fully rounded pills — override the global --ui-radius for button primitives only */
+[data-slot="button"] {
+    --ui-radius: 9999px;
+}
+
+/* Hero bleed: routes that set handle.ui.header.transparentOnLoad remove the main top padding */
+main[data-hero-bleed="true"] {
+    padding-top: 0;
+}
+
+/* Input fields: moderate rounding, not pills */
+[data-slot="input"],
+[data-slot="select"],
+[data-slot="textarea"] {
+    --ui-radius: 0.5rem;
 }
 
 @layer base {

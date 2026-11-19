@@ -14,217 +14,67 @@
  * limitations under the License.
  */
 
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import type { LoaderFunctionArgs } from 'react-router';
-import type { ShopperExperience, ShopperProducts, ShopperSearch } from '@/scapi';
-import { getTranslation } from '@salesforce/storefront-next-runtime/i18n';
 import HomePage, { type HomePageData, loader } from './_app._index';
-import { createTestContext } from '@/lib/test-utils';
-import { fetchPageWithComponentData } from '@/lib/page-designer/page-loader.server';
-import { fetchSearchProducts } from '@/lib/api/search.server';
-import { fetchCategories } from '@/lib/api/categories.server';
 import { getConfig } from '@salesforce/storefront-next-runtime/config';
 import type { AppConfig } from '@/types/config';
 
-const { t } = getTranslation();
-
-// Mock data
-const mockSearchResult = {
-    hits: [
-        {
-            productId: 'product-1',
-            productName: 'Product 1',
-            image: { alt: 'Product 1', link: '/product1.jpg' },
-            price: 29.99,
-            currency: 'USD',
-            inventory: { ats: 10 },
-            representedProduct: {
-                id: 'product-1',
-            },
-        },
-    ],
-    total: 1,
-    query: '',
-    refinements: [],
-    searchPhraseSuggestions: { suggestedTerms: [] },
-    sortingOptions: [],
-    start: 0,
-    count: 1,
-    offset: 0,
-    limit: 10,
-} as unknown as ShopperSearch.schemas['ProductSearchResult'];
-
-const mockCategories: ShopperProducts.schemas['Category'][] = [
-    {
-        id: 'category-1',
-        name: 'Category 1',
-        parentCategoryId: 'root',
-        image: '/category1.jpg',
-    },
-    {
-        id: 'category-2',
-        name: 'Category 2',
-        parentCategoryId: 'root',
-        image: '/category2.jpg',
-    },
-    {
-        id: 'category-3',
-        name: 'Category 3',
-        parentCategoryId: 'root',
-        image: '/category3.jpg',
-    },
-    {
-        id: 'category-4',
-        name: 'Category 4',
-        parentCategoryId: 'root',
-        image: '/category4.jpg',
-    },
-];
-
-// Helper function to create mock Page objects
-const createMockPage = (regions: any[] = []): ShopperExperience.schemas['Page'] =>
-    ({
-        id: 'mock-page',
-        typeId: 'homepage',
-        regions,
-    }) as ShopperExperience.schemas['Page'];
-
-// Mock the Region component to render the `errorElement` as fallback
-vi.mock('@/components/region', () => ({
-    Region: ({ errorElement }: any) => <>{errorElement}</>,
-}));
-
-// Mock the PopularCategories component
-vi.mock('@/components/home/popular-categories', () => ({
-    default: () => (
-        <div data-testid="popular-categories">
-            <h2>Step into Elegance</h2>
-        </div>
-    ),
-}));
-
-// Mock the ContentCard component
-vi.mock('@/components/content-card', () => ({
-    default: ({ title, description }: any) => (
-        <div data-testid="content-card">
-            <h3>{title}</h3>
-            <p>{description}</p>
-        </div>
-    ),
-}));
-
-// Mock HeroCarousel component
-vi.mock('@/components/hero-carousel', () => ({
-    default: () => <div data-testid="hero-carousel">Hero Carousel</div>,
-    HeroCarouselSkeleton: () => <div data-testid="hero-carousel-skeleton">Hero Carousel</div>,
-}));
-
-// Mock ProductCarousel components
-vi.mock('@/components/product-carousel', () => ({
-    ProductCarouselSkeleton: () => <div data-testid="product-carousel-skeleton">Product Carousel</div>,
-}));
-
-vi.mock('@/components/product-carousel/carousel', () => ({
-    ProductCarouselWithData: ({ data, title }: any) => (
-        <div data-testid="product-carousel">
-            {title && <h2>{title}</h2>}
-            {data?.hits?.length ?? 0} products
-        </div>
-    ),
-}));
-
-// Mock the Button component
-vi.mock('@/components/ui/button', () => ({
-    Button: ({ children, ...props }: any) => <button {...props}>{children}</button>,
-}));
-
-// Mock the Skeleton component
-vi.mock('@/components/ui/skeleton', () => ({
-    Skeleton: ({ className, ...props }: any) => <div data-testid="skeleton" className={className} {...props} />,
-}));
-
-vi.mock('@/components/home/skeleton', () => ({
-    default: () => <div data-testid="home-skeleton" />,
-}));
-
-// Mock react-i18next with partial mock to preserve other exports
+// Mock react-i18next
 vi.mock('react-i18next', async () => {
     const actual: any = await vi.importActual('react-i18next');
     return {
         ...actual,
         useTranslation: () => ({
-            t: (key: string) => {
-                // Simple translation mock that returns the translation key used in tests
-                // Handle both with and without the 'home:' namespace prefix
-                const normalizedKey = key.startsWith('home:') ? key.substring(5) : key;
-                const translations: Record<string, string> = {
-                    'hero.slide1.title': 'Welcome to Our Store',
-                    'hero.slide1.subtitle': 'Discover amazing products',
-                    'hero.slide1.imageAlt': 'Hero image',
-                    'hero.slide1.ctaText': 'Shop Now',
-                    'hero.slide2.title': 'Summer Collection',
-                    'hero.slide2.subtitle': 'Hot deals on trending items',
-                    'hero.slide2.ctaText': 'Explore',
-                    'hero.slide3.title': 'Free Shipping',
-                    'hero.slide3.subtitle': 'On orders over $50',
-                    'hero.slide3.ctaText': 'Learn More',
-                    'featuredProducts.title': 'Featured Products',
-                    'categoryGrid.title': 'Style for Real Life',
-                    'categoryGrid.shopNowButton': 'Shop Now',
-                    'featuredContent.women.title': 'Women',
-                    'featuredContent.women.description':
-                        'Discover our curated collection of sophisticated footwear designed for the modern woman.',
-                    'featuredContent.women.imageAlt': "Women's Collection",
-                    'featuredContent.women.ctaText': 'EXPLORE COLLECTION',
-                    'featuredContent.men.title': 'Men',
-                    'featuredContent.men.description':
-                        "Timeless craftsmanship meets contemporary style in our men's footwear collection.",
-                    'featuredContent.men.imageAlt': "Men's Collection",
-                    'featuredContent.men.ctaText': 'EXPLORE COLLECTION',
-                    'featuredContent.styleForRealLife.title': 'Style for Real Life',
-                    'featuredContent.styleForRealLife.description':
-                        'We believe style should be effortless, authentic, and accessible. Our collections are designed for the modern individual who values quality, versatility, and timeless appeal.\n\nDiscover pieces that move with you, adapt to your life, and become the foundation of a wardrobe that works—every day, everywhere.',
-                };
-                return translations[normalizedKey] || key;
+            t: (key: string, fallback?: any) => {
+                if (typeof fallback === 'string') return fallback;
+                if (fallback && typeof fallback === 'object' && 'defaultValue' in fallback) {
+                    return fallback.defaultValue ?? key;
+                }
+                return key;
             },
-            i18n: {
-                language: 'en-US',
-                changeLanguage: vi.fn(),
-            },
+            i18n: { language: 'en-GB', changeLanguage: vi.fn() },
         }),
     };
 });
 
-// Mock decorators and utilities
+// Mock decorators
 vi.mock('@/lib/decorators/page-type', () => ({
     PageType: () => (target: any) => target,
 }));
-
 vi.mock('@/lib/decorators/region-definition', () => ({
     RegionDefinition: () => (target: any) => target,
-    getRegionDefinition: vi.fn(() => ({ id: 'headerbanner' })),
+    getRegionDefinition: vi.fn(),
 }));
 
-vi.mock('@/lib/page-designer/page-loader.server', () => ({
-    fetchPageWithComponentData: vi.fn(),
+// Mock SeoMeta
+vi.mock('@/components/seo-meta', () => ({
+    SeoMeta: () => null,
 }));
 
-vi.mock('@/lib/api/search.server', () => ({
-    fetchSearchProducts: vi.fn(() => Promise.resolve(mockSearchResult)),
+// Mock Dyson home components (all lazy-loaded)
+vi.mock('@/components/home/dyson-hero', () => ({
+    default: () => <div data-testid="dyson-hero">DysonHero</div>,
 }));
-
-vi.mock('@/lib/api/categories.server', () => ({
-    fetchCategories: vi.fn(() => Promise.resolve(mockCategories)),
+vi.mock('@/components/home/statement-band', () => ({
+    default: () => <div data-testid="statement-band">StatementBand</div>,
 }));
-
-vi.mock('@salesforce/storefront-next-runtime/config', async (importOriginal) => {
-    const actual = await importOriginal<object>();
-    return {
-        ...actual,
-        getConfig: vi.fn(),
-    };
-});
+vi.mock('@/components/home/goal-carousel', () => ({
+    default: () => <div data-testid="goal-carousel">GoalCarousel</div>,
+}));
+vi.mock('@/components/home/proof-band', () => ({
+    default: () => <div data-testid="proof-band">ProofBand</div>,
+}));
+vi.mock('@/components/home/hotspot-diagram', () => ({
+    default: () => <div data-testid="hotspot-diagram">HotspotDiagram</div>,
+}));
+vi.mock('@/components/home/real-homes', () => ({
+    default: () => <div data-testid="real-homes">RealHomes</div>,
+}));
+vi.mock('@/components/home/care-cta', () => ({
+    default: () => <div data-testid="care-cta">CareCta</div>,
+}));
 
 vi.mock('@/lib/logger.server', () => ({
     getLogger: vi.fn(() => ({
@@ -235,310 +85,90 @@ vi.mock('@/lib/logger.server', () => ({
     })),
 }));
 
-vi.mock('@/middlewares/auth.server', () => ({
-    getAuth: vi.fn(() => ({ customerId: null })),
-}));
+vi.mock('@salesforce/storefront-next-runtime/config', async (importOriginal) => {
+    const actual = await importOriginal<object>();
+    return { ...actual, getConfig: vi.fn() };
+});
 
-vi.mock('@/hooks/use-seo-url-context', () => ({
-    useSeoUrlContext: () => ({ siteId: 'RefArchGlobal' }),
-}));
-
-const renderComponent = (loaderDataOverrides?: Partial<HomePageData>) => {
-    const defaultData: HomePageData = {
-        page: {
-            ...createMockPage([]),
-            componentData: {},
-        },
-        searchResult: Promise.resolve(mockSearchResult),
-        categories: Promise.resolve(mockCategories),
-
-        pageUrl: 'http://localhost/',
-        ogImageUrl: 'http://localhost/__ASSET_MOCK__',
+vi.mock('@salesforce/storefront-next-runtime/site-context', async (importOriginal) => {
+    const actual = await importOriginal<object>();
+    return {
+        ...actual,
+        siteContext: 'siteContext',
+        resolvePrefix: vi.fn().mockReturnValue('/en-GB'),
     };
-    const data = { ...defaultData, ...loaderDataOverrides };
-    return render(<HomePage loaderData={data} />);
+});
+
+vi.mock('@/utils/canonical-url', () => ({
+    buildCanonicalUrl: vi.fn(() => 'http://localhost/en-GB/'),
+}));
+
+const defaultLoaderData: HomePageData = {
+    pageUrl: 'http://localhost/en-GB/',
+    currency: 'GBP',
 };
+
+const renderComponent = (overrides?: Partial<HomePageData>) =>
+    render(<HomePage loaderData={{ ...defaultLoaderData, ...overrides }} />);
+
+const createMockContext = () => ({
+    get: vi.fn(() => ({ currency: 'GBP' })),
+    set: vi.fn(),
+});
+
+const mockConfig = {
+    url: { prefix: '/:siteId/:localeId' },
+    defaultSiteId: 'dysonuk',
+    siteAliasMap: { dysonuk: 'uk' },
+    localeAliasMap: { 'en-GB': 'en-gb' },
+    commerce: { sites: [{ id: 'dysonuk', defaultLocale: 'en-GB' }] },
+    i18n: { fallbackLng: 'en-GB' },
+} as unknown as AppConfig;
 
 describe('HomePage', () => {
     beforeEach(() => {
         vi.clearAllMocks();
-
-        // Reset mock implementations for loader tests
-        vi.mocked(fetchPageWithComponentData).mockResolvedValue({
-            ...createMockPage([]),
-            componentData: {},
-        });
-        vi.mocked(getConfig).mockReturnValue({ pages: { home: { featuredProductsCount: 8 } } } as AppConfig);
+        vi.mocked(getConfig).mockReturnValue(mockConfig);
     });
 
-    describe('Basic Rendering', () => {
-        const renderingTests = [
-            {
-                description: 'renders featured content cards',
-                assertion: () => {
-                    expect(screen.getByText(t('home:featuredContent.women.title'))).toBeInTheDocument();
-                    expect(screen.getByText(t('home:featuredContent.men.title'))).toBeInTheDocument();
-                },
-            },
-        ];
-
-        test.each(renderingTests)('$description', ({ assertion }) => {
-            renderComponent();
-            assertion();
-        });
-
-        test('renders popular categories section', async () => {
-            renderComponent();
-            await waitFor(() => {
-                expect(screen.getByTestId('popular-categories')).toBeInTheDocument();
-            });
-        });
-
-        test('renders without header banner region when no regions available', () => {
-            renderComponent();
-
-            // Should not render region when no regions are available
-            expect(screen.queryByTestId('region')).not.toBeInTheDocument();
-            // But should still render other sections
-            expect(screen.getByText(t('home:featuredContent.women.title'))).toBeInTheDocument();
-        });
-
-        test('renders header banner region when headerbanner region is provided', async () => {
-            const headerBannerRegion = {
-                id: 'headerbanner',
-                components: [
-                    { id: 'hero-1', typeId: 'hero' },
-                    { id: 'banner-1', typeId: 'banner' },
-                ],
-            };
-
-            const page = {
-                ...createMockPage([headerBannerRegion]),
-                componentData: {},
-            };
-
-            renderComponent({
-                page,
-            });
-
-            // Region mock always renders the error element, so check for that fallback content
-            expect(screen.getByTestId('hero-carousel')).toBeInTheDocument();
-            await waitFor(() => {
-                expect(screen.getByTestId('product-carousel')).toBeInTheDocument();
-            });
-            // Should still render other sections
-            expect(screen.getByText(t('home:featuredContent.women.title'))).toBeInTheDocument();
-        });
+    test('renders DysonHero', () => {
+        renderComponent();
+        expect(screen.getByTestId('dyson-hero')).toBeDefined();
     });
 
-    describe('Popular Categories Section', () => {
-        test('renders popular categories component', async () => {
-            renderComponent();
-            await waitFor(() => {
-                expect(screen.getByTestId('popular-categories')).toBeInTheDocument();
-            });
-        });
+    test('renders StatementBand', () => {
+        renderComponent();
+        expect(screen.getByTestId('statement-band')).toBeDefined();
+    });
+});
 
-        test('passes categories promise to PopularCategories component', async () => {
-            renderComponent();
-            await waitFor(() => {
-                expect(screen.getByTestId('popular-categories')).toBeInTheDocument();
-                expect(screen.getByText('Style for Real Life')).toBeInTheDocument();
-            });
-        });
+describe('HomePage loader', () => {
+    beforeEach(() => {
+        vi.clearAllMocks();
+        vi.mocked(getConfig).mockReturnValue(mockConfig);
     });
 
-    describe('Featured Content Cards Section', () => {
-        // Assert against the copy the component renders (the react-i18next mock
-        // above), not getTranslation()'s base bundle — the latter resolves to the
-        // active brand's merged locales, which differ when a brand overlay is active.
-        const contentCardTests = [
-            {
-                description: 'renders women content card',
-                title: 'Women',
-                content: 'Discover our curated collection of sophisticated footwear designed for the modern woman.',
-            },
-            {
-                description: 'renders men content card',
-                title: 'Men',
-                content: "Timeless craftsmanship meets contemporary style in our men's footwear collection.",
-            },
-        ];
+    test('returns pageUrl and currency', async () => {
+        const context = createMockContext();
+        const args = {
+            context,
+            request: new Request('http://localhost/en-GB/'),
+            params: {},
+        } as unknown as LoaderFunctionArgs;
 
-        test.each(contentCardTests)('$description', ({ title, content }) => {
-            renderComponent();
-            expect(screen.getByText(title)).toBeInTheDocument();
-            expect(screen.getByText(content)).toBeInTheDocument();
-        });
-
-        test('renders all content cards with correct count', () => {
-            renderComponent();
-            const contentCards = screen.getAllByTestId('content-card');
-            expect(contentCards).toHaveLength(3); // Women, Men, and Style for Real Life card
-        });
+        const result = await loader(args as any);
+        expect(result.pageUrl).toBe('http://localhost/en-GB/');
+        expect(result.currency).toBe('GBP');
     });
 
-    describe('Error Handling', () => {
-        test('handles page promise rejection gracefully', () => {
-            renderComponent();
-            // Should still render other sections
-            expect(screen.getByText(t('home:featuredContent.women.title'))).toBeInTheDocument();
-        });
+    test('redirects bare "/" to default site/locale prefix', async () => {
+        const context = createMockContext();
+        const args = {
+            context,
+            request: new Request('http://localhost/'),
+            params: {},
+        } as unknown as LoaderFunctionArgs;
 
-        test('handles a missing Page Designer page', () => {
-            renderComponent({ page: null });
-
-            // Should still render other sections
-            expect(screen.getByText(t('home:featuredContent.women.title'))).toBeInTheDocument();
-        });
-    });
-
-    describe('Layout and Styling', () => {
-        const layoutTests = [
-            {
-                description: 'applies correct main container styling',
-                assertion: ({ container }: { container: HTMLElement }) => {
-                    const mainContainer = container.firstChild as HTMLElement;
-                    expect(mainContainer).toHaveClass('pb-16', '-mt-8');
-                },
-            },
-            {
-                description: 'applies correct spacing between sections',
-                assertion: () => {
-                    const featuredContentTitle = screen.getByText(t('home:featuredContent.women.title'));
-                    const sectionWithPadding = featuredContentTitle.closest('[class*="pt-16"]');
-                    expect(sectionWithPadding).toBeInTheDocument();
-                },
-            },
-            {
-                description: 'applies correct grid layout for content cards',
-                assertion: () => {
-                    const contentCardsGrid = screen
-                        .getByText(t('home:featuredContent.women.title'))
-                        .closest('div')?.parentElement;
-                    expect(contentCardsGrid).toHaveClass('grid', 'grid-cols-1', 'md:grid-cols-2', 'gap-6');
-                },
-            },
-        ];
-
-        test.each(layoutTests)('$description', ({ assertion }) => {
-            const { container } = renderComponent();
-            assertion({ container });
-        });
-    });
-
-    describe('Loaders', () => {
-        let mockContext: ReturnType<typeof createTestContext>;
-        let baseLoaderArgs: LoaderFunctionArgs;
-
-        beforeEach(() => {
-            mockContext = createTestContext();
-            baseLoaderArgs = {
-                request: new Request('http://localhost/'),
-                url: new URL('http://localhost/'),
-                params: {},
-                context: mockContext,
-                pattern: '/',
-            };
-        });
-
-        describe('loader (server-side)', () => {
-            test('starts independent data requests before the critical page resolves', async () => {
-                let resolvePage!: (page: ShopperExperience.schemas['Page']) => void;
-                vi.mocked(fetchPageWithComponentData).mockReturnValue(
-                    new Promise((resolve) => {
-                        resolvePage = resolve;
-                    })
-                );
-
-                const result = loader(baseLoaderArgs);
-
-                expect(fetchSearchProducts).toHaveBeenCalled();
-                expect(fetchCategories).toHaveBeenCalled();
-
-                resolvePage(createMockPage([]));
-                await result;
-            });
-
-            test('awaits home page data with fetchPageWithComponentData', async () => {
-                const mockPageWithData = {
-                    ...createMockPage([]),
-                    componentData: { test: Promise.resolve('data') },
-                };
-                const pagePromise = Promise.resolve(mockPageWithData);
-
-                vi.mocked(fetchPageWithComponentData).mockReturnValue(pagePromise);
-
-                const result = await loader(baseLoaderArgs);
-
-                // Assert - API calls
-                expect(vi.mocked(fetchPageWithComponentData)).toHaveBeenCalledWith(baseLoaderArgs, {
-                    pageId: 'homepage',
-                });
-
-                // Assert - Return value contains all expected promises
-                expect(result.page).toBe(mockPageWithData);
-                expect(result.searchResult).toBeInstanceOf(Promise);
-                expect(result.categories).toBeInstanceOf(Promise);
-            });
-        });
-
-        describe('Error Handling', () => {
-            test('loader propagates page API errors', async () => {
-                const error = new Error('API Error');
-                vi.mocked(fetchPageWithComponentData).mockRejectedValue(error);
-
-                await expect(loader(baseLoaderArgs)).rejects.toThrow('API Error');
-            });
-
-            test('observes deferred request failures when the page request rejects', async () => {
-                const pageError = new Error('Page failed');
-                const searchPromise = Promise.reject(new Error('Search failed'));
-                const categoriesPromise = Promise.reject(new Error('Categories failed'));
-                const allSettledSpy = vi.spyOn(Promise, 'allSettled');
-
-                vi.mocked(fetchPageWithComponentData).mockRejectedValueOnce(pageError);
-                vi.mocked(fetchSearchProducts).mockReturnValueOnce(searchPromise);
-                vi.mocked(fetchCategories).mockReturnValueOnce(categoriesPromise);
-
-                try {
-                    await expect(loader(baseLoaderArgs)).rejects.toBe(pageError);
-                    expect(allSettledSpy).toHaveBeenCalledWith([searchPromise, categoriesPromise]);
-                } finally {
-                    allSettledSpy.mockRestore();
-                }
-            });
-        });
-
-        describe('Data Integration', () => {
-            test('resolved page is returned with componentData', async () => {
-                const mockPageWithData = {
-                    ...createMockPage([]),
-                    componentData: { some: Promise.resolve('data') },
-                };
-                const pagePromise = Promise.resolve(mockPageWithData);
-
-                vi.mocked(fetchPageWithComponentData).mockReturnValue(pagePromise);
-
-                const result = await loader(baseLoaderArgs);
-
-                expect(vi.mocked(fetchPageWithComponentData)).toHaveBeenCalledWith(baseLoaderArgs, {
-                    pageId: 'homepage',
-                });
-                expect(result.page).toBe(mockPageWithData);
-                expect(result.searchResult).toBeInstanceOf(Promise);
-                expect(result.categories).toBeInstanceOf(Promise);
-            });
-        });
-    });
-
-    describe('shouldRevalidate export', () => {
-        // The policy itself is covered by src/lib/revalidation/routes/home.test.ts. Here we only
-        // assert home wires up that exact function, so the behavior isn't re-tested at the route.
-        test('re-exports the home page revalidation policy', async () => {
-            const { shouldRevalidate } = await import('./_app._index');
-            const { shouldRevalidate: shouldRevalidateHome } = await import('@/lib/revalidation/routes/home');
-            expect(shouldRevalidate).toBe(shouldRevalidateHome);
-        });
+        await expect(loader(args as any)).rejects.toBeDefined();
     });
 });

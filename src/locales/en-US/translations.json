@@ -146,6 +146,56 @@
             "signInForBestExperience": "Sign in for the best experience",
             "newCustomer": "New customer?",
             "createAccount": "Create account"
+        },
+        "shopAll": "Shop all products",
+        "nav": {
+            "shop": "Shop",
+            "findYourClean": "Find your clean",
+            "engineering": "Engineering",
+            "support": "Support",
+            "featuredProduct": "Featured",
+            "newIn": "New in",
+            "allCategories": "All categories",
+            "startHere": "Start here",
+            "guidedPicker": "Guided picker",
+            "findYourMachine": "Find your machine",
+            "finderDesc": "Answer 3 quick questions and we'll recommend the right cleaner for your home.",
+            "startFinder": "Start the finder →",
+            "byGoal": "Shop by goal",
+            "engineeringLabel": "Engineering",
+            "supportLabel": "Support",
+            "engineeringTitle": "Inside Dyson",
+            "supportTitle": "How can we help?",
+            "goal": {
+                "petHair": "Pet hair",
+                "hardFloors": "Hard floors",
+                "carpets": "Carpets",
+                "allergies": "Allergies",
+                "smallSpaces": "Small spaces",
+                "wholeHome": "Whole home",
+                "wetDry": "Wet & dry",
+                "quiet": "Quiet clean"
+            },
+            "engineering": {
+                "insideMachine": "Inside the machine",
+                "insideMachineDesc": "Discover the technology behind Dyson's motors and sensors.",
+                "filtrationAir": "Filtration & air",
+                "filtrationAirDesc": "How Dyson captures particles down to 0.1 microns.",
+                "testing": "Testing",
+                "testingDesc": "Every machine tested to real-world standards.",
+                "sustainability": "Sustainability",
+                "sustainabilityDesc": "Our commitment to responsible design."
+            },
+            "support": {
+                "register": "Register your machine",
+                "registerDesc": "Activate your warranty and get personalised support.",
+                "repairs": "Repairs",
+                "repairsDesc": "Book a repair or find an authorised service centre.",
+                "spareParts": "Spare parts",
+                "sparePartsDesc": "Genuine Dyson parts and accessories.",
+                "contact": "Contact us",
+                "contactDesc": "Chat, call or email our experts."
+            }
         }
     },
     "login": {
@@ -1398,39 +1448,132 @@
         }
     },
     "home": {
+        "meta": {
+            "title": "Dyson | Engineered to clean deeper",
+            "description": "Dyson's most powerful cordless vacuum. Laser-guided. Self-cleaning. Shop the V12s Detect Slim Submarine."
+        },
         "hero": {
-            "slide1": {
-                "title": "The New Season",
-                "subtitle": "A new collection shaped by contrast, proportion, and modern attitude. Introducing key pieces for the season ahead.",
-                "ctaText": "Discover the Collection",
-                "ctaAriaLabel": "Discover the Collection: The New Season",
-                "imageAlt": "Women's Slacks Jackets and Purses"
-            },
-            "slide2": {
-                "title": "The Modern Wardrobe",
-                "subtitle": "Elevated silhouettes, refined textures, and a bold approach to everyday dressing. Designed to move with you.",
-                "ctaText": "Shop the Look",
-                "ctaAriaLabel": "Shop the Look: The Modern Wardrobe",
-                "imageAlt": "Women's White Linen Dress"
-            },
-            "slide3": {
-                "title": "After Hours",
-                "subtitle": "Statement pieces and refined layers designed for nights out, late moments, and everything in between.",
-                "ctaText": "Explore the Collection",
-                "ctaAriaLabel": "Explore the Collection: After Hours",
-                "imageAlt": "Women's Black Suit"
-            },
-            "slide4": {
-                "title": "New Perspectives",
-                "subtitle": "A curated drop of standout pieces that redefine contemporary fashion. Confident. Expressive. Uncompromising.",
-                "ctaText": "Shop Now",
-                "ctaAriaLabel": "Shop Now: New Perspectives",
-                "imageAlt": "Women's Grey Dress"
+            "dyson": {
+                "ariaLabel": "Hero",
+                "eyebrow": "New arrival",
+                "heading": "Engineered to clean deeper.",
+                "subhead": "The V12s Detect Slim Submarine. Laser-guided. Self-cleaning.",
+                "ctaPrimary": "Shop now",
+                "ctaSecondary": "See how it works",
+                "imageAlt": "Dyson V12s Detect Slim Submarine"
             }
         },
-        "meta": {
-            "title": "Storefront Next: Market Street",
-            "description": "Next gen fashion store"
+        "statement": {
+            "ariaLabel": "Statement",
+            "heading": "See what you've been missing.",
+            "body": "Every surface. Every particle. Dyson's machines see the invisible so you don't have to.",
+            "ctaWhy": "Why Dyson",
+            "ctaHow": "How it works"
+        },
+        "goalCarousel": {
+            "ariaLabel": "Find your clean",
+            "heading": "Find your clean.",
+            "subhead": "Start from the job, not the model.",
+            "guidedPicker": "Guided picker",
+            "findYourMachine": "Find your machine.",
+            "startFinder": "Start the finder →",
+            "goal": {
+                "petHair": "Pet hair",
+                "hardFloors": "Hard floors",
+                "carpets": "Carpets",
+                "allergies": "Allergies",
+                "smallSpaces": "Small spaces",
+                "wholeHome": "Whole home",
+                "wetDry": "Wet & dry",
+                "quiet": "Quiet clean"
+            },
+            "goalHeadline": {
+                "petHair": "Pet hair, gone.",
+                "hardFloors": "Floors that shine.",
+                "carpets": "Deep clean, every time.",
+                "allergies": "Air you can trust.",
+                "smallSpaces": "Reach every corner.",
+                "wholeHome": "Clean while you sleep.",
+                "wetDry": "Spills? No problem.",
+                "quiet": "Powerful. Whisper-quiet."
+            }
+        },
+        "proof": {
+            "ariaLabel": "Proof band",
+            "eyebrow": "By the numbers",
+            "heading": "Nothing escapes it.",
+            "footnote": "* Based on ASTM F1977 test method using 0.3 micron particles.",
+            "stat": {
+                "hepa": { "value": "99.99%", "label": "of particles captured" },
+                "watts": { "value": "220AW", "label": "of suction power" },
+                "modes": { "value": "5", "label": "cleaning modes" },
+                "run": { "value": "60min", "label": "run time" }
+            }
+        },
+        "hotspot": {
+            "ariaLabel": "Inside the machine",
+            "eyebrow": "Engineering, explained",
+            "heading": "Every detail, deliberate.",
+            "imageAlt": "Dyson V12s Detect Slim Submarine with feature callouts",
+            "laser": {
+                "title": "Laser Slim Fluffy head",
+                "body": "Green laser illuminates microscopic particles invisible to the naked eye."
+            },
+            "filtration": {
+                "title": "Whole-machine HEPA filtration",
+                "body": "Five-stage filtration captures 99.99% of particles down to 0.3 microns."
+            },
+            "motor": {
+                "title": "Hyperdymium motor",
+                "body": "Spins at up to 125,000rpm — generating powerful suction from a lightweight motor."
+            },
+            "lcd": {
+                "title": "LCD screen",
+                "body": "Real-time performance reporting: mode, run time, and filter life at a glance."
+            },
+            "submarine": {
+                "title": "Submarine wet head",
+                "body": "Self-cleaning roller washes and dries itself after every pass."
+            }
+        },
+        "realHomes": {
+            "ariaLabel": "Real homes",
+            "eyebrow": "Real homes, real results",
+            "heading": "From the people using it every day.",
+            "london": {
+                "quote": "The laser picks up what I never saw before.",
+                "name": "Sarah M.",
+                "city": "London"
+            },
+            "manchester": {
+                "quote": "Three cats, one Dyson. I win every time.",
+                "name": "James K.",
+                "city": "Manchester"
+            },
+            "edinburgh": {
+                "quote": "Went back to the store once — to buy one for my mum.",
+                "name": "Aileen T.",
+                "city": "Edinburgh"
+            }
+        },
+        "care": {
+            "ariaLabel": "Dyson care",
+            "heading": "We're with you, long after the box is opened.",
+            "warranty": {
+                "title": "2-year warranty",
+                "body": "Register your machine and we'll protect it for two years.",
+                "cta": "Register now"
+            },
+            "spares": {
+                "title": "Genuine spare parts",
+                "body": "Only original Dyson parts keep your machine performing at its best.",
+                "cta": "Shop parts"
+            },
+            "repairs": {
+                "title": "Expert repairs",
+                "body": "Our engineers are trained to fix any Dyson, fast.",
+                "cta": "Book a repair"
+            }
         },
         "featuredProducts": {
             "title": "Featured Products",
@@ -2056,6 +2199,40 @@
             "listPriceFrom": "List price from {{price}}",
             "listPrice": "List price: {{price}}",
             "onRequest": "Price on request"
+        },
+        "dyson": {
+            "keyFeatures": "Key features",
+            "promise": {
+                "warranty": "2-year guarantee",
+                "warrantyDesc": "On all Dyson machines",
+                "delivery": "Free delivery",
+                "deliveryDesc": "On all orders",
+                "returns": "30-day returns",
+                "returnsDesc": "No quibble guarantee"
+            },
+            "specs": {
+                "title": "Performance",
+                "suction": "Suction power",
+                "runtime": "Run time",
+                "binVolume": "Bin volume",
+                "weight": "Weight",
+                "filtration": "Filtration",
+                "suctionUnit": "AW",
+                "runtimeUnit": "min",
+                "binVolumeUnit": "L",
+                "weightUnit": "kg",
+                "filtrationUnit": "%"
+            },
+            "techSpecs": {
+                "title": "Technical specifications",
+                "overview": "Overview",
+                "inBox": "What's in the box",
+                "compatibility": "Compatibility",
+                "power": "Power",
+                "filter": "Filtration",
+                "warrantyDetail": "Warranty",
+                "boxContents": "Box contents"
+            }
         }
     },
     "orderLookup": {

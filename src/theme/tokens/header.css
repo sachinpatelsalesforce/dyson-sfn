@@ -10,20 +10,22 @@
  * standalone literals, not aliases of --header-foreground.
  */
 :root {
-    /* header & navigation — Dyson black header */
-    --header-background: #000000;
+    /* header & navigation — Dyson near-black header */
+    --header-background: #141414;
     --header-foreground: #ffffff;
-    --header-border: rgba(255, 255, 255, 0.1);
-    --header-divider: #333333;
-    /* header menu dropdowns */
-    --header-menu-background: #242424;
-    --header-menu-foreground: #ffffff;
-    --header-menu-border: #333333;
-    --header-menu-hover-background: #222222;
-    --header-menu-hover-foreground: #ffffff;
-    --header-menu-active-background: rgba(255, 255, 255, 0.05);
+    --header-border: rgba(255, 255, 255, 0.08);
+    --header-divider: rgba(255, 255, 255, 0.12);
+    /* header menu dropdowns — dark floating panels matching site theme */
+    --header-menu-background: #1c1c1c;
+    --header-menu-foreground: #f0ede8;
+    --header-menu-border: rgba(255, 255, 255, 0.08);
+    --header-menu-hover-background: #242424;
+    --header-menu-hover-foreground: #f0ede8;
+    --header-menu-active-background: rgba(255, 255, 255, 0.06);
     --header-menu-icon: rgba(255, 255, 255, 0.7);
-    /* logo.svg is white paths; keep invert for safety on black header */
+    /* transparent header variant (over hero) */
+    --header-transparent-foreground: #ffffff;
+    /* logo.svg is white paths; keep invert for safety on dark header */
     --header-logo-filter: brightness(0) invert(1);
 
     /* footer — Dyson black footer */

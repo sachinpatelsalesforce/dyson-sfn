@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 import { useRef } from 'react';
-import { Outlet } from 'react-router';
+import { Outlet, useMatches } from 'react-router';
+import { LenisProvider } from '@/providers/lenis';
 import type { Route } from './+types/_app';
 import { usePageUIConfig, mainPaddingDataAttributes } from '@/lib/routes/page-ui-config';
 import { getConfig } from '@salesforce/storefront-next-runtime/config';
 import { type ShopperProducts } from '@/scapi';
-import { fetchCategory, fetchCategoriesByIds } from '@/lib/api/categories.server';
+import { fetchCategory } from '@/lib/api/categories.server';
 import { getLogger } from '@/lib/logger.server';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import ResponsiveNavigationMenu, { type MegaMenuCategoryFields } from '@/components/navigation-menu-mega';
-import type { CategoryItemsFilter } from '@/components/navigation-menu';
+import DysonNav from '@/components/dyson-nav';
 import { WishlistMergeToast } from '@/components/wishlist/wishlist-merge-toast';
 import { useAuth } from '@/providers/auth';
 import { useWishlistSession } from '@/providers/wishlist';
@@ -37,39 +37,15 @@ import {
 
 type LoaderData = {
     root: Promise<ShopperProducts.schemas['Category']>;
-    subs: Promise<ShopperProducts.schemas['Category'][]>;
     headerComponent: Promise<ComponentWithComponentData | null>;
-    megaMenuComponent: Promise<ComponentWithComponentData | null>;
 };
 
-const NAVIGATION_FIELDS_FILTER = 'c_showInMenu' satisfies CategoryItemsFilter;
-const NAVIGATION_FIELDS_MEGAMENU = {
-    contentField: 'c_headerMenuBanner',
-    imageField: 'c_slotBannerImage',
-    orientationField: 'c_headerMenuOrientation',
-} satisfies MegaMenuCategoryFields;
-const NAVIGATION_FIELDS_SELECT_ROOT = [
-    'id',
-    'name',
-    'slug',
-    'onlineSubCategoriesCount',
-    NAVIGATION_FIELDS_FILTER,
-    ...Object.values(NAVIGATION_FIELDS_MEGAMENU),
-].join(',');
-const NAVIGATION_FIELDS_SELECT_SUB = ['id', 'name', 'slug', 'onlineSubCategoriesCount', NAVIGATION_FIELDS_FILTER].join(
-    ','
-);
+const NAVIGATION_FIELDS_SELECT_ROOT = ['id', 'name', 'slug', 'onlineSubCategoriesCount'].join(',');
 
 /**
  * We're using the `shouldRevalidate` functionality to only load the navigation menu categories from the server on the
- * very first navigation to a page using the (default) `_app` layout. Those categories requests are divided into two
- * discrete request phases; the first to only fetch the root categories, and subsequent multiple calls to fetch the
- * identified sub categories to be displayed in the navigation menu. This behavior ensures that the initial data
+ * very first navigation to a page using the (default) `_app` layout. This behavior ensures that the initial data
  * doesn't get overwritten/removed on subsequent client-side navigations.
- *
- * **Note:** If there is a desire/intent to customize that behavior, the `shouldRevalidate` function can be modified
- * accordingly. For example, a client-side storage for the categories could be introduced to implement any desired
- * caching strategy, including specific reload/refresh intervals/conditions.
  * @see {@link https://reactrouter.com/start/framework/route-module#shouldrevalidate}
  */
 export function shouldRevalidate() {
@@ -79,12 +55,10 @@ export function shouldRevalidate() {
 export function loader({ context, request }: Route.LoaderArgs): LoaderData {
     const logger = getLogger(context);
     const config = getConfig(context);
-    const { rootCategoryId, maxDepth } = config.pages.navigation;
+    const { rootCategoryId } = config.pages.navigation;
 
-    logger.debug('AppLayout: loader starting', { rootCategoryId, maxDepth });
+    logger.debug('AppLayout: loader starting', { rootCategoryId });
 
-    // Load the root category and its sub categories information
-    // Depth 1 fetches the root category with its immediate children
     const rootCategoryPromise = fetchCategory(context, rootCategoryId, 1, {
         select: NAVIGATION_FIELDS_SELECT_ROOT,
         personalized: 'none',
@@ -92,39 +66,6 @@ export function loader({ context, request }: Route.LoaderArgs): LoaderData {
         logger.error('AppLayout: root navigation fetch failed', { error, rootCategoryId });
         return { id: rootCategoryId, categories: [] };
     });
-
-    // Load each second-level sub categories tree as well, in case the resolved root-level category has any sub
-    // categories and maxDepth allows for it. We then base this composed second-level promise on the initial root
-    // category promise to allow for parallel loading and streaming of the two main promises. The sub category trees
-    // are fetched in a single (chunked) getCategories request rather than one getCategory request per root category.
-    const subCategoriesPromise =
-        maxDepth >= 2
-            ? rootCategoryPromise.then((rootCategory: ShopperProducts.schemas['Category']) => {
-                  const subCategoryIds =
-                      rootCategory.categories?.reduce((acc: string[], subCategory) => {
-                          if (
-                              Boolean(subCategory[NAVIGATION_FIELDS_FILTER]) &&
-                              typeof subCategory.onlineSubCategoriesCount === 'number' &&
-                              subCategory.onlineSubCategoriesCount > 0
-                          ) {
-                              acc.push(subCategory.id);
-                          }
-                          return acc;
-                      }, []) ?? [];
-
-                  if (subCategoryIds.length === 0) {
-                      return [];
-                  }
-
-                  return fetchCategoriesByIds(context, subCategoryIds, maxDepth as 0 | 1 | 2, {
-                      select: NAVIGATION_FIELDS_SELECT_SUB,
-                      personalized: 'none',
-                  }).catch((error: unknown) => {
-                      logger.warn('AppLayout: subcategory navigation fetch failed', { error, rootCategoryId });
-                      return [];
-                  });
-              })
-            : Promise.resolve([]);
 
     const fetchEmbeddedComponent = (componentId: string) =>
         fetchComponentWithComponentData({ context, request, params: {} } as Route.LoaderArgs, { componentId }).catch(
@@ -138,14 +79,9 @@ export function loader({ context, request }: Route.LoaderArgs): LoaderData {
     // which suspends the shell until this resolves: a banner streamed in later would push the page down.
     const headerComponentPromise = fetchEmbeddedComponent('header');
 
-    // Fetch mega-menu embedded component data — populates per-category dropdown panel content slots
-    const megaMenuComponentPromise = fetchEmbeddedComponent('mega-menu');
-
     return {
         root: rootCategoryPromise,
-        subs: subCategoriesPromise,
         headerComponent: headerComponentPromise,
-        megaMenuComponent: megaMenuComponentPromise,
     };
 }
 
@@ -161,58 +97,45 @@ export function loader({ context, request }: Route.LoaderArgs): LoaderData {
  * For routes without default header/footer (e.g., login), use the `_empty.` prefix instead.
  */
 export default function DefaultLayout({
-    loaderData: { root, subs, headerComponent, megaMenuComponent },
+    loaderData: { root, headerComponent },
 }: {
     loaderData: LoaderData;
 }) {
     const refRoot = useRef<Promise<ShopperProducts.schemas['Category']> | undefined>(undefined);
-    const refSubs = useRef<Promise<ShopperProducts.schemas['Category'][]> | undefined>(undefined);
     const refHeaderComponent = useRef<Promise<ComponentWithComponentData | null> | undefined>(undefined);
-    const refMegaMenuComponent = useRef<Promise<ComponentWithComponentData | null> | undefined>(undefined);
-    if (!refRoot.current && !refSubs.current && !refHeaderComponent.current && !refMegaMenuComponent.current) {
+    if (!refRoot.current && !refHeaderComponent.current) {
         refRoot.current = root;
-        refSubs.current = subs;
         refHeaderComponent.current = headerComponent;
-        refMegaMenuComponent.current = megaMenuComponent;
     }
 
     // Reflect the route's `handle.ui` config onto <main> as data-* attributes
     // during render, so the correct top padding is present in the SSR'd HTML.
-    // If your CSS keys <main> padding off these, emitting them at render (not
-    // in a post-hydration effect) avoids a layout shift (CLS) when the padding
-    // would otherwise be added after first paint. Inert if no CSS matches.
     const mainPaddingAttrs = mainPaddingDataAttributes(usePageUIConfig());
 
-    // Bind the module-level wishlist store (see providers/wishlist) to the current shopper here,
-    // once, from client auth context. `customerId` only changes on login/logout — both are
-    // redirects that revalidate the root loader, refreshing `useAuth()` — so the shell re-runs
-    // this on every identity change and evicts the prior shopper's hearts. Plain browse never
-    // changes it. The actual read stays lazy, fired by the first product intent.
     useWishlistSession(useAuth()?.customerId ?? null);
 
-    // <WishlistMergeToast> stays at the app shell — it reads URL params and a one-time
-    // cookie set by the post-login redirect target, not wishlist state.
+    // Check if the current route opts in to a transparent hero header
+    const matches = useMatches();
+    const heroTransparent = matches.some(
+        (m) => (m.handle as { transparentHeader?: boolean } | undefined)?.transparentHeader === true
+    );
+
     return (
-        <>
+        <LenisProvider>
             <SkipLink />
             <WishlistMergeToast />
             <Header
+                heroTransparent={heroTransparent}
                 announcementSlot={
                     // Keep this region outside any Suspense boundary, so it blocks the shell until it resolves.
                     <EmbeddedComponentRegion component={refHeaderComponent.current} regionId="announcement" critical />
                 }>
-                <ResponsiveNavigationMenu
-                    resolve={refRoot.current}
-                    defer={refSubs.current}
-                    itemsFilter={NAVIGATION_FIELDS_FILTER}
-                    megaMenu={NAVIGATION_FIELDS_MEGAMENU}
-                    embeddedComponent={refMegaMenuComponent.current}
-                />
+                <DysonNav categoriesPromise={refRoot.current!} />
             </Header>
             <main id="main-content" tabIndex={-1} className="grow pt-8" {...mainPaddingAttrs}>
                 <Outlet />
             </main>
             <Footer />
-        </>
+        </LenisProvider>
     );
 }

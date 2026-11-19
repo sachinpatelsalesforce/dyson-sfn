@@ -21,9 +21,8 @@ import type { ShopperProducts } from '@/scapi';
 import DefaultLayout, { loader, shouldRevalidate } from './_app';
 import { AllProvidersWrapper } from '@/test-utils/context-provider';
 
-const NAVIGATION_FIELDS_SELECT_ROOT =
-    'id,name,slug,onlineSubCategoriesCount,c_showInMenu,c_headerMenuBanner,c_slotBannerImage,c_headerMenuOrientation';
-const NAVIGATION_FIELDS_SELECT_SUB = 'id,name,slug,onlineSubCategoriesCount,c_showInMenu';
+const NAVIGATION_FIELDS_SELECT_ROOT = 'id,name,slug,onlineSubCategoriesCount';
+
 const { mockLogger, mockNavigationConfig } = vi.hoisted(() => ({
     mockLogger: {
         error: vi.fn(),
@@ -44,7 +43,6 @@ const { mockLogger, mockNavigationConfig } = vi.hoisted(() => ({
 
 vi.mock('@/lib/api/categories.server', () => ({
     fetchCategory: vi.fn(),
-    fetchCategoriesByIds: vi.fn().mockResolvedValue([]),
 }));
 
 vi.mock('@/lib/page-designer/component-loader.server', () => ({
@@ -83,27 +81,12 @@ vi.mock('@/components/footer', () => ({
     default: () => <footer data-testid="footer">Footer</footer>,
 }));
 
-vi.mock('@/components/navigation-menu-mega', () => ({
-    default: ({
-        resolve,
-        defer,
-        itemsFilter,
-        megaMenu,
-    }: {
-        resolve?: unknown;
-        defer?: unknown;
-        itemsFilter?: string;
-        megaMenu?: { contentField?: string; imageField?: string; orientationField?: string };
-    }) => (
+vi.mock('@/components/dyson-nav', () => ({
+    default: ({ categoriesPromise }: { categoriesPromise?: unknown }) => (
         <nav
-            data-testid="navigation-menu-mega"
-            data-has-resolve={!!resolve}
-            data-has-defer={!!defer}
-            data-items-filter={itemsFilter}
-            data-content-field={megaMenu?.contentField}
-            data-image-field={megaMenu?.imageField}
-            data-orientation-field={megaMenu?.orientationField}>
-            Navigation
+            data-testid="dyson-nav"
+            data-has-categories={!!categoriesPromise}>
+            Dyson Navigation
         </nav>
     ),
 }));
@@ -135,11 +118,6 @@ describe('_app.tsx - Default Layout Route', () => {
         name: 'Root Category',
     };
 
-    const mockSubCategories: ShopperProducts.schemas['Category'][] = [
-        { id: 'sub1', name: 'Sub Category 1' },
-        { id: 'sub2', name: 'Sub Category 2' },
-    ];
-
     beforeEach(() => {
         vi.clearAllMocks();
     });
@@ -153,7 +131,6 @@ describe('_app.tsx - Default Layout Route', () => {
                     Component: DefaultLayout,
                     loader: () => ({
                         root: Promise.resolve(mockCategory),
-                        subs: Promise.resolve(mockSubCategories),
                     }),
                     children: [
                         {
@@ -171,12 +148,9 @@ describe('_app.tsx - Default Layout Route', () => {
             );
 
             await waitFor(() => {
-                // Verify layout structure
                 expect(screen.getByTestId('header')).toBeInTheDocument();
                 expect(screen.getByTestId('footer')).toBeInTheDocument();
-                expect(screen.getByTestId('navigation-menu-mega')).toBeInTheDocument();
-
-                // Verify child content is rendered via Outlet
+                expect(screen.getByTestId('dyson-nav')).toBeInTheDocument();
                 expect(screen.getByTestId('child-content')).toBeInTheDocument();
             });
         });
@@ -189,7 +163,6 @@ describe('_app.tsx - Default Layout Route', () => {
                     Component: DefaultLayout,
                     loader: () => ({
                         root: Promise.resolve(mockCategory),
-                        subs: Promise.resolve(mockSubCategories),
                         headerComponent: Promise.resolve({ id: 'header-component' }),
                     }),
                     children: [{ index: true, Component: () => <div /> }],
@@ -216,7 +189,6 @@ describe('_app.tsx - Default Layout Route', () => {
                     Component: DefaultLayout,
                     loader: () => ({
                         root: Promise.resolve(mockCategory),
-                        subs: Promise.resolve(mockSubCategories),
                     }),
                     children: [
                         {
@@ -237,8 +209,6 @@ describe('_app.tsx - Default Layout Route', () => {
                 const main = screen.getByRole('main');
                 expect(main).toBeInTheDocument();
                 expect(main).toHaveClass('grow', 'pt-8');
-                // With no `handle.ui`, both padding data-attributes are emitted
-                // as "false" (deterministic SSR output, no missing attribute).
                 expect(main).toHaveAttribute('data-has-top-padding', 'false');
                 expect(main).toHaveAttribute('data-hero-bleed', 'false');
             });
@@ -252,15 +222,10 @@ describe('_app.tsx - Default Layout Route', () => {
                     Component: DefaultLayout,
                     loader: () => ({
                         root: Promise.resolve(mockCategory),
-                        subs: Promise.resolve(mockSubCategories),
                     }),
                     children: [
                         {
                             index: true,
-                            // The leaf route declares the padding config; the
-                            // shell must reflect it onto <main> during render so
-                            // the padding ships in the SSR'd HTML rather than
-                            // being added by a client effect (which caused CLS).
                             handle: { ui: { main: { hasTopPadding: true } } },
                             Component: () => <div>Content</div>,
                         },
@@ -289,7 +254,6 @@ describe('_app.tsx - Default Layout Route', () => {
                     Component: DefaultLayout,
                     loader: () => ({
                         root: Promise.resolve(mockCategory),
-                        subs: Promise.resolve(mockSubCategories),
                     }),
                     children: [
                         {
@@ -314,7 +278,7 @@ describe('_app.tsx - Default Layout Route', () => {
             });
         });
 
-        it('should pass category data to CategoryNavigationMenuMega', async () => {
+        it('should render DysonNav with categories promise', async () => {
             const Stub = createRoutesStub([
                 {
                     id: 'root',
@@ -322,7 +286,6 @@ describe('_app.tsx - Default Layout Route', () => {
                     Component: DefaultLayout,
                     loader: () => ({
                         root: Promise.resolve(mockCategory),
-                        subs: Promise.resolve(mockSubCategories),
                     }),
                     children: [
                         {
@@ -340,13 +303,8 @@ describe('_app.tsx - Default Layout Route', () => {
             );
 
             await waitFor(() => {
-                const nav = screen.getByTestId('navigation-menu-mega');
-                expect(nav).toHaveAttribute('data-has-resolve', 'true');
-                expect(nav).toHaveAttribute('data-has-defer', 'true');
-                expect(nav).toHaveAttribute('data-items-filter', 'c_showInMenu');
-                expect(nav).toHaveAttribute('data-content-field', 'c_headerMenuBanner');
-                expect(nav).toHaveAttribute('data-image-field', 'c_slotBannerImage');
-                expect(nav).toHaveAttribute('data-orientation-field', 'c_headerMenuOrientation');
+                const nav = screen.getByTestId('dyson-nav');
+                expect(nav).toHaveAttribute('data-has-categories', 'true');
             });
         });
 
@@ -357,7 +315,7 @@ describe('_app.tsx - Default Layout Route', () => {
                     path: '/',
                     Component: DefaultLayout,
                     loader: () => ({
-                        // No root or subs data
+                        // No root data
                     }),
                     children: [
                         {
@@ -375,15 +333,12 @@ describe('_app.tsx - Default Layout Route', () => {
             );
 
             await waitFor(() => {
-                // Layout should still render
                 expect(screen.getByTestId('header')).toBeInTheDocument();
                 expect(screen.getByTestId('footer')).toBeInTheDocument();
                 expect(screen.getByTestId('child-content')).toBeInTheDocument();
 
-                // Navigation should render but without data
-                const nav = screen.getByTestId('navigation-menu-mega');
-                expect(nav).toHaveAttribute('data-has-resolve', 'false');
-                expect(nav).toHaveAttribute('data-has-defer', 'false');
+                const nav = screen.getByTestId('dyson-nav');
+                expect(nav).toHaveAttribute('data-has-categories', 'false');
             });
         });
 
@@ -395,7 +350,6 @@ describe('_app.tsx - Default Layout Route', () => {
                     Component: DefaultLayout,
                     loader: () => ({
                         root: Promise.resolve(mockCategory),
-                        subs: Promise.resolve(mockSubCategories),
                     }),
                     children: [
                         {
@@ -413,18 +367,16 @@ describe('_app.tsx - Default Layout Route', () => {
             );
 
             await waitFor(() => {
-                // First render should have data
-                expect(screen.getByTestId('navigation-menu-mega')).toHaveAttribute('data-has-resolve', 'true');
+                expect(screen.getByTestId('dyson-nav')).toHaveAttribute('data-has-categories', 'true');
             });
 
-            // Re-render should preserve the refs
             rerender(
                 <AllProvidersWrapper>
                     <Stub initialEntries={['/']} />
                 </AllProvidersWrapper>
             );
             await waitFor(() => {
-                expect(screen.getByTestId('navigation-menu-mega')).toHaveAttribute('data-has-resolve', 'true');
+                expect(screen.getByTestId('dyson-nav')).toHaveAttribute('data-has-categories', 'true');
             });
         });
     });
@@ -456,17 +408,16 @@ describe('_app.tsx - Default Layout Route', () => {
                 personalized: 'none',
             });
             expect(result).toHaveProperty('root');
-            expect(result).toHaveProperty('subs');
-            expect(result).not.toHaveProperty('itemsFilter');
-            expect(result).not.toHaveProperty('megaMenu');
             expect(result).toHaveProperty('headerComponent');
+            expect(result).not.toHaveProperty('subs');
+            expect(result).not.toHaveProperty('megaMenuComponent');
 
             const rootCategory = await result.root;
             expect(rootCategory).toEqual(mockRootCategory);
         });
 
         it('degrades to empty navigation when the root category request fails', async () => {
-            const { fetchCategory, fetchCategoriesByIds } = await import('@/lib/api/categories.server');
+            const { fetchCategory } = await import('@/lib/api/categories.server');
             const navigationError = new Error('Shopper Products unavailable');
             vi.mocked(fetchCategory).mockRejectedValue(navigationError);
 
@@ -476,33 +427,7 @@ describe('_app.tsx - Default Layout Route', () => {
             } as any);
 
             await expect(result.root).resolves.toEqual({ id: 'root', categories: [] });
-            await expect(result.subs).resolves.toEqual([]);
-            expect(fetchCategoriesByIds).not.toHaveBeenCalled();
             expect(mockLogger.error).toHaveBeenCalledWith('AppLayout: root navigation fetch failed', {
-                error: navigationError,
-                rootCategoryId: 'root',
-            });
-        });
-
-        it('degrades to root navigation when the subcategory request fails', async () => {
-            const { fetchCategory, fetchCategoriesByIds } = await import('@/lib/api/categories.server');
-            const navigationError = new Error('Shopper Products unavailable');
-            const mockRootCategory: ShopperProducts.schemas['Category'] = {
-                id: 'root',
-                name: 'Root',
-                categories: [{ id: 'cat1', name: 'Category 1', onlineSubCategoriesCount: 1, c_showInMenu: true }],
-            };
-            vi.mocked(fetchCategory).mockResolvedValue(mockRootCategory);
-            vi.mocked(fetchCategoriesByIds).mockRejectedValue(navigationError);
-
-            const result = loader({
-                context: {} as any,
-                request: new Request('https://example.test/'),
-            } as any);
-
-            await expect(result.root).resolves.toEqual(mockRootCategory);
-            await expect(result.subs).resolves.toEqual([]);
-            expect(mockLogger.warn).toHaveBeenCalledWith('AppLayout: subcategory navigation fetch failed', {
                 error: navigationError,
                 rootCategoryId: 'root',
             });
@@ -521,39 +446,13 @@ describe('_app.tsx - Default Layout Route', () => {
             const request = new Request('https://example.test/');
             const result = loader({ context: mockContext, request } as any);
 
-            // The loader fetches two embedded components: the header and the mega menu.
-            expect(mockFetchComponent).toHaveBeenCalledTimes(2);
+            expect(mockFetchComponent).toHaveBeenCalledTimes(1);
             const headerCall = mockFetchComponent.mock.calls.find(([, options]) => options?.componentId === 'header');
             expect(headerCall).toBeDefined();
             expect(headerCall?.[0]).toMatchObject({ context: mockContext, request, params: {} });
 
             const headerComponent = await result.headerComponent;
             expect(headerComponent).toEqual({ id: 'header-component' });
-        });
-
-        it('should fetch mega-menu embedded component data with componentId="mega-menu"', async () => {
-            const { fetchCategory } = await import('@/lib/api/categories.server');
-            const { fetchComponentWithComponentData } = await import('@/lib/page-designer/component-loader.server');
-            const mockFetchCategory = vi.mocked(fetchCategory);
-            const mockFetchComponent = vi.mocked(fetchComponentWithComponentData);
-
-            mockFetchCategory.mockResolvedValue({ id: 'root', name: 'Root', categories: [] });
-            mockFetchComponent.mockImplementation((_args, { componentId }) =>
-                Promise.resolve({ id: `${componentId}-component` } as never)
-            );
-
-            const mockContext = {} as any;
-            const request = new Request('https://example.test/');
-            const result = loader({ context: mockContext, request } as any);
-
-            const megaMenuCall = mockFetchComponent.mock.calls.find(
-                ([, options]) => options?.componentId === 'mega-menu'
-            );
-            expect(megaMenuCall).toBeDefined();
-            expect(megaMenuCall?.[0]).toMatchObject({ context: mockContext, request, params: {} });
-
-            const megaMenuComponent = await result.megaMenuComponent;
-            expect(megaMenuComponent).toEqual({ id: 'mega-menu-component' });
         });
 
         it('degrades to empty embedded regions when their requests fail', async () => {
@@ -569,13 +468,9 @@ describe('_app.tsx - Default Layout Route', () => {
             } as any);
 
             await expect(result.headerComponent).resolves.toBeNull();
-            await expect(result.megaMenuComponent).resolves.toBeNull();
+            expect(mockLogger.warn).toHaveBeenCalledTimes(1);
             expect(mockLogger.warn).toHaveBeenCalledWith('AppLayout: embedded component fetch failed', {
                 componentId: 'header',
-                error: componentError,
-            });
-            expect(mockLogger.warn).toHaveBeenCalledWith('AppLayout: embedded component fetch failed', {
-                componentId: 'mega-menu',
                 error: componentError,
             });
         });
@@ -594,142 +489,22 @@ describe('_app.tsx - Default Layout Route', () => {
             await expect(result.headerComponent).resolves.toBeNull();
         });
 
-        it('should fetch subcategories for categories with onlineSubCategoriesCount > 0 in a single batch call', async () => {
-            const { fetchCategory, fetchCategoriesByIds } = await import('@/lib/api/categories.server');
+        it('should return a promise for root that can be used for streaming', async () => {
+            const { fetchCategory } = await import('@/lib/api/categories.server');
             const mockFetchCategory = vi.mocked(fetchCategory);
-            const mockFetchCategoriesByIds = vi.mocked(fetchCategoriesByIds);
 
             const mockRootCategory: ShopperProducts.schemas['Category'] = {
                 id: 'root',
                 name: 'Root',
-                categories: [
-                    { id: 'cat1', name: 'Category 1', onlineSubCategoriesCount: 3, c_showInMenu: true },
-                    { id: 'cat2', name: 'Category 2', onlineSubCategoriesCount: 0, c_showInMenu: true },
-                    { id: 'cat3', name: 'Category 3', onlineSubCategoriesCount: 5, c_showInMenu: true },
-                ],
-            };
-
-            const mockSubCategory1: ShopperProducts.schemas['Category'] = {
-                id: 'cat1',
-                name: 'Category 1',
-                categories: [{ id: 'sub1', name: 'Sub 1' }],
-            };
-
-            const mockSubCategory3: ShopperProducts.schemas['Category'] = {
-                id: 'cat3',
-                name: 'Category 3',
-                categories: [{ id: 'sub3', name: 'Sub 3' }],
+                categories: [{ id: 'cat1', name: 'Category 1', onlineSubCategoriesCount: 2 }],
             };
 
             mockFetchCategory.mockResolvedValue(mockRootCategory);
-            // The API is not guaranteed to respond in the requested id order; the loader must not depend on it.
-            mockFetchCategoriesByIds.mockResolvedValue([mockSubCategory3, mockSubCategory1]);
-
-            const mockContext = {} as any;
-            const result = loader({ context: mockContext, request: new Request('https://example.test/') } as any);
-
-            const subs = await result.subs;
-
-            expect(mockFetchCategory).toHaveBeenCalledTimes(1);
-            expect(mockFetchCategory).toHaveBeenCalledWith(mockContext, 'root', 1, {
-                select: NAVIGATION_FIELDS_SELECT_ROOT,
-                personalized: 'none',
-            });
-            expect(mockFetchCategoriesByIds).toHaveBeenCalledTimes(1);
-            expect(mockFetchCategoriesByIds).toHaveBeenCalledWith(mockContext, ['cat1', 'cat3'], 2, {
-                select: NAVIGATION_FIELDS_SELECT_SUB,
-                personalized: 'none',
-            });
-            expect(subs).toEqual([mockSubCategory3, mockSubCategory1]);
-        });
-
-        it('should not fetch descendants for root categories hidden from navigation', async () => {
-            const { fetchCategory, fetchCategoriesByIds } = await import('@/lib/api/categories.server');
-            vi.mocked(fetchCategory).mockResolvedValue({
-                id: 'root',
-                name: 'Root',
-                categories: [
-                    { id: 'visible', name: 'Visible', onlineSubCategoriesCount: 2, c_showInMenu: true },
-                    { id: 'hidden', name: 'Hidden', onlineSubCategoriesCount: 2, c_showInMenu: false },
-                ],
-            });
-            vi.mocked(fetchCategoriesByIds).mockResolvedValue([]);
-            const mockContext = {} as any;
-            const result = loader({ context: mockContext, request: new Request('https://example.test/') } as any);
-            await result.subs;
-
-            expect(fetchCategoriesByIds).toHaveBeenCalledWith(mockContext, ['visible'], 2, {
-                select: NAVIGATION_FIELDS_SELECT_SUB,
-                personalized: 'none',
-            });
-        });
-
-        it('should handle root category without subcategories', async () => {
-            const { fetchCategory, fetchCategoriesByIds } = await import('@/lib/api/categories.server');
-            const mockFetchCategory = vi.mocked(fetchCategory);
-            const mockFetchCategoriesByIds = vi.mocked(fetchCategoriesByIds);
-
-            const mockRootCategory: ShopperProducts.schemas['Category'] = {
-                id: 'root',
-                name: 'Root',
-                categories: [],
-            };
-
-            mockFetchCategory.mockResolvedValue(mockRootCategory);
-            mockFetchCategoriesByIds.mockResolvedValue([]);
-
-            const mockContext = {} as any;
-            const result = loader({ context: mockContext, request: new Request('https://example.test/') } as any);
-
-            const subs = await result.subs;
-
-            expect(mockFetchCategory).toHaveBeenCalledTimes(1);
-            expect(mockFetchCategoriesByIds).not.toHaveBeenCalled();
-            expect(subs).toEqual([]);
-        });
-
-        it('should handle root category with undefined categories array', async () => {
-            const { fetchCategory, fetchCategoriesByIds } = await import('@/lib/api/categories.server');
-            const mockFetchCategory = vi.mocked(fetchCategory);
-            const mockFetchCategoriesByIds = vi.mocked(fetchCategoriesByIds);
-
-            const mockRootCategory: ShopperProducts.schemas['Category'] = {
-                id: 'root',
-                name: 'Root',
-            };
-
-            mockFetchCategory.mockResolvedValue(mockRootCategory);
-            mockFetchCategoriesByIds.mockResolvedValue([]);
-
-            const mockContext = {} as any;
-            const result = loader({ context: mockContext, request: new Request('https://example.test/') } as any);
-
-            const subs = await result.subs;
-
-            expect(mockFetchCategory).toHaveBeenCalledTimes(1);
-            expect(mockFetchCategoriesByIds).not.toHaveBeenCalled();
-            expect(subs).toEqual([]);
-        });
-
-        it('should return promises that can be used for streaming', async () => {
-            const { fetchCategory, fetchCategoriesByIds } = await import('@/lib/api/categories.server');
-            const mockFetchCategory = vi.mocked(fetchCategory);
-            const mockFetchCategoriesByIds = vi.mocked(fetchCategoriesByIds);
-
-            const mockRootCategory: ShopperProducts.schemas['Category'] = {
-                id: 'root',
-                name: 'Root',
-                categories: [{ id: 'cat1', name: 'Category 1', onlineSubCategoriesCount: 2, c_showInMenu: true }],
-            };
-
-            mockFetchCategory.mockResolvedValue(mockRootCategory);
-            mockFetchCategoriesByIds.mockResolvedValue([]);
 
             const mockContext = {} as any;
             const result = loader({ context: mockContext, request: new Request('https://example.test/') } as any);
 
             expect(result.root).toBeInstanceOf(Promise);
-            expect(result.subs).toBeInstanceOf(Promise);
 
             const rootResolved = await result.root;
             expect(rootResolved).toEqual(mockRootCategory);
