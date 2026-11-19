@@ -35,6 +35,7 @@ export const handle = {
 };
 
 const GoalCarousel = lazy(() => import('@/components/home/goal-carousel'));
+const BenefitCards = lazy(() => import('@/components/home/benefit-cards'));
 const ProofBand = lazy(() => import('@/components/home/proof-band'));
 const HotspotDiagram = lazy(() => import('@/components/home/hotspot-diagram'));
 const RealHomes = lazy(() => import('@/components/home/real-homes'));
@@ -117,6 +118,11 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
             {/* Section 3: Goal-first carousel — lazy, below fold */}
             <Suspense fallback={<div className="h-[520px] bg-background" />}>
                 <GoalCarousel />
+            </Suspense>
+
+            {/* Section 3b: Benefit cards — expandable job-first exploration */}
+            <Suspense fallback={<div className="h-[560px] bg-background" />}>
+                <BenefitCards />
             </Suspense>
 
             {/* Section 4: Proof band — dark stats */}
