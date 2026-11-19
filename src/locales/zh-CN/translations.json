@@ -1128,31 +1128,6 @@
         }
     },
     "home": {
-        "hero": {
-            "slide1": {
-                "title": "新一季",
-                "subtitle": "全新系列，以对比、比例和现代态度为特色。介绍下一季的重点单品。",
-                "ctaText": "探索产品系列",
-                "imageAlt": "女士休闲裤、外套和手提包"
-            },
-            "slide2": {
-                "title": "现代衣橱",
-                "subtitle": "高雅廓形、精致质感和大胆日常穿搭风格。专为随身携带而设计。",
-                "imageAlt": "女士白色亚麻连衣裙"
-            },
-            "slide3": {
-                "title": "下班后",
-                "subtitle": "专为夜晚外出、深夜时光以及介于两者之间的各种场合而设计的吸睛单品和精致叠穿款式。",
-                "ctaText": "探索产品系列",
-                "imageAlt": "女士黑色西装"
-            },
-            "slide4": {
-                "title": "新视角",
-                "subtitle": "精心挑选的特色单品，重新定义当代时尚。自信。张扬。不妥协。",
-                "ctaText": "立即购买",
-                "imageAlt": "女士灰色连衣裙"
-            }
-        },
         "meta": {
             "title": "网店 下一个：Market Street",
             "description": "新一代时装店"
@@ -1693,6 +1668,40 @@
             "listPrice": "标价：{{price}}"
         },
         "removingFromWishlist": "Removing from wishlist...",
-        "inWishlist": "In your wishlist"
+        "inWishlist": "In your wishlist",
+        "dyson": {
+            "keyFeatures": "Key features",
+            "promise": {
+                "warranty": "2-year guarantee",
+                "warrantyDesc": "On all Dyson machines",
+                "delivery": "Free delivery",
+                "deliveryDesc": "On all orders",
+                "returns": "30-day returns",
+                "returnsDesc": "No quibble guarantee"
+            },
+            "specs": {
+                "title": "Performance",
+                "suction": "Suction power",
+                "runtime": "Run time",
+                "binVolume": "Bin volume",
+                "weight": "Weight",
+                "filtration": "Filtration",
+                "suctionUnit": "AW",
+                "runtimeUnit": "min",
+                "binVolumeUnit": "L",
+                "weightUnit": "kg",
+                "filtrationUnit": "%"
+            },
+            "techSpecs": {
+                "title": "Technical specifications",
+                "overview": "Overview",
+                "inBox": "What's in the box",
+                "compatibility": "Compatibility",
+                "power": "Power",
+                "filter": "Filtration",
+                "warrantyDetail": "Warranty",
+                "boxContents": "Box contents"
+            }
+        }
     }
 }

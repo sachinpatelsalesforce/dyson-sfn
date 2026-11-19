@@ -25,6 +25,11 @@ const staticRegistryImporters = [
     () => import('../../components/home/popular-category/index'),
     () => import('../../components/product-recommendations/index'),
     () => import('../../components/product-tile/index'),
+    () => import('../../components/dyson-colour-showcase/index'),
+    () => import('../../components/dyson-dark-feature-block/index'),
+    () => import('../../components/dyson-hero-banner/index'),
+    () => import('../../components/dyson-how-it-works/index'),
+    () => import('../../components/dyson-image-row-3up/index'),
     () => import('../../components/grid/index'),
     () => import('../../components/header/index'),
     () => import('../../components/hero-carousel/index'),
@@ -40,7 +45,7 @@ const staticRegistryImporters = [
  *
  * DO NOT EDIT THIS FUNCTION MANUALLY - it will be overwritten on next build.
  *
- * Components registered: Content.announcementBanner, Content.contentCard, Content.hero, Content.pdImage, Content.popularCategory, Content.productRecommendations, Content.productTile, Layout.grid, Layout.header, Layout.heroCarousel, Layout.megaMenu, Layout.popularCategories, Layout.productCarousel, Layout.productMerchandisingGrid
+ * Components registered: Content.announcementBanner, Content.contentCard, Content.hero, Content.pdImage, Content.popularCategory, Content.productRecommendations, Content.productTile, Dyson.dysonColourShowcase, Dyson.dysonDarkFeatureBlock, Dyson.dysonHeroBanner, Dyson.dysonHowItWorks, Dyson.dysonImageRow3Up, Layout.grid, Layout.header, Layout.heroCarousel, Layout.megaMenu, Layout.popularCategories, Layout.productCarousel, Layout.productMerchandisingGrid
  */
 export function initializeRegistry(targetRegistry = registry): void {
     targetRegistry.registerImporter('Content.announcementBanner', staticRegistryImporters[0], { fallback: 'fallback' });
@@ -50,16 +55,21 @@ export function initializeRegistry(targetRegistry = registry): void {
     targetRegistry.registerImporter('Content.popularCategory', staticRegistryImporters[4], { loader: 'loader' });
     targetRegistry.registerImporter('Content.productRecommendations', staticRegistryImporters[5], { loader: 'loader' });
     targetRegistry.registerImporter('Content.productTile', staticRegistryImporters[6], { loader: 'loader' });
-    targetRegistry.registerImporter('Layout.grid', staticRegistryImporters[7]);
-    targetRegistry.registerImporter('Layout.header', staticRegistryImporters[8]);
-    targetRegistry.registerImporter('Layout.heroCarousel', staticRegistryImporters[9], { fallback: 'fallback' });
-    targetRegistry.registerImporter('Layout.megaMenu', staticRegistryImporters[10]);
-    targetRegistry.registerImporter('Layout.popularCategories', staticRegistryImporters[11], { loader: 'loader' });
-    targetRegistry.registerImporter('Layout.productCarousel', staticRegistryImporters[12], {
+    targetRegistry.registerImporter('Dyson.dysonColourShowcase', staticRegistryImporters[7]);
+    targetRegistry.registerImporter('Dyson.dysonDarkFeatureBlock', staticRegistryImporters[8]);
+    targetRegistry.registerImporter('Dyson.dysonHeroBanner', staticRegistryImporters[9]);
+    targetRegistry.registerImporter('Dyson.dysonHowItWorks', staticRegistryImporters[10]);
+    targetRegistry.registerImporter('Dyson.dysonImageRow3Up', staticRegistryImporters[11]);
+    targetRegistry.registerImporter('Layout.grid', staticRegistryImporters[12]);
+    targetRegistry.registerImporter('Layout.header', staticRegistryImporters[13]);
+    targetRegistry.registerImporter('Layout.heroCarousel', staticRegistryImporters[14], { fallback: 'fallback' });
+    targetRegistry.registerImporter('Layout.megaMenu', staticRegistryImporters[15]);
+    targetRegistry.registerImporter('Layout.popularCategories', staticRegistryImporters[16], { loader: 'loader' });
+    targetRegistry.registerImporter('Layout.productCarousel', staticRegistryImporters[17], {
         loader: 'loader',
         fallback: 'fallback',
     });
-    targetRegistry.registerImporter('Layout.productMerchandisingGrid', staticRegistryImporters[13], {
+    targetRegistry.registerImporter('Layout.productMerchandisingGrid', staticRegistryImporters[18], {
         loader: 'loader',
         fallback: 'fallback',
     });

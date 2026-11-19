@@ -1,0 +1,67 @@
+{
+    "name": "Dyson Dark Feature Block",
+    "description": "Two-column dark block: an image on one side and a headline + body text on the other. Can be flipped to put image on the right. Used to highlight a single product capability.",
+    "group": "Dyson",
+    "arch_type": "headless",
+    "region_definitions": [],
+    "attribute_definition_groups": [
+        {
+            "id": "dysonDarkFeatureBlock",
+            "name": "Dyson Dark Feature Block",
+            "description": "Two-column dark block: an image on one side and a headline + body text on the other. Can be flipped to put image on the right. Used to highlight a single product capability.",
+            "attribute_definitions": [
+                {
+                    "id": "headline",
+                    "name": "Headline",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: headline"
+                },
+                {
+                    "id": "body",
+                    "name": "Body Text",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: body"
+                },
+                {
+                    "id": "imageUrl",
+                    "name": "Feature Image",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: imageUrl"
+                },
+                {
+                    "id": "imageAlt",
+                    "name": "Image Alt Text",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: imageAlt"
+                },
+                {
+                    "id": "imageSide",
+                    "name": "Image Side",
+                    "type": "enum",
+                    "required": false,
+                    "description": "Field: imageSide",
+                    "values": ["left", "right"],
+                    "default_value": "left"
+                },
+                {
+                    "id": "statValue",
+                    "name": "Stat Value",
+                    "type": "string",
+                    "required": false,
+                    "description": "Large callout number (e.g. \"99.97%\")"
+                },
+                {
+                    "id": "statLabel",
+                    "name": "Stat Label",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: statLabel"
+                }
+            ]
+        }
+    ]
+}

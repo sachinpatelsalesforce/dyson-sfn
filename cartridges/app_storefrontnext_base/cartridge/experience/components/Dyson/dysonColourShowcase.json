@@ -1,0 +1,107 @@
+{
+    "name": "Dyson Colour Showcase",
+    "description": "Grid of colour variants: each swatch shows a product image in that colourway with the variant name below. Up to 4 swatches. Used on PDP pages to visually surface colourway options.",
+    "group": "Dyson",
+    "arch_type": "headless",
+    "region_definitions": [],
+    "attribute_definition_groups": [
+        {
+            "id": "dysonColourShowcase",
+            "name": "Dyson Colour Showcase",
+            "description": "Grid of colour variants: each swatch shows a product image in that colourway with the variant name below. Up to 4 swatches. Used on PDP pages to visually surface colourway options.",
+            "attribute_definitions": [
+                {
+                    "id": "headline",
+                    "name": "Section Headline",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: headline"
+                },
+                {
+                    "id": "variant1Name",
+                    "name": "Variant 1 Name",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: variant1Name"
+                },
+                {
+                    "id": "variant1Image",
+                    "name": "Variant 1 Image",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: variant1Image"
+                },
+                {
+                    "id": "variant1Link",
+                    "name": "Variant 1 Link",
+                    "type": "url",
+                    "required": false,
+                    "description": "Field: variant1Link"
+                },
+                {
+                    "id": "variant2Name",
+                    "name": "Variant 2 Name",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: variant2Name"
+                },
+                {
+                    "id": "variant2Image",
+                    "name": "Variant 2 Image",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: variant2Image"
+                },
+                {
+                    "id": "variant2Link",
+                    "name": "Variant 2 Link",
+                    "type": "url",
+                    "required": false,
+                    "description": "Field: variant2Link"
+                },
+                {
+                    "id": "variant3Name",
+                    "name": "Variant 3 Name",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: variant3Name"
+                },
+                {
+                    "id": "variant3Image",
+                    "name": "Variant 3 Image",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: variant3Image"
+                },
+                {
+                    "id": "variant3Link",
+                    "name": "Variant 3 Link",
+                    "type": "url",
+                    "required": false,
+                    "description": "Field: variant3Link"
+                },
+                {
+                    "id": "variant4Name",
+                    "name": "Variant 4 Name",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: variant4Name"
+                },
+                {
+                    "id": "variant4Image",
+                    "name": "Variant 4 Image",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: variant4Image"
+                },
+                {
+                    "id": "variant4Link",
+                    "name": "Variant 4 Link",
+                    "type": "url",
+                    "required": false,
+                    "description": "Field: variant4Link"
+                }
+            ]
+        }
+    ]
+}

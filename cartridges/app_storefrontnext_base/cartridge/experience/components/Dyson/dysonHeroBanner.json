@@ -1,0 +1,65 @@
+{
+    "name": "Dyson Hero Banner",
+    "description": "Full-bleed product hero with a headline, sub-copy, and optional CTA. Dark background with white text. Designed for above-the-fold PDP placement.",
+    "group": "Dyson",
+    "arch_type": "headless",
+    "region_definitions": [],
+    "attribute_definition_groups": [
+        {
+            "id": "dysonHeroBanner",
+            "name": "Dyson Hero Banner",
+            "description": "Full-bleed product hero with a headline, sub-copy, and optional CTA. Dark background with white text. Designed for above-the-fold PDP placement.",
+            "attribute_definitions": [
+                {
+                    "id": "headline",
+                    "name": "Headline",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: headline"
+                },
+                {
+                    "id": "subCopy",
+                    "name": "Sub-copy",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: subCopy"
+                },
+                {
+                    "id": "imageUrl",
+                    "name": "Background Image",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: imageUrl"
+                },
+                {
+                    "id": "imageAlt",
+                    "name": "Image Alt Text",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: imageAlt"
+                },
+                {
+                    "id": "ctaText",
+                    "name": "CTA Text",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: ctaText"
+                },
+                {
+                    "id": "ctaLink",
+                    "name": "CTA Link",
+                    "type": "url",
+                    "required": false,
+                    "description": "Field: ctaLink"
+                },
+                {
+                    "id": "eyebrow",
+                    "name": "Eyebrow Tag",
+                    "type": "string",
+                    "required": false,
+                    "description": "Short tag line displayed above the headline (e.g. \"New\" or \"Award-winning\")"
+                }
+            ]
+        }
+    ]
+}

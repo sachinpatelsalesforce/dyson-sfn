@@ -1120,31 +1120,6 @@
         }
     },
     "home": {
-        "hero": {
-            "slide1": {
-                "title": "Het nieuwe seizoen",
-                "subtitle": "Een nieuwe collectie, vormgegeven met contrast, proportie en een moderne attitude. Introductie van de belangrijkste kledingstukken voor het komende seizoen.",
-                "ctaText": "Ontdek de collectie",
-                "imageAlt": "Pantalons, jasjes en tassen voor dames"
-            },
-            "slide2": {
-                "title": "De moderne garderobe",
-                "subtitle": "Stijlvolle silhouetten, verfijnde texturen en een gedurfde benadering van je kleding voor elke dag. Ontworpen om met je mee te bewegen.",
-                "imageAlt": "Witte linnen damesjurk"
-            },
-            "slide3": {
-                "title": "Na het werk",
-                "subtitle": "Stukken met karakter en subtiele laagjes, voor een avondje uit, de late uurtjes en alles ertussenin.",
-                "ctaText": "Verken de collectie",
-                "imageAlt": "Zwart damespak"
-            },
-            "slide4": {
-                "title": "Nieuwe perspectieven",
-                "subtitle": "Een zorgvuldig samengestelde collectie opvallende kledingstukken die een nieuwe invulling geven aan de mode van vandaag. Zelfverzekerd. Expressief. Compromisloos.",
-                "ctaText": "Nu shoppen",
-                "imageAlt": "Grijze damesjurk"
-            }
-        },
         "meta": {
             "description": "Next-gen modewinkel"
         },
@@ -1627,6 +1602,40 @@
             "listPrice": "Winkelprijs: {{price}}"
         },
         "removingFromWishlist": "Removing from wishlist...",
-        "inWishlist": "In your wishlist"
+        "inWishlist": "In your wishlist",
+        "dyson": {
+            "keyFeatures": "Key features",
+            "promise": {
+                "warranty": "2-year guarantee",
+                "warrantyDesc": "On all Dyson machines",
+                "delivery": "Free delivery",
+                "deliveryDesc": "On all orders",
+                "returns": "30-day returns",
+                "returnsDesc": "No quibble guarantee"
+            },
+            "specs": {
+                "title": "Performance",
+                "suction": "Suction power",
+                "runtime": "Run time",
+                "binVolume": "Bin volume",
+                "weight": "Weight",
+                "filtration": "Filtration",
+                "suctionUnit": "AW",
+                "runtimeUnit": "min",
+                "binVolumeUnit": "L",
+                "weightUnit": "kg",
+                "filtrationUnit": "%"
+            },
+            "techSpecs": {
+                "title": "Technical specifications",
+                "overview": "Overview",
+                "inBox": "What's in the box",
+                "compatibility": "Compatibility",
+                "power": "Power",
+                "filter": "Filtration",
+                "warrantyDetail": "Warranty",
+                "boxContents": "Box contents"
+            }
+        }
     }
 }

@@ -1,0 +1,86 @@
+{
+    "name": "Dyson Image Row (3-up)",
+    "description": "Three equal-width images in a horizontal row, each with an optional caption. Used to showcase product angles, accessories, or lifestyle shots.",
+    "group": "Dyson",
+    "arch_type": "headless",
+    "region_definitions": [],
+    "attribute_definition_groups": [
+        {
+            "id": "dysonImageRow3Up",
+            "name": "Dyson Image Row (3-up)",
+            "description": "Three equal-width images in a horizontal row, each with an optional caption. Used to showcase product angles, accessories, or lifestyle shots.",
+            "attribute_definitions": [
+                {
+                    "id": "headline",
+                    "name": "Section Headline",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: headline"
+                },
+                {
+                    "id": "image1Url",
+                    "name": "Image 1",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: image1Url"
+                },
+                {
+                    "id": "image1Alt",
+                    "name": "Image 1 Alt Text",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: image1Alt"
+                },
+                {
+                    "id": "image1Caption",
+                    "name": "Image 1 Caption",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: image1Caption"
+                },
+                {
+                    "id": "image2Url",
+                    "name": "Image 2",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: image2Url"
+                },
+                {
+                    "id": "image2Alt",
+                    "name": "Image 2 Alt Text",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: image2Alt"
+                },
+                {
+                    "id": "image2Caption",
+                    "name": "Image 2 Caption",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: image2Caption"
+                },
+                {
+                    "id": "image3Url",
+                    "name": "Image 3",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: image3Url"
+                },
+                {
+                    "id": "image3Alt",
+                    "name": "Image 3 Alt Text",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: image3Alt"
+                },
+                {
+                    "id": "image3Caption",
+                    "name": "Image 3 Caption",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: image3Caption"
+                }
+            ]
+        }
+    ]
+}

@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { type ReactElement } from 'react';
+import React, { type ReactElement } from 'react';
+import { ShieldCheck, Truck, RotateCcw } from 'lucide-react';
 import type { ShopperProducts } from '@/scapi';
 import ImageGallery from '@/components/image-gallery';
 import ProductInfo from '@/components/product-view/product-info';
@@ -27,10 +28,35 @@ import { usesInlineAddToCartQuantity } from '@/lib/product/add-to-cart-quantity-
 import CollapsibleHtmlSection from '@/components/collapsible-section/collapsible-html-section';
 import { useTranslation } from 'react-i18next';
 import { UITarget } from '@/targets/ui-target';
+import KeyFeatureStrip from '@/components/product-view/key-feature-strip';
+import SpecTiles from '@/components/product-view/spec-tiles';
+import TechSpecsAccordion from '@/components/product-view/tech-specs-accordion';
+import BrandPromiseStrip from '@/components/product-view/brand-promise-strip';
 
 interface ProductViewProps {
     product: ShopperProducts.schemas['Product'];
     mode?: 'add' | 'edit';
+}
+
+
+/** Inline trust badges rendered immediately after the ATC button. */
+function TrustRow(): ReactElement {
+    const { t } = useTranslation('product');
+    const items = [
+        { Icon: ShieldCheck, label: t('dyson.promise.warranty') },
+        { Icon: Truck, label: t('dyson.promise.delivery') },
+        { Icon: RotateCcw, label: t('dyson.promise.returns') },
+    ] as const;
+    return (
+        <ul className="mt-4 flex flex-col gap-1.5" aria-label="Dyson Promise">
+            {items.map(({ Icon, label }) => (
+                <li key={label} className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <Icon className="size-3.5 text-primary shrink-0" aria-hidden="true" />
+                    {label}
+                </li>
+            ))}
+        </ul>
+    );
 }
 
 /**
@@ -60,43 +86,57 @@ export default function ProductView({ product, mode = 'add' }: ProductViewProps)
         (productView?.mode ?? mode) === 'add' && !isProductASet && !isProductABundle && usesInlineAddToCartQuantity();
 
     const content = (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12">
-            <div className="order-1">
-                <ImageGallery
-                    key={product.id}
-                    images={galleryImages}
-                    eager={!isProductASet && !isProductABundle}
-                    showNavigationArrows
-                    navigationArrowSize="lg"
-                    productName={product.name}
-                    layout={galleryLayout}
-                />
-                <UITarget targetId="sfcc.pdp.agent.productHelper" />
-                {product.longDescription && product.longDescription !== product.shortDescription && (
-                    <CollapsibleHtmlSection
-                        label={`${t('description')}:`}
-                        content={product.longDescription}
-                        contentType="bulleted-list"
-                        defaultOpen
-                        className="mt-6"
+        // React.Fragment (not <>) is required: the storefront-next-dev UITarget
+        // Babel transform's VariableDeclaration handler only traverses when the
+        // init value is a JSXElement; a JSXFragment (<>) silently skips the
+        // traversal, leaving <UITarget/> unreplaced while stripping its import.
+        <React.Fragment>
+            {/* Hero grid — 60/40 split on large screens */}
+            <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-4 lg:gap-12">
+                <div className="order-1">
+                    <ImageGallery
+                        key={product.id}
+                        images={galleryImages}
+                        eager={!isProductASet && !isProductABundle}
+                        showNavigationArrows
+                        navigationArrowSize="lg"
+                        productName={product.name}
+                        layout={galleryLayout}
                     />
-                )}
+                    <UITarget targetId="sfcc.pdp.agent.productHelper" />
+                    {product.longDescription && product.longDescription !== product.shortDescription && (
+                        <CollapsibleHtmlSection
+                            label={`${t('description')}:`}
+                            content={product.longDescription}
+                            contentType="bulleted-list"
+                            defaultOpen
+                            className="mt-6"
+                        />
+                    )}
+                </div>
+
+                <div className="order-2">
+                    <ProductInfo
+                        product={product}
+                        showQuantityPicker={!useInlineCartQuantity}
+                        // @sfdc-extension-block-start SFDC_EXT_BOPIS
+                        // @sfdc-extension-line SFDC_EXT_SHIPPING_DELIVERY
+                        enableDeliveryEstimatePresentation
+                        // @sfdc-extension-block-end SFDC_EXT_BOPIS
+                    />
+                    <ProductCartActions product={product} showInlineCartQuantity={useInlineCartQuantity} />
+                    <TrustRow />
+                    <UITarget targetId="sfcc.pdp.returnsWarranty" />
+                    <UITarget targetId="sfcc.pdp.collapsibles" />
+                </div>
             </div>
 
-            <div className="order-2">
-                <ProductInfo
-                    product={product}
-                    showQuantityPicker={!useInlineCartQuantity}
-                    // @sfdc-extension-block-start SFDC_EXT_BOPIS
-                    // @sfdc-extension-line SFDC_EXT_SHIPPING_DELIVERY
-                    enableDeliveryEstimatePresentation
-                    // @sfdc-extension-block-end SFDC_EXT_BOPIS
-                />
-                <ProductCartActions product={product} showInlineCartQuantity={useInlineCartQuantity} />
-                <UITarget targetId="sfcc.pdp.returnsWarranty" />
-                <UITarget targetId="sfcc.pdp.collapsibles" />
-            </div>
-        </div>
+            {/* Below-fold enrichment sections */}
+            <KeyFeatureStrip product={product} />
+            <SpecTiles product={product} />
+            <TechSpecsAccordion product={product} />
+            <BrandPromiseStrip />
+        </React.Fragment>
     );
 
     if (productView) return content;

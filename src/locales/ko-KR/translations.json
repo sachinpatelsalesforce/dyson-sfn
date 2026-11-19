@@ -1122,32 +1122,6 @@
         }
     },
     "home": {
-        "hero": {
-            "slide1": {
-                "title": "새로운 시즌",
-                "subtitle": "대비, 비율, 현대적인 애티튜드로 구성된 새로운 컬렉션입니다. 다가오는 시즌의 핵심 아이템을 소개합니다.",
-                "ctaText": "컬렉션 살펴보기",
-                "imageAlt": "여성용 슬랙스 재킷 및 지갑"
-            },
-            "slide2": {
-                "title": "모던 스타일",
-                "subtitle": "고상한 실루엣, 세련된 질감, 일상적인 옷차림에 대한 대담한 접근 방식. 활동이 편한 디자인.",
-                "ctaText": "스타일 쇼핑하기",
-                "imageAlt": "여성용 화이트 린넨 드레스"
-            },
-            "slide3": {
-                "title": "퇴근 후",
-                "subtitle": "강렬한 아이템과 세련된 레이어는 저녁 외출, 늦은 밤 등 소중한 시간을 위해 디자인되었습니다.",
-                "ctaText": "컬렉션 살펴보기",
-                "imageAlt": "여성용 블랙 정장"
-            },
-            "slide4": {
-                "title": "새로운 관점",
-                "subtitle": "컨템포러리 패션을 재정의하는 눈에 띄는 상품을 엄선했습니다. 자신감. 표현. 당당함.",
-                "ctaText": "지금 쇼핑하기",
-                "imageAlt": "여성용 그레이 드레스"
-            }
-        },
         "meta": {
             "description": "차세대 패션 매장"
         },
@@ -1686,6 +1660,40 @@
             "listPrice": "정가: {{price}}"
         },
         "removingFromWishlist": "Removing from wishlist...",
-        "inWishlist": "In your wishlist"
+        "inWishlist": "In your wishlist",
+        "dyson": {
+            "keyFeatures": "Key features",
+            "promise": {
+                "warranty": "2-year guarantee",
+                "warrantyDesc": "On all Dyson machines",
+                "delivery": "Free delivery",
+                "deliveryDesc": "On all orders",
+                "returns": "30-day returns",
+                "returnsDesc": "No quibble guarantee"
+            },
+            "specs": {
+                "title": "Performance",
+                "suction": "Suction power",
+                "runtime": "Run time",
+                "binVolume": "Bin volume",
+                "weight": "Weight",
+                "filtration": "Filtration",
+                "suctionUnit": "AW",
+                "runtimeUnit": "min",
+                "binVolumeUnit": "L",
+                "weightUnit": "kg",
+                "filtrationUnit": "%"
+            },
+            "techSpecs": {
+                "title": "Technical specifications",
+                "overview": "Overview",
+                "inBox": "What's in the box",
+                "compatibility": "Compatibility",
+                "power": "Power",
+                "filter": "Filtration",
+                "warrantyDetail": "Warranty",
+                "boxContents": "Box contents"
+            }
+        }
     }
 }

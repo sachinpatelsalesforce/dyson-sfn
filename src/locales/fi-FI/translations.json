@@ -1125,31 +1125,6 @@
         }
     },
     "home": {
-        "hero": {
-            "slide1": {
-                "title": "Uusi sesonki",
-                "subtitle": "Uusi mallisto, jota muovaavat kontrastit, mittasuhteet ja moderni asenne. Esittelyssä tulevan kauden avaintuotteet.",
-                "ctaText": "Tutustu kokoelmaan",
-                "imageAlt": "Naisten housut, takit ja laukut"
-            },
-            "slide2": {
-                "title": "Moderni vaatekaappi",
-                "subtitle": "Korkeatasoisia siluetteja, hienostuneita tekstuureja ja rohkea ote arkipukeutumiseen. Suunniteltu liikkumaan kanssasi.",
-                "ctaText": "Osta tämä look",
-                "imageAlt": "Naisten valkoinen pellavamekko"
-            },
-            "slide3": {
-                "subtitle": "Näyttäviä vaatekappaleita ja tarkasti valittuja kerroksia, jotka on suunniteltu juhliin, myöhäisiin hetkiin ja kaikkeen siltä väliltä.",
-                "ctaText": "Tutustu kokoelmaan",
-                "imageAlt": "Naisten musta puku"
-            },
-            "slide4": {
-                "title": "Uusia näkökulmia",
-                "subtitle": "Kuratoitu valikoima massasta erottuvia tuotteita, jotka määrittelevät nykymuodin uudelleen. Itsevarma. Ilmeikäs. Tinkimätön.",
-                "ctaText": "Osta nyt",
-                "imageAlt": "Naisten harmaa mekko"
-            }
-        },
         "meta": {
             "description": "Seuraavan sukupolven muotikauppa"
         },
@@ -1635,6 +1610,40 @@
             "listPrice": "Listahinta: {{price}}"
         },
         "removingFromWishlist": "Removing from wishlist...",
-        "inWishlist": "In your wishlist"
+        "inWishlist": "In your wishlist",
+        "dyson": {
+            "keyFeatures": "Key features",
+            "promise": {
+                "warranty": "2-year guarantee",
+                "warrantyDesc": "On all Dyson machines",
+                "delivery": "Free delivery",
+                "deliveryDesc": "On all orders",
+                "returns": "30-day returns",
+                "returnsDesc": "No quibble guarantee"
+            },
+            "specs": {
+                "title": "Performance",
+                "suction": "Suction power",
+                "runtime": "Run time",
+                "binVolume": "Bin volume",
+                "weight": "Weight",
+                "filtration": "Filtration",
+                "suctionUnit": "AW",
+                "runtimeUnit": "min",
+                "binVolumeUnit": "L",
+                "weightUnit": "kg",
+                "filtrationUnit": "%"
+            },
+            "techSpecs": {
+                "title": "Technical specifications",
+                "overview": "Overview",
+                "inBox": "What's in the box",
+                "compatibility": "Compatibility",
+                "power": "Power",
+                "filter": "Filtration",
+                "warrantyDetail": "Warranty",
+                "boxContents": "Box contents"
+            }
+        }
     }
 }

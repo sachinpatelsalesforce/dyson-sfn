@@ -421,7 +421,14 @@ export function toDisImageUrl({ src, options = {}, config }: ImageUrlParams): st
  * // → 'https://example.com/image.jpg'
  */
 export function toImageUrl({ src, options = {}, config, image }: ImageUrlParams): string | undefined {
-    const imageUrl = src || image?.disBaseLink || image?.link;
+    const rawUrl = src || image?.disBaseLink || image?.link;
+
+    // When B2C imports a catalog with absolute external URLs as image paths, it treats them as
+    // relative paths and prepends its DIS/static prefix, producing malformed URLs like:
+    // https://edge.disstg.com/.../v1234567890/https://external-cdn.com/image.png
+    // Detect this and use the embedded external URL directly.
+    const embeddedMatch = rawUrl?.match(/\/v\d+\/(https?:\/\/.+)$/);
+    const imageUrl = embeddedMatch ? embeddedMatch[1] : rawUrl;
 
     if (!imageUrl) {
         return undefined;
@@ -1130,7 +1137,16 @@ export const resolveDynamicImageAttributes = ({
         enableDis = true,
     } = config.images ?? {};
 
-    const transformedSrc = (enableDis ? toDisBaseUrl({ src, config }) : toImageUrl({ src, config })) || src;
+    // When B2C imports a catalog with absolute external URLs as image paths, it treats them as
+    // relative paths and embeds them inside its DIS/static prefix, producing malformed URLs like:
+    // https://edge.disstg.com/.../v1234567890/https://external-cdn.com/image.png
+    // Extract the real external URL so it passes through as a plain <img> src.
+    const embeddedExternalMatch = src?.match(/\/v\d+\/(https?:\/\/.+)$/);
+    const resolvedSrc = embeddedExternalMatch ? embeddedExternalMatch[1] : src;
+
+    const transformedSrc =
+        (enableDis ? toDisBaseUrl({ src: resolvedSrc, config }) : toImageUrl({ src: resolvedSrc, config })) ||
+        resolvedSrc;
 
     // DIS can only resize/convert URLs it actually routes through the imaging service — i.e. ones `toDisBaseUrl`
     // rewrote into `/dw/image/v2/{realm}/`. A relative bundled asset (`/images/hero-01.webp`) or a third-party host

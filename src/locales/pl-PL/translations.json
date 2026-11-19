@@ -1136,31 +1136,6 @@
         }
     },
     "home": {
-        "hero": {
-            "slide1": {
-                "title": "Nowy sezon",
-                "subtitle": "Nowa kolekcja oparta na kontraście, proporcjach i nowoczesnej postawie. Przedstawiamy kluczowe elementy garderoby na nadchodzący sezon.",
-                "ctaText": "Odkryj kolekcję",
-                "imageAlt": "Damskie spodnie, kurtki i torebki"
-            },
-            "slide2": {
-                "title": "Nowoczesna szafa",
-                "subtitle": "Wyeksponowane sylwetki, wykwintne faktury i odważne podejście do codziennego stylu. Zaprojektowane tak, aby żyć z Tobą w ruchu.",
-                "imageAlt": "Biała lniana sukienka damska"
-            },
-            "slide3": {
-                "title": "Po godzinach",
-                "subtitle": "Wyraziste elementy i wykwintne warstwy zaprojektowane z myślą o wieczornych wyjściach, późnych porach i wszystkim tym, co pomiędzy.",
-                "ctaText": "Odkryj kolekcję",
-                "imageAlt": "Czarny garnitur damski"
-            },
-            "slide4": {
-                "title": "Nowe perspektywy",
-                "subtitle": "Wyjątkowa kolekcja przykuwających uwagę artykułów, które na nowo definiują współczesną modę. Pewność siebie. Ekspresja. Bezkompromisowość.",
-                "ctaText": "Kupuj teraz",
-                "imageAlt": "Szara sukienka damska"
-            }
-        },
         "meta": {
             "description": "Sklep z modą nowej generacji"
         },
@@ -1664,6 +1639,40 @@
             "listPrice": "Cena katalogowa: {{price}}"
         },
         "removingFromWishlist": "Removing from wishlist...",
-        "inWishlist": "In your wishlist"
+        "inWishlist": "In your wishlist",
+        "dyson": {
+            "keyFeatures": "Key features",
+            "promise": {
+                "warranty": "2-year guarantee",
+                "warrantyDesc": "On all Dyson machines",
+                "delivery": "Free delivery",
+                "deliveryDesc": "On all orders",
+                "returns": "30-day returns",
+                "returnsDesc": "No quibble guarantee"
+            },
+            "specs": {
+                "title": "Performance",
+                "suction": "Suction power",
+                "runtime": "Run time",
+                "binVolume": "Bin volume",
+                "weight": "Weight",
+                "filtration": "Filtration",
+                "suctionUnit": "AW",
+                "runtimeUnit": "min",
+                "binVolumeUnit": "L",
+                "weightUnit": "kg",
+                "filtrationUnit": "%"
+            },
+            "techSpecs": {
+                "title": "Technical specifications",
+                "overview": "Overview",
+                "inBox": "What's in the box",
+                "compatibility": "Compatibility",
+                "power": "Power",
+                "filter": "Filtration",
+                "warrantyDetail": "Warranty",
+                "boxContents": "Box contents"
+            }
+        }
     }
 }

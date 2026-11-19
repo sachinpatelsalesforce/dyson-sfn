@@ -22,7 +22,7 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
-import { NavLink } from '@/components/link';
+import { NavLink, Link } from '@/components/link';
 import { cn } from '@/lib/utils';
 import { useTranslation } from 'react-i18next';
 import type { ShopperProducts } from '@/scapi';
@@ -42,10 +42,10 @@ const GOALS = [
 ] as const;
 
 const ENGINEERING_LINKS = [
-    { key: 'insideMachine' },
-    { key: 'filtrationAir' },
-    { key: 'testing' },
-    { key: 'sustainability' },
+    { key: 'insideMachine', to: '/engineering' },
+    { key: 'filtrationAir', to: '/engineering' },
+    { key: 'testing', to: '/engineering' },
+    { key: 'sustainability', to: '/sustainability' },
 ] as const;
 
 const SUPPORT_LINKS = [
@@ -209,16 +209,16 @@ function EngineeringPanel() {
                 {t('nav.engineeringTitle', 'Inside Dyson')}
             </p>
             <ul className="grid grid-cols-4 gap-6">
-                {ENGINEERING_LINKS.map(({ key }) => (
+                {ENGINEERING_LINKS.map(({ key, to }) => (
                     <li key={key}>
-                        <div className="rounded-xl bg-panel p-5 h-full flex flex-col gap-3 hover:bg-muted transition-colors">
+                        <Link to={to} className="block rounded-xl bg-panel p-5 h-full flex flex-col gap-3 hover:bg-muted transition-colors">
                             <p className="text-sm font-medium text-header-menu-foreground">
                                 {t(`nav.engineering.${key}`, key)}
                             </p>
                             <p className="text-xs text-header-menu-foreground/50 flex-1">
                                 {t(`nav.engineering.${key}Desc`, '')}
                             </p>
-                        </div>
+                        </Link>
                     </li>
                 ))}
             </ul>

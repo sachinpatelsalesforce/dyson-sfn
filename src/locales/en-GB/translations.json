@@ -151,8 +151,26 @@
         "nav": {
             "shop": "Shop",
             "findYourClean": "Find your clean",
-            "engineering": "Engineering",
-            "support": "Support",
+            "engineering": {
+                "insideMachine": "Inside the machine",
+                "insideMachineDesc": "Discover the technology behind Dyson's motors and sensors.",
+                "filtrationAir": "Filtration & air",
+                "filtrationAirDesc": "How Dyson captures particles down to 0.1 microns.",
+                "testing": "Testing",
+                "testingDesc": "Every machine tested to real-world standards.",
+                "sustainability": "Sustainability",
+                "sustainabilityDesc": "Our commitment to responsible design."
+            },
+            "support": {
+                "register": "Register your machine",
+                "registerDesc": "Activate your warranty and get personalised support.",
+                "repairs": "Repairs",
+                "repairsDesc": "Book a repair or find an authorised service centre.",
+                "spareParts": "Spare parts",
+                "sparePartsDesc": "Genuine Dyson parts and accessories.",
+                "contact": "Contact us",
+                "contactDesc": "Chat, call or email our experts."
+            },
             "featuredProduct": "Featured",
             "newIn": "New in",
             "allCategories": "All categories",
@@ -175,26 +193,6 @@
                 "wholeHome": "Whole home",
                 "wetDry": "Wet & dry",
                 "quiet": "Quiet clean"
-            },
-            "engineering": {
-                "insideMachine": "Inside the machine",
-                "insideMachineDesc": "Discover the technology behind Dyson's motors and sensors.",
-                "filtrationAir": "Filtration & air",
-                "filtrationAirDesc": "How Dyson captures particles down to 0.1 microns.",
-                "testing": "Testing",
-                "testingDesc": "Every machine tested to real-world standards.",
-                "sustainability": "Sustainability",
-                "sustainabilityDesc": "Our commitment to responsible design."
-            },
-            "support": {
-                "register": "Register your machine",
-                "registerDesc": "Activate your warranty and get personalised support.",
-                "repairs": "Repairs",
-                "repairsDesc": "Book a repair or find an authorised service centre.",
-                "spareParts": "Spare parts",
-                "sparePartsDesc": "Genuine Dyson parts and accessories.",
-                "contact": "Contact us",
-                "contactDesc": "Chat, call or email our experts."
             }
         }
     },
@@ -1504,10 +1502,22 @@
             "heading": "Nothing escapes it.",
             "footnote": "* Based on ASTM F1977 test method using 0.3 micron particles.",
             "stat": {
-                "hepa": { "value": "99.99%", "label": "of particles captured" },
-                "watts": { "value": "220AW", "label": "of suction power" },
-                "modes": { "value": "5", "label": "cleaning modes" },
-                "run": { "value": "60min", "label": "run time" }
+                "hepa": {
+                    "value": "99.99%",
+                    "label": "of particles captured"
+                },
+                "watts": {
+                    "value": "220AW",
+                    "label": "of suction power"
+                },
+                "modes": {
+                    "value": "5",
+                    "label": "cleaning modes"
+                },
+                "run": {
+                    "value": "60min",
+                    "label": "run time"
+                }
             }
         },
         "hotspot": {
@@ -2305,5 +2315,121 @@
         "sessionExpired": "Your session has expired. Please start over.",
         "cooldownActive": "Please wait {{seconds}} seconds before requesting a new code.",
         "codeResentHint": "Didn't receive the email? Check your spam folder or wait 15 minutes before requesting a new code."
+    },
+    "trust": {
+        "warranty": {
+            "label": "2-year warranty",
+            "sub": "Registered at dyson.co.uk"
+        },
+        "delivery": {
+            "label": "Free delivery",
+            "sub": "On all orders over £30"
+        },
+        "returns": {
+            "label": "Easy returns",
+            "sub": "30-day hassle-free returns"
+        },
+        "secure": {
+            "label": "Secure checkout",
+            "sub": "Your data is always protected"
+        }
+    },
+    "engineering": {
+        "meta": {
+            "title": "Engineering — DEMO",
+            "description": "How Dyson engineers the machines that clean better."
+        },
+        "hero": {
+            "eyebrow": "Inside the machine — DEMO",
+            "heading": "Engineered without compromise.",
+            "subhead": "Every component is tested beyond the limits of real-world use. This is how we know it works."
+        },
+        "stats": {
+            "heading": "The numbers behind the engineering — DEMO",
+            "items": [
+                {
+                    "value": "5 years",
+                    "label": "of development"
+                },
+                {
+                    "value": "65",
+                    "label": "patents filed"
+                },
+                {
+                    "value": "10,000+",
+                    "label": "test cycles"
+                },
+                {
+                    "value": "99.97%",
+                    "label": "filtration efficiency"
+                }
+            ]
+        },
+        "cards": {
+            "heading": "Three problems. Three breakthroughs. — DEMO",
+            "cyclone": {
+                "title": "Dyson Hyperdymium motor",
+                "body": "The digital motor spins at up to 125,000rpm — capturing fine particles other machines let through."
+            },
+            "laser": {
+                "title": "Laser Detect technology",
+                "body": "A precisely angled green laser illuminates microscopic dust invisible to the naked eye."
+            },
+            "filtration": {
+                "title": "Whole-machine filtration",
+                "body": "All air expelled is filtered to HEPA H13 standard — capturing particles as small as 0.1 microns."
+            }
+        },
+        "standards": {
+            "heading": "Independently verified — DEMO",
+            "intro": "Dyson machines are tested to meet or exceed international standards.",
+            "items": [
+                "IEC 62885-2 suction performance",
+                "EN 1822 HEPA filtration",
+                "IEC 62301 standby power",
+                "TÜV tested battery runtime"
+            ]
+        },
+        "cta": {
+            "heading": "See it in action",
+            "body": "The V12s Detect Slim Submarine. Engineered for every floor.",
+            "button": "Shop the V12s"
+        }
+    },
+    "sustainability": {
+        "meta": {
+            "title": "Sustainability — DEMO",
+            "description": "Our commitment to repairability, longevity and responsible materials."
+        },
+        "letter": {
+            "eyebrow": "A commitment — DEMO",
+            "heading": "A clean home starts with honest engineering.",
+            "body": "We design machines to last. When something wears out, we want you to fix it — not replace it. That means parts available for at least 7 years, clear repair guides, and a team that picks up the phone."
+        },
+        "pillars": {
+            "heading": "How we think about sustainability — DEMO",
+            "repair": {
+                "title": "Repair first",
+                "body": "Spare parts stocked for a minimum of 7 years after the last sale date. Same-day dispatch on most items."
+            },
+            "longevity": {
+                "title": "Built to last",
+                "body": "Accelerated lifecycle testing simulates years of use in weeks. We only ship when it passes."
+            },
+            "materials": {
+                "title": "Responsible materials",
+                "body": "Increasing use of recycled plastic in non-structural components, with targets to report against annually."
+            }
+        },
+        "warranty": {
+            "heading": "What your warranty covers — DEMO",
+            "body": "2 years parts and labour on all Dyson machines registered within 30 days of purchase.",
+            "cta": "Register your machine"
+        },
+        "cta": {
+            "heading": "Questions about your machine?",
+            "body": "Our engineers are available 7 days a week.",
+            "button": "Get support"
+        }
     }
 }

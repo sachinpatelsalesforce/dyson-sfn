@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pricebooks xmlns="http://www.demandware.com/xml/impex/pricebook/2006-10-31">
+    <pricebook>
+        <header pricebook-id="dysonuk-GBP-sale">
+            <currency>GBP</currency>
+            <display-name xml:lang="x-default">Dyson UK Sale Prices</display-name>
+            <online-flag>true</online-flag>
+            <parent-id>dysonuk-GBP</parent-id>
+        </header>
+        <price-tables>
+            <price-table product-id="499085-01">
+                <amount quantity="1">549.99</amount>
+            </price-table>
+            <price-table product-id="589598-01">
+                <amount quantity="1">479.99</amount>
+            </price-table>
+            <price-table product-id="594028-01">
+                <amount quantity="1">399.99</amount>
+            </price-table>
+            <price-table product-id="637628-01">
+                <amount quantity="1">379.99</amount>
+            </price-table>
+            <price-table product-id="485296-01">
+                <amount quantity="1">359</amount>
+            </price-table>
+            <price-table product-id="630917-01">
+                <amount quantity="1">349.99</amount>
+            </price-table>
+            <price-table product-id="594594-01">
+                <amount quantity="1">329.99</amount>
+            </price-table>
+            <price-table product-id="443096-01">
+                <amount quantity="1">279.99</amount>
+            </price-table>
+            <price-table product-id="589596-01">
+                <amount quantity="1">209.99</amount>
+            </price-table>
+            <price-table product-id="586121-01">
+                <amount quantity="1">199.99</amount>
+            </price-table>
+            <price-table product-id="586180-01">
+                <amount quantity="1">779.99</amount>
+            </price-table>
+            <price-table product-id="664879-01">
+                <amount quantity="1">599.99</amount>
+            </price-table>
+            <price-table product-id="626366-01">
+                <amount quantity="1">279.99</amount>
+            </price-table>
+            <price-table product-id="593863-01">
+                <amount quantity="1">229.99</amount>
+            </price-table>
+            <price-table product-id="593814-01">
+                <amount quantity="1">199.99</amount>
+            </price-table>
+            <price-table product-id="653668-01">
+                <amount quantity="1">299.99</amount>
+            </price-table>
+            <price-table product-id="431999-01">
+                <amount quantity="1">279.99</amount>
+            </price-table>
+            <price-table product-id="637218-01">
+                <amount quantity="1">179</amount>
+            </price-table>
+            <price-table product-id="598976-01">
+                <amount quantity="1">299.99</amount>
+            </price-table>
+            <price-table product-id="112905-01">
+                <amount quantity="1">299.99</amount>
+            </price-table>
+            <price-table product-id="544587-01">
+                <amount quantity="1">549.99</amount>
+            </price-table>
+            <price-table product-id="544557-01">
+                <amount quantity="1">549.99</amount>
+            </price-table>
+            <price-table product-id="430516-01">
+                <amount quantity="1">379.99</amount>
+            </price-table>
+        </price-tables>
+    </pricebook>
+</pricebooks>

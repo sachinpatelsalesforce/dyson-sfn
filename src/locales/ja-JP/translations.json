@@ -1126,32 +1126,6 @@
         }
     },
     "home": {
-        "hero": {
-            "slide1": {
-                "title": "新シーズン",
-                "subtitle": "コントラストとバランス、そしてモダンな感性が息づく新しいコレクション。これからのシーズンを彩るキーアイテムをご紹介します。",
-                "ctaText": "コレクションを見る",
-                "imageAlt": "レディーススラックス、ジャケット、バッグ"
-            },
-            "slide2": {
-                "title": "モダンなワードローブ",
-                "subtitle": "洗練されたシルエットと上質な質感で、日常の装いに大胆なエッセンスを。動きに寄り添うデザイン。",
-                "ctaText": "このルックを見る",
-                "imageAlt": "レディースホワイトリネンドレス"
-            },
-            "slide3": {
-                "title": "アフターアワーズ",
-                "subtitle": "夜のお出かけや遅い時間のひととき、その間のあらゆるシーンに寄り添う、存在感のあるアイテムと洗練されたレイヤード。",
-                "ctaText": "コレクションを見る",
-                "imageAlt": "レディースブラックスーツ"
-            },
-            "slide4": {
-                "title": "新たな視点",
-                "subtitle": "現代のファッションを新たに捉え直す、選び抜かれた存在感あふれるアイテム。自信に満ちて。自分らしく。妥協しない。",
-                "ctaText": "今すぐお買い物",
-                "imageAlt": "レディースグレードレス"
-            }
-        },
         "meta": {
             "description": "次世代のファッションストア"
         },
@@ -1690,6 +1664,40 @@
             "listPrice": "通常価格: {{price}}"
         },
         "removingFromWishlist": "Removing from wishlist...",
-        "inWishlist": "In your wishlist"
+        "inWishlist": "In your wishlist",
+        "dyson": {
+            "keyFeatures": "Key features",
+            "promise": {
+                "warranty": "2-year guarantee",
+                "warrantyDesc": "On all Dyson machines",
+                "delivery": "Free delivery",
+                "deliveryDesc": "On all orders",
+                "returns": "30-day returns",
+                "returnsDesc": "No quibble guarantee"
+            },
+            "specs": {
+                "title": "Performance",
+                "suction": "Suction power",
+                "runtime": "Run time",
+                "binVolume": "Bin volume",
+                "weight": "Weight",
+                "filtration": "Filtration",
+                "suctionUnit": "AW",
+                "runtimeUnit": "min",
+                "binVolumeUnit": "L",
+                "weightUnit": "kg",
+                "filtrationUnit": "%"
+            },
+            "techSpecs": {
+                "title": "Technical specifications",
+                "overview": "Overview",
+                "inBox": "What's in the box",
+                "compatibility": "Compatibility",
+                "power": "Power",
+                "filter": "Filtration",
+                "warrantyDetail": "Warranty",
+                "boxContents": "Box contents"
+            }
+        }
     }
 }

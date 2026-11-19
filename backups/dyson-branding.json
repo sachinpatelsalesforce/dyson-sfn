@@ -1,1135 +1,1077 @@
 {
-  "schemaVersion": "1.0.0",
-  "name": "Dyson-inspired website branding reference",
-  "requestedUrl": "https://www.dyson.co.uk/en",
-  "preparedOn": "2026-11-17",
-  "extractionStatus": "partial_reference_not_live_css_extraction",
-  "completeCssExtraction": false,
-  "importantNotice": "The live UK stylesheets and computed styles could not be retrieved. referenceFacts contains attributed third-party reports, not independently verified UK CSS. implementation is newly written, proposed CSS for rebranding. Do not present this file as Dyson official design tokens or a complete extraction.",
-  "coverage": {
-    "requestedPageTextRetrieved": true,
-    "liveHtmlSourceRetrieved": false,
-    "liveStylesheetFilesRetrieved": 0,
-    "liveSelectorsExtracted": 0,
-    "computedStylesMeasured": false,
-    "viewportsMeasured": [],
-    "interactionStatesTestedOnDyson": [],
-    "fontFilesIncluded": false,
-    "logoFilesIncluded": false,
-    "imageFilesIncluded": false,
-    "allWebsiteRoutesCrawled": false
-  },
-  "referenceFacts": {
-    "status": "reported_by_external_sources_not_live_verified",
-    "palette": {
-      "values": {
-        "black": "#000000",
-        "ink": "#333333",
-        "secondary": "#555555",
-        "muted": "#999999",
-        "outline": "#919191",
-        "divider": "#dadada",
-        "light": "#ebebeb",
-        "white": "#ffffff",
-        "cream": "#fff8e6",
-        "green": "#79b928",
-        "blue": "#0066cc",
-        "cyan": "#149ecc",
-        "brown": "#ac5d00"
-      },
-      "sourceRefs": [
-        "vasa-reference"
-      ],
-      "note": "Reported colors, not a complete UK palette. Cream and saturated accents may be campaign- or component-specific."
+    "schemaVersion": "1.0.0",
+    "name": "Dyson-inspired website branding reference",
+    "requestedUrl": "https://www.dyson.co.uk/en",
+    "preparedOn": "2026-11-17",
+    "extractionStatus": "partial_reference_not_live_css_extraction",
+    "completeCssExtraction": false,
+    "importantNotice": "The live UK stylesheets and computed styles could not be retrieved. referenceFacts contains attributed third-party reports, not independently verified UK CSS. implementation is newly written, proposed CSS for rebranding. Do not present this file as Dyson official design tokens or a complete extraction.",
+    "coverage": {
+        "requestedPageTextRetrieved": true,
+        "liveHtmlSourceRetrieved": false,
+        "liveStylesheetFilesRetrieved": 0,
+        "liveSelectorsExtracted": 0,
+        "computedStylesMeasured": false,
+        "viewportsMeasured": [],
+        "interactionStatesTestedOnDyson": [],
+        "fontFilesIncluded": false,
+        "logoFilesIncluded": false,
+        "imageFilesIncluded": false,
+        "allWebsiteRoutesCrawled": false
     },
-    "typography": {
-      "familiesReportedForUk": {
-        "values": [
-          "DysonFutura",
-          "FoundryGridnik"
-        ],
-        "sourceRefs": [
-          "uk-font-report"
-        ],
-        "scope": "The scanner checked the homepage and linked pages; exact per-component usage is not supplied."
-      },
-      "mainFamilyReported": {
-        "value": "DysonFutura",
-        "sourceRefs": [
-          "vasa-reference",
-          "refero-reference"
-        ]
-      },
-      "weightsReported": {
-        "values": [
-          300,
-          400,
-          500
-        ],
-        "sourceRefs": [
-          "vasa-reference"
-        ]
-      },
-      "sizesReportedPx": {
-        "values": [
-          12,
-          14,
-          16,
-          18,
-          24,
-          28,
-          32,
-          36
-        ],
-        "sourceRefs": [
-          "vasa-reference"
-        ]
-      },
-      "liveFontFaceDeclarations": null,
-      "liveFallbackStack": null,
-      "liveLineHeights": null
+    "referenceFacts": {
+        "status": "reported_by_external_sources_not_live_verified",
+        "palette": {
+            "values": {
+                "black": "#000000",
+                "ink": "#333333",
+                "secondary": "#555555",
+                "muted": "#999999",
+                "outline": "#919191",
+                "divider": "#dadada",
+                "light": "#ebebeb",
+                "white": "#ffffff",
+                "cream": "#fff8e6",
+                "green": "#79b928",
+                "blue": "#0066cc",
+                "cyan": "#149ecc",
+                "brown": "#ac5d00"
+            },
+            "sourceRefs": ["vasa-reference"],
+            "note": "Reported colors, not a complete UK palette. Cream and saturated accents may be campaign- or component-specific."
+        },
+        "typography": {
+            "familiesReportedForUk": {
+                "values": ["DysonFutura", "FoundryGridnik"],
+                "sourceRefs": ["uk-font-report"],
+                "scope": "The scanner checked the homepage and linked pages; exact per-component usage is not supplied."
+            },
+            "mainFamilyReported": {
+                "value": "DysonFutura",
+                "sourceRefs": ["vasa-reference", "refero-reference"]
+            },
+            "weightsReported": {
+                "values": [300, 400, 500],
+                "sourceRefs": ["vasa-reference"]
+            },
+            "sizesReportedPx": {
+                "values": [12, 14, 16, 18, 24, 28, 32, 36],
+                "sourceRefs": ["vasa-reference"]
+            },
+            "liveFontFaceDeclarations": null,
+            "liveFallbackStack": null,
+            "liveLineHeights": null
+        },
+        "layout": {
+            "referenceMaxWidthPx": {
+                "value": 1200,
+                "sourceRefs": ["refero-reference"]
+            },
+            "referenceSpacingPx": {
+                "values": [4, 8, 12, 16, 20, 24, 28, 32, 40, 44, 48],
+                "sourceRefs": ["refero-reference"]
+            },
+            "reportedSectionGapPx": {
+                "value": 48,
+                "sourceRefs": ["vasa-reference"]
+            },
+            "reportedCardPaddingPx": {
+                "value": 16,
+                "sourceRefs": ["vasa-reference"]
+            },
+            "reportedElementGapPx": {
+                "value": 8,
+                "sourceRefs": ["vasa-reference"]
+            },
+            "liveBreakpoints": null
+        },
+        "shape": {
+            "reportedCardRadiusPx": {
+                "value": 0,
+                "sourceRefs": ["vasa-reference"]
+            },
+            "reportedImageRadiusPx": {
+                "value": 8,
+                "sourceRefs": ["vasa-reference"]
+            },
+            "reportedBadgeRadiusPx": {
+                "value": 2,
+                "sourceRefs": ["vasa-reference"]
+            },
+            "verifiedButtonRadiusPx": null,
+            "liveShadows": null
+        }
     },
-    "layout": {
-      "referenceMaxWidthPx": {
-        "value": 1200,
-        "sourceRefs": [
-          "refero-reference"
-        ]
-      },
-      "referenceSpacingPx": {
-        "values": [
-          4,
-          8,
-          12,
-          16,
-          20,
-          24,
-          28,
-          32,
-          40,
-          44,
-          48
-        ],
-        "sourceRefs": [
-          "refero-reference"
-        ]
-      },
-      "reportedSectionGapPx": {
-        "value": 48,
-        "sourceRefs": [
-          "vasa-reference"
-        ]
-      },
-      "reportedCardPaddingPx": {
-        "value": 16,
-        "sourceRefs": [
-          "vasa-reference"
-        ]
-      },
-      "reportedElementGapPx": {
-        "value": 8,
-        "sourceRefs": [
-          "vasa-reference"
-        ]
-      },
-      "liveBreakpoints": null
-    },
-    "shape": {
-      "reportedCardRadiusPx": {
-        "value": 0,
-        "sourceRefs": [
-          "vasa-reference"
-        ]
-      },
-      "reportedImageRadiusPx": {
-        "value": 8,
-        "sourceRefs": [
-          "vasa-reference"
-        ]
-      },
-      "reportedBadgeRadiusPx": {
-        "value": 2,
-        "sourceRefs": [
-          "vasa-reference"
-        ]
-      },
-      "verifiedButtonRadiusPx": null,
-      "liveShadows": null
-    }
-  },
-  "uncertainties": [
-    {
-      "field": "button.radius",
-      "reports": [
+    "uncertainties": [
         {
-          "value": "0px",
-          "sourceRef": "vasa-reference"
+            "field": "button.radius",
+            "reports": [
+                {
+                    "value": "0px",
+                    "sourceRef": "vasa-reference"
+                },
+                {
+                    "value": "2px",
+                    "sourceRef": "refero-reference"
+                }
+            ],
+            "resolution": "Unresolved for the requested page. The proposed implementation deliberately chooses 0px."
         },
         {
-          "value": "2px",
-          "sourceRef": "refero-reference"
-        }
-      ],
-      "resolution": "Unresolved for the requested page. The proposed implementation deliberately chooses 0px."
-    },
-    {
-      "field": "button.primaryColorRole",
-      "reports": [
-        {
-          "value": "Green is presented as a main CTA.",
-          "sourceRef": "vasa-reference"
+            "field": "button.primaryColorRole",
+            "reports": [
+                {
+                    "value": "Green is presented as a main CTA.",
+                    "sourceRef": "vasa-reference"
+                },
+                {
+                    "value": "Green is treated as a supporting promotional accent.",
+                    "sourceRef": "refero-reference"
+                }
+            ],
+            "resolution": "No universal UK role inferred. The implementation offers separately named dark and green variants."
         },
         {
-          "value": "Green is treated as a supporting promotional accent.",
-          "sourceRef": "refero-reference"
-        }
-      ],
-      "resolution": "No universal UK role inferred. The implementation offers separately named dark and green variants."
-    },
-    {
-      "field": "page.background",
-      "reports": [
-        {
-          "value": "White and warm accent surfaces.",
-          "sourceRef": "vasa-reference"
+            "field": "page.background",
+            "reports": [
+                {
+                    "value": "White and warm accent surfaces.",
+                    "sourceRef": "vasa-reference"
+                },
+                {
+                    "value": "Cream page canvas.",
+                    "sourceRef": "refero-reference"
+                }
+            ],
+            "resolution": "The implementation defaults to white and provides an optional warm section. Current campaign backgrounds were not measured."
         },
         {
-          "value": "Cream page canvas.",
-          "sourceRef": "refero-reference"
+            "field": "responsiveAndInteractiveValues",
+            "resolution": "All implementation breakpoints, hover treatments, focus styles, motion, z-index, grid behavior and touch-target sizes are author-selected, not extracted."
         }
-      ],
-      "resolution": "The implementation defaults to white and provides an optional warm section. Current campaign backgrounds were not measured."
+    ],
+    "implementation": {
+        "status": "original_proposed_implementation_not_extracted_source",
+        "scopeClass": "dyson-inspired",
+        "cssPropertyConvention": "kebab-case",
+        "cssVariables": {
+            "--dy-color-black": "#000000",
+            "--dy-color-ink": "#333333",
+            "--dy-color-secondary": "#555555",
+            "--dy-color-muted": "#999999",
+            "--dy-color-outline": "#919191",
+            "--dy-color-divider": "#dadada",
+            "--dy-color-light": "#ebebeb",
+            "--dy-color-white": "#ffffff",
+            "--dy-color-cream": "#fff8e6",
+            "--dy-color-green": "#79b928",
+            "--dy-color-blue": "#0066cc",
+            "--dy-color-cyan": "#149ecc",
+            "--dy-color-brown": "#ac5d00",
+            "--dy-font-sans": "\"DysonFutura\", \"Futura\", \"Avenir Next\", Arial, sans-serif",
+            "--dy-font-weight-light": "300",
+            "--dy-font-weight-regular": "400",
+            "--dy-font-weight-medium": "500",
+            "--dy-font-size-caption": "12px",
+            "--dy-font-size-small": "14px",
+            "--dy-font-size-body": "16px",
+            "--dy-font-size-lead": "18px",
+            "--dy-font-size-h3": "24px",
+            "--dy-font-size-h2": "28px",
+            "--dy-font-size-h1": "36px",
+            "--dy-line-height-body": "1.5",
+            "--dy-line-height-heading": "1.2",
+            "--dy-content-max": "1200px",
+            "--dy-page-gutter": "24px",
+            "--dy-section-space": "48px",
+            "--dy-radius-control": "0px",
+            "--dy-radius-card": "0px",
+            "--dy-radius-badge": "2px",
+            "--dy-radius-media": "8px",
+            "--dy-border-width": "1px",
+            "--dy-focus-width": "3px",
+            "--dy-focus-offset": "3px",
+            "--dy-shadow-flat": "none",
+            "--dy-motion-fast": "160ms",
+            "--dy-motion-ease": "ease-out",
+            "--dy-layer-header": "20",
+            "--dy-layer-overlay": "100",
+            "--dy-layer-dialog": "110",
+            "--dy-space-0": "0px",
+            "--dy-space-4": "4px",
+            "--dy-space-8": "8px",
+            "--dy-space-12": "12px",
+            "--dy-space-16": "16px",
+            "--dy-space-20": "20px",
+            "--dy-space-24": "24px",
+            "--dy-space-28": "28px",
+            "--dy-space-32": "32px",
+            "--dy-space-40": "40px",
+            "--dy-space-44": "44px",
+            "--dy-space-48": "48px",
+            "--dy-space-64": "64px",
+            "--dy-space-80": "80px",
+            "--dy-space-96": "96px"
+        },
+        "components": {
+            "page": {
+                "selector": ".dyson-inspired",
+                "declarations": {
+                    "margin": "0",
+                    "color": "var(--dy-color-ink)",
+                    "background-color": "var(--dy-color-white)",
+                    "font-family": "var(--dy-font-sans)",
+                    "font-size": "var(--dy-font-size-body)",
+                    "font-weight": "400",
+                    "line-height": "var(--dy-line-height-body)",
+                    "text-rendering": "optimizeLegibility"
+                }
+            },
+            "container": {
+                "selector": ".dyson-inspired .brand-container",
+                "declarations": {
+                    "width": "100%",
+                    "max-width": "var(--dy-content-max)",
+                    "margin-inline": "auto",
+                    "padding-inline": "var(--dy-page-gutter)"
+                }
+            },
+            "section": {
+                "selector": ".dyson-inspired .brand-section",
+                "declarations": {
+                    "padding-block": "var(--dy-section-space)"
+                }
+            },
+            "header": {
+                "selector": ".dyson-inspired .brand-header",
+                "declarations": {
+                    "background-color": "var(--dy-color-black)",
+                    "color": "var(--dy-color-white)",
+                    "position": "relative",
+                    "z-index": "var(--dy-layer-header)"
+                }
+            },
+            "navigation": {
+                "selector": ".dyson-inspired .brand-nav",
+                "declarations": {
+                    "display": "flex",
+                    "align-items": "center",
+                    "flex-wrap": "wrap",
+                    "gap": "var(--dy-space-24)"
+                }
+            },
+            "hero": {
+                "selector": ".dyson-inspired .brand-hero",
+                "declarations": {
+                    "color": "var(--dy-color-white)",
+                    "background-color": "var(--dy-color-black)",
+                    "padding-block": "var(--dy-space-64)"
+                }
+            },
+            "headings": {
+                "selector": ".dyson-inspired h1, .dyson-inspired h2, .dyson-inspired h3, .dyson-inspired .brand-heading",
+                "declarations": {
+                    "margin": "0 0 var(--dy-space-16)",
+                    "font-family": "var(--dy-font-sans)",
+                    "font-weight": "300",
+                    "line-height": "var(--dy-line-height-heading)",
+                    "letter-spacing": "normal"
+                }
+            },
+            "link": {
+                "selector": ".dyson-inspired .brand-link",
+                "declarations": {
+                    "color": "var(--dy-color-blue)",
+                    "text-decoration": "underline",
+                    "text-underline-offset": "3px"
+                }
+            },
+            "button": {
+                "selector": ".dyson-inspired .brand-button",
+                "declarations": {
+                    "display": "inline-flex",
+                    "align-items": "center",
+                    "justify-content": "center",
+                    "gap": "var(--dy-space-8)",
+                    "min-height": "48px",
+                    "padding": "16px 24px",
+                    "border": "1px solid transparent",
+                    "border-radius": "var(--dy-radius-control)",
+                    "font-family": "inherit",
+                    "font-size": "var(--dy-font-size-body)",
+                    "font-weight": "500",
+                    "line-height": "1.25",
+                    "text-align": "center",
+                    "text-decoration": "none",
+                    "cursor": "pointer",
+                    "transition": "background-color var(--dy-motion-fast) var(--dy-motion-ease), color var(--dy-motion-fast) var(--dy-motion-ease), border-color var(--dy-motion-fast) var(--dy-motion-ease)"
+                }
+            },
+            "focus": {
+                "selector": ".dyson-inspired :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible",
+                "declarations": {
+                    "outline": "var(--dy-focus-width) solid var(--dy-color-blue)",
+                    "outline-offset": "var(--dy-focus-offset)"
+                }
+            },
+            "productCard": {
+                "selector": ".dyson-inspired .brand-card",
+                "declarations": {
+                    "color": "var(--dy-color-ink)",
+                    "background-color": "var(--dy-color-white)",
+                    "border": "var(--dy-border-width) solid var(--dy-color-light)",
+                    "border-radius": "var(--dy-radius-card)",
+                    "padding": "var(--dy-space-24)",
+                    "box-shadow": "var(--dy-shadow-flat)",
+                    "display": "flex",
+                    "flex-direction": "column",
+                    "gap": "var(--dy-space-16)",
+                    "min-width": "0"
+                }
+            },
+            "price": {
+                "selector": ".dyson-inspired .brand-price",
+                "declarations": {
+                    "font-size": "var(--dy-font-size-h3)",
+                    "font-weight": "400",
+                    "line-height": "1.3",
+                    "color": "var(--dy-color-ink)"
+                }
+            },
+            "badge": {
+                "selector": ".dyson-inspired .brand-badge",
+                "declarations": {
+                    "display": "inline-flex",
+                    "align-self": "flex-start",
+                    "padding": "4px 8px",
+                    "border-radius": "var(--dy-radius-badge)",
+                    "background-color": "var(--dy-color-brown)",
+                    "color": "var(--dy-color-white)",
+                    "font-size": "var(--dy-font-size-caption)",
+                    "font-weight": "500",
+                    "line-height": "1.4"
+                }
+            },
+            "field": {
+                "selector": ".dyson-inspired .brand-field",
+                "declarations": {
+                    "display": "grid",
+                    "gap": "var(--dy-space-8)"
+                }
+            },
+            "input": {
+                "selector": ".dyson-inspired .brand-input, .dyson-inspired .brand-select, .dyson-inspired .brand-textarea",
+                "declarations": {
+                    "width": "100%",
+                    "min-height": "48px",
+                    "padding": "12px 16px",
+                    "font-family": "inherit",
+                    "font-size": "var(--dy-font-size-body)",
+                    "line-height": "1.5",
+                    "color": "var(--dy-color-ink)",
+                    "background-color": "var(--dy-color-white)",
+                    "border": "1px solid var(--dy-color-outline)",
+                    "border-radius": "var(--dy-radius-control)"
+                }
+            },
+            "accordion": {
+                "selector": ".dyson-inspired .brand-accordion",
+                "declarations": {
+                    "border-block-start": "1px solid var(--dy-color-divider)"
+                }
+            },
+            "legalText": {
+                "selector": ".dyson-inspired .brand-legal",
+                "declarations": {
+                    "color": "var(--dy-color-secondary)",
+                    "font-size": "var(--dy-font-size-caption)",
+                    "line-height": "1.6"
+                }
+            },
+            "footer": {
+                "selector": ".dyson-inspired .brand-footer",
+                "declarations": {
+                    "background-color": "var(--dy-color-black)",
+                    "color": "var(--dy-color-white)",
+                    "padding-block": "var(--dy-space-48)"
+                }
+            }
+        },
+        "rules": [
+            {
+                "selector": ".dyson-inspired, .dyson-inspired *, .dyson-inspired *::before, .dyson-inspired *::after",
+                "declarations": {
+                    "box-sizing": "border-box"
+                }
+            },
+            {
+                "selector": ".dyson-inspired",
+                "declarations": {
+                    "margin": "0",
+                    "color": "var(--dy-color-ink)",
+                    "background-color": "var(--dy-color-white)",
+                    "font-family": "var(--dy-font-sans)",
+                    "font-size": "var(--dy-font-size-body)",
+                    "font-weight": "400",
+                    "line-height": "var(--dy-line-height-body)",
+                    "text-rendering": "optimizeLegibility"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-container",
+                "declarations": {
+                    "width": "100%",
+                    "max-width": "var(--dy-content-max)",
+                    "margin-inline": "auto",
+                    "padding-inline": "var(--dy-page-gutter)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-section",
+                "declarations": {
+                    "padding-block": "var(--dy-section-space)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-section--light",
+                "declarations": {
+                    "background-color": "var(--dy-color-light)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-section--warm",
+                "declarations": {
+                    "background-color": "var(--dy-color-cream)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-section--dark",
+                "declarations": {
+                    "color": "var(--dy-color-white)",
+                    "background-color": "var(--dy-color-black)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-header",
+                "declarations": {
+                    "background-color": "var(--dy-color-black)",
+                    "color": "var(--dy-color-white)",
+                    "position": "relative",
+                    "z-index": "var(--dy-layer-header)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-header__inner",
+                "declarations": {
+                    "display": "flex",
+                    "align-items": "center",
+                    "justify-content": "space-between",
+                    "flex-wrap": "wrap",
+                    "gap": "var(--dy-space-24)",
+                    "min-height": "80px",
+                    "padding-block": "var(--dy-space-16)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-nav",
+                "declarations": {
+                    "display": "flex",
+                    "align-items": "center",
+                    "flex-wrap": "wrap",
+                    "gap": "var(--dy-space-24)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-nav a",
+                "declarations": {
+                    "color": "inherit",
+                    "text-decoration": "none",
+                    "font-size": "var(--dy-font-size-small)",
+                    "font-weight": "500"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-nav a:hover",
+                "declarations": {
+                    "text-decoration": "underline",
+                    "text-underline-offset": "4px"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-hero",
+                "declarations": {
+                    "color": "var(--dy-color-white)",
+                    "background-color": "var(--dy-color-black)",
+                    "padding-block": "var(--dy-space-64)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-hero__layout",
+                "declarations": {
+                    "display": "grid",
+                    "grid-template-columns": "minmax(0, 1fr)",
+                    "gap": "var(--dy-space-32)",
+                    "align-items": "center"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-hero__copy",
+                "declarations": {
+                    "max-width": "36rem"
+                }
+            },
+            {
+                "selector": ".dyson-inspired h1, .dyson-inspired h2, .dyson-inspired h3, .dyson-inspired .brand-heading",
+                "declarations": {
+                    "margin": "0 0 var(--dy-space-16)",
+                    "font-family": "var(--dy-font-sans)",
+                    "font-weight": "300",
+                    "line-height": "var(--dy-line-height-heading)",
+                    "letter-spacing": "normal"
+                }
+            },
+            {
+                "selector": ".dyson-inspired h1, .dyson-inspired .brand-heading--1",
+                "declarations": {
+                    "font-size": "var(--dy-font-size-h1)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired h2, .dyson-inspired .brand-heading--2",
+                "declarations": {
+                    "font-size": "var(--dy-font-size-h2)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired h3, .dyson-inspired .brand-heading--3",
+                "declarations": {
+                    "font-size": "var(--dy-font-size-h3)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired p",
+                "declarations": {
+                    "margin": "0 0 var(--dy-space-16)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-lead",
+                "declarations": {
+                    "font-size": "var(--dy-font-size-lead)",
+                    "line-height": "1.5"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-small",
+                "declarations": {
+                    "font-size": "var(--dy-font-size-small)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-legal",
+                "declarations": {
+                    "color": "var(--dy-color-secondary)",
+                    "font-size": "var(--dy-font-size-caption)",
+                    "line-height": "1.6"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-link",
+                "declarations": {
+                    "color": "var(--dy-color-blue)",
+                    "text-decoration": "underline",
+                    "text-underline-offset": "3px"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-link:hover",
+                "declarations": {
+                    "text-decoration-thickness": "2px"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-section--dark .brand-link, .dyson-inspired .brand-hero .brand-link, .dyson-inspired .brand-footer .brand-link",
+                "declarations": {
+                    "color": "var(--dy-color-white)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button",
+                "declarations": {
+                    "display": "inline-flex",
+                    "align-items": "center",
+                    "justify-content": "center",
+                    "gap": "var(--dy-space-8)",
+                    "min-height": "48px",
+                    "padding": "16px 24px",
+                    "border": "1px solid transparent",
+                    "border-radius": "var(--dy-radius-control)",
+                    "font-family": "inherit",
+                    "font-size": "var(--dy-font-size-body)",
+                    "font-weight": "500",
+                    "line-height": "1.25",
+                    "text-align": "center",
+                    "text-decoration": "none",
+                    "cursor": "pointer",
+                    "transition": "background-color var(--dy-motion-fast) var(--dy-motion-ease), color var(--dy-motion-fast) var(--dy-motion-ease), border-color var(--dy-motion-fast) var(--dy-motion-ease)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button--primary",
+                "declarations": {
+                    "background-color": "var(--dy-color-ink)",
+                    "color": "var(--dy-color-white)",
+                    "border-color": "var(--dy-color-ink)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button--primary:hover",
+                "declarations": {
+                    "background-color": "var(--dy-color-black)",
+                    "border-color": "var(--dy-color-black)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button--purchase",
+                "declarations": {
+                    "background-color": "var(--dy-color-green)",
+                    "color": "var(--dy-color-black)",
+                    "border-color": "var(--dy-color-green)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button--purchase:hover",
+                "declarations": {
+                    "box-shadow": "inset 0 0 0 2px var(--dy-color-black)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button--secondary",
+                "declarations": {
+                    "color": "var(--dy-color-ink)",
+                    "background-color": "transparent",
+                    "border-color": "var(--dy-color-ink)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button--secondary:hover",
+                "declarations": {
+                    "background-color": "var(--dy-color-light)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button--inverse",
+                "declarations": {
+                    "color": "var(--dy-color-black)",
+                    "background-color": "var(--dy-color-white)",
+                    "border-color": "var(--dy-color-white)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button--inverse:hover",
+                "declarations": {
+                    "background-color": "var(--dy-color-light)",
+                    "border-color": "var(--dy-color-light)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button--text",
+                "declarations": {
+                    "color": "inherit",
+                    "background-color": "transparent",
+                    "border-color": "transparent",
+                    "padding-inline": "0",
+                    "text-decoration": "underline",
+                    "text-underline-offset": "4px"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button:disabled, .dyson-inspired .brand-button[aria-disabled=\"true\"]",
+                "declarations": {
+                    "color": "var(--dy-color-secondary)",
+                    "background-color": "var(--dy-color-light)",
+                    "border-color": "var(--dy-color-divider)",
+                    "box-shadow": "none",
+                    "cursor": "not-allowed"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-button-group",
+                "declarations": {
+                    "display": "flex",
+                    "flex-wrap": "wrap",
+                    "gap": "var(--dy-space-16)",
+                    "align-items": "center"
+                }
+            },
+            {
+                "selector": ".dyson-inspired :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible",
+                "declarations": {
+                    "outline": "var(--dy-focus-width) solid var(--dy-color-blue)",
+                    "outline-offset": "var(--dy-focus-offset)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-header :focus-visible, .dyson-inspired .brand-footer :focus-visible, .dyson-inspired .brand-hero :focus-visible, .dyson-inspired .brand-section--dark :focus-visible",
+                "declarations": {
+                    "outline-color": "var(--dy-color-white)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-card",
+                "declarations": {
+                    "color": "var(--dy-color-ink)",
+                    "background-color": "var(--dy-color-white)",
+                    "border": "var(--dy-border-width) solid var(--dy-color-light)",
+                    "border-radius": "var(--dy-radius-card)",
+                    "padding": "var(--dy-space-24)",
+                    "box-shadow": "var(--dy-shadow-flat)",
+                    "display": "flex",
+                    "flex-direction": "column",
+                    "gap": "var(--dy-space-16)",
+                    "min-width": "0"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-card__media",
+                "declarations": {
+                    "display": "block",
+                    "width": "100%",
+                    "height": "auto",
+                    "aspect-ratio": "1 / 1",
+                    "object-fit": "contain"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-card__actions",
+                "declarations": {
+                    "margin-top": "auto"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-product-grid",
+                "declarations": {
+                    "display": "grid",
+                    "grid-template-columns": "minmax(0, 1fr)",
+                    "gap": "var(--dy-space-24)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-price",
+                "declarations": {
+                    "font-size": "var(--dy-font-size-h3)",
+                    "font-weight": "400",
+                    "line-height": "1.3",
+                    "color": "var(--dy-color-ink)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-price--old",
+                "declarations": {
+                    "font-size": "var(--dy-font-size-small)",
+                    "text-decoration": "line-through",
+                    "color": "var(--dy-color-secondary)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-badge",
+                "declarations": {
+                    "display": "inline-flex",
+                    "align-self": "flex-start",
+                    "padding": "4px 8px",
+                    "border-radius": "var(--dy-radius-badge)",
+                    "background-color": "var(--dy-color-brown)",
+                    "color": "var(--dy-color-white)",
+                    "font-size": "var(--dy-font-size-caption)",
+                    "font-weight": "500",
+                    "line-height": "1.4"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-field",
+                "declarations": {
+                    "display": "grid",
+                    "gap": "var(--dy-space-8)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-label",
+                "declarations": {
+                    "font-size": "var(--dy-font-size-small)",
+                    "font-weight": "500"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-input, .dyson-inspired .brand-select, .dyson-inspired .brand-textarea",
+                "declarations": {
+                    "width": "100%",
+                    "min-height": "48px",
+                    "padding": "12px 16px",
+                    "font-family": "inherit",
+                    "font-size": "var(--dy-font-size-body)",
+                    "line-height": "1.5",
+                    "color": "var(--dy-color-ink)",
+                    "background-color": "var(--dy-color-white)",
+                    "border": "1px solid var(--dy-color-outline)",
+                    "border-radius": "var(--dy-radius-control)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-input::placeholder, .dyson-inspired .brand-textarea::placeholder",
+                "declarations": {
+                    "color": "var(--dy-color-secondary)",
+                    "opacity": "1"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-input:disabled, .dyson-inspired .brand-select:disabled, .dyson-inspired .brand-textarea:disabled",
+                "declarations": {
+                    "background-color": "var(--dy-color-light)",
+                    "cursor": "not-allowed"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-textarea",
+                "declarations": {
+                    "min-height": "144px",
+                    "resize": "vertical"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-help",
+                "declarations": {
+                    "color": "var(--dy-color-secondary)",
+                    "font-size": "var(--dy-font-size-caption)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-divider",
+                "declarations": {
+                    "border": "0",
+                    "border-top": "1px solid var(--dy-color-divider)",
+                    "margin-block": "var(--dy-space-32)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-accordion",
+                "declarations": {
+                    "border-block-start": "1px solid var(--dy-color-divider)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-accordion > summary",
+                "declarations": {
+                    "cursor": "pointer",
+                    "padding-block": "var(--dy-space-20)",
+                    "font-size": "var(--dy-font-size-lead)",
+                    "font-weight": "400"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-accordion__content",
+                "declarations": {
+                    "padding-bottom": "var(--dy-space-24)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-footer",
+                "declarations": {
+                    "background-color": "var(--dy-color-black)",
+                    "color": "var(--dy-color-white)",
+                    "padding-block": "var(--dy-space-48)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-footer__grid",
+                "declarations": {
+                    "display": "grid",
+                    "grid-template-columns": "minmax(0, 1fr)",
+                    "gap": "var(--dy-space-32)"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-footer a",
+                "declarations": {
+                    "color": "inherit"
+                }
+            },
+            {
+                "selector": ".dyson-inspired .brand-footer .brand-legal",
+                "declarations": {
+                    "color": "var(--dy-color-white)"
+                }
+            }
+        ],
+        "mediaQueries": [
+            {
+                "query": "(min-width: 640px)",
+                "rules": [
+                    {
+                        "selector": ".dyson-inspired .brand-product-grid",
+                        "declarations": {
+                            "grid-template-columns": "repeat(2, minmax(0, 1fr))"
+                        }
+                    },
+                    {
+                        "selector": ".dyson-inspired .brand-footer__grid",
+                        "declarations": {
+                            "grid-template-columns": "repeat(2, minmax(0, 1fr))"
+                        }
+                    }
+                ]
+            },
+            {
+                "query": "(min-width: 1024px)",
+                "rules": [
+                    {
+                        "selector": ".dyson-inspired .brand-hero__layout",
+                        "declarations": {
+                            "grid-template-columns": "repeat(2, minmax(0, 1fr))"
+                        }
+                    },
+                    {
+                        "selector": ".dyson-inspired .brand-product-grid",
+                        "declarations": {
+                            "grid-template-columns": "repeat(3, minmax(0, 1fr))"
+                        }
+                    },
+                    {
+                        "selector": ".dyson-inspired .brand-footer__grid",
+                        "declarations": {
+                            "grid-template-columns": "repeat(4, minmax(0, 1fr))"
+                        }
+                    }
+                ]
+            },
+            {
+                "query": "(max-width: 639px)",
+                "rules": [
+                    {
+                        "selector": ".dyson-inspired",
+                        "declarations": {
+                            "--dy-page-gutter": "16px",
+                            "--dy-section-space": "32px",
+                            "--dy-font-size-h1": "32px",
+                            "--dy-font-size-h2": "24px"
+                        }
+                    },
+                    {
+                        "selector": ".dyson-inspired .brand-hero",
+                        "declarations": {
+                            "padding-block": "40px"
+                        }
+                    },
+                    {
+                        "selector": ".dyson-inspired .brand-button-group",
+                        "declarations": {
+                            "align-items": "stretch",
+                            "flex-direction": "column"
+                        }
+                    },
+                    {
+                        "selector": ".dyson-inspired .brand-header__inner",
+                        "declarations": {
+                            "min-height": "64px"
+                        }
+                    }
+                ]
+            },
+            {
+                "query": "(prefers-reduced-motion: reduce)",
+                "rules": [
+                    {
+                        "selector": ".dyson-inspired .brand-button",
+                        "declarations": {
+                            "transition": "none"
+                        }
+                    }
+                ]
+            }
+        ],
+        "cssText": "/* Dyson-inspired REFERENCE IMPLEMENTATION, prepared 2026-11-17.\n * This is original component CSS, NOT a dump of dyson.co.uk stylesheets.\n * Published reference values are unverified against the current UK page.\n * Scope with class=\"dyson-inspired\" on a wrapper or <body>.\n * No logos, photographs or font binaries are included.\n * Load a licensed font separately, or allow the local fallback stack.\n */\n\n.dyson-inspired {\n  --dy-color-black: #000000;\n  --dy-color-ink: #333333;\n  --dy-color-secondary: #555555;\n  --dy-color-muted: #999999;\n  --dy-color-outline: #919191;\n  --dy-color-divider: #dadada;\n  --dy-color-light: #ebebeb;\n  --dy-color-white: #ffffff;\n  --dy-color-cream: #fff8e6;\n  --dy-color-green: #79b928;\n  --dy-color-blue: #0066cc;\n  --dy-color-cyan: #149ecc;\n  --dy-color-brown: #ac5d00;\n  --dy-font-sans: \"DysonFutura\", \"Futura\", \"Avenir Next\", Arial, sans-serif;\n  --dy-font-weight-light: 300;\n  --dy-font-weight-regular: 400;\n  --dy-font-weight-medium: 500;\n  --dy-font-size-caption: 12px;\n  --dy-font-size-small: 14px;\n  --dy-font-size-body: 16px;\n  --dy-font-size-lead: 18px;\n  --dy-font-size-h3: 24px;\n  --dy-font-size-h2: 28px;\n  --dy-font-size-h1: 36px;\n  --dy-line-height-body: 1.5;\n  --dy-line-height-heading: 1.2;\n  --dy-content-max: 1200px;\n  --dy-page-gutter: 24px;\n  --dy-section-space: 48px;\n  --dy-radius-control: 0px;\n  --dy-radius-card: 0px;\n  --dy-radius-badge: 2px;\n  --dy-radius-media: 8px;\n  --dy-border-width: 1px;\n  --dy-focus-width: 3px;\n  --dy-focus-offset: 3px;\n  --dy-shadow-flat: none;\n  --dy-motion-fast: 160ms;\n  --dy-motion-ease: ease-out;\n  --dy-layer-header: 20;\n  --dy-layer-overlay: 100;\n  --dy-layer-dialog: 110;\n  --dy-space-0: 0px;\n  --dy-space-4: 4px;\n  --dy-space-8: 8px;\n  --dy-space-12: 12px;\n  --dy-space-16: 16px;\n  --dy-space-20: 20px;\n  --dy-space-24: 24px;\n  --dy-space-28: 28px;\n  --dy-space-32: 32px;\n  --dy-space-40: 40px;\n  --dy-space-44: 44px;\n  --dy-space-48: 48px;\n  --dy-space-64: 64px;\n  --dy-space-80: 80px;\n  --dy-space-96: 96px;\n}\n\n.dyson-inspired, .dyson-inspired *, .dyson-inspired *::before, .dyson-inspired *::after {\n  box-sizing: border-box;\n}\n\n.dyson-inspired {\n  margin: 0;\n  color: var(--dy-color-ink);\n  background-color: var(--dy-color-white);\n  font-family: var(--dy-font-sans);\n  font-size: var(--dy-font-size-body);\n  font-weight: 400;\n  line-height: var(--dy-line-height-body);\n  text-rendering: optimizeLegibility;\n}\n\n.dyson-inspired .brand-container {\n  width: 100%;\n  max-width: var(--dy-content-max);\n  margin-inline: auto;\n  padding-inline: var(--dy-page-gutter);\n}\n\n.dyson-inspired .brand-section {\n  padding-block: var(--dy-section-space);\n}\n\n.dyson-inspired .brand-section--light {\n  background-color: var(--dy-color-light);\n}\n\n.dyson-inspired .brand-section--warm {\n  background-color: var(--dy-color-cream);\n}\n\n.dyson-inspired .brand-section--dark {\n  color: var(--dy-color-white);\n  background-color: var(--dy-color-black);\n}\n\n.dyson-inspired .brand-header {\n  background-color: var(--dy-color-black);\n  color: var(--dy-color-white);\n  position: relative;\n  z-index: var(--dy-layer-header);\n}\n\n.dyson-inspired .brand-header__inner {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  gap: var(--dy-space-24);\n  min-height: 80px;\n  padding-block: var(--dy-space-16);\n}\n\n.dyson-inspired .brand-nav {\n  display: flex;\n  align-items: center;\n  flex-wrap: wrap;\n  gap: var(--dy-space-24);\n}\n\n.dyson-inspired .brand-nav a {\n  color: inherit;\n  text-decoration: none;\n  font-size: var(--dy-font-size-small);\n  font-weight: 500;\n}\n\n.dyson-inspired .brand-nav a:hover {\n  text-decoration: underline;\n  text-underline-offset: 4px;\n}\n\n.dyson-inspired .brand-hero {\n  color: var(--dy-color-white);\n  background-color: var(--dy-color-black);\n  padding-block: var(--dy-space-64);\n}\n\n.dyson-inspired .brand-hero__layout {\n  display: grid;\n  grid-template-columns: minmax(0, 1fr);\n  gap: var(--dy-space-32);\n  align-items: center;\n}\n\n.dyson-inspired .brand-hero__copy {\n  max-width: 36rem;\n}\n\n.dyson-inspired h1, .dyson-inspired h2, .dyson-inspired h3, .dyson-inspired .brand-heading {\n  margin: 0 0 var(--dy-space-16);\n  font-family: var(--dy-font-sans);\n  font-weight: 300;\n  line-height: var(--dy-line-height-heading);\n  letter-spacing: normal;\n}\n\n.dyson-inspired h1, .dyson-inspired .brand-heading--1 {\n  font-size: var(--dy-font-size-h1);\n}\n\n.dyson-inspired h2, .dyson-inspired .brand-heading--2 {\n  font-size: var(--dy-font-size-h2);\n}\n\n.dyson-inspired h3, .dyson-inspired .brand-heading--3 {\n  font-size: var(--dy-font-size-h3);\n}\n\n.dyson-inspired p {\n  margin: 0 0 var(--dy-space-16);\n}\n\n.dyson-inspired .brand-lead {\n  font-size: var(--dy-font-size-lead);\n  line-height: 1.5;\n}\n\n.dyson-inspired .brand-small {\n  font-size: var(--dy-font-size-small);\n}\n\n.dyson-inspired .brand-legal {\n  color: var(--dy-color-secondary);\n  font-size: var(--dy-font-size-caption);\n  line-height: 1.6;\n}\n\n.dyson-inspired .brand-link {\n  color: var(--dy-color-blue);\n  text-decoration: underline;\n  text-underline-offset: 3px;\n}\n\n.dyson-inspired .brand-link:hover {\n  text-decoration-thickness: 2px;\n}\n\n.dyson-inspired .brand-section--dark .brand-link, .dyson-inspired .brand-hero .brand-link, .dyson-inspired .brand-footer .brand-link {\n  color: var(--dy-color-white);\n}\n\n.dyson-inspired .brand-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--dy-space-8);\n  min-height: 48px;\n  padding: 16px 24px;\n  border: 1px solid transparent;\n  border-radius: var(--dy-radius-control);\n  font-family: inherit;\n  font-size: var(--dy-font-size-body);\n  font-weight: 500;\n  line-height: 1.25;\n  text-align: center;\n  text-decoration: none;\n  cursor: pointer;\n  transition: background-color var(--dy-motion-fast) var(--dy-motion-ease), color var(--dy-motion-fast) var(--dy-motion-ease), border-color var(--dy-motion-fast) var(--dy-motion-ease);\n}\n\n.dyson-inspired .brand-button--primary {\n  background-color: var(--dy-color-ink);\n  color: var(--dy-color-white);\n  border-color: var(--dy-color-ink);\n}\n\n.dyson-inspired .brand-button--primary:hover {\n  background-color: var(--dy-color-black);\n  border-color: var(--dy-color-black);\n}\n\n.dyson-inspired .brand-button--purchase {\n  background-color: var(--dy-color-green);\n  color: var(--dy-color-black);\n  border-color: var(--dy-color-green);\n}\n\n.dyson-inspired .brand-button--purchase:hover {\n  box-shadow: inset 0 0 0 2px var(--dy-color-black);\n}\n\n.dyson-inspired .brand-button--secondary {\n  color: var(--dy-color-ink);\n  background-color: transparent;\n  border-color: var(--dy-color-ink);\n}\n\n.dyson-inspired .brand-button--secondary:hover {\n  background-color: var(--dy-color-light);\n}\n\n.dyson-inspired .brand-button--inverse {\n  color: var(--dy-color-black);\n  background-color: var(--dy-color-white);\n  border-color: var(--dy-color-white);\n}\n\n.dyson-inspired .brand-button--inverse:hover {\n  background-color: var(--dy-color-light);\n  border-color: var(--dy-color-light);\n}\n\n.dyson-inspired .brand-button--text {\n  color: inherit;\n  background-color: transparent;\n  border-color: transparent;\n  padding-inline: 0;\n  text-decoration: underline;\n  text-underline-offset: 4px;\n}\n\n.dyson-inspired .brand-button:disabled, .dyson-inspired .brand-button[aria-disabled=\"true\"] {\n  color: var(--dy-color-secondary);\n  background-color: var(--dy-color-light);\n  border-color: var(--dy-color-divider);\n  box-shadow: none;\n  cursor: not-allowed;\n}\n\n.dyson-inspired .brand-button-group {\n  display: flex;\n  flex-wrap: wrap;\n  gap: var(--dy-space-16);\n  align-items: center;\n}\n\n.dyson-inspired :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {\n  outline: var(--dy-focus-width) solid var(--dy-color-blue);\n  outline-offset: var(--dy-focus-offset);\n}\n\n.dyson-inspired .brand-header :focus-visible, .dyson-inspired .brand-footer :focus-visible, .dyson-inspired .brand-hero :focus-visible, .dyson-inspired .brand-section--dark :focus-visible {\n  outline-color: var(--dy-color-white);\n}\n\n.dyson-inspired .brand-card {\n  color: var(--dy-color-ink);\n  background-color: var(--dy-color-white);\n  border: var(--dy-border-width) solid var(--dy-color-light);\n  border-radius: var(--dy-radius-card);\n  padding: var(--dy-space-24);\n  box-shadow: var(--dy-shadow-flat);\n  display: flex;\n  flex-direction: column;\n  gap: var(--dy-space-16);\n  min-width: 0;\n}\n\n.dyson-inspired .brand-card__media {\n  display: block;\n  width: 100%;\n  height: auto;\n  aspect-ratio: 1 / 1;\n  object-fit: contain;\n}\n\n.dyson-inspired .brand-card__actions {\n  margin-top: auto;\n}\n\n.dyson-inspired .brand-product-grid {\n  display: grid;\n  grid-template-columns: minmax(0, 1fr);\n  gap: var(--dy-space-24);\n}\n\n.dyson-inspired .brand-price {\n  font-size: var(--dy-font-size-h3);\n  font-weight: 400;\n  line-height: 1.3;\n  color: var(--dy-color-ink);\n}\n\n.dyson-inspired .brand-price--old {\n  font-size: var(--dy-font-size-small);\n  text-decoration: line-through;\n  color: var(--dy-color-secondary);\n}\n\n.dyson-inspired .brand-badge {\n  display: inline-flex;\n  align-self: flex-start;\n  padding: 4px 8px;\n  border-radius: var(--dy-radius-badge);\n  background-color: var(--dy-color-brown);\n  color: var(--dy-color-white);\n  font-size: var(--dy-font-size-caption);\n  font-weight: 500;\n  line-height: 1.4;\n}\n\n.dyson-inspired .brand-field {\n  display: grid;\n  gap: var(--dy-space-8);\n}\n\n.dyson-inspired .brand-label {\n  font-size: var(--dy-font-size-small);\n  font-weight: 500;\n}\n\n.dyson-inspired .brand-input, .dyson-inspired .brand-select, .dyson-inspired .brand-textarea {\n  width: 100%;\n  min-height: 48px;\n  padding: 12px 16px;\n  font-family: inherit;\n  font-size: var(--dy-font-size-body);\n  line-height: 1.5;\n  color: var(--dy-color-ink);\n  background-color: var(--dy-color-white);\n  border: 1px solid var(--dy-color-outline);\n  border-radius: var(--dy-radius-control);\n}\n\n.dyson-inspired .brand-input::placeholder, .dyson-inspired .brand-textarea::placeholder {\n  color: var(--dy-color-secondary);\n  opacity: 1;\n}\n\n.dyson-inspired .brand-input:disabled, .dyson-inspired .brand-select:disabled, .dyson-inspired .brand-textarea:disabled {\n  background-color: var(--dy-color-light);\n  cursor: not-allowed;\n}\n\n.dyson-inspired .brand-textarea {\n  min-height: 144px;\n  resize: vertical;\n}\n\n.dyson-inspired .brand-help {\n  color: var(--dy-color-secondary);\n  font-size: var(--dy-font-size-caption);\n}\n\n.dyson-inspired .brand-divider {\n  border: 0;\n  border-top: 1px solid var(--dy-color-divider);\n  margin-block: var(--dy-space-32);\n}\n\n.dyson-inspired .brand-accordion {\n  border-block-start: 1px solid var(--dy-color-divider);\n}\n\n.dyson-inspired .brand-accordion > summary {\n  cursor: pointer;\n  padding-block: var(--dy-space-20);\n  font-size: var(--dy-font-size-lead);\n  font-weight: 400;\n}\n\n.dyson-inspired .brand-accordion__content {\n  padding-bottom: var(--dy-space-24);\n}\n\n.dyson-inspired .brand-footer {\n  background-color: var(--dy-color-black);\n  color: var(--dy-color-white);\n  padding-block: var(--dy-space-48);\n}\n\n.dyson-inspired .brand-footer__grid {\n  display: grid;\n  grid-template-columns: minmax(0, 1fr);\n  gap: var(--dy-space-32);\n}\n\n.dyson-inspired .brand-footer a {\n  color: inherit;\n}\n\n.dyson-inspired .brand-footer .brand-legal {\n  color: var(--dy-color-white);\n}\n\n@media (min-width: 640px) {\n  .dyson-inspired .brand-product-grid {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n  .dyson-inspired .brand-footer__grid {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n}\n\n@media (min-width: 1024px) {\n  .dyson-inspired .brand-hero__layout {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n  .dyson-inspired .brand-product-grid {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n\n  .dyson-inspired .brand-footer__grid {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n}\n\n@media (max-width: 639px) {\n  .dyson-inspired {\n    --dy-page-gutter: 16px;\n    --dy-section-space: 32px;\n    --dy-font-size-h1: 32px;\n    --dy-font-size-h2: 24px;\n  }\n\n  .dyson-inspired .brand-hero {\n    padding-block: 40px;\n  }\n\n  .dyson-inspired .brand-button-group {\n    align-items: stretch;\n    flex-direction: column;\n  }\n\n  .dyson-inspired .brand-header__inner {\n    min-height: 64px;\n  }\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .dyson-inspired .brand-button {\n    transition: none;\n  }\n}\n",
+        "usage": [
+            "Use implementation.cssText as a stylesheet, or use the supplied dyson-inspired.css.",
+            "Add class=\"dyson-inspired\" to the page body or a wrapper around the area being restyled.",
+            "Map your existing markup to the supplied brand-* component classes, or adapt their selectors.",
+            "The font stack uses local fonts only unless your project separately supplies a licensed @font-face definition.",
+            "The CSS does not implement menus, carts, dialog focus management or other application logic.",
+            "aria-disabled only styles an element; disable its behavior in your application. Use the disabled attribute on native buttons.",
+            "Review contrast on custom imagery and surfaces, keyboard navigation, responsive layouts and font fallbacks in your own site."
+        ],
+        "minimalMarkupExample": "<div class=\"dyson-inspired\"><header class=\"brand-header\"><div class=\"brand-container brand-header__inner\">Your brand</div></header><main><section class=\"brand-hero\"><div class=\"brand-container\"><h1>Your headline</h1><p class=\"brand-lead\">Your own description.</p><a class=\"brand-button brand-button--purchase\" href=\"/shop\">Shop products</a></div></section></main></div>"
     },
-    {
-      "field": "responsiveAndInteractiveValues",
-      "resolution": "All implementation breakpoints, hover treatments, focus styles, motion, z-index, grid behavior and touch-target sizes are author-selected, not extracted."
+    "liveExtractionCompanion": {
+        "file": "extract-dyson-branding.js",
+        "purpose": "Run on the loaded target page in your browser to export accessible live CSSOM rules, declarations, custom properties, font metadata and computed-style inventories.",
+        "executionStatus": "not_run_on_live_dyson_site",
+        "networkRequestsMadeByScript": false,
+        "uploadsData": false,
+        "fontBinariesDownloadedByScript": false,
+        "limitations": [
+            "Cross-origin stylesheet rules may be inaccessible.",
+            "Closed shadow roots and iframe documents are excluded.",
+            "Computed values describe the current viewport and state only.",
+            "Other pages and untriggered lazy-loaded styles are not included.",
+            "CSSOM serialization is normalized and does not retain source comments or formatting."
+        ]
+    },
+    "sources": [
+        {
+            "id": "dyson-uk",
+            "url": "https://www.dyson.co.uk/en",
+            "kind": "requested_primary_website",
+            "accessedOn": "2026-11-17",
+            "scope": "Page text only. The live CSS, HTML source and computed styles were not accessible."
+        },
+        {
+            "id": "uk-font-report",
+            "url": "https://whogetsmydata.com/website/dyson.co.uk",
+            "kind": "independent_firsthand_browser_scan",
+            "scanDate": "2026-10-02",
+            "accessedOn": "2026-11-17",
+            "scope": "Reports DysonFutura and FoundryGridnik as self-hosted families across the pages it checked. Not a live CSS extraction by this assistant."
+        },
+        {
+            "id": "vasa-reference",
+            "url": "https://inspiration.vasa.works/item/website-styles/dyson",
+            "kind": "third_party_design_reference",
+            "referencedWebsite": "https://dyson.com",
+            "accessedOn": "2026-11-17",
+            "scope": "Published palette, font sizes and component measurements. Market and capture date are not confirmed as the requested UK page."
+        },
+        {
+            "id": "refero-reference",
+            "url": "https://styles.refero.design/style/96845df2-7ddb-420a-814e-c339f95a6554",
+            "kind": "third_party_design_reference",
+            "referencedWebsite": "https://dyson.com",
+            "accessedOn": "2026-11-17",
+            "scope": "Published design-reference measurements. Not independently verified against the current UK page."
+        },
+        {
+            "id": "mdn-cssom",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/cssRules",
+            "kind": "browser_api_documentation",
+            "accessedOn": "2026-11-17",
+            "scope": "Documentation for the separate browser-side exporter."
+        },
+        {
+            "id": "mdn-computed-style",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle",
+            "kind": "browser_api_documentation",
+            "accessedOn": "2026-11-17",
+            "scope": "Documentation for resolved element and pseudo-element styles."
+        }
+    ],
+    "validation": {
+        "jsonParsed": true,
+        "cssParsed": true,
+        "cssTextMatchesStandaloneFile": true,
+        "referenceSourceIdsValidated": true,
+        "localThemeViewportWidthsPx": [1440, 390],
+        "localThemeHorizontalOverflow": false,
+        "exporterJavaScriptSyntaxChecked": true,
+        "exporterTestedWithLocalSyntheticFixtures": true,
+        "fixtureNotes": "CSSOM security errors and import traversal used simulated fixtures; no live-site validation was performed.",
+        "liveDysonSiteTested": false
     }
-  ],
-  "implementation": {
-    "status": "original_proposed_implementation_not_extracted_source",
-    "scopeClass": "dyson-inspired",
-    "cssPropertyConvention": "kebab-case",
-    "cssVariables": {
-      "--dy-color-black": "#000000",
-      "--dy-color-ink": "#333333",
-      "--dy-color-secondary": "#555555",
-      "--dy-color-muted": "#999999",
-      "--dy-color-outline": "#919191",
-      "--dy-color-divider": "#dadada",
-      "--dy-color-light": "#ebebeb",
-      "--dy-color-white": "#ffffff",
-      "--dy-color-cream": "#fff8e6",
-      "--dy-color-green": "#79b928",
-      "--dy-color-blue": "#0066cc",
-      "--dy-color-cyan": "#149ecc",
-      "--dy-color-brown": "#ac5d00",
-      "--dy-font-sans": "\"DysonFutura\", \"Futura\", \"Avenir Next\", Arial, sans-serif",
-      "--dy-font-weight-light": "300",
-      "--dy-font-weight-regular": "400",
-      "--dy-font-weight-medium": "500",
-      "--dy-font-size-caption": "12px",
-      "--dy-font-size-small": "14px",
-      "--dy-font-size-body": "16px",
-      "--dy-font-size-lead": "18px",
-      "--dy-font-size-h3": "24px",
-      "--dy-font-size-h2": "28px",
-      "--dy-font-size-h1": "36px",
-      "--dy-line-height-body": "1.5",
-      "--dy-line-height-heading": "1.2",
-      "--dy-content-max": "1200px",
-      "--dy-page-gutter": "24px",
-      "--dy-section-space": "48px",
-      "--dy-radius-control": "0px",
-      "--dy-radius-card": "0px",
-      "--dy-radius-badge": "2px",
-      "--dy-radius-media": "8px",
-      "--dy-border-width": "1px",
-      "--dy-focus-width": "3px",
-      "--dy-focus-offset": "3px",
-      "--dy-shadow-flat": "none",
-      "--dy-motion-fast": "160ms",
-      "--dy-motion-ease": "ease-out",
-      "--dy-layer-header": "20",
-      "--dy-layer-overlay": "100",
-      "--dy-layer-dialog": "110",
-      "--dy-space-0": "0px",
-      "--dy-space-4": "4px",
-      "--dy-space-8": "8px",
-      "--dy-space-12": "12px",
-      "--dy-space-16": "16px",
-      "--dy-space-20": "20px",
-      "--dy-space-24": "24px",
-      "--dy-space-28": "28px",
-      "--dy-space-32": "32px",
-      "--dy-space-40": "40px",
-      "--dy-space-44": "44px",
-      "--dy-space-48": "48px",
-      "--dy-space-64": "64px",
-      "--dy-space-80": "80px",
-      "--dy-space-96": "96px"
-    },
-    "components": {
-      "page": {
-        "selector": ".dyson-inspired",
-        "declarations": {
-          "margin": "0",
-          "color": "var(--dy-color-ink)",
-          "background-color": "var(--dy-color-white)",
-          "font-family": "var(--dy-font-sans)",
-          "font-size": "var(--dy-font-size-body)",
-          "font-weight": "400",
-          "line-height": "var(--dy-line-height-body)",
-          "text-rendering": "optimizeLegibility"
-        }
-      },
-      "container": {
-        "selector": ".dyson-inspired .brand-container",
-        "declarations": {
-          "width": "100%",
-          "max-width": "var(--dy-content-max)",
-          "margin-inline": "auto",
-          "padding-inline": "var(--dy-page-gutter)"
-        }
-      },
-      "section": {
-        "selector": ".dyson-inspired .brand-section",
-        "declarations": {
-          "padding-block": "var(--dy-section-space)"
-        }
-      },
-      "header": {
-        "selector": ".dyson-inspired .brand-header",
-        "declarations": {
-          "background-color": "var(--dy-color-black)",
-          "color": "var(--dy-color-white)",
-          "position": "relative",
-          "z-index": "var(--dy-layer-header)"
-        }
-      },
-      "navigation": {
-        "selector": ".dyson-inspired .brand-nav",
-        "declarations": {
-          "display": "flex",
-          "align-items": "center",
-          "flex-wrap": "wrap",
-          "gap": "var(--dy-space-24)"
-        }
-      },
-      "hero": {
-        "selector": ".dyson-inspired .brand-hero",
-        "declarations": {
-          "color": "var(--dy-color-white)",
-          "background-color": "var(--dy-color-black)",
-          "padding-block": "var(--dy-space-64)"
-        }
-      },
-      "headings": {
-        "selector": ".dyson-inspired h1, .dyson-inspired h2, .dyson-inspired h3, .dyson-inspired .brand-heading",
-        "declarations": {
-          "margin": "0 0 var(--dy-space-16)",
-          "font-family": "var(--dy-font-sans)",
-          "font-weight": "300",
-          "line-height": "var(--dy-line-height-heading)",
-          "letter-spacing": "normal"
-        }
-      },
-      "link": {
-        "selector": ".dyson-inspired .brand-link",
-        "declarations": {
-          "color": "var(--dy-color-blue)",
-          "text-decoration": "underline",
-          "text-underline-offset": "3px"
-        }
-      },
-      "button": {
-        "selector": ".dyson-inspired .brand-button",
-        "declarations": {
-          "display": "inline-flex",
-          "align-items": "center",
-          "justify-content": "center",
-          "gap": "var(--dy-space-8)",
-          "min-height": "48px",
-          "padding": "16px 24px",
-          "border": "1px solid transparent",
-          "border-radius": "var(--dy-radius-control)",
-          "font-family": "inherit",
-          "font-size": "var(--dy-font-size-body)",
-          "font-weight": "500",
-          "line-height": "1.25",
-          "text-align": "center",
-          "text-decoration": "none",
-          "cursor": "pointer",
-          "transition": "background-color var(--dy-motion-fast) var(--dy-motion-ease), color var(--dy-motion-fast) var(--dy-motion-ease), border-color var(--dy-motion-fast) var(--dy-motion-ease)"
-        }
-      },
-      "focus": {
-        "selector": ".dyson-inspired :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible",
-        "declarations": {
-          "outline": "var(--dy-focus-width) solid var(--dy-color-blue)",
-          "outline-offset": "var(--dy-focus-offset)"
-        }
-      },
-      "productCard": {
-        "selector": ".dyson-inspired .brand-card",
-        "declarations": {
-          "color": "var(--dy-color-ink)",
-          "background-color": "var(--dy-color-white)",
-          "border": "var(--dy-border-width) solid var(--dy-color-light)",
-          "border-radius": "var(--dy-radius-card)",
-          "padding": "var(--dy-space-24)",
-          "box-shadow": "var(--dy-shadow-flat)",
-          "display": "flex",
-          "flex-direction": "column",
-          "gap": "var(--dy-space-16)",
-          "min-width": "0"
-        }
-      },
-      "price": {
-        "selector": ".dyson-inspired .brand-price",
-        "declarations": {
-          "font-size": "var(--dy-font-size-h3)",
-          "font-weight": "400",
-          "line-height": "1.3",
-          "color": "var(--dy-color-ink)"
-        }
-      },
-      "badge": {
-        "selector": ".dyson-inspired .brand-badge",
-        "declarations": {
-          "display": "inline-flex",
-          "align-self": "flex-start",
-          "padding": "4px 8px",
-          "border-radius": "var(--dy-radius-badge)",
-          "background-color": "var(--dy-color-brown)",
-          "color": "var(--dy-color-white)",
-          "font-size": "var(--dy-font-size-caption)",
-          "font-weight": "500",
-          "line-height": "1.4"
-        }
-      },
-      "field": {
-        "selector": ".dyson-inspired .brand-field",
-        "declarations": {
-          "display": "grid",
-          "gap": "var(--dy-space-8)"
-        }
-      },
-      "input": {
-        "selector": ".dyson-inspired .brand-input, .dyson-inspired .brand-select, .dyson-inspired .brand-textarea",
-        "declarations": {
-          "width": "100%",
-          "min-height": "48px",
-          "padding": "12px 16px",
-          "font-family": "inherit",
-          "font-size": "var(--dy-font-size-body)",
-          "line-height": "1.5",
-          "color": "var(--dy-color-ink)",
-          "background-color": "var(--dy-color-white)",
-          "border": "1px solid var(--dy-color-outline)",
-          "border-radius": "var(--dy-radius-control)"
-        }
-      },
-      "accordion": {
-        "selector": ".dyson-inspired .brand-accordion",
-        "declarations": {
-          "border-block-start": "1px solid var(--dy-color-divider)"
-        }
-      },
-      "legalText": {
-        "selector": ".dyson-inspired .brand-legal",
-        "declarations": {
-          "color": "var(--dy-color-secondary)",
-          "font-size": "var(--dy-font-size-caption)",
-          "line-height": "1.6"
-        }
-      },
-      "footer": {
-        "selector": ".dyson-inspired .brand-footer",
-        "declarations": {
-          "background-color": "var(--dy-color-black)",
-          "color": "var(--dy-color-white)",
-          "padding-block": "var(--dy-space-48)"
-        }
-      }
-    },
-    "rules": [
-      {
-        "selector": ".dyson-inspired, .dyson-inspired *, .dyson-inspired *::before, .dyson-inspired *::after",
-        "declarations": {
-          "box-sizing": "border-box"
-        }
-      },
-      {
-        "selector": ".dyson-inspired",
-        "declarations": {
-          "margin": "0",
-          "color": "var(--dy-color-ink)",
-          "background-color": "var(--dy-color-white)",
-          "font-family": "var(--dy-font-sans)",
-          "font-size": "var(--dy-font-size-body)",
-          "font-weight": "400",
-          "line-height": "var(--dy-line-height-body)",
-          "text-rendering": "optimizeLegibility"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-container",
-        "declarations": {
-          "width": "100%",
-          "max-width": "var(--dy-content-max)",
-          "margin-inline": "auto",
-          "padding-inline": "var(--dy-page-gutter)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-section",
-        "declarations": {
-          "padding-block": "var(--dy-section-space)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-section--light",
-        "declarations": {
-          "background-color": "var(--dy-color-light)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-section--warm",
-        "declarations": {
-          "background-color": "var(--dy-color-cream)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-section--dark",
-        "declarations": {
-          "color": "var(--dy-color-white)",
-          "background-color": "var(--dy-color-black)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-header",
-        "declarations": {
-          "background-color": "var(--dy-color-black)",
-          "color": "var(--dy-color-white)",
-          "position": "relative",
-          "z-index": "var(--dy-layer-header)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-header__inner",
-        "declarations": {
-          "display": "flex",
-          "align-items": "center",
-          "justify-content": "space-between",
-          "flex-wrap": "wrap",
-          "gap": "var(--dy-space-24)",
-          "min-height": "80px",
-          "padding-block": "var(--dy-space-16)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-nav",
-        "declarations": {
-          "display": "flex",
-          "align-items": "center",
-          "flex-wrap": "wrap",
-          "gap": "var(--dy-space-24)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-nav a",
-        "declarations": {
-          "color": "inherit",
-          "text-decoration": "none",
-          "font-size": "var(--dy-font-size-small)",
-          "font-weight": "500"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-nav a:hover",
-        "declarations": {
-          "text-decoration": "underline",
-          "text-underline-offset": "4px"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-hero",
-        "declarations": {
-          "color": "var(--dy-color-white)",
-          "background-color": "var(--dy-color-black)",
-          "padding-block": "var(--dy-space-64)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-hero__layout",
-        "declarations": {
-          "display": "grid",
-          "grid-template-columns": "minmax(0, 1fr)",
-          "gap": "var(--dy-space-32)",
-          "align-items": "center"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-hero__copy",
-        "declarations": {
-          "max-width": "36rem"
-        }
-      },
-      {
-        "selector": ".dyson-inspired h1, .dyson-inspired h2, .dyson-inspired h3, .dyson-inspired .brand-heading",
-        "declarations": {
-          "margin": "0 0 var(--dy-space-16)",
-          "font-family": "var(--dy-font-sans)",
-          "font-weight": "300",
-          "line-height": "var(--dy-line-height-heading)",
-          "letter-spacing": "normal"
-        }
-      },
-      {
-        "selector": ".dyson-inspired h1, .dyson-inspired .brand-heading--1",
-        "declarations": {
-          "font-size": "var(--dy-font-size-h1)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired h2, .dyson-inspired .brand-heading--2",
-        "declarations": {
-          "font-size": "var(--dy-font-size-h2)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired h3, .dyson-inspired .brand-heading--3",
-        "declarations": {
-          "font-size": "var(--dy-font-size-h3)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired p",
-        "declarations": {
-          "margin": "0 0 var(--dy-space-16)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-lead",
-        "declarations": {
-          "font-size": "var(--dy-font-size-lead)",
-          "line-height": "1.5"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-small",
-        "declarations": {
-          "font-size": "var(--dy-font-size-small)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-legal",
-        "declarations": {
-          "color": "var(--dy-color-secondary)",
-          "font-size": "var(--dy-font-size-caption)",
-          "line-height": "1.6"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-link",
-        "declarations": {
-          "color": "var(--dy-color-blue)",
-          "text-decoration": "underline",
-          "text-underline-offset": "3px"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-link:hover",
-        "declarations": {
-          "text-decoration-thickness": "2px"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-section--dark .brand-link, .dyson-inspired .brand-hero .brand-link, .dyson-inspired .brand-footer .brand-link",
-        "declarations": {
-          "color": "var(--dy-color-white)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button",
-        "declarations": {
-          "display": "inline-flex",
-          "align-items": "center",
-          "justify-content": "center",
-          "gap": "var(--dy-space-8)",
-          "min-height": "48px",
-          "padding": "16px 24px",
-          "border": "1px solid transparent",
-          "border-radius": "var(--dy-radius-control)",
-          "font-family": "inherit",
-          "font-size": "var(--dy-font-size-body)",
-          "font-weight": "500",
-          "line-height": "1.25",
-          "text-align": "center",
-          "text-decoration": "none",
-          "cursor": "pointer",
-          "transition": "background-color var(--dy-motion-fast) var(--dy-motion-ease), color var(--dy-motion-fast) var(--dy-motion-ease), border-color var(--dy-motion-fast) var(--dy-motion-ease)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button--primary",
-        "declarations": {
-          "background-color": "var(--dy-color-ink)",
-          "color": "var(--dy-color-white)",
-          "border-color": "var(--dy-color-ink)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button--primary:hover",
-        "declarations": {
-          "background-color": "var(--dy-color-black)",
-          "border-color": "var(--dy-color-black)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button--purchase",
-        "declarations": {
-          "background-color": "var(--dy-color-green)",
-          "color": "var(--dy-color-black)",
-          "border-color": "var(--dy-color-green)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button--purchase:hover",
-        "declarations": {
-          "box-shadow": "inset 0 0 0 2px var(--dy-color-black)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button--secondary",
-        "declarations": {
-          "color": "var(--dy-color-ink)",
-          "background-color": "transparent",
-          "border-color": "var(--dy-color-ink)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button--secondary:hover",
-        "declarations": {
-          "background-color": "var(--dy-color-light)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button--inverse",
-        "declarations": {
-          "color": "var(--dy-color-black)",
-          "background-color": "var(--dy-color-white)",
-          "border-color": "var(--dy-color-white)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button--inverse:hover",
-        "declarations": {
-          "background-color": "var(--dy-color-light)",
-          "border-color": "var(--dy-color-light)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button--text",
-        "declarations": {
-          "color": "inherit",
-          "background-color": "transparent",
-          "border-color": "transparent",
-          "padding-inline": "0",
-          "text-decoration": "underline",
-          "text-underline-offset": "4px"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button:disabled, .dyson-inspired .brand-button[aria-disabled=\"true\"]",
-        "declarations": {
-          "color": "var(--dy-color-secondary)",
-          "background-color": "var(--dy-color-light)",
-          "border-color": "var(--dy-color-divider)",
-          "box-shadow": "none",
-          "cursor": "not-allowed"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-button-group",
-        "declarations": {
-          "display": "flex",
-          "flex-wrap": "wrap",
-          "gap": "var(--dy-space-16)",
-          "align-items": "center"
-        }
-      },
-      {
-        "selector": ".dyson-inspired :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible",
-        "declarations": {
-          "outline": "var(--dy-focus-width) solid var(--dy-color-blue)",
-          "outline-offset": "var(--dy-focus-offset)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-header :focus-visible, .dyson-inspired .brand-footer :focus-visible, .dyson-inspired .brand-hero :focus-visible, .dyson-inspired .brand-section--dark :focus-visible",
-        "declarations": {
-          "outline-color": "var(--dy-color-white)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-card",
-        "declarations": {
-          "color": "var(--dy-color-ink)",
-          "background-color": "var(--dy-color-white)",
-          "border": "var(--dy-border-width) solid var(--dy-color-light)",
-          "border-radius": "var(--dy-radius-card)",
-          "padding": "var(--dy-space-24)",
-          "box-shadow": "var(--dy-shadow-flat)",
-          "display": "flex",
-          "flex-direction": "column",
-          "gap": "var(--dy-space-16)",
-          "min-width": "0"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-card__media",
-        "declarations": {
-          "display": "block",
-          "width": "100%",
-          "height": "auto",
-          "aspect-ratio": "1 / 1",
-          "object-fit": "contain"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-card__actions",
-        "declarations": {
-          "margin-top": "auto"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-product-grid",
-        "declarations": {
-          "display": "grid",
-          "grid-template-columns": "minmax(0, 1fr)",
-          "gap": "var(--dy-space-24)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-price",
-        "declarations": {
-          "font-size": "var(--dy-font-size-h3)",
-          "font-weight": "400",
-          "line-height": "1.3",
-          "color": "var(--dy-color-ink)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-price--old",
-        "declarations": {
-          "font-size": "var(--dy-font-size-small)",
-          "text-decoration": "line-through",
-          "color": "var(--dy-color-secondary)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-badge",
-        "declarations": {
-          "display": "inline-flex",
-          "align-self": "flex-start",
-          "padding": "4px 8px",
-          "border-radius": "var(--dy-radius-badge)",
-          "background-color": "var(--dy-color-brown)",
-          "color": "var(--dy-color-white)",
-          "font-size": "var(--dy-font-size-caption)",
-          "font-weight": "500",
-          "line-height": "1.4"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-field",
-        "declarations": {
-          "display": "grid",
-          "gap": "var(--dy-space-8)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-label",
-        "declarations": {
-          "font-size": "var(--dy-font-size-small)",
-          "font-weight": "500"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-input, .dyson-inspired .brand-select, .dyson-inspired .brand-textarea",
-        "declarations": {
-          "width": "100%",
-          "min-height": "48px",
-          "padding": "12px 16px",
-          "font-family": "inherit",
-          "font-size": "var(--dy-font-size-body)",
-          "line-height": "1.5",
-          "color": "var(--dy-color-ink)",
-          "background-color": "var(--dy-color-white)",
-          "border": "1px solid var(--dy-color-outline)",
-          "border-radius": "var(--dy-radius-control)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-input::placeholder, .dyson-inspired .brand-textarea::placeholder",
-        "declarations": {
-          "color": "var(--dy-color-secondary)",
-          "opacity": "1"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-input:disabled, .dyson-inspired .brand-select:disabled, .dyson-inspired .brand-textarea:disabled",
-        "declarations": {
-          "background-color": "var(--dy-color-light)",
-          "cursor": "not-allowed"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-textarea",
-        "declarations": {
-          "min-height": "144px",
-          "resize": "vertical"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-help",
-        "declarations": {
-          "color": "var(--dy-color-secondary)",
-          "font-size": "var(--dy-font-size-caption)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-divider",
-        "declarations": {
-          "border": "0",
-          "border-top": "1px solid var(--dy-color-divider)",
-          "margin-block": "var(--dy-space-32)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-accordion",
-        "declarations": {
-          "border-block-start": "1px solid var(--dy-color-divider)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-accordion > summary",
-        "declarations": {
-          "cursor": "pointer",
-          "padding-block": "var(--dy-space-20)",
-          "font-size": "var(--dy-font-size-lead)",
-          "font-weight": "400"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-accordion__content",
-        "declarations": {
-          "padding-bottom": "var(--dy-space-24)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-footer",
-        "declarations": {
-          "background-color": "var(--dy-color-black)",
-          "color": "var(--dy-color-white)",
-          "padding-block": "var(--dy-space-48)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-footer__grid",
-        "declarations": {
-          "display": "grid",
-          "grid-template-columns": "minmax(0, 1fr)",
-          "gap": "var(--dy-space-32)"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-footer a",
-        "declarations": {
-          "color": "inherit"
-        }
-      },
-      {
-        "selector": ".dyson-inspired .brand-footer .brand-legal",
-        "declarations": {
-          "color": "var(--dy-color-white)"
-        }
-      }
-    ],
-    "mediaQueries": [
-      {
-        "query": "(min-width: 640px)",
-        "rules": [
-          {
-            "selector": ".dyson-inspired .brand-product-grid",
-            "declarations": {
-              "grid-template-columns": "repeat(2, minmax(0, 1fr))"
-            }
-          },
-          {
-            "selector": ".dyson-inspired .brand-footer__grid",
-            "declarations": {
-              "grid-template-columns": "repeat(2, minmax(0, 1fr))"
-            }
-          }
-        ]
-      },
-      {
-        "query": "(min-width: 1024px)",
-        "rules": [
-          {
-            "selector": ".dyson-inspired .brand-hero__layout",
-            "declarations": {
-              "grid-template-columns": "repeat(2, minmax(0, 1fr))"
-            }
-          },
-          {
-            "selector": ".dyson-inspired .brand-product-grid",
-            "declarations": {
-              "grid-template-columns": "repeat(3, minmax(0, 1fr))"
-            }
-          },
-          {
-            "selector": ".dyson-inspired .brand-footer__grid",
-            "declarations": {
-              "grid-template-columns": "repeat(4, minmax(0, 1fr))"
-            }
-          }
-        ]
-      },
-      {
-        "query": "(max-width: 639px)",
-        "rules": [
-          {
-            "selector": ".dyson-inspired",
-            "declarations": {
-              "--dy-page-gutter": "16px",
-              "--dy-section-space": "32px",
-              "--dy-font-size-h1": "32px",
-              "--dy-font-size-h2": "24px"
-            }
-          },
-          {
-            "selector": ".dyson-inspired .brand-hero",
-            "declarations": {
-              "padding-block": "40px"
-            }
-          },
-          {
-            "selector": ".dyson-inspired .brand-button-group",
-            "declarations": {
-              "align-items": "stretch",
-              "flex-direction": "column"
-            }
-          },
-          {
-            "selector": ".dyson-inspired .brand-header__inner",
-            "declarations": {
-              "min-height": "64px"
-            }
-          }
-        ]
-      },
-      {
-        "query": "(prefers-reduced-motion: reduce)",
-        "rules": [
-          {
-            "selector": ".dyson-inspired .brand-button",
-            "declarations": {
-              "transition": "none"
-            }
-          }
-        ]
-      }
-    ],
-    "cssText": "/* Dyson-inspired REFERENCE IMPLEMENTATION, prepared 2026-11-17.\n * This is original component CSS, NOT a dump of dyson.co.uk stylesheets.\n * Published reference values are unverified against the current UK page.\n * Scope with class=\"dyson-inspired\" on a wrapper or <body>.\n * No logos, photographs or font binaries are included.\n * Load a licensed font separately, or allow the local fallback stack.\n */\n\n.dyson-inspired {\n  --dy-color-black: #000000;\n  --dy-color-ink: #333333;\n  --dy-color-secondary: #555555;\n  --dy-color-muted: #999999;\n  --dy-color-outline: #919191;\n  --dy-color-divider: #dadada;\n  --dy-color-light: #ebebeb;\n  --dy-color-white: #ffffff;\n  --dy-color-cream: #fff8e6;\n  --dy-color-green: #79b928;\n  --dy-color-blue: #0066cc;\n  --dy-color-cyan: #149ecc;\n  --dy-color-brown: #ac5d00;\n  --dy-font-sans: \"DysonFutura\", \"Futura\", \"Avenir Next\", Arial, sans-serif;\n  --dy-font-weight-light: 300;\n  --dy-font-weight-regular: 400;\n  --dy-font-weight-medium: 500;\n  --dy-font-size-caption: 12px;\n  --dy-font-size-small: 14px;\n  --dy-font-size-body: 16px;\n  --dy-font-size-lead: 18px;\n  --dy-font-size-h3: 24px;\n  --dy-font-size-h2: 28px;\n  --dy-font-size-h1: 36px;\n  --dy-line-height-body: 1.5;\n  --dy-line-height-heading: 1.2;\n  --dy-content-max: 1200px;\n  --dy-page-gutter: 24px;\n  --dy-section-space: 48px;\n  --dy-radius-control: 0px;\n  --dy-radius-card: 0px;\n  --dy-radius-badge: 2px;\n  --dy-radius-media: 8px;\n  --dy-border-width: 1px;\n  --dy-focus-width: 3px;\n  --dy-focus-offset: 3px;\n  --dy-shadow-flat: none;\n  --dy-motion-fast: 160ms;\n  --dy-motion-ease: ease-out;\n  --dy-layer-header: 20;\n  --dy-layer-overlay: 100;\n  --dy-layer-dialog: 110;\n  --dy-space-0: 0px;\n  --dy-space-4: 4px;\n  --dy-space-8: 8px;\n  --dy-space-12: 12px;\n  --dy-space-16: 16px;\n  --dy-space-20: 20px;\n  --dy-space-24: 24px;\n  --dy-space-28: 28px;\n  --dy-space-32: 32px;\n  --dy-space-40: 40px;\n  --dy-space-44: 44px;\n  --dy-space-48: 48px;\n  --dy-space-64: 64px;\n  --dy-space-80: 80px;\n  --dy-space-96: 96px;\n}\n\n.dyson-inspired, .dyson-inspired *, .dyson-inspired *::before, .dyson-inspired *::after {\n  box-sizing: border-box;\n}\n\n.dyson-inspired {\n  margin: 0;\n  color: var(--dy-color-ink);\n  background-color: var(--dy-color-white);\n  font-family: var(--dy-font-sans);\n  font-size: var(--dy-font-size-body);\n  font-weight: 400;\n  line-height: var(--dy-line-height-body);\n  text-rendering: optimizeLegibility;\n}\n\n.dyson-inspired .brand-container {\n  width: 100%;\n  max-width: var(--dy-content-max);\n  margin-inline: auto;\n  padding-inline: var(--dy-page-gutter);\n}\n\n.dyson-inspired .brand-section {\n  padding-block: var(--dy-section-space);\n}\n\n.dyson-inspired .brand-section--light {\n  background-color: var(--dy-color-light);\n}\n\n.dyson-inspired .brand-section--warm {\n  background-color: var(--dy-color-cream);\n}\n\n.dyson-inspired .brand-section--dark {\n  color: var(--dy-color-white);\n  background-color: var(--dy-color-black);\n}\n\n.dyson-inspired .brand-header {\n  background-color: var(--dy-color-black);\n  color: var(--dy-color-white);\n  position: relative;\n  z-index: var(--dy-layer-header);\n}\n\n.dyson-inspired .brand-header__inner {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  gap: var(--dy-space-24);\n  min-height: 80px;\n  padding-block: var(--dy-space-16);\n}\n\n.dyson-inspired .brand-nav {\n  display: flex;\n  align-items: center;\n  flex-wrap: wrap;\n  gap: var(--dy-space-24);\n}\n\n.dyson-inspired .brand-nav a {\n  color: inherit;\n  text-decoration: none;\n  font-size: var(--dy-font-size-small);\n  font-weight: 500;\n}\n\n.dyson-inspired .brand-nav a:hover {\n  text-decoration: underline;\n  text-underline-offset: 4px;\n}\n\n.dyson-inspired .brand-hero {\n  color: var(--dy-color-white);\n  background-color: var(--dy-color-black);\n  padding-block: var(--dy-space-64);\n}\n\n.dyson-inspired .brand-hero__layout {\n  display: grid;\n  grid-template-columns: minmax(0, 1fr);\n  gap: var(--dy-space-32);\n  align-items: center;\n}\n\n.dyson-inspired .brand-hero__copy {\n  max-width: 36rem;\n}\n\n.dyson-inspired h1, .dyson-inspired h2, .dyson-inspired h3, .dyson-inspired .brand-heading {\n  margin: 0 0 var(--dy-space-16);\n  font-family: var(--dy-font-sans);\n  font-weight: 300;\n  line-height: var(--dy-line-height-heading);\n  letter-spacing: normal;\n}\n\n.dyson-inspired h1, .dyson-inspired .brand-heading--1 {\n  font-size: var(--dy-font-size-h1);\n}\n\n.dyson-inspired h2, .dyson-inspired .brand-heading--2 {\n  font-size: var(--dy-font-size-h2);\n}\n\n.dyson-inspired h3, .dyson-inspired .brand-heading--3 {\n  font-size: var(--dy-font-size-h3);\n}\n\n.dyson-inspired p {\n  margin: 0 0 var(--dy-space-16);\n}\n\n.dyson-inspired .brand-lead {\n  font-size: var(--dy-font-size-lead);\n  line-height: 1.5;\n}\n\n.dyson-inspired .brand-small {\n  font-size: var(--dy-font-size-small);\n}\n\n.dyson-inspired .brand-legal {\n  color: var(--dy-color-secondary);\n  font-size: var(--dy-font-size-caption);\n  line-height: 1.6;\n}\n\n.dyson-inspired .brand-link {\n  color: var(--dy-color-blue);\n  text-decoration: underline;\n  text-underline-offset: 3px;\n}\n\n.dyson-inspired .brand-link:hover {\n  text-decoration-thickness: 2px;\n}\n\n.dyson-inspired .brand-section--dark .brand-link, .dyson-inspired .brand-hero .brand-link, .dyson-inspired .brand-footer .brand-link {\n  color: var(--dy-color-white);\n}\n\n.dyson-inspired .brand-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--dy-space-8);\n  min-height: 48px;\n  padding: 16px 24px;\n  border: 1px solid transparent;\n  border-radius: var(--dy-radius-control);\n  font-family: inherit;\n  font-size: var(--dy-font-size-body);\n  font-weight: 500;\n  line-height: 1.25;\n  text-align: center;\n  text-decoration: none;\n  cursor: pointer;\n  transition: background-color var(--dy-motion-fast) var(--dy-motion-ease), color var(--dy-motion-fast) var(--dy-motion-ease), border-color var(--dy-motion-fast) var(--dy-motion-ease);\n}\n\n.dyson-inspired .brand-button--primary {\n  background-color: var(--dy-color-ink);\n  color: var(--dy-color-white);\n  border-color: var(--dy-color-ink);\n}\n\n.dyson-inspired .brand-button--primary:hover {\n  background-color: var(--dy-color-black);\n  border-color: var(--dy-color-black);\n}\n\n.dyson-inspired .brand-button--purchase {\n  background-color: var(--dy-color-green);\n  color: var(--dy-color-black);\n  border-color: var(--dy-color-green);\n}\n\n.dyson-inspired .brand-button--purchase:hover {\n  box-shadow: inset 0 0 0 2px var(--dy-color-black);\n}\n\n.dyson-inspired .brand-button--secondary {\n  color: var(--dy-color-ink);\n  background-color: transparent;\n  border-color: var(--dy-color-ink);\n}\n\n.dyson-inspired .brand-button--secondary:hover {\n  background-color: var(--dy-color-light);\n}\n\n.dyson-inspired .brand-button--inverse {\n  color: var(--dy-color-black);\n  background-color: var(--dy-color-white);\n  border-color: var(--dy-color-white);\n}\n\n.dyson-inspired .brand-button--inverse:hover {\n  background-color: var(--dy-color-light);\n  border-color: var(--dy-color-light);\n}\n\n.dyson-inspired .brand-button--text {\n  color: inherit;\n  background-color: transparent;\n  border-color: transparent;\n  padding-inline: 0;\n  text-decoration: underline;\n  text-underline-offset: 4px;\n}\n\n.dyson-inspired .brand-button:disabled, .dyson-inspired .brand-button[aria-disabled=\"true\"] {\n  color: var(--dy-color-secondary);\n  background-color: var(--dy-color-light);\n  border-color: var(--dy-color-divider);\n  box-shadow: none;\n  cursor: not-allowed;\n}\n\n.dyson-inspired .brand-button-group {\n  display: flex;\n  flex-wrap: wrap;\n  gap: var(--dy-space-16);\n  align-items: center;\n}\n\n.dyson-inspired :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {\n  outline: var(--dy-focus-width) solid var(--dy-color-blue);\n  outline-offset: var(--dy-focus-offset);\n}\n\n.dyson-inspired .brand-header :focus-visible, .dyson-inspired .brand-footer :focus-visible, .dyson-inspired .brand-hero :focus-visible, .dyson-inspired .brand-section--dark :focus-visible {\n  outline-color: var(--dy-color-white);\n}\n\n.dyson-inspired .brand-card {\n  color: var(--dy-color-ink);\n  background-color: var(--dy-color-white);\n  border: var(--dy-border-width) solid var(--dy-color-light);\n  border-radius: var(--dy-radius-card);\n  padding: var(--dy-space-24);\n  box-shadow: var(--dy-shadow-flat);\n  display: flex;\n  flex-direction: column;\n  gap: var(--dy-space-16);\n  min-width: 0;\n}\n\n.dyson-inspired .brand-card__media {\n  display: block;\n  width: 100%;\n  height: auto;\n  aspect-ratio: 1 / 1;\n  object-fit: contain;\n}\n\n.dyson-inspired .brand-card__actions {\n  margin-top: auto;\n}\n\n.dyson-inspired .brand-product-grid {\n  display: grid;\n  grid-template-columns: minmax(0, 1fr);\n  gap: var(--dy-space-24);\n}\n\n.dyson-inspired .brand-price {\n  font-size: var(--dy-font-size-h3);\n  font-weight: 400;\n  line-height: 1.3;\n  color: var(--dy-color-ink);\n}\n\n.dyson-inspired .brand-price--old {\n  font-size: var(--dy-font-size-small);\n  text-decoration: line-through;\n  color: var(--dy-color-secondary);\n}\n\n.dyson-inspired .brand-badge {\n  display: inline-flex;\n  align-self: flex-start;\n  padding: 4px 8px;\n  border-radius: var(--dy-radius-badge);\n  background-color: var(--dy-color-brown);\n  color: var(--dy-color-white);\n  font-size: var(--dy-font-size-caption);\n  font-weight: 500;\n  line-height: 1.4;\n}\n\n.dyson-inspired .brand-field {\n  display: grid;\n  gap: var(--dy-space-8);\n}\n\n.dyson-inspired .brand-label {\n  font-size: var(--dy-font-size-small);\n  font-weight: 500;\n}\n\n.dyson-inspired .brand-input, .dyson-inspired .brand-select, .dyson-inspired .brand-textarea {\n  width: 100%;\n  min-height: 48px;\n  padding: 12px 16px;\n  font-family: inherit;\n  font-size: var(--dy-font-size-body);\n  line-height: 1.5;\n  color: var(--dy-color-ink);\n  background-color: var(--dy-color-white);\n  border: 1px solid var(--dy-color-outline);\n  border-radius: var(--dy-radius-control);\n}\n\n.dyson-inspired .brand-input::placeholder, .dyson-inspired .brand-textarea::placeholder {\n  color: var(--dy-color-secondary);\n  opacity: 1;\n}\n\n.dyson-inspired .brand-input:disabled, .dyson-inspired .brand-select:disabled, .dyson-inspired .brand-textarea:disabled {\n  background-color: var(--dy-color-light);\n  cursor: not-allowed;\n}\n\n.dyson-inspired .brand-textarea {\n  min-height: 144px;\n  resize: vertical;\n}\n\n.dyson-inspired .brand-help {\n  color: var(--dy-color-secondary);\n  font-size: var(--dy-font-size-caption);\n}\n\n.dyson-inspired .brand-divider {\n  border: 0;\n  border-top: 1px solid var(--dy-color-divider);\n  margin-block: var(--dy-space-32);\n}\n\n.dyson-inspired .brand-accordion {\n  border-block-start: 1px solid var(--dy-color-divider);\n}\n\n.dyson-inspired .brand-accordion > summary {\n  cursor: pointer;\n  padding-block: var(--dy-space-20);\n  font-size: var(--dy-font-size-lead);\n  font-weight: 400;\n}\n\n.dyson-inspired .brand-accordion__content {\n  padding-bottom: var(--dy-space-24);\n}\n\n.dyson-inspired .brand-footer {\n  background-color: var(--dy-color-black);\n  color: var(--dy-color-white);\n  padding-block: var(--dy-space-48);\n}\n\n.dyson-inspired .brand-footer__grid {\n  display: grid;\n  grid-template-columns: minmax(0, 1fr);\n  gap: var(--dy-space-32);\n}\n\n.dyson-inspired .brand-footer a {\n  color: inherit;\n}\n\n.dyson-inspired .brand-footer .brand-legal {\n  color: var(--dy-color-white);\n}\n\n@media (min-width: 640px) {\n  .dyson-inspired .brand-product-grid {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n  .dyson-inspired .brand-footer__grid {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n}\n\n@media (min-width: 1024px) {\n  .dyson-inspired .brand-hero__layout {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n  .dyson-inspired .brand-product-grid {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n\n  .dyson-inspired .brand-footer__grid {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n}\n\n@media (max-width: 639px) {\n  .dyson-inspired {\n    --dy-page-gutter: 16px;\n    --dy-section-space: 32px;\n    --dy-font-size-h1: 32px;\n    --dy-font-size-h2: 24px;\n  }\n\n  .dyson-inspired .brand-hero {\n    padding-block: 40px;\n  }\n\n  .dyson-inspired .brand-button-group {\n    align-items: stretch;\n    flex-direction: column;\n  }\n\n  .dyson-inspired .brand-header__inner {\n    min-height: 64px;\n  }\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .dyson-inspired .brand-button {\n    transition: none;\n  }\n}\n",
-    "usage": [
-      "Use implementation.cssText as a stylesheet, or use the supplied dyson-inspired.css.",
-      "Add class=\"dyson-inspired\" to the page body or a wrapper around the area being restyled.",
-      "Map your existing markup to the supplied brand-* component classes, or adapt their selectors.",
-      "The font stack uses local fonts only unless your project separately supplies a licensed @font-face definition.",
-      "The CSS does not implement menus, carts, dialog focus management or other application logic.",
-      "aria-disabled only styles an element; disable its behavior in your application. Use the disabled attribute on native buttons.",
-      "Review contrast on custom imagery and surfaces, keyboard navigation, responsive layouts and font fallbacks in your own site."
-    ],
-    "minimalMarkupExample": "<div class=\"dyson-inspired\"><header class=\"brand-header\"><div class=\"brand-container brand-header__inner\">Your brand</div></header><main><section class=\"brand-hero\"><div class=\"brand-container\"><h1>Your headline</h1><p class=\"brand-lead\">Your own description.</p><a class=\"brand-button brand-button--purchase\" href=\"/shop\">Shop products</a></div></section></main></div>"
-  },
-  "liveExtractionCompanion": {
-    "file": "extract-dyson-branding.js",
-    "purpose": "Run on the loaded target page in your browser to export accessible live CSSOM rules, declarations, custom properties, font metadata and computed-style inventories.",
-    "executionStatus": "not_run_on_live_dyson_site",
-    "networkRequestsMadeByScript": false,
-    "uploadsData": false,
-    "fontBinariesDownloadedByScript": false,
-    "limitations": [
-      "Cross-origin stylesheet rules may be inaccessible.",
-      "Closed shadow roots and iframe documents are excluded.",
-      "Computed values describe the current viewport and state only.",
-      "Other pages and untriggered lazy-loaded styles are not included.",
-      "CSSOM serialization is normalized and does not retain source comments or formatting."
-    ]
-  },
-  "sources": [
-    {
-      "id": "dyson-uk",
-      "url": "https://www.dyson.co.uk/en",
-      "kind": "requested_primary_website",
-      "accessedOn": "2026-11-17",
-      "scope": "Page text only. The live CSS, HTML source and computed styles were not accessible."
-    },
-    {
-      "id": "uk-font-report",
-      "url": "https://whogetsmydata.com/website/dyson.co.uk",
-      "kind": "independent_firsthand_browser_scan",
-      "scanDate": "2026-10-02",
-      "accessedOn": "2026-11-17",
-      "scope": "Reports DysonFutura and FoundryGridnik as self-hosted families across the pages it checked. Not a live CSS extraction by this assistant."
-    },
-    {
-      "id": "vasa-reference",
-      "url": "https://inspiration.vasa.works/item/website-styles/dyson",
-      "kind": "third_party_design_reference",
-      "referencedWebsite": "https://dyson.com",
-      "accessedOn": "2026-11-17",
-      "scope": "Published palette, font sizes and component measurements. Market and capture date are not confirmed as the requested UK page."
-    },
-    {
-      "id": "refero-reference",
-      "url": "https://styles.refero.design/style/96845df2-7ddb-420a-814e-c339f95a6554",
-      "kind": "third_party_design_reference",
-      "referencedWebsite": "https://dyson.com",
-      "accessedOn": "2026-11-17",
-      "scope": "Published design-reference measurements. Not independently verified against the current UK page."
-    },
-    {
-      "id": "mdn-cssom",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/cssRules",
-      "kind": "browser_api_documentation",
-      "accessedOn": "2026-11-17",
-      "scope": "Documentation for the separate browser-side exporter."
-    },
-    {
-      "id": "mdn-computed-style",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle",
-      "kind": "browser_api_documentation",
-      "accessedOn": "2026-11-17",
-      "scope": "Documentation for resolved element and pseudo-element styles."
-    }
-  ],
-  "validation": {
-    "jsonParsed": true,
-    "cssParsed": true,
-    "cssTextMatchesStandaloneFile": true,
-    "referenceSourceIdsValidated": true,
-    "localThemeViewportWidthsPx": [
-      1440,
-      390
-    ],
-    "localThemeHorizontalOverflow": false,
-    "exporterJavaScriptSyntaxChecked": true,
-    "exporterTestedWithLocalSyntheticFixtures": true,
-    "fixtureNotes": "CSSOM security errors and import traversal used simulated fixtures; no live-site validation was performed.",
-    "liveDysonSiteTested": false
-  }
 }

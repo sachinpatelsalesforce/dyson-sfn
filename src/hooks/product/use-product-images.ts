@@ -41,7 +41,7 @@ const getDefaultImages = (
     imageGroups: ShopperProducts.schemas['ImageGroup'][] | undefined,
     viewType: string = 'large'
 ): ShopperProducts.schemas['Image'][] => {
-    return imageGroups?.find((group) => group.viewType === viewType)?.images || [];
+    return imageGroups?.filter((group) => group.viewType === viewType).flatMap((group) => group.images || []) || [];
 };
 
 /**
@@ -117,24 +117,42 @@ export function useProductImages({
     // to `image_groups`) cannot be served through the `<picture>`/`<DynamicImage>` pipeline and is dropped here so
     // downstream code never needs to special-case it.
     const galleryImages: GalleryImage[] = useMemo(() => {
-        if (!filteredImages || filteredImages.length === 0) {
-            return [];
+        const fromImageGroups: GalleryImage[] = (filteredImages || []).flatMap(
+            (image: ShopperProducts.schemas['Image']): GalleryImage[] => {
+                if (!isDynamicImageSource(image.disBaseLink ?? image.link)) {
+                    return [];
+                }
+                const optimizedImageUrl = toImageUrl({ image, config }) || '';
+                return [
+                    {
+                        src: optimizedImageUrl,
+                        alt: image.alt || product.name || '',
+                        thumbSrc: optimizedImageUrl,
+                    },
+                ];
+            }
+        );
+
+        // When the catalog supplies a pipe-separated list of gallery URLs via c_galleryImages,
+        // use them in place of whatever SFCC imageGroups returned. This lets the demo catalog
+        // show rich Dyson Scene7 imagery even though the sandbox's imageGroups only carry a
+        // single per-variant shot.
+        // SFCC prepends c_ to custom attribute IDs in SCAPI responses, so catalog attribute
+        // "c_galleryImages" (attribute-id) is exposed as "c_c_galleryImages" by the API.
+        const rawGalleryAttr = (product as Record<string, unknown>).c_c_galleryImages;
+        if (typeof rawGalleryAttr === 'string' && rawGalleryAttr.trim()) {
+            const attrImages: GalleryImage[] = rawGalleryAttr
+                .split('|')
+                .map((u) => u.trim())
+                .filter((u) => isDynamicImageSource(u))
+                .map((url) => ({ src: url, alt: product.name || '', thumbSrc: url }));
+            if (attrImages.length > 0) {
+                return attrImages;
+            }
         }
 
-        return filteredImages.flatMap((image: ShopperProducts.schemas['Image']): GalleryImage[] => {
-            if (!isDynamicImageSource(image.disBaseLink ?? image.link)) {
-                return [];
-            }
-            const optimizedImageUrl = toImageUrl({ image, config }) || '';
-            return [
-                {
-                    src: optimizedImageUrl,
-                    alt: image.alt || product.name || '',
-                    thumbSrc: optimizedImageUrl,
-                },
-            ];
-        });
-    }, [filteredImages, product.name, config]);
+        return fromImageGroups;
+    }, [filteredImages, product, config]);
 
     return {
         // Transformed images

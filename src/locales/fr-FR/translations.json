@@ -1127,31 +1127,6 @@
         }
     },
     "home": {
-        "hero": {
-            "slide1": {
-                "title": "La nouvelle saison",
-                "subtitle": "Une nouvelle collection basée sur le contraste, les proportions et une attitude moderne. Découvrez les pièces maîtresses de la saison à venir.",
-                "ctaText": "Découvrir la collection",
-                "imageAlt": "Pantalons, vestes et sacs à main pour femmes"
-            },
-            "slide2": {
-                "title": "La garde-robe moderne",
-                "subtitle": "Des silhouettes rehaussées, des textures raffinées et une approche audacieuse des tenues de tous les jours. Conçues pour bouger avec vous.",
-                "ctaText": "Acheter le look",
-                "imageAlt": "Robe en lin blanc pour femme"
-            },
-            "slide3": {
-                "subtitle": "Des pièces originales et des superpositions raffinées conçues pour les soirées, les moments tardifs et tout ce qui se passe entre les deux.",
-                "ctaText": "Explorez la collection",
-                "imageAlt": "Tailleur noir pour femme"
-            },
-            "slide4": {
-                "title": "Nouvelles perspectives",
-                "subtitle": "Une sélection de pièces exceptionnelles qui redéfinissent la mode contemporaine. Sûre d’elle. Expressive. Intransigeante.",
-                "ctaText": "Acheter maintenant",
-                "imageAlt": "Robe grise pour femme"
-            }
-        },
         "meta": {
             "title": "Storefront Next : Market Street",
             "description": "Magasin de mode nouvelle génération"
@@ -1647,6 +1622,40 @@
             "listPrice": "Prix catalogue : {{price}}"
         },
         "removingFromWishlist": "Removing from wishlist...",
-        "inWishlist": "In your wishlist"
+        "inWishlist": "In your wishlist",
+        "dyson": {
+            "keyFeatures": "Key features",
+            "promise": {
+                "warranty": "2-year guarantee",
+                "warrantyDesc": "On all Dyson machines",
+                "delivery": "Free delivery",
+                "deliveryDesc": "On all orders",
+                "returns": "30-day returns",
+                "returnsDesc": "No quibble guarantee"
+            },
+            "specs": {
+                "title": "Performance",
+                "suction": "Suction power",
+                "runtime": "Run time",
+                "binVolume": "Bin volume",
+                "weight": "Weight",
+                "filtration": "Filtration",
+                "suctionUnit": "AW",
+                "runtimeUnit": "min",
+                "binVolumeUnit": "L",
+                "weightUnit": "kg",
+                "filtrationUnit": "%"
+            },
+            "techSpecs": {
+                "title": "Technical specifications",
+                "overview": "Overview",
+                "inBox": "What's in the box",
+                "compatibility": "Compatibility",
+                "power": "Power",
+                "filter": "Filtration",
+                "warrantyDetail": "Warranty",
+                "boxContents": "Box contents"
+            }
+        }
     }
 }

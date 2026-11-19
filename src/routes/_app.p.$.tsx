@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Suspense, Fragment } from 'react';
+import { Suspense, Fragment, lazy } from 'react';
 import { Await, useRouteLoaderData } from 'react-router';
 import type { loader as rootLoader } from '@/root';
 import { shouldRevalidate as shouldRevalidateProduct } from '@/lib/revalidation/routes/product';
@@ -35,6 +35,7 @@ import ProductRecommendations from '@/components/product-recommendations';
 import { EINSTEIN_RECOMMENDERS } from '@/lib/product/einstein-recommenders';
 import { useTranslation } from 'react-i18next';
 import { useProductViewTracking } from '@/hooks/product/use-product-view-tracking';
+const TrustRow = lazy(() => import('@/components/trust-row'));
 import { Region } from '@/components/region';
 import { ProductProvider } from '@/providers/product-context';
 import { PageType } from '@/lib/decorators/page-type';
@@ -438,6 +439,11 @@ function ProductDetailView({ loaderData }: { loaderData: ProductPageData }) {
                     pdpCollapsiblesPromise={loaderData.pdpCollapsibles}
                     // @sfdc-extension-block-end SFDC_EXT_PRODUCT_CONTENT
                 />
+
+                {/* Trust strip — warranty, delivery, returns, secure checkout */}
+                <Suspense fallback={null}>
+                    <TrustRow />
+                </Suspense>
 
                 {/* Engagement Content Region - Shows page content or recommendations */}
                 <Region

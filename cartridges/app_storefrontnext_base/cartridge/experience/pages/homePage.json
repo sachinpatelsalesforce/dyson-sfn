@@ -1,6 +1,6 @@
 {
     "name": "Home Page",
-    "description": "Main landing page with hero carousel, featured products, and help sections",
+    "description": "Dyson storefront home page",
     "arch_type": "headless",
     "region_definitions": [
         {

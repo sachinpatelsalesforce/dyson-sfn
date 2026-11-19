@@ -1125,32 +1125,6 @@
         }
     },
     "home": {
-        "hero": {
-            "slide1": {
-                "title": "Den nya säsongen",
-                "subtitle": "En ny kollektion baserad på kontraster, proportioner och en modern attityd. Nyckelplagg för den kommande säsongen.",
-                "ctaText": "Upptäck kollektionen",
-                "imageAlt": "Byxor, jackor och handväskor för henne"
-            },
-            "slide2": {
-                "title": "Den moderna garderoben",
-                "subtitle": "Skarpa linjer, eleganta texturer och en helt ny inställning till vardagskläder. Designad för att röra sig med dig.",
-                "ctaText": "Köp looken",
-                "imageAlt": "Vit linneklänning för henne"
-            },
-            "slide3": {
-                "title": "Efter arbetstid",
-                "subtitle": "Statementplagg och eleganta lager som är designade för utekvällar, sena nätter och allt däremellan.",
-                "ctaText": "Utforska kollektionen",
-                "imageAlt": "Svart kostym för henne"
-            },
-            "slide4": {
-                "title": "Nya perspektiv",
-                "subtitle": "Handplockade plagg som ger ett nytt perspektiv på dagens mode. Självsäker. Uttrycksfull. Kompromisslös.",
-                "ctaText": "Handla nu",
-                "imageAlt": "Grå klänning för henne"
-            }
-        },
         "meta": {
             "description": "En modebutik för nästa generation"
         },
@@ -1628,6 +1602,40 @@
             "listPrice": "Rekommenderat pris: {{price}}"
         },
         "removingFromWishlist": "Removing from wishlist...",
-        "inWishlist": "In your wishlist"
+        "inWishlist": "In your wishlist",
+        "dyson": {
+            "keyFeatures": "Key features",
+            "promise": {
+                "warranty": "2-year guarantee",
+                "warrantyDesc": "On all Dyson machines",
+                "delivery": "Free delivery",
+                "deliveryDesc": "On all orders",
+                "returns": "30-day returns",
+                "returnsDesc": "No quibble guarantee"
+            },
+            "specs": {
+                "title": "Performance",
+                "suction": "Suction power",
+                "runtime": "Run time",
+                "binVolume": "Bin volume",
+                "weight": "Weight",
+                "filtration": "Filtration",
+                "suctionUnit": "AW",
+                "runtimeUnit": "min",
+                "binVolumeUnit": "L",
+                "weightUnit": "kg",
+                "filtrationUnit": "%"
+            },
+            "techSpecs": {
+                "title": "Technical specifications",
+                "overview": "Overview",
+                "inBox": "What's in the box",
+                "compatibility": "Compatibility",
+                "power": "Power",
+                "filter": "Filtration",
+                "warrantyDetail": "Warranty",
+                "boxContents": "Box contents"
+            }
+        }
     }
 }

@@ -1,0 +1,107 @@
+{
+    "name": "Dyson How It Works",
+    "description": "Numbered step-by-step diagram: up to 4 steps each with an icon/image, a step number, a title, and a description. Used to explain product mechanics.",
+    "group": "Dyson",
+    "arch_type": "headless",
+    "region_definitions": [],
+    "attribute_definition_groups": [
+        {
+            "id": "dysonHowItWorks",
+            "name": "Dyson How It Works",
+            "description": "Numbered step-by-step diagram: up to 4 steps each with an icon/image, a step number, a title, and a description. Used to explain product mechanics.",
+            "attribute_definitions": [
+                {
+                    "id": "headline",
+                    "name": "Section Headline",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: headline"
+                },
+                {
+                    "id": "step1Title",
+                    "name": "Step 1 Title",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: step1Title"
+                },
+                {
+                    "id": "step1Desc",
+                    "name": "Step 1 Description",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: step1Desc"
+                },
+                {
+                    "id": "step1Image",
+                    "name": "Step 1 Image",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: step1Image"
+                },
+                {
+                    "id": "step2Title",
+                    "name": "Step 2 Title",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: step2Title"
+                },
+                {
+                    "id": "step2Desc",
+                    "name": "Step 2 Description",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: step2Desc"
+                },
+                {
+                    "id": "step2Image",
+                    "name": "Step 2 Image",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: step2Image"
+                },
+                {
+                    "id": "step3Title",
+                    "name": "Step 3 Title",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: step3Title"
+                },
+                {
+                    "id": "step3Desc",
+                    "name": "Step 3 Description",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: step3Desc"
+                },
+                {
+                    "id": "step3Image",
+                    "name": "Step 3 Image",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: step3Image"
+                },
+                {
+                    "id": "step4Title",
+                    "name": "Step 4 Title",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: step4Title"
+                },
+                {
+                    "id": "step4Desc",
+                    "name": "Step 4 Description",
+                    "type": "string",
+                    "required": false,
+                    "description": "Field: step4Desc"
+                },
+                {
+                    "id": "step4Image",
+                    "name": "Step 4 Image",
+                    "type": "image",
+                    "required": false,
+                    "description": "Field: step4Image"
+                }
+            ]
+        }
+    ]
+}

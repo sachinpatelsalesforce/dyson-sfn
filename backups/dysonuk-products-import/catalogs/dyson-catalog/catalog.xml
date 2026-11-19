@@ -1,0 +1,3001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.demandware.com/xml/impex/catalog/2006-10-31" catalog-id="dyson-catalog">
+    <category category-id="air-purifiers">
+        <display-name xml:lang="x-default">Air Purifiers</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="all-hair-care">
+        <display-name xml:lang="x-default">All Hair Care</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="cordless-vacuums">
+        <display-name xml:lang="x-default">Cordless Vacuums</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="cylinder-vacuums">
+        <display-name xml:lang="x-default">Cylinder Vacuums</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="fans-heaters">
+        <display-name xml:lang="x-default">Fans &amp; Heaters</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="hair-dryers">
+        <display-name xml:lang="x-default">Hair Dryers</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="hair-straighteners">
+        <display-name xml:lang="x-default">Hair Straighteners</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="headphones">
+        <display-name xml:lang="x-default">Headphones</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="lighting">
+        <display-name xml:lang="x-default">Lighting</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="oral-care">
+        <display-name xml:lang="x-default">Oral Care</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="robot-vacuums">
+        <display-name xml:lang="x-default">Robot Vacuums</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="upright-vacuums">
+        <display-name xml:lang="x-default">Upright Vacuums</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <category category-id="wet-floor-cleaners">
+        <display-name xml:lang="x-default">Wet Floor Cleaners</display-name>
+        <online-flag>true</online-flag>
+    </category>
+    <product product-id="dyson-v16-piston-animal">
+        <display-name xml:lang="x-default">Dyson V16 Piston Animal cordless vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The most powerful 3-in-1 anti-tangle vacuum.¹</strong></p>
+<ul>
+	<li>
+	<p>New all Floor Cones™ Sense cleaner head de-tangles hair up to 25 inches.</p></li>
+	<li>315 Air Watts suction.<sup>2</sup></li>
+	<li>70min run time</li>
+	<li>Illuminates invisible dust</li>
+	<li>Submarine™ wet roller head</li>
+	<li>Compresses dust in the bin</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">v16-piston-animal</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="submarine-black-copper"><display-value xml:lang="x-default">Submarine Black Copper</display-value></variation-attribute-value>
+                        <variation-attribute-value value="black-copper"><display-value xml:lang="x-default">Black Copper</display-value></variation-attribute-value>
+                        <variation-attribute-value value="black-copper-detail-cleaning-kit"><display-value xml:lang="x-default">Black Copper Detail Cleaning Kit</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="499087-01" default="true"/>
+                <variant product-id="499085-01"/>
+                <variant product-id="499090-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-v15">
+        <display-name xml:lang="x-default">Dyson V15 Detect™ Absolute vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Powerful, cordless vacuum. Automatically de-tangles hair. For all floors. Up to 60 minutes run-time. Intelligently calculates run-time. ]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">v15</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="absolute-detail-cleaning-kit"><display-value xml:lang="x-default">Absolute Detail Cleaning Kit</display-value></variation-attribute-value>
+                        <variation-attribute-value value="detect-yellow-nickel"><display-value xml:lang="x-default">Detect Yellow Nickel</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="637722-01" default="true"/>
+                <variant product-id="589598-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-v12">
+        <display-name xml:lang="x-default">Dyson V12 Detect™ Slim Absolute cordless vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Our most powerful, lightweight cordless vacuum with De-tangling technology and single-button power control. Includes the new Fluffy Opticᵀᴹ cleaner head.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">v12</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="detail-cleaning-kit"><display-value xml:lang="x-default">Detail Cleaning Kit</display-value></variation-attribute-value>
+                        <variation-attribute-value value="detect-absolute-yellow-nickel"><display-value xml:lang="x-default">Detect Absolute Yellow Nickel</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="637759-01" default="true"/>
+                <variant product-id="630917-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-v10-konical">
+        <display-name xml:lang="x-default">Dyson V10 Konical™ vacuum cleaner</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Conical brush bars de-tangle hair up to 25 inches.¹</p>
+<p>&nbsp;</p>
+<p>150 Air Watts of fade-free power.²&nbsp;</p>
+<p>&nbsp;</p>
+<p>Traps 99.99% of particles.³&nbsp;</p>
+<p>&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">v10-konical</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="black-copper"><display-value xml:lang="x-default">Black Copper</display-value></variation-attribute-value>
+                        <variation-attribute-value value="black-copper-auto-empty-dok"><display-value xml:lang="x-default">Black Copper Auto Empty Dok</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="419633-01" default="true"/>
+                <variant product-id="594028-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-v10">
+        <display-name xml:lang="x-default">Dyson Cyclone V10 Absolute</display-name>
+        <long-description xml:lang="x-default"><![CDATA[All Dyson Cyclone V10™ vacuums features up to 60 minutes of powerful fade-free suction1. The large 0.76 bin supports bigger cleans which means less stopping as you go. Whole-machine filtration ensures the vacuum expels cleaner air and the ‘point and shoot’ emptying system drives out dust and debris in one easy action.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">v10</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="detail-cleaning-kit"><display-value xml:lang="x-default">Detail Cleaning Kit</display-value></variation-attribute-value>
+                        <variation-attribute-value value="submarine"><display-value xml:lang="x-default">Submarine</display-value></variation-attribute-value>
+                        <variation-attribute-value value="total-clean"><display-value xml:lang="x-default">Total Clean</display-value></variation-attribute-value>
+                        <variation-attribute-value value="absolute"><display-value xml:lang="x-default">Absolute</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="637628-01" default="true"/>
+                <variant product-id="594594-01"/>
+                <variant product-id="443096-01"/>
+                <variant product-id="394433-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-ball-animal">
+        <display-name xml:lang="x-default">Dyson Ball™ Animal</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Cleans carpets better than any other upright de-tangling vacuum.¹</strong></p>
+<ul>
+	<li>Automatically de-tangles.</li>
+	<li>Powerful pick up across all floor types. For deep cleaning homes with pets.</li>
+	<li>60% bigger bin than the&nbsp;Ball™ Animal 2, for bigger cleans.&nbsp;</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">ball-animal</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="complete"><display-value xml:lang="x-default">Complete</display-value></variation-attribute-value>
+                        <variation-attribute-value value="multi-floor"><display-value xml:lang="x-default">Multi Floor</display-value></variation-attribute-value>
+                        <variation-attribute-value value="animal"><display-value xml:lang="x-default">Animal</display-value></variation-attribute-value>
+                        <variation-attribute-value value="origin"><display-value xml:lang="x-default">Origin</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="394520-01" default="true"/>
+                <variant product-id="626366-01"/>
+                <variant product-id="593863-01"/>
+                <variant product-id="593814-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-supersonic-r">
+        <display-name xml:lang="x-default">Dyson Supersonic r™hair dryer - Curly+Coily (Jasper plum)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Our most powerful¹, yet lightest² hair dryer.</strong></p>
+<ul>
+	<li>Precision drying for a smoother finish. More shine³. No heat damage.</li>
+	<li>Maintains scalp moisture.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">supersonic-r</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="straight-wavy-jasper-plum"><display-value xml:lang="x-default">Straight Wavy Jasper Plum</display-value></variation-attribute-value>
+                        <variation-attribute-value value="curly-coily-jasper-plum"><display-value xml:lang="x-default">Curly Coily Jasper Plum</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="122783-01" default="true"/>
+                <variant product-id="123487-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-supersonic-nural">
+        <display-name xml:lang="x-default">Dyson Supersonic Nural™ - Straight+Wavy (Prussian blue / Rich copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Auto-adapts to enhance natural shine and protect scalp health.¹</strong></p>
+<ul>
+	<li>Scalp protect mode helps improves scalp moisture retention.</li>
+	<li>Fast, intelligent drying. No heat damage.</li>
+	<li>Includes five styling attachments.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">supersonic-nural</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="straight-wavy-prussian-blue-bright-copper"><display-value xml:lang="x-default">Straight Wavy Prussian Blue Bright Copper</display-value></variation-attribute-value>
+                        <variation-attribute-value value="curly-coily-ceramic-pink-rose-gold"><display-value xml:lang="x-default">Curly Coily Ceramic Pink Rose Gold</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="122614-01" default="true"/>
+                <variant product-id="598976-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-airwrap-co-anda2x">
+        <display-name xml:lang="x-default">Dyson Airwrap Co-anda2x™ multi-styler and dryer Curly+Coily (Jasper Plum)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The next-level multi-styler. The most powerful Dyson Airwrap™ multi-styler.</strong></p>
+<ul>
+	<li>30% more powerful. 2x the air pressure with the Dyson Hyperdymium™ 2 motor.</li>
+	<li>Includes the new Tension comb 2x attachment, to dry hair fast, while stretching and smoothing curly and coily hair.</li>
+	<li>Better curling. Faster drying. Straighter styles.¹ No heat damage.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">airwrap-co-anda2x</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="curly-coily-ceramic-pink"><display-value xml:lang="x-default">Curly Coily Ceramic Pink</display-value></variation-attribute-value>
+                        <variation-attribute-value value="straight-wavy-jasper"><display-value xml:lang="x-default">Straight Wavy Jasper</display-value></variation-attribute-value>
+                        <variation-attribute-value value="curly-coily-jasper-plum"><display-value xml:lang="x-default">Curly Coily Jasper Plum</display-value></variation-attribute-value>
+                        <variation-attribute-value value="straight-wavy-jasper-plum"><display-value xml:lang="x-default">Straight Wavy Jasper Plum</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="598792-01" default="true"/>
+                <variant product-id="597011-01"/>
+                <variant product-id="492551-01"/>
+                <variant product-id="492491-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-airwrap-id">
+        <display-name xml:lang="x-default">Dyson Airwrap i.d.™ multi-styler and dryer - Curly+Coily (Prussian blue/Rich copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Our first Bluetooth® enabled Airwrap™ multi-styler and dryer makes perfect curls easy with the MyDyson™ app.</strong></p>
+<ul>
+	<li>Perfect curls at the touch of a button.¹</li>
+	<li>A faster easier way to achieve long lasting curls with no heat damage.¹</li>
+	<li>New Conical Airwrap™ barrel with tapered tip. Styles closer to the root, for tighter curls.² While maintaining volume and bounce.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">airwrap-id</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="straight-wavy-prussian-blue-bright-copper"><display-value xml:lang="x-default">Straight Wavy Prussian Blue Bright Copper</display-value></variation-attribute-value>
+                        <variation-attribute-value value="curly-coily-prussian-blue-bright-copper"><display-value xml:lang="x-default">Curly Coily Prussian Blue Bright Copper</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="107183-01" default="true"/>
+                <variant product-id="107454-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-chitosan">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Post-style serum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Multi-use styling spray, to hold, revive and restyle. Maintaining softness and natural movement.</strong></p>
+<ul>
+	<li>2x longer hold.* Without the crunch.</li>
+	<li>One spray. Multiple benefits.</li>
+	<li>Rigorously tested with Dyson hair care devices.</li>
+	<li>Engineered with Dyson Triodetic™ technology.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<div>&nbsp;</div>
+
+<p>*vs. untreated hair.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">chitosan</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="multi-use-styling-spray-165ml"><display-value xml:lang="x-default">Multi Use Styling Spray 165ml</display-value></variation-attribute-value>
+                        <variation-attribute-value value="multi-use-styling-spray-refill"><display-value xml:lang="x-default">Multi Use Styling Spray Refill</display-value></variation-attribute-value>
+                        <variation-attribute-value value="post-style-hair-serum-100ml"><display-value xml:lang="x-default">Post Style Hair Serum 100ml</display-value></variation-attribute-value>
+                        <variation-attribute-value value="post-style-hair-serum-refill"><display-value xml:lang="x-default">Post Style Hair Serum Refill</display-value></variation-attribute-value>
+                        <variation-attribute-value value="multi-use-styling-spray-50ml"><display-value xml:lang="x-default">Multi Use Styling Spray 50ml</display-value></variation-attribute-value>
+                        <variation-attribute-value value="pre-style-hair-cream-100ml"><display-value xml:lang="x-default">Pre Style Hair Cream 100ml</display-value></variation-attribute-value>
+                        <variation-attribute-value value="pre-style-hair-cream-refill"><display-value xml:lang="x-default">Pre Style Hair Cream Refill</display-value></variation-attribute-value>
+                        <variation-attribute-value value="pre-style-hair-cream-30ml"><display-value xml:lang="x-default">Pre Style Hair Cream 30ml</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="572592-01" default="true"/>
+                <variant product-id="572591-01"/>
+                <variant product-id="572594-01"/>
+                <variant product-id="572593-01"/>
+                <variant product-id="127312-01"/>
+                <variant product-id="607235-01"/>
+                <variant product-id="607237-01"/>
+                <variant product-id="239253-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-omega">
+        <display-name xml:lang="x-default">Dyson Omega™ hydrating hair oil</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div><strong>Weightless leave-in spray to instantly smooth, condition and detangle hair.&nbsp;</strong></div>
+
+<div>
+<ul>
+	<li>Powered by Dyson Oli7™ blend.</li>
+	<li>With heat protection up to 230°C and UV shield.</li>
+	<li>For all hair types and routines.</li>
+</ul>
+</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">omega</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="leave-in-conditioning-spray-165ml"><display-value xml:lang="x-default">Leave In Conditioning Spray 165ml</display-value></variation-attribute-value>
+                        <variation-attribute-value value="leave-in-conditioning-spray-refill"><display-value xml:lang="x-default">Leave In Conditioning Spray Refill</display-value></variation-attribute-value>
+                        <variation-attribute-value value="hydrating-hair-oil-30ml"><display-value xml:lang="x-default">Hydrating Hair Oil 30ml</display-value></variation-attribute-value>
+                        <variation-attribute-value value="leave-in-conditioning-spray-50ml"><display-value xml:lang="x-default">Leave In Conditioning Spray 50ml</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="879469-01" default="true"/>
+                <variant product-id="879484-01"/>
+                <variant product-id="161094-01"/>
+                <variant product-id="127300-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-pre-style-hair-cream-100ml">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream (Curly to coily rich conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally straight to wavy hair that is easily weighed down.<br />
+For use on towel-dried, damp hair, before styling.<br />
+Four formulas, precision-blended for different hair types.<br />
+&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">pre-style-hair-cream-100ml</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="straight-to-wavy-light"><display-value xml:lang="x-default">Straight To Wavy Light</display-value></variation-attribute-value>
+                        <variation-attribute-value value="straight-to-wavy-rich"><display-value xml:lang="x-default">Straight To Wavy Rich</display-value></variation-attribute-value>
+                        <variation-attribute-value value="curly-to-coily-light"><display-value xml:lang="x-default">Curly To Coily Light</display-value></variation-attribute-value>
+                        <variation-attribute-value value="curly-to-coily-rich"><display-value xml:lang="x-default">Curly To Coily Rich</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="521871-01" default="true"/>
+                <variant product-id="521874-01"/>
+                <variant product-id="521903-01"/>
+                <variant product-id="521912-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-amino">
+        <display-name xml:lang="x-default">Dyson Amino™ leave-in scalp bubble treatment</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div>Strengthens, hydrates, and controls oil supporting all scalp types and promotes fuller, healthy-looking hair</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">amino</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="leave-in-scalp-bubble-treatment-75ml"><display-value xml:lang="x-default">Leave In Scalp Bubble Treatment 75ml</display-value></variation-attribute-value>
+                        <variation-attribute-value value="leave-in-scalp-bubble-treatment-refill"><display-value xml:lang="x-default">Leave In Scalp Bubble Treatment Refill</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="123415-01" default="true"/>
+                <variant product-id="123416-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-pre-style-hair-cream-refill">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream refill (Curly to coily rich conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally straight to wavy hair that is easily weighed down.<br />
+Four formulas, precision-blended for different hair types.<br />
+100% recyclable.*<br />
+*Refill cartridge only, check local recycling guidance.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">pre-style-hair-cream-refill</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="straight-to-wavy-light"><display-value xml:lang="x-default">Straight To Wavy Light</display-value></variation-attribute-value>
+                        <variation-attribute-value value="straight-to-wavy-rich"><display-value xml:lang="x-default">Straight To Wavy Rich</display-value></variation-attribute-value>
+                        <variation-attribute-value value="curly-to-coily-light"><display-value xml:lang="x-default">Curly To Coily Light</display-value></variation-attribute-value>
+                        <variation-attribute-value value="curly-to-coily-rich"><display-value xml:lang="x-default">Curly To Coily Rich</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="521913-01" default="true"/>
+                <variant product-id="521919-01"/>
+                <variant product-id="521929-01"/>
+                <variant product-id="521950-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-pre-style-hair-cream-30ml">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream travel mini (Curly to coily rich conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally straight to wavy hair that is easily weighed down.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">pre-style-hair-cream-30ml</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="straight-to-wavy-light"><display-value xml:lang="x-default">Straight To Wavy Light</display-value></variation-attribute-value>
+                        <variation-attribute-value value="straight-to-wavy-rich"><display-value xml:lang="x-default">Straight To Wavy Rich</display-value></variation-attribute-value>
+                        <variation-attribute-value value="curly-to-coily-light"><display-value xml:lang="x-default">Curly To Coily Light</display-value></variation-attribute-value>
+                        <variation-attribute-value value="curly-to-coily-rich"><display-value xml:lang="x-default">Curly To Coily Rich</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="581866-01" default="true"/>
+                <variant product-id="581869-01"/>
+                <variant product-id="592292-01"/>
+                <variant product-id="592311-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-zone-absolute-plus">
+        <display-name xml:lang="x-default">Dyson Zone™ absolute+ headphones (Black/Bright Copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Dyson's most advanced headphones with integrated air purification.¹</strong></p>
+<ul>
+	<li>High-fidelity audio engineered by Dyson acoustic engineers.</li>
+	<li>Fully sealed, three-stage filtration. Captures 99.95% of particles as small as 0.1 microns.²</li>
+	<li>Detects and destroys formaldehyde.³</li>
+	<li>Up to 50 hours audio-only battery life.⁴</li>
+	<li>MyDyson™ app connectivity.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">zone-absolute-plus</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="black-bright-copper"><display-value xml:lang="x-default">Black Bright Copper</display-value></variation-attribute-value>
+                        <variation-attribute-value value="prussian-blue-bright-copper"><display-value xml:lang="x-default">Prussian Blue Bright Copper</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="683291-01" default="true"/>
+                <variant product-id="683292-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-lightcycle-morph">
+        <display-name xml:lang="x-default">Dyson Lightcycle Morph™ Desk light (Black/Black)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>4-in-1 intelligent task light that transforms to suit every task.¹</strong></p>
+<ul>
+	<li>Task, feature, indirect and ambient modes.</li>
+	<li>Tracks local daylight automatically, adjusting colour temperature and brightness.²</li>
+	<li>Eye comfort mode reduces glare and flicker.</li>
+	<li>60-year LED lifespan.³</li>
+	<li>MyDyson™ app connectivity.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">lightcycle-morph</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="white-silver"><display-value xml:lang="x-default">White Silver</display-value></variation-attribute-value>
+                        <variation-attribute-value value="white-silver"><display-value xml:lang="x-default">White Silver</display-value></variation-attribute-value>
+                        <variation-attribute-value value="black"><display-value xml:lang="x-default">Black</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="302217-01" default="true"/>
+                <variant product-id="302218-01"/>
+                <variant product-id="302220-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="dyson-supersonic-oral">
+        <display-name xml:lang="x-default">Dyson Supersonic Oral™ toothbrush (Black/Copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Dyson's first toothbrush. Engineered for the full mouth.¹</strong></p>
+<ul>
+	<li>Hyperdymium™ motor drives 108,000 brush movements per minute.²</li>
+	<li>Pressure sensor pauses brushing when too much force is applied.</li>
+	<li>Built-in UV sanitiser kills 99.9% of bacteria on brush head.³</li>
+	<li>Up to 7 days battery life per charge.⁴</li>
+	<li>MyDyson™ app with AI-powered brushing guidance.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="family">supersonic-oral</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="colour" variation-attribute-id="colour">
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="black-copper"><display-value xml:lang="x-default">Black Copper</display-value></variation-attribute-value>
+                        <variation-attribute-value value="white-silver"><display-value xml:lang="x-default">White Silver</display-value></variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="499201-01" default="true"/>
+                <variant product-id="499202-01"/>
+            </variants>
+        </variations>
+    </product>
+    <product product-id="499087-01">
+        <display-name xml:lang="x-default">Dyson V16 Piston Animal Submarine™ wet and dry vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The most powerful 3-in-1 anti-tangle vacuum.¹</strong></p>
+<ul>
+	<li>
+	<p>New all Floor Cones™ Sense cleaner head de-tangles hair up to 25 inches.</p></li>
+	<li>315 Air Watts suction.<sup>2</sup></li>
+	<li>70min run time</li>
+	<li>Illuminates invisible dust</li>
+	<li>Submarine™ wet roller head</li>
+	<li>Compresses dust in the bin</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/499087-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/499087-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/499087-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">submarine-black-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="499085-01">
+        <display-name xml:lang="x-default">Dyson V16 Piston Animal cordless vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The most powerful anti-tangle cordless vacuum¹</strong></p>
+<ul>
+	<li>New all Floor Cones™ Sense cleaner head de-tangles hair up to 25 inches.</li>
+	<li>315 Air Watts suction.²</li>
+	<li>70min run time</li>
+	<li>Illuminates invisible dust</li>
+	<li>99.99% HEPA filtration.<sup>4</sup></li>
+	<li>Compresses dust in the bin</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/499085-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/499085-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/499085-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">black-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="499090-01">
+        <display-name xml:lang="x-default">Dyson V16 Piston Animal cordless vacuum + Detail Cleaning Kit</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The most powerful anti-tangle cordless vacuum.<sup>1</sup></strong></p>
+<ul>
+	<li>
+	<p>New all Floor Cones™ Sense cleaner head de-tangles hair up to 25 inches.</p></li>
+	<li>315 Air Watts suction.<sup>2</sup></li>
+	<li>70min run time</li>
+	<li>Illuminates invisible dust</li>
+	<li>99.99% HEPA filtration.<sup>4</sup></li>
+	<li>Compresses dust in the bin&nbsp;</li>
+	<li><strong>Exclusive at Dyson:&nbsp;</strong>3 additional tools</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>false</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/499090-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/499090-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/499090-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">black-copper-detail-cleaning-kit</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="637722-01">
+        <display-name xml:lang="x-default">Dyson V15 Detect™ Absolute cordless vacuum + Detail cleaning kit</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Powerful, cordless vacuum. Automatically de-tangles hair. For all floors. Up to 60 minutes run-time. Intelligently calculates run-time. ]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637722-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637722-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637722-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">absolute-detail-cleaning-kit</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="589598-01">
+        <display-name xml:lang="x-default">Dyson V15 Detect™ Absolute vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Powerful, cordless vacuum. Automatically de-tangles hair. For all floors. Up to 60 minutes run-time. Intelligently calculates run-time.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>false</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/589598-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/589598-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/589598-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">detect-yellow-nickel</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="637759-01">
+        <display-name xml:lang="x-default">Dyson V12 Detectᵀᴹ Slim cordless vacuum+ Detail Cleaning Kit</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Our most powerful, lightweight cordless vacuum with De-tangling technology and single-button power control. Includes the new Fluffy Opticᵀᴹ cleaner head.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637759-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637759-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637759-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">detail-cleaning-kit</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="630917-01">
+        <display-name xml:lang="x-default">Dyson V12 Detect™ Slim Absolute cordless vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Our most powerful, lightweight cordless vacuum with De-tangling technology and single-button power control. Includes the new Fluffy Opticᵀᴹ cleaner head.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/630917-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/630917-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/630917-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">detect-absolute-yellow-nickel</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="419633-01">
+        <display-name xml:lang="x-default">Dyson V10 Konical™ vacuum cleaner</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Conical brush bars de-tangle hair up to 25 inches.¹</p>
+<p>&nbsp;</p>
+<p>150 Air Watts of fade-free power.²&nbsp;</p>
+<p>&nbsp;</p>
+<p>Traps 99.99% of particles.³&nbsp;</p>
+<p>&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/419633-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/419633-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/419633-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">black-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="594028-01">
+        <display-name xml:lang="x-default">Dyson V10 Konical™ vacuum cleaner + Auto-empty Dok™</display-name>
+        <long-description xml:lang="x-default"><![CDATA[150 Air Watts suction 60min run time No loss of suction De-tangles all hair lengths Reveals hidden dust  99.99% HEPA filtration Auto-empty Dok™ self-empties, charges and stores]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/594028-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/594028-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/594028-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">black-copper-auto-empty-dok</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="637628-01">
+        <display-name xml:lang="x-default">Dyson Cyclone V10  cordless vacuum+ Detail cleaning kit</display-name>
+        <long-description xml:lang="x-default"><![CDATA[All Dyson Cyclone V10™ vacuums features up to 60 minutes of powerful fade-free suction1. The large 0.76 bin supports bigger cleans which means less stopping as you go. Whole-machine filtration ensures the vacuum expels cleaner air and the ‘point and shoot’ emptying system drives out dust and debris in one easy action.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637628-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637628-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637628-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">detail-cleaning-kit</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="594594-01">
+        <display-name xml:lang="x-default">Dyson Cyclone V10 Submarine</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Lightweight and powerful cordless vacuum.<br />
+Picks up fine dust and debris and now washes hard floors.</p>
+<p>- Single-button power control.&nbsp;<br />
+- Up to 60 minutes run-time.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/594594-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/594594-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/594594-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">submarine</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="443096-01">
+        <display-name xml:lang="x-default">Dyson Cyclone V10 Total Clean</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The suction power of a corded vacuum with De-tangling technology.</strong></p>
+<ul>
+	<li>Three power modes.</li>
+	<li>Run time: Up to 60 minutes.</li>
+	<li>Suction power: 150 AW</li>
+	<li>Weight: 2.6kg</li>
+	<li>40% larger bin compared to Dyson V8™ vacuums.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/443096-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/443096-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/443096-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">total-clean</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="394433-01">
+        <display-name xml:lang="x-default">Dyson Cyclone V10 Absolute</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The suction power of a corded vacuum cleaner. With anti-tangle technology.</strong></p>
+<ul>
+	<li>150 Air Watts&nbsp;suction</li>
+	<li>60min&nbsp;run time¹</li>
+	<li>Hair de-tangling</li>
+	<li>Fluffy&nbsp;hard floor cleaner head</li>
+</ul>
+
+<p><br />
+&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>false</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/394433-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/394433-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_GB/394433-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">absolute</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="394520-01">
+        <display-name xml:lang="x-default">Dyson Ball Animal Complete</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Cleans carpets better than any other upright de-tangling vacuum.¹</strong></p>
+<ul>
+	<li>Automatically de-tangles.</li>
+	<li>Powerful pick up across all floor types. For deep cleaning homes with pets.</li>
+	<li>60% bigger bin than the&nbsp;Ball™ Animal 2, for bigger cleans.&nbsp;</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/394520-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/394520-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/394520-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">complete</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="626366-01">
+        <display-name xml:lang="x-default">Dyson Ball™ Animal Multifloor</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Automatically de-tangles hair for powerful deep cleaning on all surfaces. With no loss of suction.Rides on a ball for easier manoeuvrability.For deep cleaning homes with pets.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/626366-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/626366-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/626366-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">multi-floor</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="593863-01">
+        <display-name xml:lang="x-default">Dyson Ball™ Animal</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Automatically de-tangles hair for powerful deep cleaning on all surfaces. With no loss of suction.Rides on a ball for easier manoeuvrability.For deep cleaning homes with pets.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/593863-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/593863-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/593863-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">animal</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="593814-01">
+        <display-name xml:lang="x-default">Dyson Ball™ Animal Origin upright vacuum cleaner</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div>&nbsp;</div>
+
+<p>Engineered for tough tasks across all floor types. Self-adjusting cleaner head. Rides on a ball for easier maneuravibility.&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/593814-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/593814-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/593814-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">origin</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="122783-01">
+        <display-name xml:lang="x-default">Dyson Supersonic r™hair dryer - Straight+Wavy (Jasper plum)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Our most powerful¹, yet lightest² hair dryer.</strong></p>
+<ul>
+	<li>Precision drying for a smoother finish. More shine³. No heat damage.</li>
+	<li>Maintains scalp moisture.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/122783-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/122783-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/122783-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-wavy-jasper-plum</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="123487-01">
+        <display-name xml:lang="x-default">Dyson Supersonic r™hair dryer - Curly+Coily (Jasper plum)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Our most powerful¹, yet lightest² hair dryer.</strong></p>
+<ul>
+	<li>Precision drying for a smoother finish. More shine³. No heat damage.</li>
+	<li>Maintains scalp moisture.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>false</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/123487-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/123487-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/123487-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-coily-jasper-plum</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="122614-01">
+        <display-name xml:lang="x-default">Dyson Supersonic Nural™ - Straight+Wavy (Prussian blue / Rich copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Auto-adapts to enhance natural shine and protect scalp health.¹</strong></p>
+<ul>
+	<li>Scalp protect mode helps improves scalp moisture retention.</li>
+	<li>Fast, intelligent drying. No heat damage.</li>
+	<li>Includes five styling attachments.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/122614-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/122614-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/122614-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-wavy-prussian-blue-bright-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="598976-01">
+        <display-name xml:lang="x-default">Dyson Supersonic Nural™ hair dryer - Curly+Coily (Ceramic pink/Rose gold)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Auto-adapts to enhance natural shine and protect scalp health.¹</strong></p>
+<ul>
+	<li>Scalp protect mode helps improves scalp moisture retention.</li>
+	<li>Fast, intelligent drying. No heat damage.</li>
+	<li>Includes five styling attachments.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/598976-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/598976-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/598976-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-coily-ceramic-pink-rose-gold</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="598792-01">
+        <display-name xml:lang="x-default">Dyson Airwrap Co-anda 2x™ multi-styler and dryer with Diffuser (Ceramic pink/Rose gold)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The next-level multi-styler. The most powerful Dyson Airwrap™ multi-styler.</strong></p>
+<ul>
+	<li>30% more powerful. 2x the air pressure with the Dyson Hyperdymium™ 2 motor.</li>
+	<li>Includes the new Tension comb 2x attachment, to dry hair fast, while stretching and smoothing curly and coily hair.</li>
+	<li>Better curling. Faster drying. Straighter styles.¹ No heat damage.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/598792-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/598792-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/598792-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-coily-ceramic-pink</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="597011-01">
+        <display-name xml:lang="x-default">Dyson Airwrap Co-anda 2x™ multi-styler and dryer - Straight+Wavy (Jasper plum)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The next-level multi-styler. The most powerful Dyson Airwrap™ multi-styler.</strong></p>
+<ul>
+	<li>30% more powerful. 2x the air pressure with the Dyson Hyperdymium™ 2 motor.</li>
+	<li>Includes the new AirSmooth2x™ finishing attachment, to straighten hair using only air pressure.²</li>
+	<li>Better curling. Faster drying. Straighter styles.¹ No heat damage.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/597011-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/597011-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/597011-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-wavy-jasper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="492551-01">
+        <display-name xml:lang="x-default">Dyson Airwrap Co-anda2x™ multi-styler and dryer Curly+Coily (Jasper Plum)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[The Dyson Co-anda 2x™ multi-styler and dryer. Our fastest, most intelligent multi-styler with 2x the air pressure for even more power. ]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/492551-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/492551-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/492551-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-coily-jasper-plum</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="492491-01">
+        <display-name xml:lang="x-default">New Dyson Airwrap Co-anda2x™ multi-styler and dryer with new attachments Straight+Wavy (Jasper plum)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[The Dyson Co-anda 2x™ multi-styler and dryer. Our fastest, most intelligent multi-styler with 2x the air pressure for even more power. ]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/492491-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/492491-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/492491-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-wavy-jasper-plum</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="107183-01">
+        <display-name xml:lang="x-default">Dyson Airwrap i.d.™ multi-styler and dryer - Straight+Wavy (Prussian blue/Rich copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Our first Bluetooth® enabled Airwrap™ multi-styler and dryer makes perfect curls easy with the MyDyson™ app.</strong></p>
+<ul>
+	<li>Perfect curls at the touch of a button.¹</li>
+	<li>A faster easier way to achieve long lasting curls with no heat damage.¹</li>
+	<li>New Conical Airwrap™ barrel with tapered tip. Styles closer to the root, for tighter curls.² While maintaining volume and bounce.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/107183-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/107183-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/107183-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-wavy-prussian-blue-bright-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="107454-01">
+        <display-name xml:lang="x-default">Dyson Airwrap i.d.™ multi-styler and dryer - Curly+Coily (Prussian blue/Rich copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Our first Bluetooth® enabled Airwrap™ multi-styler and dryer makes perfect curls easy with the MyDyson™ app.</strong></p>
+<ul>
+	<li>Perfect curls at the touch of a button.¹</li>
+	<li>A faster easier way to achieve long lasting curls with no heat damage.¹</li>
+	<li>New Conical Airwrap™ barrel with tapered tip. Styles closer to the root, for tighter curls.² While maintaining volume and bounce.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/107454-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/107454-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/107454-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-coily-prussian-blue-bright-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="572592-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ multi-use styling spray</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Multi-use styling spray, to hold, revive and restyle. Maintaining softness and natural movement.</strong></p>
+<ul>
+	<li>2x longer hold.* Without the crunch.</li>
+	<li>One spray. Multiple benefits.</li>
+	<li>Rigorously tested with Dyson hair care devices.</li>
+	<li>Engineered with Dyson Triodetic™ technology.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<div>&nbsp;</div>
+
+<p>*vs. untreated hair.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572592-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572592-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572592-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">multi-use-styling-spray-165ml</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="572591-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ multi-use styling spray refill</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div>
+<div>Refill of our multi-use styling spray, to hold, revive and restyle. Maintaining softness and natural movement with 2x longer hold.*</div>
+</div>
+
+<div>&nbsp;</div>
+
+<div>
+<div>&nbsp;</div>
+*vs. untreated hair.&nbsp;</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572591-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572591-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572591-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">multi-use-styling-spray-refill</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="572594-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Post-style serum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Flexible all-day hold.*<br />
+With less frizz, and increased shine.&nbsp;<br />
+Smooth down lengths to reduce frizz and flyaways.<br />
+Creates instant shine for smoother hair that lasts.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572594-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572594-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572594-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">post-style-hair-serum-100ml</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="572593-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Post-style serum refill</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Flexible all-day hold.*<br />
+With less frizz, and increased shine.&nbsp;<br />
+Smooth down lengths to reduce frizz and flyaways.<br />
+Creates instant shine for smoother hair that lasts.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572593-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572593-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/572593-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">post-style-hair-serum-refill</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="127312-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ multi-use styling spray (50ml)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Travel-friendly multi-use styling spray, to hold, revive and restyle. Maintaining softness and natural movement with 2x longer hold.*</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/127312-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/127312-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/127312-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">multi-use-styling-spray-50ml</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="607235-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream (100ml)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>&nbsp;2 x longer hold.* Without the crunch.&nbsp;<br />
+*vs. untreated hair.&nbsp;<br />
+Up to 50% less frizz. *vs. untreated hair.<br />
+With oil blends to help condition the hair surface, giving a soft, shiny finish.<br />
+Heat protectant properties. [Heat protection up to XXX°C/°F.]</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/607235-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/607235-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/607235-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">pre-style-hair-cream-100ml</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="607237-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream (Refill)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>&nbsp;2 x longer hold.* Without the crunch.&nbsp;<br />
+*vs. untreated hair.&nbsp;<br />
+Up to 50% less frizz. *vs. untreated hair.<br />
+With oil blends to help condition the hair surface, giving a soft, shiny finish.<br />
+Heat protectant properties. [Heat protection up to XXX°C/°F.]</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/607237-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/607237-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/607237-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">pre-style-hair-cream-refill</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="239253-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream (30ml)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/239253-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/239253-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/239253-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">pre-style-hair-cream-30ml</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="879469-01">
+        <display-name xml:lang="x-default">Dyson Omega™ leave-in conditioning spray</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div><strong>Weightless leave-in spray to instantly smooth, condition and detangle hair.&nbsp;</strong></div>
+
+<div>
+<ul>
+	<li>Powered by Dyson Oli7™ blend.</li>
+	<li>With heat protection up to 230°C and UV shield.</li>
+	<li>For all hair types and routines.</li>
+</ul>
+</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/879469-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/879469-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/879469-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">leave-in-conditioning-spray-165ml</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="879484-01">
+        <display-name xml:lang="x-default">Dyson Omega™ leave-in conditioning spray refill</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div><strong>Refill of our weightless leave-in spray to instantly smooth, condition and detangle hair.</strong></div>
+
+<div>
+<ul>
+	<li>Powered by Dyson Oli7™ blend.</li>
+	<li>With heat protection up to 230°C and UV shield.</li>
+</ul>
+</div>
+
+<ul>
+	<li>For all hair types and routines.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/879484-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/879484-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/879484-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">leave-in-conditioning-spray-refill</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="161094-01">
+        <display-name xml:lang="x-default">Dyson Omega™ hydrating hair oil</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div><strong>Lightweight oil to hydrate and restore hair, with instant shine.</strong></div>
+
+<ul>
+	<li>Powered by Dyson Oli7™ blend.</li>
+	<li>With heat protection up to 230°C.</li>
+	<li>For all hair types and routines.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/161094-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/161094-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/161094-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">hydrating-hair-oil-30ml</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="127300-01">
+        <display-name xml:lang="x-default">Dyson Omega™ leave-in conditioning spray (50ml)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Travel-friendly weightless leave-in spray to instantly smooth, condition and detangle hair</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/127300-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/127300-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/127300-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">leave-in-conditioning-spray-50ml</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="521871-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream (Straight to wavy light conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally straight to wavy hair that is easily weighed down.<br />
+For use on towel-dried, damp hair, before styling.<br />
+Four formulas, precision-blended for different hair types.<br />
+&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521871-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521871-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521871-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-to-wavy-light</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="521874-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream (Straight to wavy rich conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally straight to wavy hair that needs more intensely nourishing ingredients.<br />
+For use on towel-dried, damp hair, before styling.<br />
+Four formulas, precision-blended for different hair types.<br />
+&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521874-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521874-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521874-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-to-wavy-rich</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="521903-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream (Curly to coily light conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally curly to coily hair that is easily weighed down.<br />
+For use on towel-dried, damp hair, before styling.<br />
+Four formulas, precision-blended for different hair types.<br />
+&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521903-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521903-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521903-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-to-coily-light</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="521912-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream (Curly to coily rich conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally curly to coily hair that needs more intensely nourishing ingredients.<br />
+For use on towel-dried, damp hair, before styling.<br />
+Four formulas, precision-blended for different hair types.&nbsp;<br />
+&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521912-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521912-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521912-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-to-coily-rich</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="123415-01">
+        <display-name xml:lang="x-default">Dyson Amino™ leave-in scalp bubble treatment</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div>Strengthens, hydrates, and controls oil supporting all scalp types and promotes fuller, healthy-looking hair</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/123415-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/123415-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/123415-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">leave-in-scalp-bubble-treatment-75ml</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="123416-01">
+        <display-name xml:lang="x-default">Dyson Amino™ leave-in scalp bubble treatment Refill</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div>Strengthens, hydrates, and controls oil supporting all scalp types and promotes fuller, healthy-looking hair.</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/123416-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/123416-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/123416-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">leave-in-scalp-bubble-treatment-refill</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="521913-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream Refill (Straight to wavy light conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally straight to wavy hair that is easily weighed down.<br />
+Four formulas, precision-blended for different hair types.<br />
+100% recyclable.*<br />
+*Refill cartridge only, check local recycling guidance.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521913-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521913-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521913-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-to-wavy-light</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="521919-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream Refill (Straight to wavy rich conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally straight to wavy hair that needs more intensely nourishing ingredients.<br />
+Four formulas, precision-blended for different hair types.<br />
+100% recyclable.*<br />
+*Refill cartridge only, check local recycling guidance.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521919-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521919-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521919-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-to-wavy-rich</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="521929-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream refill (Curly to coily light conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally curly to coily hair that is easily weighed down.<br />
+Use on towel-dried, damp hair.<br />
+Four formulas, precision-blended for different hair types.<br />
+100% recyclable.*<br />
+*Refill cartridge only, check local recycling guidance.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521929-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521929-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521929-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-to-coily-light</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="521950-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream refill (Curly to coily rich conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally curly to coily hair that needs more intensely nourishing ingredients.<br />
+Use on towel-dried, damp hair.<br />
+Four formulas, precision-blended for different hair types.<br />
+100% recyclable.*<br />
+*Refill cartridge only, check local recycling guidance.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521950-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521950-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/521950-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-to-coily-rich</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="581866-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream travel mini (Straight to wavy light conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>For naturally straight to wavy hair that is easily weighed down.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/581866-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/581866-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/581866-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-to-wavy-light</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="581869-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream travel mini (Straight to wavy rich conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[For naturally straight to wavy hair that needs more intensely nourishing ingredients.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/581869-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/581869-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/581869-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-to-wavy-rich</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="592292-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream travel mini (Curly to coily light conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[For naturally curly to coily hair that is easily weighed down.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/592292-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/592292-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/592292-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-to-coily-light</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="592311-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream travel mini (Curly to coily rich conditioning)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[For naturally curly to coily hair that needs more intensely nourishing ingredients.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/592311-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/592311-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/592311-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">curly-to-coily-rich</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="683291-01">
+        <display-name xml:lang="x-default">Dyson Zone™ absolute+ headphones (Black/Bright Copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Dyson's most advanced headphones with integrated air purification.¹</strong></p>
+<ul>
+	<li>High-fidelity audio engineered by Dyson acoustic engineers.</li>
+	<li>Fully sealed, three-stage filtration. Captures 99.95% of particles as small as 0.1 microns.²</li>
+	<li>Detects and destroys formaldehyde.³</li>
+	<li>Up to 50 hours audio-only battery life.⁴</li>
+	<li>MyDyson™ app connectivity.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/683291-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/683291-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/683291-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">black-bright-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="683292-01">
+        <display-name xml:lang="x-default">Dyson Zone™ absolute+ headphones (Prussian Blue/Bright Copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Dyson's most advanced headphones with integrated air purification.¹</strong></p>
+<ul>
+	<li>High-fidelity audio engineered by Dyson acoustic engineers.</li>
+	<li>Fully sealed, three-stage filtration. Captures 99.95% of particles as small as 0.1 microns.²</li>
+	<li>Detects and destroys formaldehyde.³</li>
+	<li>Up to 50 hours audio-only battery life.⁴</li>
+	<li>MyDyson™ app connectivity.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/683292-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/683292-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/683292-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">prussian-blue-bright-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="302217-01">
+        <display-name xml:lang="x-default">Dyson Lightcycle Morph™ Desk light (White/Silver)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>4-in-1 intelligent task light that transforms to suit every task.¹</strong></p>
+<ul>
+	<li>Task, feature, indirect and ambient modes.</li>
+	<li>Tracks local daylight automatically, adjusting colour temperature and brightness.²</li>
+	<li>Eye comfort mode reduces glare and flicker.</li>
+	<li>60-year LED lifespan.³</li>
+	<li>MyDyson™ app connectivity.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302217-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302217-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302217-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white-silver</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="302218-01">
+        <display-name xml:lang="x-default">Dyson Lightcycle Morph™ Floor light (White/Silver)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>4-in-1 intelligent floor light that transforms to suit every task.¹</strong></p>
+<ul>
+	<li>Task, feature, indirect and ambient modes.</li>
+	<li>Tracks local daylight automatically, adjusting colour temperature and brightness.²</li>
+	<li>Eye comfort mode reduces glare and flicker.</li>
+	<li>60-year LED lifespan.³</li>
+	<li>MyDyson™ app connectivity.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302218-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302218-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302218-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white-silver</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="302220-01">
+        <display-name xml:lang="x-default">Dyson Lightcycle Morph™ Desk light (Black/Black)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>4-in-1 intelligent task light that transforms to suit every task.¹</strong></p>
+<ul>
+	<li>Task, feature, indirect and ambient modes.</li>
+	<li>Tracks local daylight automatically, adjusting colour temperature and brightness.²</li>
+	<li>Eye comfort mode reduces glare and flicker.</li>
+	<li>60-year LED lifespan.³</li>
+	<li>MyDyson™ app connectivity.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302220-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302220-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302220-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">black</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="499201-01">
+        <display-name xml:lang="x-default">Dyson Supersonic Oral™ toothbrush (Black/Copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Dyson's first toothbrush. Engineered for the full mouth.¹</strong></p>
+<ul>
+	<li>Hyperdymium™ motor drives 108,000 brush movements per minute.²</li>
+	<li>Pressure sensor pauses brushing when too much force is applied.</li>
+	<li>Built-in UV sanitiser kills 99.9% of bacteria on brush head.³</li>
+	<li>Up to 7 days battery life per charge.⁴</li>
+	<li>MyDyson™ app with AI-powered brushing guidance.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/499201-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/499201-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/499201-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">black-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="499202-01">
+        <display-name xml:lang="x-default">Dyson Supersonic Oral™ toothbrush (White/Silver)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Dyson's first toothbrush. Engineered for the full mouth.¹</strong></p>
+<ul>
+	<li>Hyperdymium™ motor drives 108,000 brush movements per minute.²</li>
+	<li>Pressure sensor pauses brushing when too much force is applied.</li>
+	<li>Built-in UV sanitiser kills 99.9% of bacteria on brush head.³</li>
+	<li>Up to 7 days battery life per charge.⁴</li>
+	<li>MyDyson™ app with AI-powered brushing guidance.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>false</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/499202-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/499202-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/499202-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white-silver</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="589623-01">
+        <display-name xml:lang="x-default">Dyson V15s Detect Submarine™  wet and dry vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Powerful, cordless vacuum. Automatically de-tangles hair. For all floors. Up to 60 minutes run-time. Intelligently calculates run-time. ]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/589623-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/589623-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/589623-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">yellow-nickel</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="492690-01">
+        <display-name xml:lang="x-default">Dyson PencilVac™ Fluffycones</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Dyson's fastest Hyperdymium™ vacuum motor in the world's slimmest vacuum¹</strong></p>
+<ul>
+	<li>Fluffycones™ cleaner head</li>
+	<li>De-tangles long hair</li>
+	<li>Illuminates dust - both forwards and backwards</li>
+	<li>Slim, ultra-manoeuvrable vacuum</li>
+	<li>Hygienic syringe action bin emptying</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/492690-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/492690-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/492690-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">fluffycones</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="485296-01">
+        <display-name xml:lang="x-default">Dyson V12s Detect Slim Submarine</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div><strong>Powerful, compact cordless vacuum.<br />
+Picks up fine dust and debris and now washes hard floors.</strong></div>
+
+<ul>
+	<li>Single-button power control.&nbsp;</li>
+	<li>Up to 60 minutes run-time.</li>
+	<li>Submarine cleaner head washes hard floors.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/485296-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/485296-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/485296-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">yellow-nickel-motorbar</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="589596-01">
+        <display-name xml:lang="x-default">Dyson V8 Cyclone cordless vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div>Dyson's most powerful V8 ever. Now with 30% more suction. Powerful suction - The updated Dyson digital motor spins at 125,000 rpm and removes 50% more dirt in one charge. Deep cleans your whole home.</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/589596-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/589596-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/589596-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">motorbar</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="586121-01">
+        <display-name xml:lang="x-default">Dyson Car+Boat handheld vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The most powerful handheld vacuum.¹ For deep cleaning on the go.</strong></p>
+<ul>
+	<li>115 Air Watts&nbsp;suction</li>
+	<li>50min&nbsp;run time</li>
+	<li>No loss of suction</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586121-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586121-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586121-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">silver</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="586180-01">
+        <display-name xml:lang="x-default">Dyson Spot+Scrub™ Ai</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Eliminates hidden stains using advanced Ai.¹ Hygienically. Wet roller cleans itself on every rotation.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586180-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586180-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586180-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">black</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="664879-01">
+        <display-name xml:lang="x-default">Dyson R2 Nurovi™ Wash+Dry robot vacuum (Light grey / Vinca blue)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Dyson’s Reuleaux triangle pads. Thorough floor washing right into corners. With Twin-capture™ system for powerful pick-up of dust and debris on all floors.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/664879-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/664879-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/664879-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">light-grey-vinca-blue</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="664869-01">
+        <display-name xml:lang="x-default">Dyson R1 Nurovi™ Dry robot vacuum (Light Grey / Vinca Blue)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Dyson Twin-capture™ system. Powerful dry cleaning across hard floors and carpets.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/664869-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/664869-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/664869-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">light-grey-vinca-blue</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="228428-01">
+        <display-name xml:lang="x-default">Dyson Cinetic Big Ball Animal 2 vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[The only vacuum with no maintenance and no loss of suction. Engineered for homes with pets.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/228428-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/228428-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/228428-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">animal-2</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="232573-01">
+        <display-name xml:lang="x-default">Dyson Big Ball Multi Floor 2 vacuum</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Powerful Dyson suction. Self-adjusts to clean every floor type.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/232573-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/232573-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/232573-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">multi-floor-2</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="653668-01">
+        <display-name xml:lang="x-default">Dyson Big Ball™</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Engineered for tough tasks across all floors. With powerful suction to deep clean carpets, wood, vinyl and tiled floors. No need to wash or replace your filters. Ever. Just powerful performance, clean after clean.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/653668-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/653668-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/653668-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">motorbar-harlequin</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="640997-01">
+        <display-name xml:lang="x-default">Dyson Big Ball™Turbine</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Dyson's powerful canister vacuum comes with a washable lifetime filter so there are no bags to buy. Advanced whole-machine filtration traps 99.97% of fine dust as small as 0.3 microns, and expels cleaner air. Ball™ technology for easy steering around corners and into difficult places. Engineered for powerful deep cleaning of all floor types.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/640997-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/640997-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/640997-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">turbinehead</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="699286-01">
+        <display-name xml:lang="x-default">W1 PencilWash™ wet and dry cleaner</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Ultra-slim design. Streak-free floor finish. Removes stains hygienically. Ultra-slim. Lightweight. 180° true lie-flat.
+Removes dirt, spills, stains and hair - all in one.
+Anti-tangles long hair.
+320m² coverage¹. Streak-free finish.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/699286-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/699286-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/699286-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">wand-charging-dock</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="431999-01">
+        <display-name xml:lang="x-default">Dyson Clean+Wash Hygiene</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<ul>
+	<li>Cleans dry dirt like a vacuum.</li>
+	<li>Washes away wet mess and stains.</li>
+	<li>Lightweight. Lies flat.</li>
+	<li>No bacteria. No bad smells.</li>
+	<li>Hygienic waste system at base Self-clean cycle and Hot-air drying dock.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/431999-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/431999-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/431999-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">copper-prussian-blue</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="637218-01">
+        <display-name xml:lang="x-default">Dyson PencilWash™</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<ul>
+	<li>Ultra-slim. Lightweight. Low profile.</li>
+	<li>Removes wet and dry mess</li>
+	<li>Self-propelled motion</li>
+	<li>Quick-drying 100m² coverage</li>
+	<li>No clogging dirt</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637218-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637218-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/637218-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="586143-01">
+        <display-name xml:lang="x-default">02 Probiotic Hard floor cleaning solution</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Deep cleans at a microscopic level for fresh smelling floors.&nbsp;</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586143-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586143-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586143-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">500ml</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="113279-01">
+        <display-name xml:lang="x-default">Dyson Supersonic™ hair dryer - Straight+Wavy (Prussian blue/Rich copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The original innovation.&nbsp;</strong></p>
+<ul>
+	<li>Fast drying. With no extreme heat. Intelligent heat control helps protect your hair's natural shine.</li>
+	<li>Dyson’s debut hair dryer for straight and wavy hair.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/113279-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/113279-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/113279-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">straight-wavy-prussian-blue-rich-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="702276-01">
+        <display-name xml:lang="x-default">Dyson Supersonic™ Travel hair dryer (Prussian blue/Rich copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>32% smaller. 25% lighter.¹ Still mighty. Travel ready with voltage that adapts automatically – for uncompromised performance², no matter the destination. Compatible with existing Supersonic™ attachments. ³</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/702276-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/702276-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/702276-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">prussian-blue</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="107833-01">
+        <display-name xml:lang="x-default">Dyson Supersonic™ Origin hair dryer (Nickel/Copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The original Supersonic™ hair dryer.&nbsp;</strong></p>
+<ul>
+	<li>Fast drying.</li>
+	<li>With no extreme heat.</li>
+	<li>Intelligent heat control helps protect your hair’s natural shine.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>false</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/107833-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/107833-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/107833-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">nickel-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="650108-01">
+        <display-name xml:lang="x-default">Dyson Airstrait™ dryer and straightener (Plum/Copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Straighten as you dry. 2x the shine.¹ Faster styling using only air. No heat damage.​]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/650108-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/650108-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/650108-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">plum-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="408108-01">
+        <display-name xml:lang="x-default">Dyson Corrale™ straightener (Blue/copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The most-awarded hair straightener.¹</strong></p>
+<ul>
+	<li>The only hair straightener with flexing copper plates.&nbsp;</li>
+	<li>Long-lasting battery delivers with up to 30 minutes cordless styling.⁴</li>
+	<li>Shiny, straight results with less heat, less frizz and fewer flyaways.³</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>false</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/408108-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/408108-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/408108-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">blue-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="600095-01">
+        <display-name xml:lang="x-default">Dyson Corrale CoolShine™ straightener (Ceramic pink / Rose gold)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[Heat extracting pipes cool the hair for glossy, sleek straight results and up to 29% less heat damage1. Up to 154% more shine.² Lightweight. All day hold.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/600095-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/600095-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/600095-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">ceramic-pink</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="112905-01">
+        <display-name xml:lang="x-default">Dyson Airwrap™ Origin multi-styler and dryer (Nickel/Copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div><strong>The original Airwrap™ multi-styler.</strong></div>
+
+<ul>
+	<li>The first multi-styler to use Coanda airflow. For simple styling without heat damage.</li>
+	<li>With 3 styling attachments.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/112905-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/112905-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/112905-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">nickel-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="493090-01">
+        <display-name xml:lang="x-default">Dyson Airsmooth™ Styling Brush (Ceramic Pink/Rose Gold)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[The Dyson Airsmooth™ styling brush. Dual bristle technology to reduce snagging and control frizz.]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/493090-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/493090-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/493090-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">ceramic-pink</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="168917-01">
+        <display-name xml:lang="x-default">Dyson Define and refresh styling duo</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Giftset featuring the Dyson Chitosan™ multi-use styling spray travel mini and Dyson Omega™ leave-in conditioning spray travel mini. For all hair types.</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>false</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/168917-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/168917-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/168917-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">define-refresh-styling-duo</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="545814-01">
+        <display-name xml:lang="x-default">Dyson Purifier Big + Quiet Formaldehyde BP04 Purifying fan (Prussian Blue/Gold)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>2 in 1: Powerful and quiet whole room cooling with advanced purifiication. <sup>1</sup></p>
+<p>&nbsp;</p>
+<ul>
+	<li>Cone aerodynamic projection delivers over 22 gallons of purified air per second to purify large spaces upto 100m<sup>2</sup>.</li>
+	<li>Three-stage HEPA fitration captures 99.95% of particles as small as 0.1 microns<sup>3</sup>. Detects and destroys formaldehyde.<sup>4</sup> Absorbs 3x more NO<sub>2</sub>.<sup>9</sup> Automatically senses when CO<sub>2</sub> is high.</li>
+	<li>MyDyson™ app connectivity.<sup>7</sup></li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>false</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/545814-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/545814-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/545814-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">prussian-blue-gold</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="544837-01">
+        <display-name xml:lang="x-default">Dyson Purifier Hot+Cool HP1 Purifying fan heater (White)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>3 in 1: Heats you in winter. Cools you in summer.<sup>1&nbsp;</sup>Purifies all year round.&nbsp;&nbsp;</strong></p>
+<ul>
+	<li>Automatically senses, captures and traps pollutants.</li>
+	<li>Captures 99.95% of particles as small as 0.1 microns.</li>
+	<li>Connects to the MyDyson<sup>TM</sup> app</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>false</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544837-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544837-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544837-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="544587-01">
+        <display-name xml:lang="x-default">Dyson Purifier Humidify+Cool PH2 De-NOx Purifying humidifying fan (White/Gold)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div><strong>3-in-1:&nbsp;Humidifies air hygienically, cooling you, with advanced air purification.</strong></div>
+
+<ul>
+	<li>Advanced air purification automatically&nbsp;captures 50% more NO₂.¹</li>
+	<li>Ultraviolet Cleanse technology hygienically removes 99.9% of bacteria in the water.⁴&nbsp;</li>
+	<li>
+	<p>Fully sealed, 3-stage HEPA H13 grade filtration captures 99.95% of ultra-fine particles.⁵</p></li>
+	<li>
+	<p>Removes odours and gases⁵, and continuously destroys formaldehyde.⁶&nbsp;</p></li>
+	<li>
+	<p>Control and monitor air quality from anywhere using the MyDyson™ app⁷, or hands-free with compatible voice services.⁷</p></li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544587-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544587-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544587-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">de-nox-white-gold</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="544557-01">
+        <display-name xml:lang="x-default">Dyson Purifier Hot+Cool HP2 De-NOx Purifying fan heater (White/Gold)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>3 in 1 : Powerfully cools you with purified air.<sup>1</sup>&nbsp;Also heats you during cooler weather.&nbsp;</p>
+<ul>
+	<li><strong>Air Multiplier™ technology</strong>&nbsp;cools you&nbsp;with over 290 litres per second of smooth, yet powerful airflow.²</li>
+	<li><strong>Ceramic plates</strong> combined with  Air Multiplier™&nbsp;projection  heats you and the whole room evenly during winter.<sup>2</sup></li>
+	<li><strong>Three-stage HEPA filtration</strong>&nbsp;captures 99.95% of particles as small as 0.3 microns<sup>2</sup>. Detects and destroys formaldehyde. Absorbs 50% more NO<sub>2</sub>.</li>
+	<li><strong>MyDyson™ app⁷</strong>&nbsp;connectivity.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544557-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544557-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544557-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">de-nox-white-gold</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="544535-01">
+        <display-name xml:lang="x-default">Dyson Purifier Cool PC2 De-NOx Purifying fan (White/Gold)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div>2 in 1: Powerfully cools you with advanced air purification.</div>
+
+<div>&nbsp;</div>
+
+<div>
+<ul>
+	<li><strong>Air Multiplier™ technology</strong> cools you&nbsp;with over 290 litres per second of smooth, yet powerful airflow.²</li>
+	<li><strong>Three-stage HEPA filtration</strong> captures 99.95% of particles as small as 0.3 microns2. Detects and destroys formaldehyde. Absorbs 50% more NO2.</li>
+	<li><strong>MyDyson™ app⁷</strong> connectivity.</li>
+</ul>
+</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544535-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544535-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544535-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">de-nox-white-gold</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="544903-01">
+        <display-name xml:lang="x-default">Dyson Purifier Cool PC1 Purifying fan (White)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>2 in 1: Powerfully cools you with purified air.</p>
+<p>&nbsp;</p>
+<ul>
+	<li>
+	<div><strong>Air Multiplier™ technology</strong> generates powerful, long-range projection to purify and cool you quickly.<sup>1</sup></div>
+	</li>
+	<li>
+	<div><strong>Two-stage HEPA H13 filtration</strong> captures 99.95% of particles as small as 0.1 microns.²</div>
+	</li>
+	<li>
+	<div><strong>MyDyson™ app³</strong> connectivity.</div>
+	</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544903-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544903-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/544903-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="699290-01">
+        <display-name xml:lang="x-default">Dyson HushJet™ Purifier Compact (Black/Iron)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div>Dyson's most powerful, small format purifier with unique Hushjet™ air projection. Delivers quiet and powerful airflow to purify rooms upto 100m<sup>2</sup>.<sup>1 </sup>Captures and traps pollutants, allergens and pet odours.</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/699290-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/699290-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/699290-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">black-iron</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="430516-01">
+        <display-name xml:lang="x-default">Dyson Pure Hot+Cool™ HP00 Purifying fan heater (White/Silver)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>3 in 1 : Powerfully cools you with purified air.<sup>1</sup> Also heats you during cooler weather.</p>
+<ul>
+	<li>Air Multiplier™ technology projects over 200 litres of air per second delivering smooth, yet powerful airflow to cool you quickly during summer.<sup>2</sup></li>
+	<li>Two-stage HEPA filtration captures 99.95% of particles as small as 0.1 microns.<sup>3</sup></li>
+	<li>Ceramic plates combined with  Air Multiplier™&nbsp;projection  heats you and the whole room evenly during winter.<sup>2</sup></li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/430516-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/430516-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/430516-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white-silver</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="586344-01">
+        <display-name xml:lang="x-default">Dyson Hot+Cool™ HF1 Remote Link Pre-heat heater fan (White/Silver)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div><strong>2 in 1: Dyson's quietest, most powerful heater and cooling fan.</strong></div>
+
+<ul>
+	<li>Heats your whole room 20% faster<sup>1</sup>&nbsp;and cools you for year-round comfort.</li>
+	<li>Pre-heat your room and control from anywhere with the MyDyson™ app<sup>2</sup></li>
+	<li>Up to 30% more efficient than a non-thermostat controlled heater.<sup>3</sup></li>
+	<li>Safe, with no exposed heater elements, and quiet as a whisper at only 26dB.<sup>4</sup></li>
+	<li>Remote control included.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586344-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586344-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586344-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white-silver</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="473399-01">
+        <display-name xml:lang="x-default">Dyson Hot+Cool™ Jet Focus AM09 fan heater (White/Nickel)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>2 in 1:&nbsp;provides comfortable heating and cooling all year round.</strong></p>
+<ul>
+	<li>Diffused mode heats the room evenly.²</li>
+	<li>Jet Focus mode channels a powerful jet of hot&nbsp;air for long-range circulation.<sup>3</sup></li>
+	<li>Air Multiplier™ technology for uninterrupted airflow.<sup>3</sup></li>
+	<li>Smoothly oscillates up to 70° to project, mix and circulate warm or cool air throughout the room.¹</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/473399-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/473399-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/473399-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white-nickel</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="300910-01">
+        <display-name xml:lang="x-default">Dyson Cool™ AM07 tower fan (White/Silver)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>Powerful airflow with long-range air projection to cool you in the summer quickly.<sup>1</sup></p>
+<p>&nbsp;</p>
+<ul>
+	<li>
+	<p><strong>Air Multipler<sup>TM</sup> technology</strong> generates 500 litres of airflow per second to cool you fast.</p></li>
+	<li>
+	<p><strong>Bladeless design</strong> for delivery of smooth, uninterrupted airflow.&nbsp;</p></li>
+	<li>
+	<p><strong>Engineered for larger spaces.</strong> Smoothly oscillates up to 70° to circulate air throughout the room.</p></li>
+	<li>
+	<p><strong>Sleep timer</strong>: Programmed to turn off after pre-set intervals.</p></li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>false</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/300910-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/300910-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/300910-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">tower-white-silver</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="586374-01">
+        <display-name xml:lang="x-default">Dyson Cool™ CF1 desk fan (White/Silver)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div>
+<div>Powerful and quiet cooling airflow for warmer weather.<sup>1</sup></div>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>
+	<p><strong>Air Multipler<sup>TM</sup> technology</strong> generates 370 litres of airflow per second to cool you fast.</p></li>
+	<li>
+	<p><strong>Quiet</strong>, even at full power.</p></li>
+	<li>
+	<p><strong>Energy efficient</strong> at only 30 watts in maximum speed setting.</p></li>
+	<li>
+	<p><strong>MyDyson<sup>TM</sup></strong> <strong>app </strong>connectivity.</p></li>
+</ul>
+</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586374-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586374-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/586374-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white-silver</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="641010-01">
+        <display-name xml:lang="x-default">HushJet™ Mini Cool fan (Stone/Blush)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<div>Dyson's first portable cooling fan with unique HushJet™ air projection. Powerful. Quiet. Fast evaporative cooling.</div>
+
+<div>&nbsp;</div>
+
+<div>
+<ul>
+	<li><strong>Unique HushJet™ air projection</strong> helps reduce turbulence for focused and quiet cooling.</li>
+	<li><strong>5 fan speeds</strong> for powerful and quick cooling.</li>
+	<li><strong>Boost mode</strong> that turbo-charges airflow up to 25m/s​.¹</li>
+	<li><strong>3-in-1</strong>: handheld, desktop and wearable with 360° twist nozzle for multidirectional airflow.</li>
+	<li>Up to <strong>6 hours of battery life</strong> on a single charge.<sup>2</sup></li>
+</ul>
+</div>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/641010-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/641010-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/641010-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">stone-blush</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="607236-01">
+        <display-name xml:lang="x-default">Dyson Chitosan™ Pre-style cream mini (15ml)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p>&nbsp;2 x longer hold.* Without the crunch.&nbsp;<br />
+*vs. untreated hair.&nbsp;<br />
+Up to 50% less frizz. *vs. untreated hair.<br />
+With oil blends to help condition the hair surface, giving a soft, shiny finish.<br />
+Heat protectant properties. [Heat protection up to XXX°C/°F.]</p>]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/607236-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/607236-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/607236-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour"></custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="683293-01">
+        <display-name xml:lang="x-default">Dyson Zone™ headphones (Iron/Bright Copper)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>High-fidelity audio and air purification.¹</strong></p>
+<ul>
+	<li>Eleven high-fidelity sound modes.</li>
+	<li>Two-stage filtration captures 99% of particles as small as 0.3 microns.²</li>
+	<li>Up to 50 hours audio-only battery life.³</li>
+	<li>Three microphones for clear calls and voice control.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/683293-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/683293-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/683293-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">iron-bright-copper</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="302219-01">
+        <display-name xml:lang="x-default">Dyson Lightcycle Morph™ Pendant light (White/Silver)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Intelligent pendant light. Tracks local daylight to deliver the right colour and brightness, automatically.¹</strong></p>
+<ul>
+	<li>Warm and cool white light.</li>
+	<li>Adjusts to match local sunrise and sunset times.</li>
+	<li>60-year LED lifespan.²</li>
+	<li>MyDyson™ app connectivity.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302219-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302219-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302219-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white-silver</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="302221-01">
+        <display-name xml:lang="x-default">Dyson Cu-Beam Quad™ ceiling light (Nickel)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>Powerful ambient ceiling light that adapts to you, your space and local daylight.¹</strong></p>
+<ul>
+	<li>Four individually controllable beams.</li>
+	<li>Tracks local daylight automatically.</li>
+	<li>Eye comfort mode reduces glare and flicker.</li>
+	<li>60-year LED lifespan.²</li>
+	<li>MyDyson™ app connectivity.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302221-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302221-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/302221-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">nickel</custom-attribute>
+        </custom-attributes>
+    </product>
+    <product product-id="499203-01">
+        <display-name xml:lang="x-default">Dyson Supersonic Oral™ Origin toothbrush (White)</display-name>
+        <long-description xml:lang="x-default"><![CDATA[<p><strong>The entry-level Dyson toothbrush. Powerful cleaning. Lightweight design.¹</strong></p>
+<ul>
+	<li>Hyperdymium™ motor drives 108,000 brush movements per minute.²</li>
+	<li>Pressure sensor pauses brushing when too much force is applied.</li>
+	<li>Up to 7 days battery life per charge.³</li>
+	<li>Three cleaning modes: Clean, Sensitive, Whitening.</li>
+</ul>
+]]></long-description>
+        <online-flag>true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <images>
+            <image-group view-type="large"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/499203-01.png"/></image-group>
+            <image-group view-type="medium"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/499203-01.png"/></image-group>
+            <image-group view-type="small"><image path="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/499203-01.png"/></image-group>
+        </images>        <tax-class-id>standard</tax-class-id>
+        <brand>Dyson</brand>
+        <custom-attributes>
+            <custom-attribute attribute-id="colour">white</custom-attribute>
+        </custom-attributes>
+    </product>
+    <category-assignment category-id="cordless-vacuums" product-id="dyson-v16-piston-animal">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cordless-vacuums" product-id="dyson-v15">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cordless-vacuums" product-id="dyson-v12">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cordless-vacuums" product-id="dyson-v10-konical">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cordless-vacuums" product-id="dyson-v10">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="upright-vacuums" product-id="dyson-ball-animal">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="hair-dryers" product-id="dyson-supersonic-r">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="hair-dryers" product-id="dyson-supersonic-nural">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="dyson-airwrap-co-anda2x">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="dyson-airwrap-id">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="dyson-chitosan">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="dyson-omega">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="dyson-pre-style-hair-cream-100ml">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="dyson-amino">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="dyson-pre-style-hair-cream-refill">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="dyson-pre-style-hair-cream-30ml">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="headphones" product-id="dyson-zone-absolute-plus">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="lighting" product-id="dyson-lightcycle-morph">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="oral-care" product-id="dyson-supersonic-oral">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cordless-vacuums" product-id="589623-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cordless-vacuums" product-id="492690-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cordless-vacuums" product-id="485296-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cordless-vacuums" product-id="589596-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cordless-vacuums" product-id="586121-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="robot-vacuums" product-id="586180-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="robot-vacuums" product-id="664879-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="robot-vacuums" product-id="664869-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cylinder-vacuums" product-id="228428-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cylinder-vacuums" product-id="232573-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cylinder-vacuums" product-id="653668-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="cylinder-vacuums" product-id="640997-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="wet-floor-cleaners" product-id="699286-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="wet-floor-cleaners" product-id="431999-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="wet-floor-cleaners" product-id="637218-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="wet-floor-cleaners" product-id="586143-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="hair-dryers" product-id="113279-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="hair-dryers" product-id="702276-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="hair-dryers" product-id="107833-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="hair-straighteners" product-id="650108-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="hair-straighteners" product-id="408108-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="hair-straighteners" product-id="600095-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="112905-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="493090-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="168917-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="air-purifiers" product-id="545814-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="air-purifiers" product-id="544837-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="air-purifiers" product-id="544587-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="air-purifiers" product-id="544557-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="air-purifiers" product-id="544535-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="air-purifiers" product-id="544903-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="air-purifiers" product-id="699290-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="air-purifiers" product-id="430516-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="fans-heaters" product-id="586344-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="fans-heaters" product-id="473399-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="fans-heaters" product-id="300910-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="fans-heaters" product-id="586374-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="fans-heaters" product-id="641010-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="all-hair-care" product-id="607236-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="headphones" product-id="683293-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="lighting" product-id="302219-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="lighting" product-id="302221-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+    <category-assignment category-id="oral-care" product-id="499203-01">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+</catalog>
