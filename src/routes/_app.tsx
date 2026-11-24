@@ -122,22 +122,24 @@ export default function DefaultLayout({
     );
 
     return (
-        <LenisProvider>
-            <SkipLink />
-            <WishlistMergeToast />
-            <Header
-                heroTransparent={heroTransparent}
-                announcementSlot={
-                    // Keep this region outside any Suspense boundary, so it blocks the shell until it resolves.
-                    <EmbeddedComponentRegion component={refHeaderComponent.current} regionId="announcement" critical />
-                }>
-                <DysonNav categoriesPromise={refRoot.current!} />
-            </Header>
-            <main id="main-content" tabIndex={-1} className="grow pt-8" {...mainPaddingAttrs}>
-                <Outlet />
-            </main>
-            <Footer />
+        <>
+            <LenisProvider>
+                <SkipLink />
+                <WishlistMergeToast />
+                <Header
+                    heroTransparent={heroTransparent}
+                    announcementSlot={
+                        // Keep this region outside any Suspense boundary, so it blocks the shell until it resolves.
+                        <EmbeddedComponentRegion component={refHeaderComponent.current} regionId="announcement" critical />
+                    }>
+                    <DysonNav categoriesPromise={refRoot.current!} />
+                </Header>
+                <main id="main-content" tabIndex={-1} className="grow pt-8" {...mainPaddingAttrs}>
+                    <Outlet />
+                </main>
+                <Footer />
+            </LenisProvider>
             <ShopperAgent />
-        </LenisProvider>
+        </>
     );
 }
