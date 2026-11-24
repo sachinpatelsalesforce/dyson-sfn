@@ -25,6 +25,7 @@ import { getLogger } from '@/lib/logger.server';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import DysonNav from '@/components/dyson-nav';
+import { ShopperAgent } from '@/components/shopper-agent';
 import { WishlistMergeToast } from '@/components/wishlist/wishlist-merge-toast';
 import { useAuth } from '@/providers/auth';
 import { useWishlistSession } from '@/providers/wishlist';
@@ -136,6 +137,7 @@ export default function DefaultLayout({
                 <Outlet />
             </main>
             <Footer />
+            <ShopperAgent />
         </LenisProvider>
     );
 }
