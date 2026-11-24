@@ -29,16 +29,17 @@ export function ShopperAgent() {
                 <button
                     onClick={() => setMounted(true)}
                     aria-label="Ask Dyson"
-                    className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-[#1a1a1a] px-4 py-3 text-white shadow-xl transition-all duration-200 hover:bg-black hover:scale-105"
+                    className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full px-5 py-3 text-white transition-all duration-300 hover:scale-105 hover:brightness-110 bg-gradient-to-r from-[#4f46e5] via-[#7c3aed] to-[#06b6d4]"
+                    style={{ boxShadow: '0 0 24px rgba(124,58,237,0.6), 0 0 48px rgba(6,182,212,0.2), 0 4px 16px rgba(0,0,0,0.4)' }}
                 >
                     <svg
-                        className="size-4 text-white/80"
+                        className="size-4 text-white/90"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
                     >
-                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1-1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
                     </svg>
                     <span className="text-sm font-semibold tracking-wide">Ask Dyson</span>
                 </button>
