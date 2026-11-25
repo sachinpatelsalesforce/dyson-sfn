@@ -67,6 +67,7 @@ export type HomePageData = {
     currency: string | null;
 };
 
+// oxlint-disable-next-line typescript/require-await -- loader declared async for React Router type compatibility; no async calls needed in this implementation
 export async function loader(args: Route.LoaderArgs): Promise<HomePageData> {
     const logger = getLogger(args.context);
     logger.debug('HomePage: loader starting');
@@ -101,7 +102,8 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
                 rawTitle
                 title={t('meta.title', { defaultValue: 'Dyson | Engineered to clean deeper' })}
                 description={t('meta.description', {
-                    defaultValue: "Dyson's most powerful cordless vacuum. Laser-guided. Self-cleaning. Shop the V12s Detect Slim Submarine.",
+                    defaultValue:
+                        "Dyson's most powerful cordless vacuum. Laser-guided. Self-cleaning. Shop the V12s Detect Slim Submarine.",
                 })}
                 openGraph={{
                     type: 'website',

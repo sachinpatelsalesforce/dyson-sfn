@@ -71,7 +71,8 @@ export default function RealHomes() {
                     {HOMES.map((home, i) => (
                         <ScrollReveal key={home.key} delay={i * 0.1}>
                             <Link to={home.href} className="block group">
-                                <div className={`${home.bg} rounded-2xl p-8 h-full flex flex-col justify-between gap-8 transition-transform duration-500 group-hover:scale-[1.02]`}>
+                                <div
+                                    className={`${home.bg} rounded-2xl p-8 h-full flex flex-col justify-between gap-8 transition-transform duration-500 group-hover:scale-[1.02]`}>
                                     {/* Decorative swatch */}
                                     <div className={`${home.accent} w-12 h-12 rounded-xl`} aria-hidden="true" />
 
@@ -89,7 +90,9 @@ export default function RealHomes() {
                                                     {t(`realHomes.${home.key}.city`, home.city)}
                                                 </p>
                                             </div>
-                                            <span className="text-dark-band-foreground/40 group-hover:text-dark-band-foreground transition-colors" aria-hidden="true">
+                                            <span
+                                                className="text-dark-band-foreground/40 group-hover:text-dark-band-foreground transition-colors"
+                                                aria-hidden="true">
                                                 →
                                             </span>
                                         </div>

@@ -16,11 +16,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-} from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import { Link } from '@/components/link';
 import { ScrollReveal } from '@/components/motion/scroll-reveal';
 import { cn } from '@/lib/utils';
@@ -59,7 +55,7 @@ const COMPLEMENT_PRODUCTS = [
         shortName: 'Purifier Cool PC2 De-NOx',
         price: '£549.99',
         tag: 'Air quality',
-        why: 'HEPA H13 filtration captures what the vacuum can\'t — allergens and VOCs.',
+        why: "HEPA H13 filtration captures what the vacuum can't — allergens and VOCs.",
         tint: 'bg-[#182a26]',
     },
     {
@@ -79,7 +75,6 @@ export default function CompleteYourClean() {
         <section
             className="-mx-4 sm:-mx-8 lg:-mx-16 py-20 bg-panel overflow-hidden"
             aria-label={t('completeYourClean.ariaLabel', 'Complete your clean')}>
-
             {/* Header */}
             <div className="px-4 sm:px-8 lg:px-16 max-w-screen-2xl mx-auto mb-12">
                 <ScrollReveal>
@@ -111,10 +106,11 @@ export default function CompleteYourClean() {
                                     <Link
                                         to={`/p/${product.sku}`}
                                         className="group block rounded-2xl overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40">
-                                        <div className={cn(
-                                            'relative h-56 flex items-center justify-center p-8',
-                                            product.tint,
-                                        )}>
+                                        <div
+                                            className={cn(
+                                                'relative h-56 flex items-center justify-center p-8',
+                                                product.tint
+                                            )}>
                                             {/* Tag pill */}
                                             <span className="absolute top-4 left-4 text-[10px] font-semibold uppercase tracking-widest text-white/55">
                                                 {t(`completeYourClean.${product.sku}.tag`, product.tag)}
@@ -143,7 +139,10 @@ export default function CompleteYourClean() {
                                                 </span>
                                                 <span className="flex items-center gap-1 text-xs text-muted-foreground group-hover:text-foreground transition-colors">
                                                     {t('completeYourClean.shop', 'Shop')}
-                                                    <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                                                    <ArrowRight
+                                                        className="size-3 transition-transform group-hover:translate-x-0.5"
+                                                        aria-hidden="true"
+                                                    />
                                                 </span>
                                             </div>
                                         </div>
@@ -154,7 +153,6 @@ export default function CompleteYourClean() {
                     </CarouselContent>
                 </Carousel>
             </div>
-
         </section>
     );
 }

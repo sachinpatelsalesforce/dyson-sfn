@@ -24,13 +24,7 @@ interface ScrollRevealProps {
     once?: boolean;
 }
 
-export function ScrollReveal({
-    children,
-    delay = 0,
-    direction = 'up',
-    className,
-    once = true,
-}: ScrollRevealProps) {
+export function ScrollReveal({ children, delay = 0, direction = 'up', className, once = true }: ScrollRevealProps) {
     const shouldReduceMotion = useReducedMotion();
 
     if (shouldReduceMotion) {

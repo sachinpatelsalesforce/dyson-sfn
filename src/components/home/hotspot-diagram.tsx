@@ -13,12 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* oxlint-disable custom/color-linter -- Hotspot uses explicit black/white colors on photographic background */
 import { useTranslation } from 'react-i18next';
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@/components/ui/popover';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { ScrollReveal } from '@/components/motion/scroll-reveal';
 import cleanerHeadExploded from '/images/cleaner-head-exploded.png';
 
@@ -74,10 +71,12 @@ export default function HotspotDiagram() {
     const { t } = useTranslation('home');
 
     return (
-        <section className="py-24 bg-panel overflow-hidden" id="inside-machine" aria-label={t('hotspot.ariaLabel', 'Inside the machine')}>
+        <section
+            className="py-24 bg-panel overflow-hidden"
+            id="inside-machine"
+            aria-label={t('hotspot.ariaLabel', 'Inside the machine')}>
             <div className="section-container">
                 <div className="lg:grid lg:grid-cols-[1fr_1fr] lg:gap-20 lg:items-center">
-
                     {/* Left: text */}
                     <div className="mb-12 lg:mb-0">
                         <ScrollReveal>
@@ -87,12 +86,15 @@ export default function HotspotDiagram() {
                         </ScrollReveal>
                         <ScrollReveal delay={0.05}>
                             <h2 className="display-heading text-4xl lg:text-5xl text-foreground mb-6">
-                                {t('hotspot.heading', "Every detail, deliberate.")}
+                                {t('hotspot.heading', 'Every detail, deliberate.')}
                             </h2>
                         </ScrollReveal>
                         <ScrollReveal delay={0.1}>
                             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
-                                {t('hotspot.subhead', 'Six precision components. One seamless system. Tap any hotspot to explore the engineering inside the High Torque cleaner head.')}
+                                {t(
+                                    'hotspot.subhead',
+                                    'Six precision components. One seamless system. Tap any hotspot to explore the engineering inside the High Torque cleaner head.'
+                                )}
                             </p>
                         </ScrollReveal>
                     </div>
@@ -104,7 +106,10 @@ export default function HotspotDiagram() {
                             <div className="relative rounded-3xl overflow-hidden ring-1 ring-white/8 shadow-[0_32px_80px_-16px_rgba(0,0,0,0.6)] bg-[#0d0d0d]">
                                 <img
                                     src={PRODUCT_IMAGE}
-                                    alt={t('hotspot.imageAlt', 'Exploded view of Dyson High Torque cleaner head showing all internal components')}
+                                    alt={t(
+                                        'hotspot.imageAlt',
+                                        'Exploded view of Dyson High Torque cleaner head showing all internal components'
+                                    )}
                                     className="w-full h-auto block"
                                     loading="lazy"
                                     width={900}
@@ -142,7 +147,6 @@ export default function HotspotDiagram() {
                             </div>
                         </div>
                     </ScrollReveal>
-
                 </div>
             </div>
         </section>

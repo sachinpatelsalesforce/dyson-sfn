@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* oxlint-disable custom/color-linter -- Dyson agent panel renders inside a dark theme; CSS token vars resolve dark, so explicit colors are required */
 import { useEffect, useRef } from 'react';
 import { useFetcher } from 'react-router';
-import { getProducts } from './dyson-catalog';
-import type { CatalogProduct } from './dyson-catalog';
+import { getProducts, type CatalogProduct } from './dyson-catalog';
 
 type ProductCardProps = {
     product: CatalogProduct;
@@ -47,29 +47,17 @@ function ProductCard({ product, onDetail, onAddedToCart }: ProductCardProps) {
                 type="button"
                 onClick={() => onDetail(product.sku)}
                 className="flex h-[120px] items-center justify-center bg-[#f7f7f7] p-2 hover:bg-gray-100 transition-colors"
-                aria-label={`See details for ${product.name}`}
-            >
-                <img
-                    src={product.image}
-                    alt={product.name}
-                    className="h-full w-full object-contain"
-                    loading="lazy"
-                />
+                aria-label={`See details for ${product.name}`}>
+                <img src={product.image} alt={product.name} className="h-full w-full object-contain" loading="lazy" />
             </button>
 
             <div className="flex flex-col gap-1.5 p-2.5">
-                <button
-                    type="button"
-                    onClick={() => onDetail(product.sku)}
-                    className="text-left"
-                >
+                <button type="button" onClick={() => onDetail(product.sku)} className="text-left">
                     <p className="line-clamp-2 text-[11px] font-medium leading-tight text-gray-900 hover:underline">
                         {product.name}
                     </p>
                 </button>
-                <p className="text-xs font-semibold text-gray-900">
-                    £{product.price.toFixed(2)}
-                </p>
+                <p className="text-xs font-semibold text-gray-900">£{product.price.toFixed(2)}</p>
 
                 <fetcher.Form method="post" action="/action/cart-item-add">
                     <input
@@ -80,8 +68,7 @@ function ProductCard({ product, onDetail, onAddedToCart }: ProductCardProps) {
                     <button
                         type="submit"
                         disabled={isAdding || added}
-                        className="mt-0.5 w-full rounded-lg bg-[#1a1a1a] px-2 py-1.5 text-[11px] font-semibold text-white transition-colors hover:bg-black disabled:opacity-60"
-                    >
+                        className="mt-0.5 w-full rounded-lg bg-[#1a1a1a] px-2 py-1.5 text-[11px] font-semibold text-white transition-colors hover:bg-black disabled:opacity-60">
                         {added ? 'Added ✓' : isAdding ? 'Adding…' : 'Add to cart'}
                     </button>
                 </fetcher.Form>

@@ -32,11 +32,7 @@ export default function DysonHero() {
         offset: ['start start', 'end start'],
     });
 
-    const imageY = useTransform(
-        scrollYProgress,
-        [0, 1],
-        shouldReduceMotion ? ['0%', '0%'] : ['0%', '15%']
-    );
+    const imageY = useTransform(scrollYProgress, [0, 1], shouldReduceMotion ? ['0%', '0%'] : ['0%', '15%']);
 
     return (
         <section
@@ -61,10 +57,7 @@ export default function DysonHero() {
                     <ScrollReveal direction="up" delay={0.3}>
                         {/* DEMO copy */}
                         <p className="text-lg text-muted-foreground mb-10 max-w-sm leading-relaxed">
-                            {t(
-                                'hero.dyson.subhead',
-                                'The V12s Detect Slim Submarine. Laser-guided. Self-cleaning.'
-                            )}
+                            {t('hero.dyson.subhead', 'The V12s Detect Slim Submarine. Laser-guided. Self-cleaning.')}
                         </p>
                     </ScrollReveal>
                     <ScrollReveal direction="up" delay={0.4}>
@@ -82,9 +75,7 @@ export default function DysonHero() {
 
             {/* Right: product image with parallax */}
             <div className="relative overflow-hidden bg-dark-band order-1 lg:order-2 min-h-[50svh] lg:min-h-0">
-                <motion.div
-                    className="absolute inset-0"
-                    style={{ y: imageY }}>
+                <motion.div className="absolute inset-0" style={{ y: imageY }}>
                     <img
                         src={heroImage}
                         alt={t('hero.dyson.imageAlt', 'Dyson V12s Detect Slim Submarine vacuum head')}

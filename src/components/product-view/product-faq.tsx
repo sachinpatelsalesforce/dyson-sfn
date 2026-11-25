@@ -15,12 +15,7 @@
  */
 import type { ReactElement } from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-    Accordion,
-    AccordionItem,
-    AccordionTrigger,
-    AccordionContent,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/components/link';
 
@@ -43,11 +38,8 @@ export default function ProductFaq(): ReactElement {
                 {t('heading', 'Frequently Asked Questions')}
             </h2>
             <Accordion type="single" collapsible className="space-y-2">
-                {items.map((item, i) => (
-                    <AccordionItem
-                        key={i}
-                        value={`faq-${i}`}
-                        className="rounded-2xl bg-panel border-0 px-5">
+                {items.map((item) => (
+                    <AccordionItem key={item.q} value={item.q} className="rounded-2xl bg-panel border-0 px-5">
                         <AccordionTrigger className="text-sm font-medium text-left hover:no-underline py-4">
                             {item.q}
                         </AccordionTrigger>

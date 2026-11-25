@@ -44,7 +44,9 @@ export function LenisProvider({ children }: LenisProviderProps) {
         }
 
         let cleanup: (() => void) | undefined;
-        void init().then((fn) => { cleanup = fn; });
+        void init().then((fn) => {
+            cleanup = fn;
+        });
 
         return () => {
             cancelAnimationFrame(animationId);

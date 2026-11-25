@@ -22,7 +22,7 @@ import TechSpecsAccordion from './tech-specs-accordion';
 const baseProduct: ShopperProducts.schemas['Product'] = { id: 'test-product' };
 
 const withAttrs = (attrs: Record<string, unknown>): ShopperProducts.schemas['Product'] =>
-    ({ ...baseProduct, ...attrs } as ShopperProducts.schemas['Product']);
+    ({ ...baseProduct, ...attrs }) as ShopperProducts.schemas['Product'];
 
 describe('TechSpecsAccordion', () => {
     test('renders null when no spec data is available', () => {

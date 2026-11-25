@@ -25,10 +25,7 @@ export default function SustainabilityPage(): ReactElement {
 
     return (
         <div className="bg-background text-foreground pb-24">
-            <SeoMeta
-                title={t('meta.title')}
-                description={t('meta.description')}
-            />
+            <SeoMeta title={t('meta.title')} description={t('meta.description')} />
 
             {/* Letter / quote hero */}
             <section className="bg-dark-band py-32">
@@ -39,14 +36,10 @@ export default function SustainabilityPage(): ReactElement {
                         </p>
                     </ScrollReveal>
                     <ScrollReveal direction="up" delay={0.2}>
-                        <h1 className="display-heading text-4xl lg:text-6xl mb-8">
-                            {t('letter.heading')}
-                        </h1>
+                        <h1 className="display-heading text-4xl lg:text-6xl mb-8">{t('letter.heading')}</h1>
                     </ScrollReveal>
                     <ScrollReveal direction="up" delay={0.3}>
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                            {t('letter.body')}
-                        </p>
+                        <p className="text-lg text-muted-foreground leading-relaxed">{t('letter.body')}</p>
                     </ScrollReveal>
                 </div>
             </section>
@@ -55,9 +48,7 @@ export default function SustainabilityPage(): ReactElement {
             <section className="py-20">
                 <div className="section-container">
                     <ScrollReveal direction="up">
-                        <h2 className="display-heading text-3xl lg:text-4xl mb-12">
-                            {t('pillars.heading')}
-                        </h2>
+                        <h2 className="display-heading text-3xl lg:text-4xl mb-12">{t('pillars.heading')}</h2>
                     </ScrollReveal>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         {(['repair', 'longevity', 'materials'] as const).map((key, i) => (
@@ -78,12 +69,8 @@ export default function SustainabilityPage(): ReactElement {
             <section className="py-20 bg-dark-band">
                 <div className="section-container max-w-2xl">
                     <ScrollReveal direction="up">
-                        <h2 className="display-heading text-3xl lg:text-4xl mb-4">
-                            {t('warranty.heading')}
-                        </h2>
-                        <p className="text-muted-foreground leading-relaxed mb-8">
-                            {t('warranty.body')}
-                        </p>
+                        <h2 className="display-heading text-3xl lg:text-4xl mb-4">{t('warranty.heading')}</h2>
+                        <p className="text-muted-foreground leading-relaxed mb-8">{t('warranty.body')}</p>
                         <Button asChild variant="outline" size="lg">
                             <Link to="/account/register">{t('warranty.cta')}</Link>
                         </Button>

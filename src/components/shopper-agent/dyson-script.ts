@@ -24,9 +24,7 @@ export type ConversationNode = {
 export const SCRIPT: Record<string, ConversationNode> = {
     welcome: {
         id: 'welcome',
-        messages: [
-            "Hi! Welcome to Dyson. Happy to help you find what you need — where would you like to start?",
-        ],
+        messages: ['Hi! Welcome to Dyson. Happy to help you find what you need — where would you like to start?'],
         chips: [
             { label: 'What vacuum is right for me?', nextId: 'vacuum-floors' },
             { label: 'Shop cordless vacuums', nextId: 'recommend-cordless' },
@@ -50,7 +48,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
 
     'vacuum-pets-hardwood': {
         id: 'vacuum-pets-hardwood',
-        messages: ["Hardwood floors benefit from gentle but thorough suction. Do you have pets at home?"],
+        messages: ['Hardwood floors benefit from gentle but thorough suction. Do you have pets at home?'],
         chips: [
             { label: 'Yes, I have pets', nextId: 'recommend-pets-cordless' },
             { label: 'No pets', nextId: 'recommend-cordless' },
@@ -59,7 +57,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
 
     'vacuum-pets-carpet': {
         id: 'vacuum-pets-carpet',
-        messages: ["Carpet needs powerful suction and deep-pile performance. Do you have pets at home?"],
+        messages: ['Carpet needs powerful suction and deep-pile performance. Do you have pets at home?'],
         chips: [
             { label: 'Yes, I have pets', nextId: 'recommend-pets-cordless' },
             { label: 'No pets', nextId: 'recommend-upright' },
@@ -68,7 +66,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
 
     'vacuum-pets-mixed': {
         id: 'vacuum-pets-mixed',
-        messages: ["A mixed-floor home needs versatility. Do you have pets at home?"],
+        messages: ['A mixed-floor home needs versatility. Do you have pets at home?'],
         chips: [
             { label: 'Yes, I have pets', nextId: 'recommend-pets-cordless' },
             { label: 'No pets', nextId: 'recommend-cordless' },
@@ -78,7 +76,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
     'recommend-cordless': {
         id: 'recommend-cordless',
         messages: [
-            "Our cordless vacuums offer powerful suction with up to 60 minutes of run time. Here are our top picks:",
+            'Our cordless vacuums offer powerful suction with up to 60 minutes of run time. Here are our top picks:',
         ],
         productSkus: ['637722-01', '637759-01', '499085-01', '630917-01'],
         chips: [
@@ -103,9 +101,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
 
     'recommend-upright': {
         id: 'recommend-upright',
-        messages: [
-            "Our upright vacuums deliver whole-home deep cleaning on carpet. Here are our top performers:",
-        ],
+        messages: ['Our upright vacuums deliver whole-home deep cleaning on carpet. Here are our top performers:'],
         productSkus: ['394520-01', '626366-01', '593863-01'],
         chips: [
             { label: 'Show me cordless instead', nextId: 'recommend-cordless' },
@@ -131,7 +127,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
         id: 'detail-r2',
         messages: [
             "The Dyson R2 Nurovi™ Wash+Dry robot vacuum is Dyson's most advanced floor care robot.",
-            "It vacuums and mops simultaneously, with auto-emptying dock, intelligent room mapping, and the ability to detect and avoid obstacles in real time.",
+            'It vacuums and mops simultaneously, with auto-emptying dock, intelligent room mapping, and the ability to detect and avoid obstacles in real time.',
         ],
         productSkus: ['664879-01'],
         chips: [
@@ -145,7 +141,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
     'hair-welcome': {
         id: 'hair-welcome',
         messages: [
-            "Our hair care range is engineered to protect hair from heat damage while delivering salon-quality results. What are you looking for?",
+            'Our hair care range is engineered to protect hair from heat damage while delivering salon-quality results. What are you looking for?',
         ],
         chips: [
             { label: 'Hair dryers', nextId: 'recommend-dryers' },
@@ -157,7 +153,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
     'recommend-dryers': {
         id: 'recommend-dryers',
         messages: [
-            "The Dyson Supersonic™ range uses intelligent heat control to prevent extreme heat damage. Here are our hair dryers:",
+            'The Dyson Supersonic™ range uses intelligent heat control to prevent extreme heat damage. Here are our hair dryers:',
         ],
         productSkus: ['122614-01', '107833-01', '122783-01', '702276-01'],
         chips: [
@@ -170,8 +166,8 @@ export const SCRIPT: Record<string, ConversationNode> = {
     'detail-nural': {
         id: 'detail-nural',
         messages: [
-            "The Dyson Supersonic Nural™ is our most intelligent hair dryer.",
-            "It senses hair and scalp separately — drying hair fast while protecting your scalp. With 6 attachments and IQ Heat™ technology that measures temperature 40 times per second.",
+            'The Dyson Supersonic Nural™ is our most intelligent hair dryer.',
+            'It senses hair and scalp separately — drying hair fast while protecting your scalp. With 6 attachments and IQ Heat™ technology that measures temperature 40 times per second.',
         ],
         productSkus: ['122614-01', '598976-01'],
         chips: [
@@ -182,9 +178,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
 
     'recommend-straighteners': {
         id: 'recommend-straighteners',
-        messages: [
-            "Our straighteners and dryer-straighteners combine styling with hair protection:",
-        ],
+        messages: ['Our straighteners and dryer-straighteners combine styling with hair protection:'],
         productSkus: ['650108-01', '408108-01'],
         chips: [
             { label: 'See hair dryers', nextId: 'recommend-dryers' },
@@ -194,9 +188,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
 
     'recommend-curlers': {
         id: 'recommend-curlers',
-        messages: [
-            "Our curl stylers use controlled airflow to form curls without extreme heat:",
-        ],
+        messages: ['Our curl stylers use controlled airflow to form curls without extreme heat:'],
         productSkus: ['650108-01', '408108-01'],
         chips: [
             { label: 'See hair dryers', nextId: 'recommend-dryers' },
@@ -209,8 +201,8 @@ export const SCRIPT: Record<string, ConversationNode> = {
     'air-welcome': {
         id: 'air-welcome',
         messages: [
-            "Our purifiers capture 99.95% of particles as small as 0.1 microns, including allergens, bacteria, and pollutants.",
-            "What matters most to you?",
+            'Our purifiers capture 99.95% of particles as small as 0.1 microns, including allergens, bacteria, and pollutants.',
+            'What matters most to you?',
         ],
         chips: [
             { label: 'Heating & cooling too', nextId: 'recommend-air-hot-cool' },
@@ -222,9 +214,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
 
     'recommend-air-hot-cool': {
         id: 'recommend-air-hot-cool',
-        messages: [
-            "These purifiers heat in winter, cool in summer, and purify year-round:",
-        ],
+        messages: ['These purifiers heat in winter, cool in summer, and purify year-round:'],
         productSkus: ['544837-01', '544557-01', '430516-01'],
         chips: [
             { label: 'See all purifiers', nextId: 'air-welcome' },
@@ -234,9 +224,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
 
     'recommend-air-cool': {
         id: 'recommend-air-cool',
-        messages: [
-            "These purifiers deliver whole-room purification with powerful cooling airflow:",
-        ],
+        messages: ['These purifiers deliver whole-room purification with powerful cooling airflow:'],
         productSkus: ['544903-01', '544535-01'],
         chips: [
             { label: 'See heating options too', nextId: 'recommend-air-hot-cool' },
@@ -247,7 +235,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
     'recommend-air-big': {
         id: 'recommend-air-big',
         messages: [
-            "For large rooms, the Dyson Purifier Big + Quiet projects purified air across the whole space — quietly:",
+            'For large rooms, the Dyson Purifier Big + Quiet projects purified air across the whole space — quietly:',
         ],
         productSkus: ['545814-01'],
         chips: [
@@ -258,9 +246,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
 
     'recommend-air-compact': {
         id: 'recommend-air-compact',
-        messages: [
-            "Our compact purifiers are perfect for bedrooms, offices, or smaller spaces:",
-        ],
+        messages: ['Our compact purifiers are perfect for bedrooms, offices, or smaller spaces:'],
         productSkus: ['699290-01', '544903-01'],
         chips: [
             { label: 'See larger options', nextId: 'recommend-air-big' },
@@ -274,7 +260,7 @@ export const SCRIPT: Record<string, ConversationNode> = {
         id: 'recommend-headphones',
         messages: [
             "The Dyson Zone™ is the world's first headphone to combine high-fidelity audio with personal air purification.",
-            "Engineered by Dyson acoustic engineers, with active noise cancellation and up to 50 hours battery life:",
+            'Engineered by Dyson acoustic engineers, with active noise cancellation and up to 50 hours battery life:',
         ],
         productSkus: ['683291-01', '683292-01', '683293-01'],
         chips: [
@@ -286,8 +272,8 @@ export const SCRIPT: Record<string, ConversationNode> = {
     'detail-zone': {
         id: 'detail-zone',
         messages: [
-            "The Dyson Zone™ absolute+ is our most advanced headphone.",
-            "Key features:\n• Fully sealed 3-stage HEPA filtration\n• Captures 99.95% of particles as small as 0.1 microns\n• Detects and destroys formaldehyde\n• High-fidelity sound with active noise cancellation\n• Up to 50 hours audio-only battery life\n• MyDyson™ app connectivity",
+            'The Dyson Zone™ absolute+ is our most advanced headphone.',
+            'Key features:\n• Fully sealed 3-stage HEPA filtration\n• Captures 99.95% of particles as small as 0.1 microns\n• Detects and destroys formaldehyde\n• High-fidelity sound with active noise cancellation\n• Up to 50 hours audio-only battery life\n• MyDyson™ app connectivity',
         ],
         productSkus: ['683291-01', '683292-01'],
         chips: [

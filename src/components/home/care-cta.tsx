@@ -78,9 +78,7 @@ export default function CareCta() {
                                     {t(`care.${card.key}.body`, card.body)}
                                 </p>
                                 <Button asChild variant={card.variant} size="sm" className="self-start">
-                                    <Link to={card.href}>
-                                        {t(`care.${card.key}.cta`, card.cta)}
-                                    </Link>
+                                    <Link to={card.href}>{t(`care.${card.key}.cta`, card.cta)}</Link>
                                 </Button>
                             </div>
                         </ScrollReveal>

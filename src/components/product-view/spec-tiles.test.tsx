@@ -21,7 +21,7 @@ import SpecTiles from './spec-tiles';
 const baseProduct: ShopperProducts.schemas['Product'] = { id: 'test-product' };
 
 const withSpecs = (attrs: Record<string, unknown>): ShopperProducts.schemas['Product'] =>
-    ({ ...baseProduct, ...attrs } as ShopperProducts.schemas['Product']);
+    ({ ...baseProduct, ...attrs }) as ShopperProducts.schemas['Product'];
 
 describe('SpecTiles', () => {
     test('renders null when no numeric spec attributes are present', () => {

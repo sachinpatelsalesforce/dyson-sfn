@@ -25,22 +25,15 @@ export default function DysonCarePlanTile(): ReactElement {
 
     return (
         <div className="rounded-2xl bg-panel p-4 flex items-center gap-3">
-            <ShieldCheck
-                className="size-5 text-primary shrink-0 mt-0.5 self-start"
-                aria-hidden="true"
-            />
+            <ShieldCheck className="size-5 text-primary shrink-0 mt-0.5 self-start" aria-hidden="true" />
             <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold leading-tight">
-                    {t('dyson.carePlan.title', 'Dyson Care+')}
-                </p>
+                <p className="text-sm font-semibold leading-tight">{t('dyson.carePlan.title', 'Dyson Care+')}</p>
                 <p className="text-xs text-muted-foreground mt-0.5 leading-snug">
                     {t('dyson.carePlan.desc', '3-year plan — accidental damage, parts & labour covered')}
                 </p>
             </div>
             <div className="flex items-center gap-2.5 shrink-0">
-                <span className="text-sm font-medium tabular-nums">
-                    {t('dyson.carePlan.price', '+£39')}
-                </span>
+                <span className="text-sm font-medium tabular-nums">{t('dyson.carePlan.price', '+£39')}</span>
                 <Switch
                     checked={checked}
                     onCheckedChange={setChecked}

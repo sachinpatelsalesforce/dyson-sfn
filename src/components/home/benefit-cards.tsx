@@ -13,15 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* oxlint-disable custom/color-linter -- Benefit cards use explicit white on dark photographic backgrounds */
 import { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import { X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-} from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import { Link } from '@/components/link';
 import { ScrollReveal } from '@/components/motion/scroll-reveal';
 import { cn } from '@/lib/utils';
@@ -66,7 +63,7 @@ const CARDS = [
         category: 'Wet & dry',
         headline: 'Wet spill. Clean floor.',
         description:
-            'The Submarine wet roller head vacuums and mops simultaneously. It self-cleans after every pass — so you are never spreading yesterday\'s mess across today\'s floor.',
+            "The Submarine wet roller head vacuums and mops simultaneously. It self-cleans after every pass — so you are never spreading yesterday's mess across today's floor.",
         image: dysonImg('485296-01'), // V12s Detect Slim Submarine
         tint: 'bg-[#1e1a2c]',
         href: '/c/wet-floor-cleaners',
@@ -102,8 +99,7 @@ export default function BenefitCards() {
 
     const activeCard = CARDS.find((c) => c.key === activeKey) ?? null;
 
-    const toggle = (key: CardKey) =>
-        setActiveKey((prev) => (prev === key ? null : key));
+    const toggle = (key: CardKey) => setActiveKey((prev) => (prev === key ? null : key));
 
     const panelTransition = shouldReduceMotion
         ? { duration: 0 }
@@ -113,7 +109,6 @@ export default function BenefitCards() {
         <section
             className="py-24 bg-background overflow-hidden"
             aria-label={t('benefitCards.ariaLabel', 'What Dyson does best')}>
-
             {/* Section header */}
             <div className="section-container mb-12">
                 <ScrollReveal>
@@ -130,7 +125,7 @@ export default function BenefitCards() {
                     <p className="text-muted-foreground mt-4 max-w-md text-sm">
                         {t(
                             'benefitCards.subhead',
-                            'Every Dyson product is engineered for a specific purpose. Identify yours — the right machine follows.',
+                            'Every Dyson product is engineered for a specific purpose. Identify yours — the right machine follows.'
                         )}
                     </p>
                 </ScrollReveal>
@@ -142,9 +137,7 @@ export default function BenefitCards() {
                     {CARDS.map((card) => {
                         const isActive = activeKey === card.key;
                         return (
-                            <CarouselItem
-                                key={card.key}
-                                className="pl-4 basis-[82%] sm:basis-[52%] lg:basis-[33.333%]">
+                            <CarouselItem key={card.key} className="pl-4 basis-[82%] sm:basis-[52%] lg:basis-[33.333%]">
                                 <div
                                     className={cn(
                                         'relative rounded-3xl overflow-hidden h-[460px]',
@@ -154,7 +147,7 @@ export default function BenefitCards() {
                                             ? 'ring-2 ring-foreground/50 shadow-[0_0_0_4px_hsl(var(--background))]'
                                             : activeKey
                                               ? 'opacity-60'
-                                              : '',
+                                              : ''
                                     )}>
                                     {/* Product image — luminosity blend so it reads against tint */}
                                     <img
@@ -193,7 +186,7 @@ export default function BenefitCards() {
                                                 'hover:scale-110 active:scale-95',
                                                 isActive
                                                     ? 'bg-white text-black border-white/0'
-                                                    : 'bg-white/15 text-white border-white/25 hover:bg-white/25',
+                                                    : 'bg-white/15 text-white border-white/25 hover:bg-white/25'
                                             )}>
                                             <motion.span
                                                 className="text-lg font-light leading-none select-none"
@@ -227,7 +220,6 @@ export default function BenefitCards() {
                         <div className="section-container">
                             <div className="mt-5 rounded-2xl bg-panel border border-border/40 p-6 lg:p-8">
                                 <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-12">
-
                                     {/* Text */}
                                     <div className="flex-1 min-w-0">
                                         <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground mb-2">
@@ -258,7 +250,7 @@ export default function BenefitCards() {
                                     <div
                                         className={cn(
                                             'hidden lg:flex shrink-0 w-44 h-44 rounded-2xl items-center justify-center overflow-hidden',
-                                            activeCard.tint,
+                                            activeCard.tint
                                         )}>
                                         <img
                                             src={activeCard.image}
@@ -266,14 +258,12 @@ export default function BenefitCards() {
                                             className="w-full h-full object-contain p-4 mix-blend-luminosity"
                                         />
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </motion.div>
                 )}
             </AnimatePresence>
-
         </section>
     );
 }

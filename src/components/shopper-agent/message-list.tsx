@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* oxlint-disable custom/color-linter, react/no-array-index-key -- Dyson agent panel: explicit colors required (dark theme); messages are append-only so index keys are stable */
 import { useEffect, useRef } from 'react';
 import { Check, ShoppingCart } from 'lucide-react';
 import { Link } from '@/components/link';
@@ -47,7 +48,9 @@ export function MessageList({ messages, isTyping, onDetail, onAddedToCart }: Pro
 
                 if (msg.role === 'cart-added') {
                     return (
-                        <div key={i} className="flex items-center gap-2.5 rounded-xl border border-green-200 bg-green-50 px-3 py-2.5">
+                        <div
+                            key={i}
+                            className="flex items-center gap-2.5 rounded-xl border border-green-200 bg-green-50 px-3 py-2.5">
                             <div className="flex size-6 shrink-0 items-center justify-center rounded-full bg-green-100">
                                 <Check className="size-3.5 text-green-600" />
                             </div>
@@ -56,8 +59,7 @@ export function MessageList({ messages, isTyping, onDetail, onAddedToCart }: Pro
                             </p>
                             <Link
                                 to="/cart"
-                                className="flex shrink-0 items-center gap-1 text-[11px] font-semibold text-green-700 underline-offset-2 hover:underline"
-                            >
+                                className="flex shrink-0 items-center gap-1 text-[11px] font-semibold text-green-700 underline-offset-2 hover:underline">
                                 <ShoppingCart className="size-3" />
                                 View basket
                             </Link>
@@ -87,8 +89,14 @@ export function MessageList({ messages, isTyping, onDetail, onAddedToCart }: Pro
             {isTyping && (
                 <div className="flex flex-col gap-2 px-0.5 py-1">
                     <div className="h-2.5 w-[72%] rounded-full bg-gray-200 animate-pulse" />
-                    <div className="h-2.5 w-[88%] rounded-full bg-gray-200 animate-pulse" style={{ animationDelay: '150ms' }} />
-                    <div className="h-2.5 w-[52%] rounded-full bg-gray-200 animate-pulse" style={{ animationDelay: '300ms' }} />
+                    <div
+                        className="h-2.5 w-[88%] rounded-full bg-gray-200 animate-pulse"
+                        style={{ animationDelay: '150ms' }}
+                    />
+                    <div
+                        className="h-2.5 w-[52%] rounded-full bg-gray-200 animate-pulse"
+                        style={{ animationDelay: '300ms' }}
+                    />
                 </div>
             )}
             <div ref={bottomRef} />

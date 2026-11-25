@@ -28,6 +28,7 @@ import { type Image } from '@/types';
     group: 'Dyson',
 })
 @RegionDefinition([])
+// oxlint-disable-next-line react/only-export-components -- Page Designer metadata class must co-export with the component
 export class DysonImageRow3UpMetadata {
     @AttributeDefinition({ name: 'Section Headline', required: false })
     headline?: string;
@@ -103,8 +104,8 @@ export default function DysonImageRow3Up({
                     </h2>
                 )}
                 <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4" role="list">
-                    {slots.map((slot, i) => (
-                        <li key={i} className="flex flex-col gap-2">
+                    {slots.map((slot) => (
+                        <li key={slot.url?.url || slot.alt} className="flex flex-col gap-2">
                             <div className="relative aspect-square overflow-hidden rounded-ui bg-accent">
                                 <DynamicImage
                                     src={slot.url.url}

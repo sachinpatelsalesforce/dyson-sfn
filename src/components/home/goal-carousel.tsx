@@ -13,16 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* oxlint-disable custom/color-linter -- Goal carousel uses explicit white/overlay colors on dark photographic backgrounds */
 import { useState, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import { X } from 'lucide-react';
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    type CarouselApi,
-} from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from '@/components/ui/carousel';
 import { Link } from '@/components/link';
 import { ScrollReveal } from '@/components/motion/scroll-reveal';
 import { cn } from '@/lib/utils';
@@ -32,44 +28,84 @@ const BASE = 'https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images
 /* DEMO: goal card definitions — images from Dyson's CDN gallery */
 const GOAL_CARDS = [
     {
-        key: 'petHair', label: 'Pet hair', headline: 'Pet hair, gone.', bg: 'bg-[#1e2a1e]', href: '/c/cordless-vacuums',
+        key: 'petHair',
+        label: 'Pet hair',
+        headline: 'Pet hair, gone.',
+        bg: 'bg-[#1e2a1e]',
+        href: '/c/cordless-vacuums',
         image: `${BASE}/cordless/v15-detect/Web_V15_Gallery_PDP_7_vertical.jpg`,
-        description: 'High Torque motorbar head attacks pet hair at the root — no tangles, no trail left behind. Pairs with allergen mode to clear pet dander from the air.',
+        description:
+            'High Torque motorbar head attacks pet hair at the root — no tangles, no trail left behind. Pairs with allergen mode to clear pet dander from the air.',
     },
     {
-        key: 'hardFloors', label: 'Hard floors', headline: 'Floors that shine.', bg: 'bg-[#1a1e2a]', href: '/c/cordless-vacuums',
+        key: 'hardFloors',
+        label: 'Hard floors',
+        headline: 'Floors that shine.',
+        bg: 'bg-[#1a1e2a]',
+        href: '/c/cordless-vacuums',
         image: `${BASE}/cordless/v12-detect-slim/Web_V12_Detect-Slim_Gallery_PDP_4_vertical.jpg`,
-        description: 'Carbon fibre filaments sweep fine dust while 150 AW of suction picks up larger debris — without scratching hard surfaces.',
+        description:
+            'Carbon fibre filaments sweep fine dust while 150 AW of suction picks up larger debris — without scratching hard surfaces.',
     },
     {
-        key: 'carpets', label: 'Carpets', headline: 'Deep clean, every time.', bg: 'bg-[#2a1e1e]', href: '/c/cordless-vacuums',
+        key: 'carpets',
+        label: 'Carpets',
+        headline: 'Deep clean, every time.',
+        bg: 'bg-[#2a1e1e]',
+        href: '/c/cordless-vacuums',
         image: `${BASE}/cordless/v15-detect/Web_V15_Gallery_PDP_5_vertical.jpg`,
-        description: 'Stiff nylon tufts drive deep into carpet fibres to pull out embedded hair and grit that surface-only heads leave behind.',
+        description:
+            'Stiff nylon tufts drive deep into carpet fibres to pull out embedded hair and grit that surface-only heads leave behind.',
     },
     {
-        key: 'allergies', label: 'Allergies', headline: 'Air you can trust.', bg: 'bg-[#1e2a26]', href: '/c/air-purifiers',
+        key: 'allergies',
+        label: 'Allergies',
+        headline: 'Air you can trust.',
+        bg: 'bg-[#1e2a26]',
+        href: '/c/air-purifiers',
         image: 'https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/air-treatment/purifiers/11s/hp11/pdp/gallery/white-white/HP11-PDP-WHWH-Gallery-5_vertical.jpg',
-        description: 'Five-stage HEPA H13 filtration captures 99.97% of ultrafine particles — allergens, dust mites, and volatile organic compounds. Sealed end-to-end.',
+        description:
+            'Five-stage HEPA H13 filtration captures 99.97% of ultrafine particles — allergens, dust mites, and volatile organic compounds. Sealed end-to-end.',
     },
     {
-        key: 'smallSpaces', label: 'Small spaces', headline: 'Reach every corner.', bg: 'bg-[#2a2a1e]', href: '/c/cordless-vacuums',
+        key: 'smallSpaces',
+        label: 'Small spaces',
+        headline: 'Reach every corner.',
+        bg: 'bg-[#2a2a1e]',
+        href: '/c/cordless-vacuums',
         image: `${BASE}/cordless/v12-detect-slim/Web_V12_Detect-Slim_Gallery_PDP_3_vertical.jpg`,
-        description: 'The slim profile and angled wand reach under low furniture and into tight corners without disassembling. Compact. Quiet. Powerful.',
+        description:
+            'The slim profile and angled wand reach under low furniture and into tight corners without disassembling. Compact. Quiet. Powerful.',
     },
     {
-        key: 'wholeHome', label: 'Whole home', headline: 'Clean while you sleep.', bg: 'bg-[#1e1e2a]', href: '/c/robot-vacuums',
+        key: 'wholeHome',
+        label: 'Whole home',
+        headline: 'Clean while you sleep.',
+        bg: 'bg-[#1e1e2a]',
+        href: '/c/robot-vacuums',
         image: `${BASE}/robots/Web_914A_PDP_Gallery_03_Core-claim_landscape_vertical.jpg`,
-        description: 'Set a schedule, go to bed, wake up to clean floors. The robot maps every room, navigates obstacles, and self-empties its bin.',
+        description:
+            'Set a schedule, go to bed, wake up to clean floors. The robot maps every room, navigates obstacles, and self-empties its bin.',
     },
     {
-        key: 'wetDry', label: 'Wet & dry', headline: 'Spills? No problem.', bg: 'bg-[#1a2a2a]', href: '/c/wet-floor-cleaners',
+        key: 'wetDry',
+        label: 'Wet & dry',
+        headline: 'Spills? No problem.',
+        bg: 'bg-[#1a2a2a]',
+        href: '/c/wet-floor-cleaners',
         image: `${BASE}/wet-dry/v15s-submarine/Web_V15_submarine_Gallery_PDP_3_vertical.jpg`,
-        description: 'The Submarine wet roller washes and vacuums in one pass. It self-cleans — so you are never mopping with yesterday\'s water.',
+        description:
+            "The Submarine wet roller washes and vacuums in one pass. It self-cleans — so you are never mopping with yesterday's water.",
     },
     {
-        key: 'quiet', label: 'Quiet clean', headline: 'Powerful. Whisper-quiet.', bg: 'bg-[#262626]', href: '/c/cordless-vacuums',
+        key: 'quiet',
+        label: 'Quiet clean',
+        headline: 'Powerful. Whisper-quiet.',
+        bg: 'bg-[#262626]',
+        href: '/c/cordless-vacuums',
         image: `${BASE}/cordless/v10-konical/Web_PDP_Gallery_285O_KONICAL_05_vertical.jpg`,
-        description: 'Lower-output mode reduces noise to 61 dB — quieter than a normal conversation. Perfect for nap times, conference calls, and open-plan living.',
+        description:
+            'Lower-output mode reduces noise to 61 dB — quieter than a normal conversation. Perfect for nap times, conference calls, and open-plan living.',
     },
 ] as const;
 
@@ -93,7 +129,10 @@ function ParticleReadout() {
         function cycle() {
             const [lev, delay] = sequence[i % sequence.length];
             setLevel(lev);
-            timer = setTimeout(() => { i++; cycle(); }, delay);
+            timer = setTimeout(() => {
+                i++;
+                cycle();
+            }, delay);
         }
         cycle();
         return () => clearTimeout(timer);
@@ -130,11 +169,12 @@ export default function GoalCarousel() {
         setCount(api.scrollSnapList().length);
         setCurrent(api.selectedScrollSnap());
         api.on('select', onSelect);
-        return () => { api.off('select', onSelect); };
+        return () => {
+            api.off('select', onSelect);
+        };
     }, [api, onSelect]);
 
-    const toggle = (key: GoalKey) =>
-        setActiveKey((prev) => (prev === key ? null : key));
+    const toggle = (key: GoalKey) => setActiveKey((prev) => (prev === key ? null : key));
 
     const activeGoal = GOAL_CARDS.find((g) => g.key === activeKey) ?? null;
 
@@ -143,7 +183,9 @@ export default function GoalCarousel() {
         : { duration: 0.35, ease: [0.25, 0.1, 0.25, 1] as const };
 
     return (
-        <section className="py-24 bg-background overflow-hidden" aria-label={t('goalCarousel.ariaLabel', 'Find your clean')}>
+        <section
+            className="py-24 bg-background overflow-hidden"
+            aria-label={t('goalCarousel.ariaLabel', 'Find your clean')}>
             <div className="section-container mb-10">
                 <ScrollReveal>
                     <h2 className="display-heading text-4xl lg:text-5xl text-foreground">
@@ -157,10 +199,7 @@ export default function GoalCarousel() {
                 </ScrollReveal>
             </div>
 
-            <Carousel
-                setApi={setApi}
-                opts={{ align: 'start', loop: false }}
-                className="section-container">
+            <Carousel setApi={setApi} opts={{ align: 'start', loop: false }} className="section-container">
                 <CarouselContent className="-ml-4">
                     {/* Featured "Find your machine" card — DEMO */}
                     <CarouselItem className="pl-4 basis-[85%] sm:basis-[60%] lg:basis-[35%]">
@@ -193,7 +232,9 @@ export default function GoalCarousel() {
                                         goal.bg,
                                         isActive
                                             ? 'ring-2 ring-foreground/50 shadow-[0_0_0_4px_hsl(var(--background))]'
-                                            : activeKey ? 'opacity-55' : '',
+                                            : activeKey
+                                              ? 'opacity-55'
+                                              : ''
                                     )}>
                                     {/* Lifestyle image */}
                                     <img
@@ -232,12 +273,16 @@ export default function GoalCarousel() {
                                                 'hover:scale-110 active:scale-95',
                                                 isActive
                                                     ? 'bg-white text-black border-transparent'
-                                                    : 'bg-white/15 text-white border-white/20 hover:bg-white/25',
+                                                    : 'bg-white/15 text-white border-white/20 hover:bg-white/25'
                                             )}>
                                             <motion.span
                                                 className="text-base font-light leading-none select-none"
                                                 animate={{ rotate: isActive ? 45 : 0 }}
-                                                transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.2, ease: 'easeInOut' }}>
+                                                transition={
+                                                    shouldReduceMotion
+                                                        ? { duration: 0 }
+                                                        : { duration: 0.2, ease: 'easeInOut' }
+                                                }>
                                                 +
                                             </motion.span>
                                         </button>
@@ -302,10 +347,11 @@ export default function GoalCarousel() {
                                     </div>
 
                                     {/* Image thumbnail */}
-                                    <div className={cn(
-                                        'hidden lg:block shrink-0 w-44 h-44 rounded-2xl overflow-hidden',
-                                        activeGoal.bg,
-                                    )}>
+                                    <div
+                                        className={cn(
+                                            'hidden lg:block shrink-0 w-44 h-44 rounded-2xl overflow-hidden',
+                                            activeGoal.bg
+                                        )}>
                                         <img
                                             src={activeGoal.image}
                                             alt={t(`goalCarousel.goalHeadline.${activeGoal.key}`, activeGoal.headline)}

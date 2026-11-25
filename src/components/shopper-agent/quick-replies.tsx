@@ -31,8 +31,7 @@ export function QuickReplies({ chips, onSelect }: Props) {
                 <button
                     key={chip.nextId}
                     onClick={() => onSelect(chip.label, chip.nextId)}
-                    className="flex items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-accent hover:border-foreground/30"
-                >
+                    className="flex items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-accent hover:border-foreground/30">
                     <Sparkles className="size-3 shrink-0 text-muted-foreground" />
                     {chip.label}
                 </button>

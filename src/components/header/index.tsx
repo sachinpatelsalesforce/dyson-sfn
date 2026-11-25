@@ -13,7 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { type ReactElement, type ReactNode, type PropsWithChildren, useRef, useEffect, useCallback, useState } from 'react';
+import {
+    type ReactElement,
+    type ReactNode,
+    type PropsWithChildren,
+    useRef,
+    useEffect,
+    useCallback,
+    useState,
+} from 'react';
 import { useLocation } from 'react-router';
 import { Link } from '@/components/link';
 import Search from './search';
@@ -117,11 +125,7 @@ export default function Header({
                 <div className="section-container">
                     <div className="flex items-center h-16">
                         <Link to="/" className="flex-shrink-0 flex items-center" data-testid="header-logo">
-                            <img
-                                src={logo}
-                                alt={t('logoAlt')}
-                                className="h-6 lg:h-7 w-auto"
-                            />
+                            <img src={logo} alt={t('logoAlt')} className="h-6 lg:h-7 w-auto" />
                         </Link>
                         <div className="flex-1" />
                         <CartBadge />
@@ -142,11 +146,7 @@ export default function Header({
                 {/* Top row: Logo left, Icons right */}
                 <div className="flex items-center gap-x-1 lg:gap-x-6">
                     <Link to="/" className="flex-shrink-0 flex items-center" data-testid="header-logo">
-                        <img
-                            src={logo}
-                            alt={t('logoAlt')}
-                            className="h-6 lg:h-7 w-auto"
-                        />
+                        <img src={logo} alt={t('logoAlt')} className="h-6 lg:h-7 w-auto" />
                     </Link>
 
                     {/* Navigation Menu - desktop only, next to logo */}

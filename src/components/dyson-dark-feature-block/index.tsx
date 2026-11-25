@@ -29,6 +29,7 @@ import { type Image } from '@/types';
     group: 'Dyson',
 })
 @RegionDefinition([])
+// oxlint-disable-next-line react/only-export-components -- Page Designer metadata class must co-export with the component
 export class DysonDarkFeatureBlockMetadata {
     @AttributeDefinition({ name: 'Headline' })
     headline?: string;
@@ -101,16 +102,16 @@ export default function DysonDarkFeatureBlock({
 
                 {/* Text pane */}
                 <div className="flex flex-col justify-center px-8 md:px-12 py-12 md:py-16">
-                    {statValue && (
-                        <p className="text-5xl font-bold text-primary leading-none mb-1">{statValue}</p>
-                    )}
+                    {statValue && <p className="text-5xl font-bold text-primary leading-none mb-1">{statValue}</p>}
                     {statLabel && (
                         <p className="text-xs font-semibold uppercase tracking-widest text-background/60 mb-6">
                             {statLabel}
                         </p>
                     )}
                     {headline && (
-                        <h2 className="text-2xl md:text-3xl font-bold text-background mb-4 leading-tight">{headline}</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-background mb-4 leading-tight">
+                            {headline}
+                        </h2>
                     )}
                     {body && <p className="text-sm md:text-base text-background/70 leading-relaxed">{body}</p>}
                 </div>

@@ -19,25 +19,20 @@ import { Link } from '@/components/link';
 import { Button } from '@/components/ui/button';
 import { SeoMeta } from '@/components/seo-meta';
 import { ScrollReveal } from '@/components/motion/scroll-reveal';
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export default function EngineeringPage(): ReactElement {
     const { t } = useTranslation('engineering');
 
-    const stats: { value: string; label: string }[] = t('stats.items', { returnObjects: true }) as { value: string; label: string }[];
+    const stats: { value: string; label: string }[] = t('stats.items', { returnObjects: true }) as {
+        value: string;
+        label: string;
+    }[];
     const standards: string[] = t('standards.items', { returnObjects: true }) as string[];
 
     return (
         <div className="bg-background text-foreground pb-24">
-            <SeoMeta
-                title={t('meta.title')}
-                description={t('meta.description')}
-            />
+            <SeoMeta title={t('meta.title')} description={t('meta.description')} />
 
             {/* Hero */}
             <section className="bg-dark-band py-32">
@@ -48,9 +43,7 @@ export default function EngineeringPage(): ReactElement {
                         </p>
                     </ScrollReveal>
                     <ScrollReveal direction="up" delay={0.2}>
-                        <h1 className="display-heading text-5xl lg:text-7xl max-w-2xl">
-                            {t('hero.heading')}
-                        </h1>
+                        <h1 className="display-heading text-5xl lg:text-7xl max-w-2xl">{t('hero.heading')}</h1>
                     </ScrollReveal>
                     <ScrollReveal direction="up" delay={0.3}>
                         <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
@@ -64,13 +57,11 @@ export default function EngineeringPage(): ReactElement {
             <section className="py-20 bg-card">
                 <div className="section-container">
                     <ScrollReveal direction="up">
-                        <h2 className="display-heading text-3xl lg:text-4xl text-center mb-14">
-                            {t('stats.heading')}
-                        </h2>
+                        <h2 className="display-heading text-3xl lg:text-4xl text-center mb-14">{t('stats.heading')}</h2>
                     </ScrollReveal>
                     <ul className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                         {stats.map((item, i) => (
-                            <ScrollReveal key={i} direction="up" delay={i * 0.08}>
+                            <ScrollReveal key={item.value} direction="up" delay={i * 0.08}>
                                 <li>
                                     <p className="display-heading text-4xl lg:text-5xl">{item.value}</p>
                                     <p className="text-sm text-muted-foreground mt-2">{item.label}</p>
@@ -85,9 +76,7 @@ export default function EngineeringPage(): ReactElement {
             <section className="py-20">
                 <div className="section-container">
                     <ScrollReveal direction="up">
-                        <h2 className="display-heading text-3xl lg:text-4xl mb-12">
-                            {t('cards.heading')}
-                        </h2>
+                        <h2 className="display-heading text-3xl lg:text-4xl mb-12">{t('cards.heading')}</h2>
                     </ScrollReveal>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         {(['cyclone', 'laser', 'filtration'] as const).map((key, i) => (
@@ -108,19 +97,18 @@ export default function EngineeringPage(): ReactElement {
             <section className="py-20 bg-card">
                 <div className="section-container max-w-3xl">
                     <ScrollReveal direction="up">
-                        <h2 className="display-heading text-3xl lg:text-4xl mb-4">
-                            {t('standards.heading')}
-                        </h2>
+                        <h2 className="display-heading text-3xl lg:text-4xl mb-4">{t('standards.heading')}</h2>
                         <p className="text-muted-foreground mb-10">{t('standards.intro')}</p>
                     </ScrollReveal>
                     <Accordion type="multiple">
-                        {standards.map((standard, i) => (
-                            <AccordionItem key={i} value={`standard-${i}`}>
+                        {standards.map((standard) => (
+                            <AccordionItem key={standard} value={standard}>
                                 <AccordionTrigger className="text-left">{standard}</AccordionTrigger>
                                 <AccordionContent>
                                     <p className="text-sm text-muted-foreground">
                                         {/* DEMO: detailed standard description would go here */}
-                                        Testing performed against this standard by an accredited third-party laboratory. Results available on request.
+                                        Testing performed against this standard by an accredited third-party laboratory.
+                                        Results available on request.
                                     </p>
                                 </AccordionContent>
                             </AccordionItem>

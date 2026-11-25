@@ -91,6 +91,10 @@ export function useTransformSearchSuggestions(
                 })
                 .map((product) => {
                     const image = product.image as ShopperSearch.schemas['Image'] | undefined;
+                    // Fall back to Dyson CDN when SFCC returns no image for this product
+                    const dysonCdnFallback = product.productId
+                        ? `https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/${product.productId}.png`
+                        : undefined;
                     return {
                         name: product.productName || '',
                         link: createProductUrl(
@@ -101,7 +105,7 @@ export function useTransformSearchSuggestions(
                             seoUrlContext
                         ),
                         type: 'product',
-                        image: image?.disBaseLink || image?.link,
+                        image: image?.disBaseLink || image?.link || dysonCdnFallback,
                         price: product.price,
                         currency: product.currency,
                     };

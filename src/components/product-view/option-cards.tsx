@@ -39,9 +39,7 @@ function OptionCard({ value, selected, title, desc, price }: OptionCardProps): R
             htmlFor={`tool-set-${value}`}
             className={cn(
                 'relative flex cursor-pointer gap-3 rounded-2xl border p-4 transition-colors',
-                selected
-                    ? 'border-foreground bg-muted/20'
-                    : 'border-muted hover:border-muted-foreground/40'
+                selected ? 'border-foreground bg-muted/20' : 'border-muted hover:border-muted-foreground/40'
             )}>
             <RadioGroupItem id={`tool-set-${value}`} value={value} className="sr-only" />
             <div className="mt-0.5 shrink-0">
@@ -117,10 +115,7 @@ export default function OptionCards(): ReactElement {
                 </Dialog>
             </div>
 
-            <RadioGroup
-                value={selected}
-                onValueChange={(v) => setSelected(v as ToolSet)}
-                className="space-y-2">
+            <RadioGroup value={selected} onValueChange={(v) => setSelected(v as ToolSet)} className="space-y-2">
                 <OptionCard
                     value="standard"
                     selected={selected === 'standard'}
@@ -132,13 +127,19 @@ export default function OptionCards(): ReactElement {
                     value="complete"
                     selected={selected === 'complete'}
                     title={t('dyson.optionCards.complete.title', 'Complete tool set')}
-                    desc={t('dyson.optionCards.complete.desc', 'Everything in Standard, plus the Hair screw tool, Stubborn dirt brush, and Flexi crevice tool. DEMO.')}
+                    desc={t(
+                        'dyson.optionCards.complete.desc',
+                        'Everything in Standard, plus the Hair screw tool, Stubborn dirt brush, and Flexi crevice tool. DEMO.'
+                    )}
                     price={t('dyson.optionCards.complete.priceDelta', '+£X DEMO')}
                 />
             </RadioGroup>
 
             {/* Book a free home demo dialog — DEMO, no data sent */}
-            <Dialog onOpenChange={(open) => { if (!open) setDemoSent(false); }}>
+            <Dialog
+                onOpenChange={(open) => {
+                    if (!open) setDemoSent(false);
+                }}>
                 <DialogTrigger asChild>
                     <button
                         type="button"
@@ -152,15 +153,21 @@ export default function OptionCards(): ReactElement {
                     </DialogHeader>
                     {demoSent ? (
                         <p className="text-sm text-muted-foreground py-4">
-                            {t('dyson.optionCards.demoSuccess', 'Thanks! We\'ll be in touch. DEMO — no data sent.')}
+                            {t('dyson.optionCards.demoSuccess', "Thanks! We'll be in touch. DEMO — no data sent.")}
                         </p>
                     ) : (
                         /* DEMO form — no data sent */
                         <form
                             className="space-y-4 mt-2"
-                            onSubmit={(e) => { e.preventDefault(); setDemoSent(true); }}>
+                            onSubmit={(e) => {
+                                e.preventDefault();
+                                setDemoSent(true);
+                            }}>
                             <p className="text-xs text-muted-foreground">
-                                {t('dyson.optionCards.demoDesc', 'DEMO: One of our experts will visit your home and show you the full range.')}
+                                {t(
+                                    'dyson.optionCards.demoDesc',
+                                    'DEMO: One of our experts will visit your home and show you the full range.'
+                                )}
                             </p>
                             <div className="space-y-3">
                                 <input

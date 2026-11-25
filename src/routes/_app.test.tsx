@@ -83,9 +83,7 @@ vi.mock('@/components/footer', () => ({
 
 vi.mock('@/components/dyson-nav', () => ({
     default: ({ categoriesPromise }: { categoriesPromise?: unknown }) => (
-        <nav
-            data-testid="dyson-nav"
-            data-has-categories={!!categoriesPromise}>
+        <nav data-testid="dyson-nav" data-has-categories={!!categoriesPromise}>
             Dyson Navigation
         </nav>
     ),

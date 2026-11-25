@@ -42,7 +42,6 @@ interface ProductViewProps {
     mode?: 'add' | 'edit';
 }
 
-
 /** Inline trust badges rendered immediately after the ATC button. */
 function TrustRow(): ReactElement {
     const { t } = useTranslation('product');
@@ -129,7 +128,9 @@ export default function ProductView({ product, mode = 'add' }: ProductViewProps)
                         // @sfdc-extension-block-end SFDC_EXT_BOPIS
                     />
                     <OptionCards />
-                    <div id="pdp-buy-panel" className="mt-6 rounded-2xl bg-panel p-6 [&_[data-testid='express-payments']]:hidden">
+                    <div
+                        id="pdp-buy-panel"
+                        className="mt-6 rounded-2xl bg-panel p-6 [&_[data-testid='express-payments']]:hidden">
                         <ProductCartActions product={product} showInlineCartQuantity={useInlineCartQuantity} />
                         <TrustRow />
                         <UITarget targetId="sfcc.pdp.returnsWarranty" />
@@ -153,14 +154,15 @@ export default function ProductView({ product, mode = 'add' }: ProductViewProps)
         </React.Fragment>
     );
 
-    if (productView) return (
-        <>
-            {content}
-            <Suspense fallback={null}>
-                <StickyAtcBar product={product} />
-            </Suspense>
-        </>
-    );
+    if (productView)
+        return (
+            <>
+                {content}
+                <Suspense fallback={null}>
+                    <StickyAtcBar product={product} />
+                </Suspense>
+            </>
+        );
 
     return (
         <ProductViewProvider product={product} mode={mode}>

@@ -28,6 +28,7 @@ import { type Image } from '@/types';
     group: 'Dyson',
 })
 @RegionDefinition([])
+// oxlint-disable-next-line react/only-export-components -- Page Designer metadata class must co-export with the component
 export class DysonHowItWorksMetadata {
     @AttributeDefinition({ name: 'Section Headline', required: false })
     headline?: string;
@@ -120,7 +121,6 @@ export default function DysonHowItWorks({
                 )}
                 <ol
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
-                    role="list"
                     aria-label={headline ?? 'How it works'}>
                     {steps.map((step) => (
                         <li key={step.num} className="flex flex-col items-center text-center">

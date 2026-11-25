@@ -30,6 +30,7 @@ import { type Image } from '@/types';
     group: 'Dyson',
 })
 @RegionDefinition([])
+// oxlint-disable-next-line react/only-export-components -- Page Designer metadata class must co-export with the component
 export class DysonHeroBannerMetadata {
     @AttributeDefinition({ name: 'Headline' })
     headline?: string;
@@ -97,7 +98,10 @@ export default function DysonHeroBanner({
                 {headline && <h2 className="text-4xl md:text-5xl font-bold leading-none mb-4">{headline}</h2>}
                 {subCopy && <p className="text-base md:text-lg text-background/80 mb-6 max-w-md">{subCopy}</p>}
                 {hasCta && (
-                    <Button asChild variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    <Button
+                        asChild
+                        variant="default"
+                        className="bg-primary text-primary-foreground hover:bg-primary/90">
                         <Link to={ctaLink as string}>{ctaText ?? 'Explore'}</Link>
                     </Button>
                 )}

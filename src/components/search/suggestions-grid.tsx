@@ -75,14 +75,25 @@ const SearchSuggestionsPopup: React.FC<SearchSuggestionsPopupProps> = ({
                             <div className="mb-2">
                                 <div className="w-full relative aspect-[4/3]">
                                     {suggestion.image ? (
-                                        <DynamicImage
-                                            src={`${toImageUrl({ src: suggestion.image, config })}[?sw={width}]`}
-                                            alt={suggestion.name || t('productImageAlt')}
-                                            imageProps={{
-                                                className: 'absolute inset-0 w-full h-full object-cover block',
-                                            }}
-                                            loading="eager"
-                                        />
+                                        // External CDN URLs (e.g. Dyson's Adobe Scene7) don't support
+                                        // SFCC DIS parameters — bypass DynamicImage and use a plain img.
+                                        suggestion.image.includes('assetsadobe2.com') ? (
+                                            <img
+                                                src={suggestion.image}
+                                                alt={suggestion.name || t('productImageAlt')}
+                                                className="absolute inset-0 w-full h-full object-contain block"
+                                                loading="eager"
+                                            />
+                                        ) : (
+                                            <DynamicImage
+                                                src={`${toImageUrl({ src: suggestion.image, config })}[?sw={width}]`}
+                                                alt={suggestion.name || t('productImageAlt')}
+                                                imageProps={{
+                                                    className: 'absolute inset-0 w-full h-full object-cover block',
+                                                }}
+                                                loading="eager"
+                                            />
+                                        )
                                     ) : (
                                         <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-muted text-header-foreground">
                                             <div className="text-center">

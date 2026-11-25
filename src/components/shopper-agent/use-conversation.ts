@@ -51,10 +51,7 @@ export function useConversation() {
         [currentNode, visitedNodeIds]
     );
 
-    const cartCount = useMemo(
-        () => messages.filter((m) => m.role === 'cart-added').length,
-        [messages]
-    );
+    const cartCount = useMemo(() => messages.filter((m) => m.role === 'cart-added').length, [messages]);
 
     const selectChip = useCallback((label: string, nextId: string) => {
         const nextNode = SCRIPT[nextId];
@@ -91,7 +88,11 @@ export function useConversation() {
             } else {
                 setMessages((prev) => [
                     ...prev,
-                    { role: 'agent', text: "I'm not sure about that — here's what I can help you with:", productSkus: undefined },
+                    {
+                        role: 'agent',
+                        text: "I'm not sure about that — here's what I can help you with:",
+                        productSkus: undefined,
+                    },
                     ...agentMessages(WELCOME_NODE_ID),
                 ]);
                 setCurrentNodeId(WELCOME_NODE_ID);

@@ -97,11 +97,7 @@ export function loader({ context, request }: Route.LoaderArgs): LoaderData {
  * Routes that need this layout should be prefixed with `_app.` in their filename.
  * For routes without default header/footer (e.g., login), use the `_empty.` prefix instead.
  */
-export default function DefaultLayout({
-    loaderData: { root, headerComponent },
-}: {
-    loaderData: LoaderData;
-}) {
+export default function DefaultLayout({ loaderData: { root, headerComponent } }: { loaderData: LoaderData }) {
     const refRoot = useRef<Promise<ShopperProducts.schemas['Category']> | undefined>(undefined);
     const refHeaderComponent = useRef<Promise<ComponentWithComponentData | null> | undefined>(undefined);
     if (!refRoot.current && !refHeaderComponent.current) {
@@ -130,9 +126,13 @@ export default function DefaultLayout({
                     heroTransparent={heroTransparent}
                     announcementSlot={
                         // Keep this region outside any Suspense boundary, so it blocks the shell until it resolves.
-                        <EmbeddedComponentRegion component={refHeaderComponent.current} regionId="announcement" critical />
+                        <EmbeddedComponentRegion
+                            component={refHeaderComponent.current}
+                            regionId="announcement"
+                            critical
+                        />
                     }>
-                    <DysonNav categoriesPromise={refRoot.current!} />
+                    <DysonNav categoriesPromise={refRoot.current ?? root} />
                 </Header>
                 <main id="main-content" tabIndex={-1} className="grow pt-8" {...mainPaddingAttrs}>
                     <Outlet />

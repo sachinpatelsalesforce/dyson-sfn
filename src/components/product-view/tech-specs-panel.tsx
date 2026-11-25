@@ -52,7 +52,11 @@ function splitSpec(value: string): string[] {
         .filter(Boolean);
 }
 
-export default function TechSpecsPanel({ product, imageUrl, className }: TechSpecsPanelProps): React.ReactElement | null {
+export default function TechSpecsPanel({
+    product,
+    imageUrl,
+    className,
+}: TechSpecsPanelProps): React.ReactElement | null {
     const { t } = useTranslation('product');
     const p = product as ShopperProducts.schemas['Product'] & DysonSpecAttrs;
 
@@ -68,26 +72,50 @@ export default function TechSpecsPanel({ product, imageUrl, className }: TechSpe
 
     const groups: SpecGroup[] = [];
     if (perfLines.length > 0) {
-        groups.push({ id: 'performance', label: t('dyson.techSpecs.performance', 'Performance'), Icon: Zap, lines: perfLines });
+        groups.push({
+            id: 'performance',
+            label: t('dyson.techSpecs.performance', 'Performance'),
+            Icon: Zap,
+            lines: perfLines,
+        });
     }
     if (dimLines.length > 0) {
-        groups.push({ id: 'dimensions', label: t('dyson.techSpecs.weightDimensions', 'Weight & Dimensions'), Icon: Ruler, lines: dimLines });
+        groups.push({
+            id: 'dimensions',
+            label: t('dyson.techSpecs.weightDimensions', 'Weight & Dimensions'),
+            Icon: Ruler,
+            lines: dimLines,
+        });
     }
     if (typeof p.c_specFilter === 'string') {
         const lines = splitSpec(p.c_specFilter);
-        if (lines.length > 0) groups.push({ id: 'filtration', label: t('dyson.techSpecs.filter', 'Filtration'), Icon: Wind, lines });
+        if (lines.length > 0)
+            groups.push({ id: 'filtration', label: t('dyson.techSpecs.filter', 'Filtration'), Icon: Wind, lines });
     }
     if (typeof p.c_specCompatibility === 'string') {
         const lines = splitSpec(p.c_specCompatibility);
-        if (lines.length > 0) groups.push({ id: 'compatibility', label: t('dyson.techSpecs.compatibility', 'Compatibility'), Icon: Smartphone, lines });
+        if (lines.length > 0)
+            groups.push({
+                id: 'compatibility',
+                label: t('dyson.techSpecs.compatibility', 'Compatibility'),
+                Icon: Smartphone,
+                lines,
+            });
     }
     if (typeof p.c_specPower === 'string') {
         const lines = splitSpec(p.c_specPower);
-        if (lines.length > 0) groups.push({ id: 'power', label: t('dyson.techSpecs.power', 'Power'), Icon: Battery, lines });
+        if (lines.length > 0)
+            groups.push({ id: 'power', label: t('dyson.techSpecs.power', 'Power'), Icon: Battery, lines });
     }
     if (typeof p.c_specWarranty === 'string') {
         const lines = splitSpec(p.c_specWarranty);
-        if (lines.length > 0) groups.push({ id: 'warranty', label: t('dyson.techSpecs.warrantyDetail', 'Warranty'), Icon: ShieldCheck, lines });
+        if (lines.length > 0)
+            groups.push({
+                id: 'warranty',
+                label: t('dyson.techSpecs.warrantyDetail', 'Warranty'),
+                Icon: ShieldCheck,
+                lines,
+            });
     }
 
     const rawIncluded = p.c_specInBox ?? p.c_boxContents;
@@ -119,8 +147,8 @@ export default function TechSpecsPanel({ product, imageUrl, className }: TechSpe
                                     </p>
                                 </div>
                                 <ul className="space-y-1">
-                                    {includedItems.map((item, i) => (
-                                        <li key={i} className="text-xs text-muted-foreground">
+                                    {includedItems.map((item) => (
+                                        <li key={item} className="text-xs text-muted-foreground">
                                             {item}
                                         </li>
                                     ))}
@@ -140,13 +168,18 @@ export default function TechSpecsPanel({ product, imageUrl, className }: TechSpe
                                     <div key={group.id} className="space-y-2">
                                         <div className="flex items-center gap-2">
                                             <div className="size-8 rounded-full border border-muted flex items-center justify-center shrink-0">
-                                                <group.Icon className="size-4 text-muted-foreground" aria-hidden="true" />
+                                                <group.Icon
+                                                    className="size-4 text-muted-foreground"
+                                                    aria-hidden="true"
+                                                />
                                             </div>
                                             <p className="font-medium text-sm">{group.label}</p>
                                         </div>
                                         <ul className="pl-10 space-y-1">
-                                            {group.lines.map((line, i) => (
-                                                <li key={i} className="text-xs text-muted-foreground leading-relaxed">
+                                            {group.lines.map((line) => (
+                                                <li
+                                                    key={line}
+                                                    className="text-xs text-muted-foreground leading-relaxed">
                                                     {line}
                                                 </li>
                                             ))}
@@ -156,7 +189,10 @@ export default function TechSpecsPanel({ product, imageUrl, className }: TechSpe
                             </div>
                         ) : (
                             <p className="text-sm text-muted-foreground">
-                                {t('dyson.techSpecs.noSpecs', 'Detailed specifications are not available for this product.')}
+                                {t(
+                                    'dyson.techSpecs.noSpecs',
+                                    'Detailed specifications are not available for this product.'
+                                )}
                             </p>
                         )}
                     </div>

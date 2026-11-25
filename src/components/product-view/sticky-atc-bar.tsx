@@ -37,10 +37,7 @@ export default function StickyAtcBar({ product }: StickyAtcBarProps): ReactEleme
         const target = document.getElementById('pdp-buy-panel');
         if (!target) return;
 
-        const observer = new IntersectionObserver(
-            ([entry]) => setVisible(!entry.isIntersecting),
-            { threshold: 0 }
-        );
+        const observer = new IntersectionObserver(([entry]) => setVisible(!entry.isIntersecting), { threshold: 0 });
         observer.observe(target);
         return () => observer.disconnect();
     }, []);

@@ -21,7 +21,7 @@ import KeyFeatureStrip from './key-feature-strip';
 const baseProduct: ShopperProducts.schemas['Product'] = { id: 'test-product' };
 
 const withFeatures = (features: string[]): ShopperProducts.schemas['Product'] =>
-    ({ ...baseProduct, c_c_filterTechnology: features } as ShopperProducts.schemas['Product']);
+    ({ ...baseProduct, c_c_filterTechnology: features }) as ShopperProducts.schemas['Product'];
 
 describe('KeyFeatureStrip', () => {
     test('renders null when product has no c_c_filterTechnology', () => {

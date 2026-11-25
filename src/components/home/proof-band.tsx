@@ -42,7 +42,7 @@ export default function ProofBand() {
                 <ScrollReveal delay={0.05}>
                     <h2 className="display-heading text-4xl lg:text-6xl text-dark-band-foreground mb-16 max-w-2xl">
                         {/* DEMO copy */}
-                        {t('proof.heading', "Nothing escapes it.")}
+                        {t('proof.heading', 'Nothing escapes it.')}
                     </h2>
                 </ScrollReveal>
 

@@ -14,7 +14,17 @@
  * limitations under the License.
  */
 import { useState, Suspense, type ComponentType } from 'react';
-import { PawPrint, Sparkles, Home, Wind, Maximize2, RefreshCw, Droplets, Volume2, type LucideProps } from 'lucide-react';
+import {
+    PawPrint,
+    Sparkles,
+    Home,
+    Wind,
+    Maximize2,
+    RefreshCw,
+    Droplets,
+    Volume2,
+    type LucideProps,
+} from 'lucide-react';
 import { Await } from 'react-router';
 import {
     NavigationMenu,
@@ -49,12 +59,7 @@ const ENGINEERING_LINKS = [
     { key: 'sustainability', to: '/sustainability' },
 ] as const;
 
-const SUPPORT_LINKS = [
-    { key: 'register' },
-    { key: 'repairs' },
-    { key: 'spareParts' },
-    { key: 'contact' },
-] as const;
+const SUPPORT_LINKS = [{ key: 'register' }, { key: 'repairs' }, { key: 'spareParts' }, { key: 'contact' }] as const;
 
 interface DysonNavProps {
     categoriesPromise: Promise<ShopperProducts.schemas['Category']>;
@@ -115,9 +120,7 @@ function ShopPanel({ categories }: { categories: ShopperProducts.schemas['Catego
                     </div>
                     <div className="p-4">
                         <p className="text-xs text-header-menu-foreground/50 mb-1">{t('nav.newIn', 'New in')}</p>
-                        <p className="text-sm font-medium text-header-menu-foreground">
-                            V12s Detect Slim Submarine
-                        </p>
+                        <p className="text-sm font-medium text-header-menu-foreground">V12s Detect Slim Submarine</p>
                     </div>
                 </NavLink>
             </div>
@@ -152,11 +155,12 @@ function FindYourCleanPanel({ categories }: { categories: ShopperProducts.schema
                     <p className="text-xs uppercase tracking-widest text-dark-band-foreground/50 mb-2">
                         {t('nav.guidedPicker', 'Guided picker')}
                     </p>
-                    <p className="display-heading text-xl mb-3">
-                        {t('nav.findYourMachine', 'Find your machine')}
-                    </p>
+                    <p className="display-heading text-xl mb-3">{t('nav.findYourMachine', 'Find your machine')}</p>
                     <p className="text-sm text-dark-band-foreground/60 mb-4">
-                        {t('nav.finderDesc', "Answer 3 quick questions and we’ll recommend the right cleaner for your home.")}
+                        {t(
+                            'nav.finderDesc',
+                            'Answer 3 quick questions and we’ll recommend the right cleaner for your home.'
+                        )}
                     </p>
                     <NavLink
                         to="/c/cordless-vacuums"
@@ -181,7 +185,10 @@ function FindYourCleanPanel({ categories }: { categories: ShopperProducts.schema
                                     <NavLink
                                         to={url}
                                         className="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-panel transition-colors group">
-                                        <Icon className="size-4 text-header-menu-foreground/50 group-hover:text-header-menu-foreground transition-colors shrink-0" aria-hidden="true" />
+                                        <Icon
+                                            className="size-4 text-header-menu-foreground/50 group-hover:text-header-menu-foreground transition-colors shrink-0"
+                                            aria-hidden="true"
+                                        />
                                         <span className="text-sm text-header-menu-foreground/80 group-hover:text-header-menu-foreground transition-colors">
                                             {t(`nav.goal.${key}`, key)}
                                         </span>
@@ -212,7 +219,9 @@ function EngineeringPanel() {
             <ul className="grid grid-cols-4 gap-6">
                 {ENGINEERING_LINKS.map(({ key, to }) => (
                     <li key={key}>
-                        <Link to={to} className="block rounded-xl bg-panel p-5 h-full flex flex-col gap-3 hover:bg-muted transition-colors">
+                        <Link
+                            to={to}
+                            className="block rounded-xl bg-panel p-5 h-full flex flex-col gap-3 hover:bg-muted transition-colors">
                             <p className="text-sm font-medium text-header-menu-foreground">
                                 {t(`nav.engineering.${key}`, key)}
                             </p>

@@ -29,6 +29,7 @@ import { type Image } from '@/types';
     group: 'Dyson',
 })
 @RegionDefinition([])
+// oxlint-disable-next-line react/only-export-components -- Page Designer metadata class must co-export with the component
 export class DysonColourShowcaseMetadata {
     @AttributeDefinition({ name: 'Section Headline', required: false })
     headline?: string;

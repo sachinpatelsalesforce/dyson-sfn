@@ -359,7 +359,12 @@ const CartSheetPanel = function CartSheetPanel({ onClose }: { onClose: () => voi
                             <DysonCarePlanTile />
                             <div className="flex items-center gap-2 text-xs text-muted-foreground">
                                 <Truck className="size-3.5 text-primary shrink-0" aria-hidden="true" />
-                                <span>{tMiniCart('dyson.freeDelivery', 'Free next-day delivery on orders over £50. DEMO.')}</span>
+                                <span>
+                                    {tMiniCart(
+                                        'dyson.freeDelivery',
+                                        'Free next-day delivery on orders over £50. DEMO.'
+                                    )}
+                                </span>
                             </div>
                         </div>
 
